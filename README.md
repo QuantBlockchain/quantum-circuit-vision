@@ -15,6 +15,14 @@ QCV investigates whether multimodal large language models (MMLLMs) can generate 
 
 ### 132 Circuits · 13 Categories · 1–10 Qubits
 
+**General Quantum Circuits (101)**
+
+![General Quantum Circuits](assets/general_circuits.png)
+
+**Blockchain Quantum Circuits (31)**
+
+![Blockchain Quantum Circuits](assets/blockchain_circuits.png)
+
 | Category | ID | Count | Qubits | Status | Examples |
 |:---|:---:|:---:|:---:|:---:|:---|
 | Basic | demo | 5 | 1–3 | ✅ Tested | Hadamard, CNOT, Bell, GHZ, Toffoli |
