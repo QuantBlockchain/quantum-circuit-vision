@@ -11,36 +11,65 @@ QCV investigates whether multimodal large language models (MMLLMs) can generate 
 - **Structural regularity > qubit count**: An 8-qubit regular circuit passes while 5-qubit and 7-qubit irregular circuits fail
 - All generated code is verified end-to-end using **unitary matrix fidelity** on Amazon Braket's LocalSimulator
 
-## Benchmark
+## Benchmark Overview
 
-120 quantum circuits across 12 categories:
+### 132 Circuits · 13 Categories · 1–10 Qubits
 
-| Category | ID | Count | Qubits | Examples |
-|---|---|---|---|---|
-| Basic | demo | 5 | 1–3 | Hadamard, CNOT, Bell, GHZ, Toffoli |
-| Intermediate | inter | 10 | 2–4 | QFT, Grover, Teleportation, Deutsch, Phase Estimation |
-| Advanced | adv | 6 | 3–5 | 3-Qubit QFT, QAOA, VQE Ansatz, Bernstein-Vazirani |
-| Blockchain | blockchain | 11 | 2–8 | QRNG, BB84 QKD, Grover Mining, Consensus Protocol |
-| Gate Coverage | A | 15 | 1–3 | Y, S, T, Rx, Ry, Rz, √X, CZ, CRy, CRx, CCZ, iSWAP |
-| Qubit Scaling | B | 12 | 4–10 | GHZ-4/5/6/8/10, QFT-4/5, Ring/Star/Full Entanglement |
-| Classical Algorithms | C | 15 | 2–4 | Deutsch-Jozsa, Simon, Grover-4, Shor, QPE, HHL, W-state |
-| Variational | D | 10 | 2–4 | Hardware-efficient, UCCSD, QAOA-2layer, Data Reuploading |
-| Error Correction | E | 8 | 3–9 | Bit/Phase Flip, Shor-9, Steane-7, Surface Code, Logical CNOT |
-| Quantum ML | F | 10 | 2–8 | Angle/IQP Encoding, QNN, QCNN, Kernel, QGAN, Classifier |
-| Blockchain Extended | G | 8 | 3–6 | E91 QKD, Quantum Money, Blind QC, Voting, Auction |
-| Visual Variants | H | 10 | 2–4 | Barrier, Compressed, Wide, Reversed Labels, Decomposed |
-| BTC/Blockchain Security | I | 12 | 4–7 | Shor vs ECDSA, Grover vs SHA-256/AES, Kyber, Dilithium, SPHINCS+ |
+| Category | ID | Count | Qubits | Status | Examples |
+|:---|:---:|:---:|:---:|:---:|:---|
+| Basic | demo | 5 | 1–3 | ✅ Tested | Hadamard, CNOT, Bell, GHZ, Toffoli |
+| Intermediate | inter | 10 | 2–4 | ✅ Tested | QFT, Grover, Teleportation, Deutsch, Phase Est. |
+| Advanced | adv | 6 | 3–5 | ✅ Tested | 3-Qubit QFT, QAOA, VQE Ansatz, Bernstein-Vazirani |
+| Blockchain | blockchain | 11 | 2–8 | 🔶 Partial | QRNG, BB84 QKD, Grover Mining, Consensus Protocol |
+| Gate Coverage | A | 15 | 1–3 | ⬜ Pending | Y, S, T, Rx, Ry, Rz, √X, CZ, CRy, CRx, CCZ, iSWAP |
+| Qubit Scaling | B | 12 | 4–10 | ⬜ Pending | GHZ 4–10q, QFT 4–5q, Ring/Star/Full Entanglement |
+| Classical Algorithms | C | 15 | 2–4 | ⬜ Pending | Deutsch-Jozsa, Simon, Grover-4, Shor, QPE, HHL |
+| Variational | D | 10 | 2–4 | ⬜ Pending | Hardware-efficient, UCCSD, QAOA-2layer, Data Reuploading |
+| Error Correction | E | 8 | 3–9 | ⬜ Pending | Bit/Phase Flip, Shor-9, Steane-7, Surface Code |
+| Quantum ML | F | 10 | 2–8 | ⬜ Pending | QNN, QCNN-8q, Quantum Kernel, QGAN, Classifier |
+| Blockchain Extended | G | 8 | 3–6 | ⬜ Pending | E91 QKD, Quantum Money, Blind QC, Voting, Auction |
+| Visual Variants | H | 10 | 2–4 | ⬜ Pending | Barrier, Compressed, Reversed Labels, Decomposed |
+| **BTC/Blockchain Security** | **I** | **12** | **4–7** | ⬜ Pending | **Shor vs ECDSA, Grover vs SHA-256/AES, Kyber, Dilithium, SPHINCS+** |
 
-Each circuit includes:
-- Circuit diagram image (PNG) in `benchmark/`
-- Ground truth Amazon Braket SDK code in `benchmark/ground_truth/`
+> ✅ = 3 models × 2 modes tested · 🔶 = Opus BV only · ⬜ = Circuit + ground truth ready, experiments pending
 
-## Results Summary
+### BTC/Blockchain Quantum Security (Direction I) — Detail
+
+Circuits directly relevant to Bitcoin and blockchain quantum security:
+
+| ID | Circuit | Qubits | Theme | Description |
+|:---|:---|:---:|:---|:---|
+| I01 | Shor vs ECDSA | 6 | 🔴 Attack | Period finding targeting elliptic curve (secp256k1 threat) |
+| I02 | Grover vs SHA-256 | 4 | 🔴 Attack | Preimage search on hash function (mining/address threat) |
+| I03 | Grover vs AES | 5 | 🔴 Attack | Key search on symmetric encryption (AES-128 → AES-64 effective) |
+| I10 | PoW Quantum Speedup | 4 | 🔴 Attack | Quadratic speedup on proof-of-work nonce search |
+| I04 | Lamport Signature | 4 | 🟢 Defense | One-time quantum-safe signature verification |
+| I08 | Kyber (CRYSTALS) | 6 | 🟢 Defense | Lattice-based key encapsulation (NIST PQC standard) |
+| I09 | Dilithium | 5 | 🟢 Defense | Lattice-based digital signature (NIST PQC standard) |
+| I12 | SPHINCS+ | 7 | 🟢 Defense | Hash-based signature scheme (NIST PQC standard) |
+| I05 | Quantum Random Beacon | 6 | 🔵 Infra | Multi-party randomness for consensus |
+| I06 | QKD Network | 6 | 🔵 Infra | 3-node key distribution with entanglement swapping |
+| I07 | Quantum Timestamp | 4 | 🔵 Infra | Unforgeable time proof for blockchain |
+| I11 | Quantum Merkle Tree | 5 | 🔵 Infra | On-chain verification with quantum leaf hashing |
+
+> 🔴 Attack surface · 🟢 Post-quantum defense · 🔵 Quantum-enhanced infrastructure
+
+### Blockchain Coverage Summary
+
+Total blockchain-related circuits: **31 / 132 (23.5%)**
+
+| Group | Count | Focus |
+|:---|:---:|:---|
+| blockchain (original) | 11 | General quantum protocols for blockchain |
+| G (extended) | 8 | Cryptographic protocols (QKD, voting, auction) |
+| I (BTC security) | 12 | BTC-specific attack/defense/infrastructure |
+
+## Results (Evaluated Subset: 21 Main + 11 Blockchain)
 
 ### Main Benchmark (21 circuits × 3 models × 2 modes)
 
 | Model | Mode | Basic (5) | Intermediate (10) | Advanced (6) | Weighted Score |
-|---|---|---|---|---|---|
+|:---|:---:|:---:|:---:|:---:|:---:|
 | Claude Opus 4.6 | BV | 100% | 90% | 100% | **97.0%** |
 | Claude Opus 4.6 | TV | 100% | 100% | 83% | 91.5% |
 | Claude Sonnet 4.6 | BV | 100% | 90% | 83% | 88.5% |
@@ -58,8 +87,8 @@ Pass rate: **9/11 (81.8%)** — including an 8-qubit consensus protocol (256×25
 
 ```
 quantum-circuit-vision/
-├── benchmark/                  # Circuit diagram images (PNG)
-│   └── ground_truth/           # Ground truth Braket SDK code
+├── benchmark/                  # 132 circuit diagram images (PNG)
+│   └── ground_truth/           # 132 ground truth Braket SDK code (.py)
 ├── prompts/                    # BV and TV prompt templates
 ├── scripts/                    # Circuit generation, experiment, and verification scripts
 ├── results/                    # Aggregated experiment results
