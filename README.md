@@ -2,7 +2,7 @@
 
 **Quantum Circuit Code Generation using Visual Capabilities of Multi-Modal Large Language Models**
 
-QCV investigates whether multimodal large language models (MMLLMs) can generate executable quantum code directly from circuit diagram images. We construct a difficulty-graded benchmark of 32 quantum circuits and evaluate multiple MMLLMs under two visual prompting modes: Basic Vision (BV) and Thinking Vision (TV).
+QCV investigates whether multimodal large language models (MMLLMs) can generate executable quantum code directly from circuit diagram images. We construct a difficulty-graded benchmark of **120 quantum circuits** across 12 categories and evaluate multiple MMLLMs under two visual prompting modes: Basic Vision (BV) and Thinking Vision (TV).
 
 ## Key Findings
 
@@ -13,14 +13,22 @@ QCV investigates whether multimodal large language models (MMLLMs) can generate 
 
 ## Benchmark
 
-32 quantum circuits across 4 categories:
+120 quantum circuits across 12 categories:
 
-| Category | Count | Qubits | Examples |
-|---|---|---|---|
-| Basic | 5 | 1–3 | Hadamard, CNOT, Bell, GHZ, Toffoli |
-| Intermediate | 10 | 2–4 | QFT, Grover, Teleportation, Deutsch, Phase Estimation |
-| Advanced | 6 | 3–5 | 3-Qubit QFT, QAOA, VQE Ansatz, Bernstein-Vazirani |
-| Blockchain | 11 | 2–8 | QRNG, BB84 QKD, Grover Mining, Consensus Protocol |
+| Category | ID | Count | Qubits | Examples |
+|---|---|---|---|---|
+| Basic | demo | 5 | 1–3 | Hadamard, CNOT, Bell, GHZ, Toffoli |
+| Intermediate | inter | 10 | 2–4 | QFT, Grover, Teleportation, Deutsch, Phase Estimation |
+| Advanced | adv | 6 | 3–5 | 3-Qubit QFT, QAOA, VQE Ansatz, Bernstein-Vazirani |
+| Blockchain | blockchain | 11 | 2–8 | QRNG, BB84 QKD, Grover Mining, Consensus Protocol |
+| Gate Coverage | A | 15 | 1–3 | Y, S, T, Rx, Ry, Rz, √X, CZ, CRy, CRx, CCZ, iSWAP |
+| Qubit Scaling | B | 12 | 4–10 | GHZ-4/5/6/8/10, QFT-4/5, Ring/Star/Full Entanglement |
+| Classical Algorithms | C | 15 | 2–4 | Deutsch-Jozsa, Simon, Grover-4, Shor, QPE, HHL, W-state |
+| Variational | D | 10 | 2–4 | Hardware-efficient, UCCSD, QAOA-2layer, Data Reuploading |
+| Error Correction | E | 8 | 3–9 | Bit/Phase Flip, Shor-9, Steane-7, Surface Code, Logical CNOT |
+| Quantum ML | F | 10 | 2–8 | Angle/IQP Encoding, QNN, QCNN, Kernel, QGAN, Classifier |
+| Blockchain Extended | G | 8 | 3–6 | E91 QKD, Quantum Money, Blind QC, Voting, Auction |
+| Visual Variants | H | 10 | 2–4 | Barrier, Compressed, Wide, Reversed Labels, Decomposed |
 
 Each circuit includes:
 - Circuit diagram image (PNG) in `benchmark/`
