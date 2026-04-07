@@ -2,7 +2,7 @@
 
 **Quantum Circuit Code Generation using Visual Capabilities of Multi-Modal Large Language Models**
 
-QCV investigates whether multimodal large language models (MMLLMs) can generate executable quantum code directly from circuit diagram images. We construct a difficulty-graded benchmark of **120 quantum circuits** across 12 categories and evaluate multiple MMLLMs under two visual prompting modes: Basic Vision (BV) and Thinking Vision (TV).
+QCV investigates whether multimodal large language models (MMLLMs) can generate executable quantum code directly from circuit diagram images. We construct a difficulty-graded benchmark of **132 quantum circuits** across 13 categories and evaluate multiple MMLLMs under two visual prompting modes: Basic Vision (BV) and Thinking Vision (TV).
 
 ## Key Findings
 
@@ -29,6 +29,7 @@ QCV investigates whether multimodal large language models (MMLLMs) can generate 
 | Quantum ML | F | 10 | 2–8 | Angle/IQP Encoding, QNN, QCNN, Kernel, QGAN, Classifier |
 | Blockchain Extended | G | 8 | 3–6 | E91 QKD, Quantum Money, Blind QC, Voting, Auction |
 | Visual Variants | H | 10 | 2–4 | Barrier, Compressed, Wide, Reversed Labels, Decomposed |
+| BTC/Blockchain Security | I | 12 | 4–7 | Shor vs ECDSA, Grover vs SHA-256/AES, Kyber, Dilithium, SPHINCS+ |
 
 Each circuit includes:
 - Circuit diagram image (PNG) in `benchmark/`
