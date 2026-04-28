@@ -52,7 +52,9 @@ In this paper, we present QCV (Quantum Circuit Vision), the first systematic stu
 
 Our results show that Claude Opus 4.6 under BV achieves a weighted score of 97.0\%, passing 20 out of 21 circuits, Sonnet 4.6 scores 88.5\%, and Haiku 4.5 scores 46.5\%. The performance gap between models widens with circuit complexity (40pp between Opus and Haiku at Basic, 67pp at Advanced), indicating that advanced visual reasoning capabilities are critical for complex quantum circuit understanding.
 
-\begin{figure*}[!t]
+\section{Methodology}
+
+\begin{figure*}[t]
 \centering
 \begin{tikzpicture}[node distance=0.5cm, every node/.style={font=\small},
   dbox/.style={draw, rounded corners, minimum height=0.7cm, minimum width=1.6cm, align=center, fill=orange!10},
@@ -90,8 +92,6 @@ Our results show that Claude Opus 4.6 under BV achieves a weighted score of 97.0
 \caption{QCV system overview. \textbf{Top:} QCV-Dataset provides 132 quantum circuits with 7 data modalities---circuit images, executable code in two SDKs (Braket and Qiskit), simulation results, bilingual annotations, natural language target descriptions, and optimization equivalence pairs. \textbf{Bottom:} The evaluation pipeline processes a circuit diagram image through an MMLLM under BV or TV mode, then verifies the generated code through syntax checking, execution, and unitary matrix fidelity ($F \geq 0.99$).}
 \label{fig:workflow}
 \end{figure*}
-
-\section{Methodology}
 
 Following the approach established in VGV~\cite{wong2024vgv}, we design a difficulty-graded benchmark, define two visual prompting modes, and build an end-to-end verification pipeline tailored to quantum circuits.
 
