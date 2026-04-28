@@ -39,15 +39,15 @@ Can AI learn to read quantum circuit diagrams---and eventually design new ones a
 
 \section{Introduction}
 
-The year 2025 marked a quantum inflection point: the Nobel Prize in Physics recognized experiments with superconducting qubits that enabled macroscopic quantum coherence, while the ACM Turing Award honored the foundations of quantum information theory---including the BB84 protocol that underpins quantum key distribution. The United Nations declared 2025 the International Year of Quantum Science and Technology. Quantum computing has crossed from theoretical promise to engineering reality.
+The year 2025 marked a quantum inflection point: the Nobel Prize in Physics recognized experiments with superconducting qubits that enabled macroscopic quantum coherence, while the ACM Turing Award honored the foundations of quantum information theory---including the BB84 protocol that underpins quantum key distribution. The United Nations declared 2025 the International Year of Quantum Science and Technology. Quantum computing has crossed from theoretical promise to engineering reality~\cite{arute2019supremacy,kim2023utility,acharya2023suppressing}.
 
 Yet a fundamental bottleneck persists: the gap between how quantum algorithms are \emph{communicated} (as circuit diagrams in papers, textbooks, and courses) and how they are \emph{executed} (as code in SDKs such as Amazon Braket~\cite{braket}, Qiskit~\cite{qiskit}, or Cirq). Every quantum circuit published in a research paper must be manually translated into executable code---a tedious, error-prone process requiring both visual interpretation skills and SDK-specific programming expertise. As quantum hardware scales and the volume of published circuits grows exponentially, this manual translation becomes an unsustainable bottleneck for scientific progress.
 
 We argue that \textbf{automating the translation from quantum circuit diagrams to verified executable code is a foundational AI-for-Science challenge}---analogous to how AlphaFold~\cite{jumper2021alphafold} automated protein structure prediction from amino acid sequences. Just as AlphaFold accelerated structural biology by orders of magnitude, a system that reliably reads quantum circuit diagrams and produces verified code could accelerate quantum algorithm development, quantum-safe cryptography research~\cite{fedorov2018quantum,liu2026quantumsafe}, and the broader quantum computing ecosystem.
 
-\textbf{Why quantum circuits, not classical transistor circuits?} Classical integrated circuits have mature EDA (Electronic Design Automation) toolchains developed over 50 years---from RTL synthesis to place-and-route---with a \$15B industry behind them. Quantum circuits have \emph{none of this infrastructure}. There is no ``quantum EDA'': every circuit must be manually designed, manually coded, and manually verified. Yet the quantum computing market is projected to reach \$450B by 2040 (McKinsey, 2024), with applications in drug discovery, financial optimization, cryptography, and materials science. The bottleneck is not hardware---IBM, Google, and Amazon are building 1000+ qubit machines---but the \emph{software toolchain} for designing and verifying quantum algorithms at scale. Autonomous quantum circuit design is to quantum computing what EDA was to the semiconductor revolution: the missing infrastructure layer that unlocks exponential growth.
+\textbf{Why quantum circuits, not classical transistor circuits?} Classical integrated circuits have mature EDA (Electronic Design Automation) toolchains developed over 50 years---from RTL synthesis to place-and-route---with a \$15B industry behind them. Quantum circuits have \emph{none of this infrastructure}. There is no ``quantum EDA'': every circuit must be manually designed, manually coded, and manually verified. Yet the quantum computing market is projected to reach \$450B by 2040 (McKinsey, 2024), with applications in drug discovery, financial optimization, cryptography, and materials science. The bottleneck is not hardware---IBM, Google, and Amazon are building 1000+ qubit machines~\cite{kim2023utility,acharya2023suppressing}---but the \emph{software toolchain} for designing and verifying quantum algorithms at scale~\cite{preskill2018quantum,cerezo2021variational}. Autonomous quantum circuit design is to quantum computing what EDA was to the semiconductor revolution: the missing infrastructure layer that unlocks exponential growth.
 
-\textbf{Why autonomous design, not just translation?} Translation (diagram$\to$code) is the first step, but the ultimate value lies in AI systems that can \emph{invent} new quantum circuits optimized for specific problems---discovering more efficient decompositions, novel error correction codes, or better variational ansätze that no human has conceived. This is where the trillion-dollar potential lies: if AI can design quantum circuits that solve optimization problems faster, break or defend cryptographic systems, or simulate molecules more efficiently, it fundamentally changes what quantum computers can achieve.
+\textbf{Why autonomous design, not just translation?} Translation (diagram$\to$code) is the first step, but the ultimate value lies in AI systems that can \emph{invent} new quantum circuits optimized for specific problems---discovering more efficient decompositions, novel error correction codes~\cite{acharya2023suppressing}, or better variational ans\"{a}tze~\cite{cerezo2021variational} that no human has conceived. This is where the trillion-dollar potential lies: if AI can design quantum circuits that solve optimization problems faster, break or defend cryptographic systems, or simulate molecules more efficiently, it fundamentally changes what quantum computers can achieve.
 
 This challenge is particularly urgent for blockchain security. As platforms migrate to post-quantum cryptography, researchers publish PQC circuit designs that must be rapidly prototyped and verified. Shor's algorithm threatens ECDSA signatures protecting billions in Bitcoin assets; Grover's algorithm offers quadratic speedup against SHA-256 mining. The ability to instantly translate these threat-model circuits from diagrams to executable code---and verify their correctness---is critical infrastructure for the quantum-safe transition.
 
@@ -481,7 +481,7 @@ Our results establish that multimodal AI can reliably interpret quantum circuit 
 
 \textbf{Level 2 --- Optimization (near-term):} AI improves existing circuits. Using the equivalence pairs and target descriptions in QCV-Dataset, future systems can learn to suggest more efficient gate decompositions, reduce circuit depth, or adapt circuits to hardware constraints---functioning as a quantum protocol design co-pilot.
 
-\textbf{Level 3 --- Invention (long-term):} AI designs novel quantum circuits from specifications. Given a computational target (e.g., ``design a 6-qubit circuit that implements quantum secret sharing with minimal depth''), AI generates, verifies, and iterates on circuit designs autonomously. This is the quantum analog of de novo protein design---moving from understanding known structures to inventing new ones.
+\textbf{Level 3 --- Invention (long-term):} AI designs novel quantum circuits from specifications. Given a computational target (e.g., ``design a 6-qubit circuit that implements quantum secret sharing with minimal depth''), AI generates, verifies, and iterates on circuit designs autonomously. This is the quantum analog of de novo protein design~\cite{jumper2021alphafold}---moving from understanding known structures to inventing new ones. Recent demonstrations of quantum advantage in learning~\cite{huang2022quantum} and practical quantum simulation~\cite{daley2022practical} suggest that the circuits AI must learn to design are becoming increasingly complex and consequential.
 
 The CoT sensitivity window finding has implications beyond quantum circuits: it suggests a general principle that chain-of-thought reasoning strategies must be calibrated to model capability, and that one-size-fits-all prompting is suboptimal. This warrants investigation across other AI-for-Science domains.
 
@@ -509,11 +509,11 @@ We have presented QCV-Dataset and demonstrated that multimodal AI can reliably i
 
 \bibitem{nielsen2010quantum} M. A. Nielsen and I. L. Chuang, \textit{Quantum Computation and Quantum Information}, 10th Anniversary ed. Cambridge University Press, 2010.
 
-\bibitem{shor1994algorithms} P. W. Shor, ``Algorithms for Quantum Computation: Discrete Logarithms and Factoring,'' in \textit{Proc. 35th Annual Symposium on Foundations of Computer Science}, 1994, pp. 124--134.
+\bibitem{shor1994algorithms} P. W. Shor, ``Algorithms for Quantum Computation: Discrete Logarithms and Factoring,'' in \textit{Proc. 35th FOCS}, 1994, pp. 124--134.
 
 \bibitem{braket} Amazon Web Services, ``Amazon Braket Developer Guide,'' \url{https://docs.aws.amazon.com/braket/}, 2024.
 
-\bibitem{qiskit} Qiskit Contributors, ``Qiskit: An Open-Source Framework for Quantum Computing,'' 2023. [Online]. Available: \url{https://qiskit.org/}
+\bibitem{qiskit} Qiskit Contributors, ``Qiskit: An Open-Source Framework for Quantum Computing,'' 2023.
 
 \bibitem{lu2023mathvista} P. Lu \textit{et al.}, ``MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts,'' \textit{arXiv preprint arXiv:2310.02255}, 2023.
 
@@ -525,9 +525,23 @@ We have presented QCV-Dataset and demonstrated that multimodal AI can reliably i
 
 \bibitem{fedorov2018quantum} A. K. Fedorov, E. O. Kiktenko, and A. I. Lvovsky, ``Quantum Computers Put Blockchain Security at Risk,'' \textit{Nature}, vol. 563, pp. 465--467, 2018.
 
-\bibitem{liu2026quantumsafe} D. Liu, A. Zhang, and L. Zhang, ``Quantum-Safe, Efficient, and AI-Enhanced Blockchains for the Web: A Cooperative Tutorial on Quantum Computing, Blockchain Applications, and Data Standards,'' in \textit{Companion Proc. ACM Web Conference (WWW Companion '26)}, 2026.
+\bibitem{liu2026quantumsafe} D. Liu, A. Zhang, and L. Zhang, ``Quantum-Safe, Efficient, and AI-Enhanced Blockchains for the Web,'' in \textit{Companion Proc. ACM Web Conference (WWW'26)}, 2026.
 
 \bibitem{jumper2021alphafold} J. Jumper \textit{et al.}, ``Highly accurate protein structure prediction with AlphaFold,'' \textit{Nature}, vol. 596, pp. 583--589, 2021.
+
+\bibitem{arute2019supremacy} F. Arute \textit{et al.}, ``Quantum supremacy using a programmable superconducting processor,'' \textit{Nature}, vol. 574, pp. 505--510, 2019.
+
+\bibitem{kim2023utility} Y. Kim \textit{et al.}, ``Evidence for the utility of quantum computing before fault tolerance,'' \textit{Nature}, vol. 618, pp. 500--505, 2023.
+
+\bibitem{acharya2023suppressing} R. Acharya \textit{et al.} (Google Quantum AI), ``Suppressing quantum errors by scaling a surface code logical qubit,'' \textit{Nature}, vol. 614, pp. 676--680, 2023.
+
+\bibitem{cerezo2021variational} M. Cerezo \textit{et al.}, ``Variational quantum algorithms,'' \textit{Nature Reviews Physics}, vol. 3, pp. 625--644, 2021.
+
+\bibitem{daley2022practical} A. J. Daley \textit{et al.}, ``Practical quantum advantage in quantum simulation,'' \textit{Nature}, vol. 607, pp. 667--676, 2022.
+
+\bibitem{huang2022quantum} H.-Y. Huang, R. Kueng, and J. Preskill, ``Quantum advantage in learning from experiments,'' \textit{Science}, vol. 376, pp. 1182--1186, 2022.
+
+\bibitem{preskill2018quantum} J. Preskill, ``Quantum Computing in the NISQ era and beyond,'' \textit{Quantum}, vol. 2, p. 79, 2018.
 
 \end{thebibliography}
 
