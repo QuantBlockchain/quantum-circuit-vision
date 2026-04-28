@@ -246,7 +246,7 @@ We report two metrics following VGV~\cite{wong2024vgv}:
 
 \subsection{Experimental Setup}
 
-We evaluate three MMLLMs from the Claude family, spanning high-end, mid-tier, and lightweight capability levels (Table~\ref{tab:models}). All models are accessed through a unified command-line interface (\texttt{kiro-cli}) in non-interactive mode, ensuring identical execution conditions. Each circuit diagram is provided as a PNG image alongside the BV or TV prompt. The total experiment comprises 21 circuits $\times$ 3 models $\times$ 2 visual modes = 126 invocations.
+We evaluate three MMLLMs from the Claude family, spanning high-end, mid-tier, and lightweight capability levels (Table~\ref{tab:models}). All models are accessed through a unified command-line interface (\texttt{kiro-cli}) in non-interactive mode, ensuring identical execution conditions. Each circuit diagram is provided as a PNG image alongside the BV or TV prompt. The total experiment comprises 21 circuits $\times$ 3 models $\times$ 2 visual modes = 126 invocations. We evaluate the first three difficulty categories (21 circuits) as a representative baseline that spans the full complexity spectrum from single-gate operations to complete algorithms; the remaining 111 circuits across 10 categories are released for community evaluation.
 
 \begin{table}[t]
 \centering
@@ -517,6 +517,8 @@ Our results establish that multimodal AI can reliably interpret quantum circuit 
 We propose a \textbf{Hybrid Agent} architecture (Fig.~\ref{fig:agent}) as the most practical path to autonomous circuit design. The agent uses QCV-Dataset in three ways: (1)~as a \emph{RAG knowledge base}---retrieving similar circuits and target descriptions to guide generation; (2)~as a \emph{verification oracle}---the unitary fidelity pipeline provides pass/fail feedback; and (3)~as \emph{negative examples}---the 27 annotated failure cases teach the agent which error patterns to avoid. This closed-loop design-verify-refine cycle mirrors how human quantum engineers work, but operates at machine speed.
 
 The CoT sensitivity window finding has implications beyond quantum circuits: it suggests a general principle that chain-of-thought reasoning strategies must be calibrated to model capability, and that one-size-fits-all prompting is suboptimal. This warrants investigation across other AI-for-Science domains.
+
+\textbf{Limitations.} We evaluate only three models from the same family (Claude); cross-vendor comparison with open-source models (DeepSeek, Qwen, LLaMA) is needed to confirm generalizability. Each circuit is tested once ($n=1$); statistical significance requires $n \geq 10$ repetitions. The Hybrid Agent architecture (Fig.~\ref{fig:agent}) is a proposed design---we have not yet implemented the full closed-loop system, which remains future work.
 
 All data and code are publicly available at \url{https://github.com/QuantBlockchain/quantum-circuit-vision}.
 
