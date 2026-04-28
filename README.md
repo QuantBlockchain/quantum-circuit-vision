@@ -95,8 +95,8 @@ Pass rate: **9/11 (81.8%)** — including an 8-qubit consensus protocol (256×25
 
 ```
 quantum-circuit-vision/
-├── benchmark/                  # 132 circuit diagram images (PNG)
-│   └── ground_truth/           # 132 ground truth Braket SDK code (.py)
+├── dataset/circuits/                  # 132 circuit diagram images (PNG)
+
 ├── prompts/                    # BV and TV prompt templates
 ├── scripts/                    # Circuit generation, experiment, and verification scripts
 ├── results/                    # Aggregated experiment results
