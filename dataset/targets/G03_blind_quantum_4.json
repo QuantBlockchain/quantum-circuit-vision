@@ -1,0 +1,5 @@
+{
+  "id": "G03_blind_quantum_4",
+  "target_description": "Create a 4-qubit blind quantum computing circuit: client rotations + server entanglement.",
+  "expected_output": "dataset/ground_truth/G03_blind_quantum_4.py"
+}

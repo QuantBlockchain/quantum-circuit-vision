@@ -1,0 +1,5 @@
+{
+  "id": "blockchain_bv_crypto",
+  "target_description": "Implement a Bernstein-Vazirani oracle for cryptographic key extraction analysis.",
+  "expected_output": "dataset/ground_truth/blockchain_bv_crypto.py"
+}

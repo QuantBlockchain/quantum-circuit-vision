@@ -1,0 +1,5 @@
+{
+  "id": "demo_03_bell",
+  "target_description": "Create a Bell state |\u03a6+\u27e9 = (|00\u27e9+|11\u27e9)/\u221a2 on 2 qubits.",
+  "expected_output": "dataset/ground_truth/demo_03_bell.py"
+}

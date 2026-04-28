@@ -1,0 +1,5 @@
+{
+  "id": "H09_param_symbolic",
+  "target_description": "Create a 2-qubit circuit: Rx(0.7) on q0, CNOT, Ry(1.2) on q1.",
+  "expected_output": "dataset/ground_truth/H09_param_symbolic.py"
+}

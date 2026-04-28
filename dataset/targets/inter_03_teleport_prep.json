@@ -1,0 +1,5 @@
+{
+  "id": "inter_03_teleport_prep",
+  "target_description": "Prepare the initial state for quantum teleportation: Bell pair + sender operations.",
+  "expected_output": "dataset/ground_truth/inter_03_teleport_prep.py"
+}

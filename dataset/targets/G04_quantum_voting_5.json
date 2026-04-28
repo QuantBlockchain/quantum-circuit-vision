@@ -1,0 +1,5 @@
+{
+  "id": "G04_quantum_voting_5",
+  "target_description": "Implement a 5-qubit GHZ-based quantum voting protocol with phase-encoded votes.",
+  "expected_output": "dataset/ground_truth/G04_quantum_voting_5.py"
+}

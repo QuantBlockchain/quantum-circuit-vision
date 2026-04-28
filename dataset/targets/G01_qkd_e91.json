@@ -1,0 +1,5 @@
+{
+  "id": "G01_qkd_e91",
+  "target_description": "Implement the E91 QKD protocol: two Bell pairs with basis rotations for key generation.",
+  "expected_output": "dataset/ground_truth/G01_qkd_e91.py"
+}

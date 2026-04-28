@@ -1,0 +1,5 @@
+{
+  "id": "C03_simon_4",
+  "target_description": "Implement Simon's algorithm for hidden string s=11 on 4 qubits.",
+  "expected_output": "dataset/ground_truth/C03_simon_4.py"
+}

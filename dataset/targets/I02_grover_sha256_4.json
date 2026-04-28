@@ -1,0 +1,5 @@
+{
+  "id": "I02_grover_sha256_4",
+  "target_description": "Implement a 4-qubit Grover oracle modeling SHA-256 preimage search for Bitcoin hash attacks.",
+  "expected_output": "dataset/ground_truth/I02_grover_sha256_4.py"
+}

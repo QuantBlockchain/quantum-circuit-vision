@@ -1,0 +1,5 @@
+{
+  "id": "A14_multi_rotation",
+  "target_description": "Apply Rx(\u03c0/4), Ry(\u03c0/3), Rz(\u03c0/6) sequentially on qubit 0, then CNOT to qubit 1.",
+  "expected_output": "dataset/ground_truth/A14_multi_rotation.py"
+}

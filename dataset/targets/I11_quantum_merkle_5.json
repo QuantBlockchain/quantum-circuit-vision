@@ -1,0 +1,5 @@
+{
+  "id": "I11_quantum_merkle_5",
+  "target_description": "Create a 5-qubit quantum Merkle tree verification circuit.",
+  "expected_output": "dataset/ground_truth/I11_quantum_merkle_5.py"
+}

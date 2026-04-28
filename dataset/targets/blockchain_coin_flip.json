@@ -1,0 +1,5 @@
+{
+  "id": "blockchain_coin_flip",
+  "target_description": "Create a quantum coin flipping protocol with entanglement and phase rotation.",
+  "expected_output": "dataset/ground_truth/blockchain_coin_flip.py"
+}

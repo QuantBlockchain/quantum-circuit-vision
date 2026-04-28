@@ -1,0 +1,5 @@
+{
+  "id": "C09_swap_test",
+  "target_description": "Implement the SWAP test on 3 qubits to compare two quantum states.",
+  "expected_output": "dataset/ground_truth/C09_swap_test.py"
+}

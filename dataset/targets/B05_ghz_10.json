@@ -1,0 +1,5 @@
+{
+  "id": "B05_ghz_10",
+  "target_description": "Create a 10-qubit GHZ state.",
+  "expected_output": "dataset/ground_truth/B05_ghz_10.py"
+}

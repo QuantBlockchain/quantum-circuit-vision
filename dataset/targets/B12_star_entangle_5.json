@@ -1,0 +1,5 @@
+{
+  "id": "B12_star_entangle_5",
+  "target_description": "Create a 5-qubit star entanglement: H on q0, CNOT from q0 to all others.",
+  "expected_output": "dataset/ground_truth/B12_star_entangle_5.py"
+}

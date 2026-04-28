@@ -1,0 +1,5 @@
+{
+  "id": "A06_single_rz",
+  "target_description": "Rotate a single qubit around the Z-axis by \u03c0/6.",
+  "expected_output": "dataset/ground_truth/A06_single_rz.py"
+}

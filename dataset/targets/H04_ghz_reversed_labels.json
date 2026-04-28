@@ -1,0 +1,5 @@
+{
+  "id": "H04_ghz_reversed_labels",
+  "target_description": "Create a 3-qubit GHZ state with qubit 2 as the source (reversed from standard).",
+  "expected_output": "dataset/ground_truth/H04_ghz_reversed_labels.py"
+}

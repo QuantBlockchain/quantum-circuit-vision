@@ -1,0 +1,5 @@
+{
+  "id": "D04_qaoa_2layer",
+  "target_description": "Implement 2-layer QAOA for MaxCut on a 4-node ring graph.",
+  "expected_output": "dataset/ground_truth/D04_qaoa_2layer.py"
+}

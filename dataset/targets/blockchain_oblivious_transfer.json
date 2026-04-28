@@ -1,0 +1,5 @@
+{
+  "id": "blockchain_oblivious_transfer",
+  "target_description": "Implement a 5-qubit quantum oblivious transfer protocol for private data exchange.",
+  "expected_output": "dataset/ground_truth/blockchain_oblivious_transfer.py"
+}

@@ -1,0 +1,5 @@
+{
+  "id": "I05_quantum_random_beacon_6",
+  "target_description": "Create a 6-qubit multi-party quantum random beacon for blockchain consensus.",
+  "expected_output": "dataset/ground_truth/I05_quantum_random_beacon_6.py"
+}

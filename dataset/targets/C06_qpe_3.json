@@ -1,0 +1,5 @@
+{
+  "id": "C06_qpe_3",
+  "target_description": "Implement 3-qubit quantum phase estimation for phase \u03c0/4.",
+  "expected_output": "dataset/ground_truth/C06_qpe_3.py"
+}

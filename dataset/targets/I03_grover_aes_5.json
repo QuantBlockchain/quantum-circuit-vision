@@ -1,0 +1,5 @@
+{
+  "id": "I03_grover_aes_5",
+  "target_description": "Implement a 5-qubit Grover oracle modeling AES-128 key search.",
+  "expected_output": "dataset/ground_truth/I03_grover_aes_5.py"
+}

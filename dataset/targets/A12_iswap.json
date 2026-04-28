@@ -1,0 +1,5 @@
+{
+  "id": "A12_iswap",
+  "target_description": "Create a 2-qubit iSWAP gate using basic gates.",
+  "expected_output": "dataset/ground_truth/A12_iswap.py"
+}

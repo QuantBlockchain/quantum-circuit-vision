@@ -1,0 +1,5 @@
+{
+  "id": "C12_amplitude_encode_2",
+  "target_description": "Encode a uniform distribution into 2 qubits using amplitude encoding.",
+  "expected_output": "dataset/ground_truth/C12_amplitude_encode_2.py"
+}

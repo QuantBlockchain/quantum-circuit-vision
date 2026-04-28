@@ -1,0 +1,5 @@
+{
+  "id": "E05_surface_code_patch",
+  "target_description": "Create a minimal 9-qubit surface code patch with X and Z stabilizer measurements.",
+  "expected_output": "dataset/ground_truth/E05_surface_code_patch.py"
+}

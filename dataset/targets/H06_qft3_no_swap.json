@@ -1,0 +1,5 @@
+{
+  "id": "H06_qft3_no_swap",
+  "target_description": "Implement 3-qubit QFT without the final bit-reversal SWAP gates.",
+  "expected_output": "dataset/ground_truth/H06_qft3_no_swap.py"
+}

@@ -1,0 +1,5 @@
+{
+  "id": "inter_02_qft2",
+  "target_description": "Implement the 2-qubit Quantum Fourier Transform.",
+  "expected_output": "dataset/ground_truth/inter_02_qft2.py"
+}

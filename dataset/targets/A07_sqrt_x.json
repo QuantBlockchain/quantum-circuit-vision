@@ -1,0 +1,5 @@
+{
+  "id": "A07_sqrt_x",
+  "target_description": "Apply a \u221aX gate to a single qubit.",
+  "expected_output": "dataset/ground_truth/A07_sqrt_x.py"
+}

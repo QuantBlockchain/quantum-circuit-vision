@@ -1,0 +1,5 @@
+{
+  "id": "F10_expressibility_test_3",
+  "target_description": "Create a 3-qubit circuit for testing expressibility with varied rotation gates and long-range entanglement.",
+  "expected_output": "dataset/ground_truth/F10_expressibility_test_3.py"
+}

@@ -1,0 +1,5 @@
+{
+  "id": "C05_shor_period_4",
+  "target_description": "Implement a simplified Shor's period-finding circuit for a=2 mod 15.",
+  "expected_output": "dataset/ground_truth/C05_shor_period_4.py"
+}

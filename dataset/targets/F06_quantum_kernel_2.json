@@ -1,0 +1,5 @@
+{
+  "id": "F06_quantum_kernel_2",
+  "target_description": "Create a 2-qubit quantum kernel circuit for computing inner products in Hilbert space.",
+  "expected_output": "dataset/ground_truth/F06_quantum_kernel_2.py"
+}

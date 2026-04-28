@@ -1,0 +1,5 @@
+{
+  "id": "H03_bell_wide",
+  "target_description": "Create a Bell state with identity gate padding for a wider visual layout.",
+  "expected_output": "dataset/ground_truth/H03_bell_wide.py"
+}

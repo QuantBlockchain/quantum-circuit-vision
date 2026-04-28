@@ -1,0 +1,5 @@
+{
+  "id": "H02_bell_compressed",
+  "target_description": "Create a Bell state in the most compact circuit representation.",
+  "expected_output": "dataset/ground_truth/H02_bell_compressed.py"
+}

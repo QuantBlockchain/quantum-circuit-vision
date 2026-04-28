@@ -1,0 +1,5 @@
+{
+  "id": "adv_05_qwalk",
+  "target_description": "Implement a quantum walk with coin qubit (q0) and 3-qubit position register.",
+  "expected_output": "dataset/ground_truth/adv_05_qwalk.py"
+}

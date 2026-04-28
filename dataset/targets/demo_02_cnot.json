@@ -1,0 +1,5 @@
+{
+  "id": "demo_02_cnot",
+  "target_description": "Create a 2-qubit circuit with a CNOT gate where qubit 0 controls qubit 1.",
+  "expected_output": "dataset/ground_truth/demo_02_cnot.py"
+}

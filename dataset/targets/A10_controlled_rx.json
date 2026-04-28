@@ -1,0 +1,5 @@
+{
+  "id": "A10_controlled_rx",
+  "target_description": "Create a controlled-Rx(\u03c0/3) gate on 2 qubits using basic gate decomposition.",
+  "expected_output": "dataset/ground_truth/A10_controlled_rx.py"
+}

@@ -1,0 +1,5 @@
+{
+  "id": "inter_09_shift_reg",
+  "target_description": "Create a 4-qubit quantum shift register: X on q0, then CNOT cascade.",
+  "expected_output": "dataset/ground_truth/inter_09_shift_reg.py"
+}

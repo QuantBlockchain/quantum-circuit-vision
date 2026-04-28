@@ -1,0 +1,5 @@
+{
+  "id": "blockchain_qrng",
+  "target_description": "Create a 4-qubit quantum random number generator using parallel Hadamard gates.",
+  "expected_output": "dataset/ground_truth/blockchain_qrng.py"
+}

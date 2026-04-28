@@ -1,0 +1,5 @@
+{
+  "id": "demo_04_ghz",
+  "target_description": "Create a 3-qubit GHZ state (|000\u27e9+|111\u27e9)/\u221a2.",
+  "expected_output": "dataset/ground_truth/demo_04_ghz.py"
+}

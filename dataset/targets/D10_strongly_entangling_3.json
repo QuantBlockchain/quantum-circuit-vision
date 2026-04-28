@@ -1,0 +1,5 @@
+{
+  "id": "D10_strongly_entangling_3",
+  "target_description": "Create a 3-qubit strongly entangling circuit with Rx-Ry-Rz rotations and long-range CNOTs.",
+  "expected_output": "dataset/ground_truth/D10_strongly_entangling_3.py"
+}

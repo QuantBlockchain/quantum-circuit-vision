@@ -1,0 +1,5 @@
+{
+  "id": "I08_kyber_lattice_6",
+  "target_description": "Create a 6-qubit circuit modeling Kyber/CRYSTALS lattice-based key encapsulation.",
+  "expected_output": "dataset/ground_truth/I08_kyber_lattice_6.py"
+}

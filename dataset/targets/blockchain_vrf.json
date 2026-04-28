@@ -1,0 +1,5 @@
+{
+  "id": "blockchain_vrf",
+  "target_description": "Create a 6-qubit quantum verifiable random function with GHZ preparation and CRz gates.",
+  "expected_output": "dataset/ground_truth/blockchain_vrf.py"
+}

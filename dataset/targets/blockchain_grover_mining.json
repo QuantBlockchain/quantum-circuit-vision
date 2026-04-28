@@ -1,0 +1,5 @@
+{
+  "id": "blockchain_grover_mining",
+  "target_description": "Implement a 2-qubit Grover search modeling the quantum threat to proof-of-work mining.",
+  "expected_output": "dataset/ground_truth/blockchain_grover_mining.py"
+}

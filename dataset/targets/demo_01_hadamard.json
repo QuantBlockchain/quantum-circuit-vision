@@ -1,0 +1,5 @@
+{
+  "id": "demo_01_hadamard",
+  "target_description": "Create a single-qubit circuit that puts qubit 0 into equal superposition of |0\u27e9 and |1\u27e9.",
+  "expected_output": "dataset/ground_truth/demo_01_hadamard.py"
+}

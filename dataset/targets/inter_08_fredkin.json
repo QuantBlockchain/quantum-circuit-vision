@@ -1,0 +1,5 @@
+{
+  "id": "inter_08_fredkin",
+  "target_description": "Implement the Fredkin (controlled-SWAP) gate on 3 qubits.",
+  "expected_output": "dataset/ground_truth/inter_08_fredkin.py"
+}

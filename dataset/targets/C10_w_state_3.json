@@ -1,0 +1,5 @@
+{
+  "id": "C10_w_state_3",
+  "target_description": "Prepare the 3-qubit W state (|001\u27e9+|010\u27e9+|100\u27e9)/\u221a3.",
+  "expected_output": "dataset/ground_truth/C10_w_state_3.py"
+}

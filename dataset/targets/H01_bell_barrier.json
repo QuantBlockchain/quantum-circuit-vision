@@ -1,0 +1,5 @@
+{
+  "id": "H01_bell_barrier",
+  "target_description": "Create a Bell state with a barrier between the H and CNOT gates.",
+  "expected_output": "dataset/ground_truth/H01_bell_barrier.py"
+}

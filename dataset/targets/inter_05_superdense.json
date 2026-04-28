@@ -1,0 +1,5 @@
+{
+  "id": "inter_05_superdense",
+  "target_description": "Implement superdense coding: encode 2 classical bits into 1 qubit using a Bell pair.",
+  "expected_output": "dataset/ground_truth/inter_05_superdense.py"
+}

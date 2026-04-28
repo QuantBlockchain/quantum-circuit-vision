@@ -1,0 +1,5 @@
+{
+  "id": "E02_phase_flip_3",
+  "target_description": "Encode a logical qubit into the 3-qubit phase-flip code.",
+  "expected_output": "dataset/ground_truth/E02_phase_flip_3.py"
+}

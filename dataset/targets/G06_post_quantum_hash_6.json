@@ -1,0 +1,5 @@
+{
+  "id": "G06_post_quantum_hash_6",
+  "target_description": "Create a 6-qubit quantum circuit simulating a lattice-based hash function.",
+  "expected_output": "dataset/ground_truth/G06_post_quantum_hash_6.py"
+}

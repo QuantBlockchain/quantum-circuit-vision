@@ -1,0 +1,5 @@
+{
+  "id": "F09_barren_plateau_4",
+  "target_description": "Create a deep 4-qubit parameterized circuit that exhibits barren plateaus.",
+  "expected_output": "dataset/ground_truth/F09_barren_plateau_4.py"
+}

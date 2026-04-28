@@ -1,0 +1,5 @@
+{
+  "id": "B10_ladder_4",
+  "target_description": "Create a 4-qubit ladder topology: H on q0, CNOT chain 0\u21921\u21922\u21923\u21920.",
+  "expected_output": "dataset/ground_truth/B10_ladder_4.py"
+}

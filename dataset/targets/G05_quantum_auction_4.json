@@ -1,0 +1,5 @@
+{
+  "id": "G05_quantum_auction_4",
+  "target_description": "Create a 4-qubit quantum sealed-bid auction with amplitude-encoded bids.",
+  "expected_output": "dataset/ground_truth/G05_quantum_auction_4.py"
+}

@@ -1,0 +1,5 @@
+{
+  "id": "C15_quantum_fourier_add_4",
+  "target_description": "Implement QFT-based addition on 4 qubits.",
+  "expected_output": "dataset/ground_truth/C15_quantum_fourier_add_4.py"
+}

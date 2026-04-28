@@ -1,0 +1,5 @@
+{
+  "id": "C04_grover_4",
+  "target_description": "Implement Grover's search on 4 qubits marking the state |11\u27e9.",
+  "expected_output": "dataset/ground_truth/C04_grover_4.py"
+}

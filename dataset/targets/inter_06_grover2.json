@@ -1,0 +1,5 @@
+{
+  "id": "inter_06_grover2",
+  "target_description": "Implement 2-qubit Grover's search with CZ oracle and diffusion operator.",
+  "expected_output": "dataset/ground_truth/inter_06_grover2.py"
+}

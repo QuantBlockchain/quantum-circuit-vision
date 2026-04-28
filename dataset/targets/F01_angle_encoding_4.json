@@ -1,0 +1,5 @@
+{
+  "id": "F01_angle_encoding_4",
+  "target_description": "Encode 4 classical values into 4 qubits using angle encoding (Rx gates).",
+  "expected_output": "dataset/ground_truth/F01_angle_encoding_4.py"
+}

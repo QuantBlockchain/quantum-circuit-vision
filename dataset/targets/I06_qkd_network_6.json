@@ -1,0 +1,5 @@
+{
+  "id": "I06_qkd_network_6",
+  "target_description": "Implement a 6-qubit 3-node QKD network with entanglement swapping at the middle node.",
+  "expected_output": "dataset/ground_truth/I06_qkd_network_6.py"
+}

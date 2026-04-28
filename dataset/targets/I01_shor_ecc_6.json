@@ -1,0 +1,5 @@
+{
+  "id": "I01_shor_ecc_6",
+  "target_description": "Implement a 6-qubit simplified Shor's algorithm targeting elliptic curve period finding (ECDSA attack model).",
+  "expected_output": "dataset/ground_truth/I01_shor_ecc_6.py"
+}

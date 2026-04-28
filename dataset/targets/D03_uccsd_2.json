@@ -1,0 +1,5 @@
+{
+  "id": "D03_uccsd_2",
+  "target_description": "Create a 2-qubit UCCSD ansatz for the H2 molecule.",
+  "expected_output": "dataset/ground_truth/D03_uccsd_2.py"
+}

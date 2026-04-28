@@ -1,0 +1,5 @@
+{
+  "id": "A03_single_t",
+  "target_description": "Apply a T gate (\u03c0/8 phase) to a single qubit.",
+  "expected_output": "dataset/ground_truth/A03_single_t.py"
+}

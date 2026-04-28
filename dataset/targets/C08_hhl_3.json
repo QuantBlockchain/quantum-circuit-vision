@@ -1,0 +1,5 @@
+{
+  "id": "C08_hhl_3",
+  "target_description": "Implement a simplified 3-qubit HHL algorithm for a linear system.",
+  "expected_output": "dataset/ground_truth/C08_hhl_3.py"
+}

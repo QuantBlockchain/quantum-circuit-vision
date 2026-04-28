@@ -1,0 +1,5 @@
+{
+  "id": "inter_01_swap_decomp",
+  "target_description": "Decompose a SWAP gate into three CNOT gates on 2 qubits.",
+  "expected_output": "dataset/ground_truth/inter_01_swap_decomp.py"
+}

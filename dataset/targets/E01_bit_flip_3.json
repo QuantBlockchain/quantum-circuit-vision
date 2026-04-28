@@ -1,0 +1,5 @@
+{
+  "id": "E01_bit_flip_3",
+  "target_description": "Encode a logical qubit into the 3-qubit bit-flip repetition code.",
+  "expected_output": "dataset/ground_truth/E01_bit_flip_3.py"
+}

@@ -1,0 +1,5 @@
+{
+  "id": "adv_04_qaoa",
+  "target_description": "Implement single-layer QAOA for MaxCut on a 4-node ring graph with \u03b3=\u03c0/4, \u03b2=\u03c0/8.",
+  "expected_output": "dataset/ground_truth/adv_04_qaoa.py"
+}

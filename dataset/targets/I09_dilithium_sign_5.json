@@ -1,0 +1,5 @@
+{
+  "id": "I09_dilithium_sign_5",
+  "target_description": "Create a 5-qubit circuit modeling Dilithium lattice-based signature verification.",
+  "expected_output": "dataset/ground_truth/I09_dilithium_sign_5.py"
+}

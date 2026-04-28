@@ -1,0 +1,5 @@
+{
+  "id": "F02_amplitude_encoding_2",
+  "target_description": "Encode amplitudes into 2 qubits using a Ry-CNOT-Ry tree structure.",
+  "expected_output": "dataset/ground_truth/F02_amplitude_encoding_2.py"
+}

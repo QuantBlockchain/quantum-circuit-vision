@@ -1,0 +1,5 @@
+{
+  "id": "I12_sphincs_hash_7",
+  "target_description": "Create a 7-qubit circuit modeling SPHINCS+ hash-based signature tree.",
+  "expected_output": "dataset/ground_truth/I12_sphincs_hash_7.py"
+}

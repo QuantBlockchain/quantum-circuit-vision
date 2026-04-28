@@ -1,0 +1,5 @@
+{
+  "id": "blockchain_consensus",
+  "target_description": "Create an 8-qubit validator consensus protocol with GHZ preparation and ring-topology cross-links.",
+  "expected_output": "dataset/ground_truth/blockchain_consensus.py"
+}

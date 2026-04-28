@@ -1,0 +1,5 @@
+{
+  "id": "B09_ring_entangle_6",
+  "target_description": "Create a 6-qubit ring entanglement: linear chain plus CNOT from q5 back to q0.",
+  "expected_output": "dataset/ground_truth/B09_ring_entangle_6.py"
+}

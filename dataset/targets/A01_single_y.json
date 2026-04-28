@@ -1,0 +1,5 @@
+{
+  "id": "A01_single_y",
+  "target_description": "Apply a Pauli-Y gate to a single qubit.",
+  "expected_output": "dataset/ground_truth/A01_single_y.py"
+}

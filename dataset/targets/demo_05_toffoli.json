@@ -1,0 +1,5 @@
+{
+  "id": "demo_05_toffoli",
+  "target_description": "Create a 3-qubit circuit with a Toffoli gate (qubits 0,1 control qubit 2).",
+  "expected_output": "dataset/ground_truth/demo_05_toffoli.py"
+}

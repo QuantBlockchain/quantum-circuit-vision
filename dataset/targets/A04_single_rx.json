@@ -1,0 +1,5 @@
+{
+  "id": "A04_single_rx",
+  "target_description": "Rotate a single qubit around the X-axis by \u03c0/4.",
+  "expected_output": "dataset/ground_truth/A04_single_rx.py"
+}

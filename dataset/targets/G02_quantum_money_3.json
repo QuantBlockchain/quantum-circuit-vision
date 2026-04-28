@@ -1,0 +1,5 @@
+{
+  "id": "G02_quantum_money_3",
+  "target_description": "Create a 3-qubit Wiesner quantum money state encoded in random bases.",
+  "expected_output": "dataset/ground_truth/G02_quantum_money_3.py"
+}

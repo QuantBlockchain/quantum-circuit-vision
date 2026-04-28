@@ -1,0 +1,5 @@
+{
+  "id": "A13_double_controlled_rz",
+  "target_description": "Create a doubly-controlled Rz(\u03c0/4) gate on 3 qubits, decomposed into CNOT and Rz.",
+  "expected_output": "dataset/ground_truth/A13_double_controlled_rz.py"
+}

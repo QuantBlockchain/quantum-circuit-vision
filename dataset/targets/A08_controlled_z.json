@@ -1,0 +1,5 @@
+{
+  "id": "A08_controlled_z",
+  "target_description": "Create a 2-qubit circuit with a controlled-Z gate.",
+  "expected_output": "dataset/ground_truth/A08_controlled_z.py"
+}

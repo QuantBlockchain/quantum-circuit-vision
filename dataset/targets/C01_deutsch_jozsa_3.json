@@ -1,0 +1,5 @@
+{
+  "id": "C01_deutsch_jozsa_3",
+  "target_description": "Implement the 2-bit Deutsch-Jozsa algorithm with a balanced oracle (CNOT from both inputs to ancilla).",
+  "expected_output": "dataset/ground_truth/C01_deutsch_jozsa_3.py"
+}

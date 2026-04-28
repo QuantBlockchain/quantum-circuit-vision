@@ -1,0 +1,5 @@
+{
+  "id": "inter_04_deutsch",
+  "target_description": "Implement the Deutsch algorithm with a balanced oracle.",
+  "expected_output": "dataset/ground_truth/inter_04_deutsch.py"
+}

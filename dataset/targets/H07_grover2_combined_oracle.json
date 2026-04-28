@@ -1,0 +1,5 @@
+{
+  "id": "H07_grover2_combined_oracle",
+  "target_description": "Implement 2-qubit Grover with CZ oracle and full diffusion operator.",
+  "expected_output": "dataset/ground_truth/H07_grover2_combined_oracle.py"
+}

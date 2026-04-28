@@ -1,0 +1,5 @@
+{
+  "id": "H08_cnot_reversed",
+  "target_description": "Create a 2-qubit CNOT with qubit 1 as control and qubit 0 as target.",
+  "expected_output": "dataset/ground_truth/H08_cnot_reversed.py"
+}

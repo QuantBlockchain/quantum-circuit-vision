@@ -1,0 +1,5 @@
+{
+  "id": "E08_logical_cnot_6",
+  "target_description": "Implement a transversal logical CNOT between two 3-qubit repetition code blocks.",
+  "expected_output": "dataset/ground_truth/E08_logical_cnot_6.py"
+}

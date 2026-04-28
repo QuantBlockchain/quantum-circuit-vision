@@ -1,0 +1,5 @@
+{
+  "id": "blockchain_bb84",
+  "target_description": "Prepare BB84 QKD states: encode 4 qubits in random X/Z bases.",
+  "expected_output": "dataset/ground_truth/blockchain_bb84.py"
+}

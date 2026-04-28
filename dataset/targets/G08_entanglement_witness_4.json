@@ -1,0 +1,5 @@
+{
+  "id": "G08_entanglement_witness_4",
+  "target_description": "Create a 4-qubit entanglement witness circuit with two Bell pairs and cross-entanglement.",
+  "expected_output": "dataset/ground_truth/G08_entanglement_witness_4.py"
+}

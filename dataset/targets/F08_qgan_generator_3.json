@@ -1,0 +1,5 @@
+{
+  "id": "F08_qgan_generator_3",
+  "target_description": "Create a 3-qubit quantum GAN generator circuit.",
+  "expected_output": "dataset/ground_truth/F08_qgan_generator_3.py"
+}

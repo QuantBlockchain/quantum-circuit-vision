@@ -1,0 +1,5 @@
+{
+  "id": "E04_steane_7_encode",
+  "target_description": "Implement the encoding circuit for the Steane [[7,1,3]] code.",
+  "expected_output": "dataset/ground_truth/E04_steane_7_encode.py"
+}

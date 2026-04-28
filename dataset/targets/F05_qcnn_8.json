@@ -1,0 +1,5 @@
+{
+  "id": "F05_qcnn_8",
+  "target_description": "Create an 8-qubit quantum convolutional neural network with conv and pooling layers.",
+  "expected_output": "dataset/ground_truth/F05_qcnn_8.py"
+}

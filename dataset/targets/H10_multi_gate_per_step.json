@@ -1,0 +1,5 @@
+{
+  "id": "H10_multi_gate_per_step",
+  "target_description": "Create a 4-qubit circuit with parallel H gates and parallel CNOT gates at the same depth.",
+  "expected_output": "dataset/ground_truth/H10_multi_gate_per_step.py"
+}

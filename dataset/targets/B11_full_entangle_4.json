@@ -1,0 +1,5 @@
+{
+  "id": "B11_full_entangle_4",
+  "target_description": "Create a 4-qubit fully-connected entanglement: H on q0, CNOT between all pairs.",
+  "expected_output": "dataset/ground_truth/B11_full_entangle_4.py"
+}

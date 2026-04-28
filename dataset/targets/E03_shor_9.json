@@ -1,0 +1,5 @@
+{
+  "id": "E03_shor_9",
+  "target_description": "Implement the encoding circuit for Shor's 9-qubit error correction code.",
+  "expected_output": "dataset/ground_truth/E03_shor_9.py"
+}

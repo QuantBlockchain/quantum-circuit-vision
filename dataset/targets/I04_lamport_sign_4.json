@@ -1,0 +1,5 @@
+{
+  "id": "I04_lamport_sign_4",
+  "target_description": "Create a 4-qubit Lamport one-time signature verification circuit.",
+  "expected_output": "dataset/ground_truth/I04_lamport_sign_4.py"
+}

@@ -1,0 +1,5 @@
+{
+  "id": "D08_data_reuploading_2",
+  "target_description": "Create a 2-qubit data reuploading circuit: two rounds of Rx encoding with CNOT.",
+  "expected_output": "dataset/ground_truth/D08_data_reuploading_2.py"
+}

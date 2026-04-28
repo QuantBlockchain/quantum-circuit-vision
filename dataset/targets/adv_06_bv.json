@@ -1,0 +1,5 @@
+{
+  "id": "adv_06_bv",
+  "target_description": "Implement the Bernstein-Vazirani algorithm for hidden string s=1011 on 5 qubits.",
+  "expected_output": "dataset/ground_truth/adv_06_bv.py"
+}

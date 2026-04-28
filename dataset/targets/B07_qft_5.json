@@ -1,0 +1,5 @@
+{
+  "id": "B07_qft_5",
+  "target_description": "Implement the 5-qubit Quantum Fourier Transform with final bit reversal.",
+  "expected_output": "dataset/ground_truth/B07_qft_5.py"
+}

@@ -1,0 +1,5 @@
+{
+  "id": "D09_alternating_layer_4",
+  "target_description": "Create a 4-qubit circuit with 3 alternating layers of Ry rotations and CNOT entangling.",
+  "expected_output": "dataset/ground_truth/D09_alternating_layer_4.py"
+}

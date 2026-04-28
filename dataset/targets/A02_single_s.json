@@ -1,0 +1,5 @@
+{
+  "id": "A02_single_s",
+  "target_description": "Apply an S (phase) gate to a single qubit.",
+  "expected_output": "dataset/ground_truth/A02_single_s.py"
+}

@@ -1,0 +1,5 @@
+{
+  "id": "F04_qnn_layer_4",
+  "target_description": "Create a single layer of a 4-qubit quantum neural network: Rx-Rz encoding + CNOT + Rz.",
+  "expected_output": "dataset/ground_truth/F04_qnn_layer_4.py"
+}

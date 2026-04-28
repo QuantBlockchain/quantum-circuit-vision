@@ -1,0 +1,5 @@
+{
+  "id": "D01_hardware_eff_2",
+  "target_description": "Create a 2-qubit hardware-efficient ansatz with Ry-Rz layers and CNOT entangling.",
+  "expected_output": "dataset/ground_truth/D01_hardware_eff_2.py"
+}

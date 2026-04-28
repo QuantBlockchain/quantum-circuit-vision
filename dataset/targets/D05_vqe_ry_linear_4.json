@@ -1,0 +1,5 @@
+{
+  "id": "D05_vqe_ry_linear_4",
+  "target_description": "Create a 4-qubit VQE ansatz with Ry rotations and linear CNOT entangling.",
+  "expected_output": "dataset/ground_truth/D05_vqe_ry_linear_4.py"
+}

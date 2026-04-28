@@ -1,0 +1,5 @@
+{
+  "id": "A11_ccz",
+  "target_description": "Create a 3-qubit CCZ (doubly-controlled Z) gate.",
+  "expected_output": "dataset/ground_truth/A11_ccz.py"
+}

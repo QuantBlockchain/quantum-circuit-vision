@@ -1,0 +1,5 @@
+{
+  "id": "blockchain_lattice_pqc",
+  "target_description": "Create a 5-qubit circuit analyzing lattice-based post-quantum cryptography security.",
+  "expected_output": "dataset/ground_truth/blockchain_lattice_pqc.py"
+}

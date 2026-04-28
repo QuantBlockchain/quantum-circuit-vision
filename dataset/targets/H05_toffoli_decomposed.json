@@ -1,0 +1,5 @@
+{
+  "id": "H05_toffoli_decomposed",
+  "target_description": "Decompose a Toffoli gate into single-qubit and CNOT gates only.",
+  "expected_output": "dataset/ground_truth/H05_toffoli_decomposed.py"
+}

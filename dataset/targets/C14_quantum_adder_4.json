@@ -1,0 +1,5 @@
+{
+  "id": "C14_quantum_adder_4",
+  "target_description": "Implement a 4-qubit quantum ripple-carry adder.",
+  "expected_output": "dataset/ground_truth/C14_quantum_adder_4.py"
+}

@@ -1,0 +1,5 @@
+{
+  "id": "adv_02_grover3",
+  "target_description": "Implement 3-qubit Grover's search marking |111\u27e9 with one iteration.",
+  "expected_output": "dataset/ground_truth/adv_02_grover3.py"
+}

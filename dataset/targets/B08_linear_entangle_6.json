@@ -1,0 +1,5 @@
+{
+  "id": "B08_linear_entangle_6",
+  "target_description": "Create a 6-qubit linear entanglement chain: H on q0, then CNOT cascade q0\u2192q1\u2192...\u2192q5.",
+  "expected_output": "dataset/ground_truth/B08_linear_entangle_6.py"
+}

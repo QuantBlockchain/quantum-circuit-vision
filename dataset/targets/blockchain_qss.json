@@ -1,0 +1,5 @@
+{
+  "id": "blockchain_qss",
+  "target_description": "Implement a 4-qubit GHZ-based quantum secret sharing protocol with phase-encoded shares.",
+  "expected_output": "dataset/ground_truth/blockchain_qss.py"
+}

@@ -1,0 +1,5 @@
+{
+  "id": "inter_10_phase_est",
+  "target_description": "Implement a simplified 3-qubit phase estimation circuit.",
+  "expected_output": "dataset/ground_truth/inter_10_phase_est.py"
+}

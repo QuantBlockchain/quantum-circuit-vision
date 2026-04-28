@@ -1,0 +1,5 @@
+{
+  "id": "E06_repetition_5",
+  "target_description": "Encode a logical qubit into a 5-qubit repetition code.",
+  "expected_output": "dataset/ground_truth/E06_repetition_5.py"
+}

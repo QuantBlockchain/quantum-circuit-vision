@@ -1,0 +1,5 @@
+{
+  "id": "blockchain_qds",
+  "target_description": "Create a 7-qubit quantum digital signature scheme.",
+  "expected_output": "dataset/ground_truth/blockchain_qds.py"
+}

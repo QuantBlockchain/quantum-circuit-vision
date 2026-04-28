@@ -1,0 +1,5 @@
+{
+  "id": "adv_03_vqe_ansatz",
+  "target_description": "Create a 4-qubit VQE ansatz with two Ry layers separated by a CNOT entangling layer.",
+  "expected_output": "dataset/ground_truth/adv_03_vqe_ansatz.py"
+}

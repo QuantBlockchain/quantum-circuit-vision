@@ -1,0 +1,5 @@
+{
+  "id": "C13_amplitude_encode_3",
+  "target_description": "Encode a uniform distribution into 3 qubits using amplitude encoding.",
+  "expected_output": "dataset/ground_truth/C13_amplitude_encode_3.py"
+}

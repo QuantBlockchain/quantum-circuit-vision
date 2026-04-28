@@ -1,0 +1,5 @@
+{
+  "id": "I10_pow_quantum_speedup_4",
+  "target_description": "Implement a 4-qubit Grover circuit modeling quantum speedup on proof-of-work nonce search.",
+  "expected_output": "dataset/ground_truth/I10_pow_quantum_speedup_4.py"
+}

@@ -1,0 +1,5 @@
+{
+  "id": "C02_deutsch_jozsa_4",
+  "target_description": "Implement the 3-bit Deutsch-Jozsa algorithm.",
+  "expected_output": "dataset/ground_truth/C02_deutsch_jozsa_4.py"
+}

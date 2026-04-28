@@ -1,0 +1,5 @@
+{
+  "id": "A15_global_phase",
+  "target_description": "Create a 2-qubit circuit: S, T, CNOT, T\u2020, S\u2020 demonstrating global phase accumulation.",
+  "expected_output": "dataset/ground_truth/A15_global_phase.py"
+}
