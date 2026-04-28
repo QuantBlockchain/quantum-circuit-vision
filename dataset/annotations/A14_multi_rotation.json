@@ -1,0 +1,13 @@
+{
+  "id": "A14_multi_rotation",
+  "category": "gate_coverage",
+  "difficulty": "basic",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 4,
+  "description_en": "Sequential Rx-Ry-Rz rotations followed by CNOT",
+  "description_cn": "连续Rx-Ry-Rz旋转后接CNOT",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 2
+}

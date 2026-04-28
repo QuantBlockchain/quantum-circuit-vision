@@ -1,0 +1,13 @@
+{
+  "id": "A08_controlled_z",
+  "category": "gate_coverage",
+  "difficulty": "basic",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 1,
+  "description_en": "Controlled-Z: phase flip on |11⟩",
+  "description_cn": "受控Z门：对|11⟩施加相位翻转",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 1
+}

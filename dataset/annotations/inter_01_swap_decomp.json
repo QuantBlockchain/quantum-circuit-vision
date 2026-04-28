@@ -1,0 +1,13 @@
+{
+  "id": "inter_01_swap_decomp",
+  "category": "intermediate",
+  "difficulty": "intermediate",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 3,
+  "description_en": "SWAP decomposition into 3 CNOTs",
+  "description_cn": "SWAP分解为3个CNOT",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 1
+}

@@ -1,0 +1,13 @@
+{
+  "id": "B04_ghz_8",
+  "category": "qubit_scaling",
+  "difficulty": "intermediate",
+  "qubits": 8,
+  "gate_count": null,
+  "depth": 8,
+  "description_en": "8-qubit GHZ state",
+  "description_cn": "8量子比特GHZ态",
+  "blockchain_relevance": null,
+  "state_vector_dim": 256,
+  "nonzero_amplitudes": 2
+}

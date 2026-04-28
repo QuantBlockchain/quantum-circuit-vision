@@ -1,0 +1,19 @@
+{
+  "id": "D08_data_reuploading_2",
+  "qubits": 2,
+  "depth": 4,
+  "state_vector_real": [
+    0.67102296,
+    -0.16047267,
+    -0.25159043,
+    -0.18050077
+  ],
+  "state_vector_imag": [
+    0.10421217,
+    -0.4357674,
+    -0.27794681,
+    -0.38741529
+  ],
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 4
+}

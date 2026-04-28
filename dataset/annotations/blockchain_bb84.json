@@ -1,0 +1,13 @@
+{
+  "id": "blockchain_bb84",
+  "category": "blockchain",
+  "difficulty": "advanced",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 2,
+  "description_en": "BB84 QKD state preparation",
+  "description_cn": "BB84 QKD态制备",
+  "blockchain_relevance": "direct",
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 8
+}

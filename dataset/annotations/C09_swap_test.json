@@ -1,0 +1,13 @@
+{
+  "id": "C09_swap_test",
+  "category": "classical_algorithms",
+  "difficulty": "advanced",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 3,
+  "description_en": "SWAP test: quantum state comparison",
+  "description_cn": "SWAP测试：量子态比较",
+  "blockchain_relevance": null,
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 1
+}

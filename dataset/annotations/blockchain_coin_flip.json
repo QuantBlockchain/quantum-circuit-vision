@@ -1,0 +1,13 @@
+{
+  "id": "blockchain_coin_flip",
+  "category": "blockchain",
+  "difficulty": "advanced",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 6,
+  "description_en": "Quantum coin flipping protocol",
+  "description_cn": "量子抛硬币协议",
+  "blockchain_relevance": "direct",
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 4
+}

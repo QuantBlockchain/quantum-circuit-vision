@@ -1,0 +1,13 @@
+{
+  "id": "demo_04_ghz",
+  "category": "basic_gates",
+  "difficulty": "basic",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 3,
+  "description_en": "GHZ state: 3-qubit maximally entangled state",
+  "description_cn": "GHZ态：3量子比特最大纠缠态",
+  "blockchain_relevance": null,
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 2
+}

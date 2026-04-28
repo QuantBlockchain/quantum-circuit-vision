@@ -1,0 +1,13 @@
+{
+  "id": "H06_qft3_no_swap",
+  "category": "visual_variants",
+  "difficulty": "basic",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 5,
+  "description_en": "3-qubit QFT without final SWAP (different convention)",
+  "description_cn": "不含最终SWAP的3量子比特QFT",
+  "blockchain_relevance": null,
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 8
+}

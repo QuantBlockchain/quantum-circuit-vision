@@ -1,0 +1,19 @@
+{
+  "id": "H01_bell_barrier",
+  "qubits": 2,
+  "depth": 2,
+  "state_vector_real": [
+    0.70710678,
+    0.0,
+    0.0,
+    0.70710678
+  ],
+  "state_vector_imag": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 2
+}

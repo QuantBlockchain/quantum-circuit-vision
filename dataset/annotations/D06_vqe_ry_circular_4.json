@@ -1,0 +1,13 @@
+{
+  "id": "D06_vqe_ry_circular_4",
+  "category": "variational",
+  "difficulty": "intermediate",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 6,
+  "description_en": "VQE with Ry gates and circular CNOT entangling",
+  "description_cn": "Ry门+环形CNOT纠缠的VQE",
+  "blockchain_relevance": null,
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 16
+}

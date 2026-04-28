@@ -1,0 +1,27 @@
+{
+  "id": "blockchain_coin_flip",
+  "qubits": 3,
+  "depth": 6,
+  "state_vector_real": [
+    0.65328148,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.65328148,
+    0.0
+  ],
+  "state_vector_imag": [
+    0.0,
+    0.0,
+    0.0,
+    -0.27059805,
+    0.0,
+    -0.27059805,
+    0.0,
+    0.0
+  ],
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 4
+}

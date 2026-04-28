@@ -1,0 +1,13 @@
+{
+  "id": "C13_amplitude_encode_3",
+  "category": "classical_algorithms",
+  "difficulty": "advanced",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 1,
+  "description_en": "Amplitude encoding: uniform 3-qubit superposition",
+  "description_cn": "振幅编码：均匀3量子比特叠加",
+  "blockchain_relevance": null,
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 8
+}

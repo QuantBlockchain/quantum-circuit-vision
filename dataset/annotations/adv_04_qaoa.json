@@ -1,0 +1,13 @@
+{
+  "id": "adv_04_qaoa",
+  "category": "advanced_algorithms",
+  "difficulty": "advanced",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 14,
+  "description_en": "QAOA single layer for MaxCut on 4-node ring",
+  "description_cn": "4节点环MaxCut的单层QAOA",
+  "blockchain_relevance": null,
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 8
+}

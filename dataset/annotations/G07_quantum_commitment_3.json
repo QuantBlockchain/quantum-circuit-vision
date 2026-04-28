@@ -1,0 +1,13 @@
+{
+  "id": "G07_quantum_commitment_3",
+  "category": "blockchain_extended",
+  "difficulty": "advanced",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 4,
+  "description_en": "Quantum bit commitment scheme",
+  "description_cn": "量子比特承诺方案",
+  "blockchain_relevance": "extended_protocol",
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 2
+}

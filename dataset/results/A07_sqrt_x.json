@@ -1,0 +1,15 @@
+{
+  "id": "A07_sqrt_x",
+  "qubits": 1,
+  "depth": 1,
+  "state_vector_real": [
+    0.5,
+    0.5
+  ],
+  "state_vector_imag": [
+    0.5,
+    -0.5
+  ],
+  "state_vector_dim": 2,
+  "nonzero_amplitudes": 2
+}

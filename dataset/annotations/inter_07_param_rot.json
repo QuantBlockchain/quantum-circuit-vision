@@ -1,0 +1,13 @@
+{
+  "id": "inter_07_param_rot",
+  "category": "intermediate",
+  "difficulty": "intermediate",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 2,
+  "description_en": "Parameterized rotation circuit",
+  "description_cn": "参数化旋转电路",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 2
+}

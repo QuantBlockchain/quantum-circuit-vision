@@ -1,0 +1,19 @@
+{
+  "id": "inter_07_param_rot",
+  "qubits": 2,
+  "depth": 2,
+  "state_vector_real": [
+    0.80010315,
+    0.0,
+    0.0,
+    -0.19134172
+  ],
+  "state_vector_imag": [
+    -0.33141357,
+    0.0,
+    0.0,
+    -0.46193977
+  ],
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 2
+}

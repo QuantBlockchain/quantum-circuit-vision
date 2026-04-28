@@ -1,0 +1,13 @@
+{
+  "id": "A05_single_ry",
+  "category": "gate_coverage",
+  "difficulty": "basic",
+  "qubits": 1,
+  "gate_count": null,
+  "depth": 1,
+  "description_en": "Ry rotation: rotation around Y-axis by π/3",
+  "description_cn": "Ry旋转：绕Y轴旋转π/3",
+  "blockchain_relevance": null,
+  "state_vector_dim": 2,
+  "nonzero_amplitudes": 2
+}

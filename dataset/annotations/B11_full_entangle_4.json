@@ -1,0 +1,13 @@
+{
+  "id": "B11_full_entangle_4",
+  "category": "qubit_scaling",
+  "difficulty": "intermediate",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 6,
+  "description_en": "4-qubit all-pairs CNOT entanglement",
+  "description_cn": "4量子比特全连接CNOT纠缠",
+  "blockchain_relevance": null,
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 2
+}

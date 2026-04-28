@@ -1,0 +1,13 @@
+{
+  "id": "A01_single_y",
+  "category": "gate_coverage",
+  "difficulty": "basic",
+  "qubits": 1,
+  "gate_count": null,
+  "depth": 1,
+  "description_en": "Pauli-Y gate: bit-flip with phase",
+  "description_cn": "Pauli-Y门：带相位的比特翻转",
+  "blockchain_relevance": null,
+  "state_vector_dim": 2,
+  "nonzero_amplitudes": 1
+}

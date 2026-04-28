@@ -1,0 +1,13 @@
+{
+  "id": "blockchain_grover_mining",
+  "category": "blockchain",
+  "difficulty": "advanced",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 6,
+  "description_en": "Grover search modeling mining threat",
+  "description_cn": "模拟挖矿威胁的Grover搜索",
+  "blockchain_relevance": "direct",
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 1
+}

@@ -1,0 +1,13 @@
+{
+  "id": "adv_06_bv",
+  "category": "advanced_algorithms",
+  "difficulty": "advanced",
+  "qubits": 5,
+  "gate_count": null,
+  "depth": 6,
+  "description_en": "Bernstein-Vazirani algorithm (s=1011)",
+  "description_cn": "Bernstein-Vazirani算法（s=1011）",
+  "blockchain_relevance": null,
+  "state_vector_dim": 32,
+  "nonzero_amplitudes": 2
+}

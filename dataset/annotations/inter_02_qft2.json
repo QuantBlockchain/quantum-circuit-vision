@@ -1,0 +1,13 @@
+{
+  "id": "inter_02_qft2",
+  "category": "intermediate",
+  "difficulty": "intermediate",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 4,
+  "description_en": "2-qubit Quantum Fourier Transform",
+  "description_cn": "2量子比特量子傅里叶变换",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 4
+}

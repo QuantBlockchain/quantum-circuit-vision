@@ -1,0 +1,13 @@
+{
+  "id": "H05_toffoli_decomposed",
+  "category": "visual_variants",
+  "difficulty": "basic",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 11,
+  "description_en": "Toffoli decomposed into 15 basic gates",
+  "description_cn": "Toffoli分解为15个基本门",
+  "blockchain_relevance": null,
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 1
+}

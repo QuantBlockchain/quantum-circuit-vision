@@ -1,0 +1,13 @@
+{
+  "id": "B10_ladder_4",
+  "category": "qubit_scaling",
+  "difficulty": "intermediate",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 5,
+  "description_en": "4-qubit ladder/ring CNOT topology",
+  "description_cn": "4量子比特梯形/环形CNOT拓扑",
+  "blockchain_relevance": null,
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 2
+}

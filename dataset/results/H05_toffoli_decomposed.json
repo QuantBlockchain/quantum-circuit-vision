@@ -1,0 +1,27 @@
+{
+  "id": "H05_toffoli_decomposed",
+  "qubits": 3,
+  "depth": 11,
+  "state_vector_real": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "state_vector_imag": [
+    0.0,
+    -0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 1
+}

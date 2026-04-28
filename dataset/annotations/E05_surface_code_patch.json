@@ -1,0 +1,13 @@
+{
+  "id": "E05_surface_code_patch",
+  "category": "error_correction",
+  "difficulty": "advanced",
+  "qubits": 9,
+  "gate_count": null,
+  "depth": 5,
+  "description_en": "Minimal surface code patch (9 qubits)",
+  "description_cn": "最小表面码补丁（9量子比特）",
+  "blockchain_relevance": null,
+  "state_vector_dim": 512,
+  "nonzero_amplitudes": 16
+}

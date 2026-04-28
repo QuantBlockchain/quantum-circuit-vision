@@ -1,0 +1,13 @@
+{
+  "id": "C05_shor_period_4",
+  "category": "classical_algorithms",
+  "difficulty": "advanced",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 7,
+  "description_en": "Shor's period finding (simplified, mod 15)",
+  "description_cn": "Shor周期查找（简化版，mod 15）",
+  "blockchain_relevance": null,
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 10
+}

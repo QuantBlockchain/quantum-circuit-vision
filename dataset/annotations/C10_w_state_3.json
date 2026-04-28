@@ -1,0 +1,13 @@
+{
+  "id": "C10_w_state_3",
+  "category": "classical_algorithms",
+  "difficulty": "advanced",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 7,
+  "description_en": "W state preparation (3-qubit)",
+  "description_cn": "W态制备（3量子比特）",
+  "blockchain_relevance": null,
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 3
+}

@@ -1,0 +1,13 @@
+{
+  "id": "E02_phase_flip_3",
+  "category": "error_correction",
+  "difficulty": "advanced",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 3,
+  "description_en": "3-qubit phase-flip code encoding",
+  "description_cn": "3量子比特相位翻转码编码",
+  "blockchain_relevance": null,
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 8
+}

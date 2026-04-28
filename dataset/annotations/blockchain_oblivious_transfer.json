@@ -1,0 +1,13 @@
+{
+  "id": "blockchain_oblivious_transfer",
+  "category": "blockchain",
+  "difficulty": "advanced",
+  "qubits": 5,
+  "gate_count": null,
+  "depth": 8,
+  "description_en": "Quantum oblivious transfer protocol",
+  "description_cn": "量子不经意传输协议",
+  "blockchain_relevance": "direct",
+  "state_vector_dim": 32,
+  "nonzero_amplitudes": 4
+}

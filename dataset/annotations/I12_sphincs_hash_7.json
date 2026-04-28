@@ -1,0 +1,13 @@
+{
+  "id": "I12_sphincs_hash_7",
+  "category": "btc_quantum_security",
+  "difficulty": "advanced",
+  "qubits": 7,
+  "gate_count": null,
+  "depth": 9,
+  "description_en": "SPHINCS+ hash-based signature tree",
+  "description_cn": "SPHINCS+基于哈希的签名树",
+  "blockchain_relevance": "btc_security",
+  "state_vector_dim": 128,
+  "nonzero_amplitudes": 32
+}

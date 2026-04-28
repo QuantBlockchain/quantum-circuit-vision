@@ -1,0 +1,13 @@
+{
+  "id": "F01_angle_encoding_4",
+  "category": "quantum_ml",
+  "difficulty": "intermediate",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 1,
+  "description_en": "Angle encoding: Rx(x_i) per qubit",
+  "description_cn": "角度编码：每量子比特Rx(x_i)",
+  "blockchain_relevance": null,
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 16
+}

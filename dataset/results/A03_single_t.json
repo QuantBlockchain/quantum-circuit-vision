@@ -1,0 +1,15 @@
+{
+  "id": "A03_single_t",
+  "qubits": 1,
+  "depth": 1,
+  "state_vector_real": [
+    1.0,
+    0.0
+  ],
+  "state_vector_imag": [
+    0.0,
+    0.0
+  ],
+  "state_vector_dim": 2,
+  "nonzero_amplitudes": 1
+}

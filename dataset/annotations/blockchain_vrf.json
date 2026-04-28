@@ -1,0 +1,13 @@
+{
+  "id": "blockchain_vrf",
+  "category": "blockchain",
+  "difficulty": "advanced",
+  "qubits": 6,
+  "gate_count": null,
+  "depth": 9,
+  "description_en": "Quantum verifiable random function",
+  "description_cn": "量子可验证随机函数",
+  "blockchain_relevance": "direct",
+  "state_vector_dim": 64,
+  "nonzero_amplitudes": 60
+}

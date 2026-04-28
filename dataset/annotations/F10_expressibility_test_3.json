@@ -1,0 +1,13 @@
+{
+  "id": "F10_expressibility_test_3",
+  "category": "quantum_ml",
+  "difficulty": "intermediate",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 7,
+  "description_en": "Circuit expressibility test with varied rotations",
+  "description_cn": "具有多种旋转的电路表达能力测试",
+  "blockchain_relevance": null,
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 8
+}

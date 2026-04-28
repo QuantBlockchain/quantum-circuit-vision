@@ -1,0 +1,13 @@
+{
+  "id": "adv_03_vqe_ansatz",
+  "category": "advanced_algorithms",
+  "difficulty": "advanced",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 5,
+  "description_en": "VQE ansatz with Ry layers and CNOT entangling",
+  "description_cn": "带Ry层和CNOT纠缠的VQE拟设",
+  "blockchain_relevance": null,
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 16
+}

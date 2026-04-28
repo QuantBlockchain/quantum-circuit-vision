@@ -1,0 +1,13 @@
+{
+  "id": "F06_quantum_kernel_2",
+  "category": "quantum_ml",
+  "difficulty": "intermediate",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 6,
+  "description_en": "Quantum kernel method circuit",
+  "description_cn": "量子核方法电路",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 4
+}

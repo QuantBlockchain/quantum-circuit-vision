@@ -1,0 +1,13 @@
+{
+  "id": "B01_ghz_4",
+  "category": "qubit_scaling",
+  "difficulty": "intermediate",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 4,
+  "description_en": "4-qubit GHZ state",
+  "description_cn": "4量子比特GHZ态",
+  "blockchain_relevance": null,
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 2
+}

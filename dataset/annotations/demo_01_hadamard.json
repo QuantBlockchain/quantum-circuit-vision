@@ -1,0 +1,13 @@
+{
+  "id": "demo_01_hadamard",
+  "category": "basic_gates",
+  "difficulty": "basic",
+  "qubits": 1,
+  "gate_count": null,
+  "depth": 1,
+  "description_en": "Single Hadamard gate creating equal superposition",
+  "description_cn": "单个哈达玛门创建等概率叠加态",
+  "blockchain_relevance": null,
+  "state_vector_dim": 2,
+  "nonzero_amplitudes": 2
+}

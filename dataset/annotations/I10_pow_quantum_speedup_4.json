@@ -1,0 +1,13 @@
+{
+  "id": "I10_pow_quantum_speedup_4",
+  "category": "btc_quantum_security",
+  "difficulty": "advanced",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 11,
+  "description_en": "Grover speedup on proof-of-work nonce search",
+  "description_cn": "工作量证明随机数搜索的Grover加速",
+  "blockchain_relevance": "btc_security",
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 16
+}

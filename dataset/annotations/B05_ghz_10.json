@@ -1,0 +1,13 @@
+{
+  "id": "B05_ghz_10",
+  "category": "qubit_scaling",
+  "difficulty": "intermediate",
+  "qubits": 10,
+  "gate_count": null,
+  "depth": 10,
+  "description_en": "10-qubit GHZ state: largest circuit in benchmark",
+  "description_cn": "10量子比特GHZ态：基准中最大的电路",
+  "blockchain_relevance": null,
+  "state_vector_dim": 1024,
+  "nonzero_amplitudes": 2
+}

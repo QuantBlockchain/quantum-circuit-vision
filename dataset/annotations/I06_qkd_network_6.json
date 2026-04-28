@@ -1,0 +1,13 @@
+{
+  "id": "I06_qkd_network_6",
+  "category": "btc_quantum_security",
+  "difficulty": "advanced",
+  "qubits": 6,
+  "gate_count": null,
+  "depth": 4,
+  "description_en": "3-node QKD network with entanglement swapping",
+  "description_cn": "带纠缠交换的3节点QKD网络",
+  "blockchain_relevance": "btc_security",
+  "state_vector_dim": 64,
+  "nonzero_amplitudes": 32
+}

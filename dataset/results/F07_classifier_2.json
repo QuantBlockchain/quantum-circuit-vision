@@ -1,0 +1,19 @@
+{
+  "id": "F07_classifier_2",
+  "qubits": 2,
+  "depth": 4,
+  "state_vector_real": [
+    0.65272665,
+    0.27731173,
+    0.21776625,
+    0.55061546
+  ],
+  "state_vector_imag": [
+    0.16634906,
+    0.18022586,
+    0.01381744,
+    -0.29343197
+  ],
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 4
+}

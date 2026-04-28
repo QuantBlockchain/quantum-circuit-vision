@@ -1,0 +1,13 @@
+{
+  "id": "blockchain_consensus",
+  "category": "blockchain",
+  "difficulty": "advanced",
+  "qubits": 8,
+  "gate_count": null,
+  "depth": 5,
+  "description_en": "8-qubit validator consensus protocol",
+  "description_cn": "8量子比特验证者共识协议",
+  "blockchain_relevance": "direct",
+  "state_vector_dim": 256,
+  "nonzero_amplitudes": 256
+}

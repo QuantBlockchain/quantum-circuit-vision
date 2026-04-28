@@ -1,0 +1,13 @@
+{
+  "id": "D02_hardware_eff_4",
+  "category": "variational",
+  "difficulty": "intermediate",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 9,
+  "description_en": "Hardware-efficient ansatz (4-qubit, 2 layers)",
+  "description_cn": "硬件高效拟设（4量子比特，2层）",
+  "blockchain_relevance": null,
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 16
+}

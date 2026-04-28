@@ -1,0 +1,13 @@
+{
+  "id": "A09_controlled_ry",
+  "category": "gate_coverage",
+  "difficulty": "basic",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 4,
+  "description_en": "Controlled-Ry: decomposed into Ry-CNOT-Ry-CNOT",
+  "description_cn": "受控Ry门：分解为Ry-CNOT-Ry-CNOT",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 1
+}

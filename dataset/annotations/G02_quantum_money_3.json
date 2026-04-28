@@ -1,0 +1,13 @@
+{
+  "id": "G02_quantum_money_3",
+  "category": "blockchain_extended",
+  "difficulty": "advanced",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 2,
+  "description_en": "Wiesner quantum money (unclonable states)",
+  "description_cn": "Wiesner量子货币（不可克隆态）",
+  "blockchain_relevance": "extended_protocol",
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 4
+}

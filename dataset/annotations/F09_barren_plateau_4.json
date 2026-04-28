@@ -1,0 +1,13 @@
+{
+  "id": "F09_barren_plateau_4",
+  "category": "quantum_ml",
+  "difficulty": "intermediate",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 13,
+  "description_en": "Deep circuit exhibiting barren plateau",
+  "description_cn": "展示贫瘠高原的深层电路",
+  "blockchain_relevance": null,
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 16
+}

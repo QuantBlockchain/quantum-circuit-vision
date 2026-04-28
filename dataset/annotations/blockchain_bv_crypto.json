@@ -1,0 +1,13 @@
+{
+  "id": "blockchain_bv_crypto",
+  "category": "blockchain",
+  "difficulty": "advanced",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 4,
+  "description_en": "Bernstein-Vazirani oracle for key extraction analysis",
+  "description_cn": "用于密钥提取分析的BV oracle",
+  "blockchain_relevance": "direct",
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 2
+}

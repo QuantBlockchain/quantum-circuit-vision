@@ -1,0 +1,13 @@
+{
+  "id": "F03_iqp_encoding_4",
+  "category": "quantum_ml",
+  "difficulty": "intermediate",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 11,
+  "description_en": "IQP encoding: H-ZZ interaction-H",
+  "description_cn": "IQP编码：H-ZZ交互-H",
+  "blockchain_relevance": null,
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 8
+}

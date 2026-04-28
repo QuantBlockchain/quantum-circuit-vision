@@ -1,0 +1,13 @@
+{
+  "id": "F05_qcnn_8",
+  "category": "quantum_ml",
+  "difficulty": "intermediate",
+  "qubits": 8,
+  "gate_count": null,
+  "depth": 6,
+  "description_en": "Quantum convolutional neural network (8 qubits)",
+  "description_cn": "量子卷积神经网络（8量子比特）",
+  "blockchain_relevance": null,
+  "state_vector_dim": 256,
+  "nonzero_amplitudes": 256
+}

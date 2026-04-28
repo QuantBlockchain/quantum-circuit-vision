@@ -1,0 +1,13 @@
+{
+  "id": "E04_steane_7_encode",
+  "category": "error_correction",
+  "difficulty": "advanced",
+  "qubits": 7,
+  "gate_count": null,
+  "depth": 7,
+  "description_en": "Steane [[7,1,3]] code encoding",
+  "description_cn": "Steane [[7,1,3]]码编码",
+  "blockchain_relevance": null,
+  "state_vector_dim": 128,
+  "nonzero_amplitudes": 8
+}

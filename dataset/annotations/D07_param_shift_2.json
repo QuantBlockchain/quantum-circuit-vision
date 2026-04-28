@@ -1,0 +1,13 @@
+{
+  "id": "D07_param_shift_2",
+  "category": "variational",
+  "difficulty": "intermediate",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 3,
+  "description_en": "Parameter shift rule demonstration circuit",
+  "description_cn": "参数偏移规则演示电路",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 4
+}

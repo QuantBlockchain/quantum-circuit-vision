@@ -1,0 +1,13 @@
+{
+  "id": "I02_grover_sha256_4",
+  "category": "btc_quantum_security",
+  "difficulty": "advanced",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 12,
+  "description_en": "Grover oracle for SHA-256 preimage search",
+  "description_cn": "SHA-256前像搜索的Grover oracle",
+  "blockchain_relevance": "btc_security",
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 16
+}

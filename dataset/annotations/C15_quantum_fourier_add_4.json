@@ -1,0 +1,13 @@
+{
+  "id": "C15_quantum_fourier_add_4",
+  "category": "classical_algorithms",
+  "difficulty": "advanced",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 8,
+  "description_en": "QFT-based addition in Fourier space",
+  "description_cn": "基于QFT的傅里叶空间加法",
+  "blockchain_relevance": null,
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 1
+}

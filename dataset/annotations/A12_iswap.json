@@ -1,0 +1,13 @@
+{
+  "id": "A12_iswap",
+  "category": "gate_coverage",
+  "difficulty": "basic",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 5,
+  "description_en": "iSWAP gate: swap with imaginary phase",
+  "description_cn": "iSWAP门：带虚数相位的交换",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 1
+}

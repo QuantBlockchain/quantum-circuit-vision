@@ -1,0 +1,13 @@
+{
+  "id": "I07_quantum_timestamp_4",
+  "category": "btc_quantum_security",
+  "difficulty": "advanced",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 3,
+  "description_en": "Quantum timestamp: unforgeable time proof",
+  "description_cn": "量子时间戳：不可伪造的时间证明",
+  "blockchain_relevance": "btc_security",
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 16
+}

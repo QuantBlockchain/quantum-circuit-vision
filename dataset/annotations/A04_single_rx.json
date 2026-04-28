@@ -1,0 +1,13 @@
+{
+  "id": "A04_single_rx",
+  "category": "gate_coverage",
+  "difficulty": "basic",
+  "qubits": 1,
+  "gate_count": null,
+  "depth": 1,
+  "description_en": "Rx rotation: rotation around X-axis by π/4",
+  "description_cn": "Rx旋转：绕X轴旋转π/4",
+  "blockchain_relevance": null,
+  "state_vector_dim": 2,
+  "nonzero_amplitudes": 2
+}

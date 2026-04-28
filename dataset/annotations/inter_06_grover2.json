@@ -1,0 +1,13 @@
+{
+  "id": "inter_06_grover2",
+  "category": "intermediate",
+  "difficulty": "intermediate",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 6,
+  "description_en": "2-qubit Grover search",
+  "description_cn": "2量子比特Grover搜索",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 1
+}

@@ -1,0 +1,13 @@
+{
+  "id": "I05_quantum_random_beacon_6",
+  "category": "btc_quantum_security",
+  "difficulty": "advanced",
+  "qubits": 6,
+  "gate_count": null,
+  "depth": 5,
+  "description_en": "Multi-party quantum random beacon for consensus",
+  "description_cn": "用于共识的多方量子随机信标",
+  "blockchain_relevance": "btc_security",
+  "state_vector_dim": 64,
+  "nonzero_amplitudes": 16
+}

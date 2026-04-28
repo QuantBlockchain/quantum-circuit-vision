@@ -1,0 +1,13 @@
+{
+  "id": "inter_09_shift_reg",
+  "category": "intermediate",
+  "difficulty": "intermediate",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 4,
+  "description_en": "Quantum shift register",
+  "description_cn": "量子移位寄存器",
+  "blockchain_relevance": null,
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 1
+}

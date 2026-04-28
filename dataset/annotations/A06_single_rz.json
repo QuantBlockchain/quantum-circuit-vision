@@ -1,0 +1,13 @@
+{
+  "id": "A06_single_rz",
+  "category": "gate_coverage",
+  "difficulty": "basic",
+  "qubits": 1,
+  "gate_count": null,
+  "depth": 1,
+  "description_en": "Rz rotation: rotation around Z-axis by π/6",
+  "description_cn": "Rz旋转：绕Z轴旋转π/6",
+  "blockchain_relevance": null,
+  "state_vector_dim": 2,
+  "nonzero_amplitudes": 1
+}

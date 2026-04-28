@@ -1,0 +1,13 @@
+{
+  "id": "E06_repetition_5",
+  "category": "error_correction",
+  "difficulty": "advanced",
+  "qubits": 5,
+  "gate_count": null,
+  "depth": 4,
+  "description_en": "5-qubit repetition code",
+  "description_cn": "5量子比特重复码",
+  "blockchain_relevance": null,
+  "state_vector_dim": 32,
+  "nonzero_amplitudes": 1
+}

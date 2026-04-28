@@ -1,0 +1,13 @@
+{
+  "id": "blockchain_lattice_pqc",
+  "category": "blockchain",
+  "difficulty": "advanced",
+  "qubits": 5,
+  "gate_count": null,
+  "depth": 7,
+  "description_en": "Lattice-based PQC security analysis circuit",
+  "description_cn": "格基PQC安全分析电路",
+  "blockchain_relevance": "direct",
+  "state_vector_dim": 32,
+  "nonzero_amplitudes": 32
+}

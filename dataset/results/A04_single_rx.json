@@ -1,0 +1,15 @@
+{
+  "id": "A04_single_rx",
+  "qubits": 1,
+  "depth": 1,
+  "state_vector_real": [
+    0.92387953,
+    0.0
+  ],
+  "state_vector_imag": [
+    0.0,
+    -0.38268343
+  ],
+  "state_vector_dim": 2,
+  "nonzero_amplitudes": 2
+}

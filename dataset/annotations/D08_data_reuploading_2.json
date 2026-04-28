@@ -1,0 +1,13 @@
+{
+  "id": "D08_data_reuploading_2",
+  "category": "variational",
+  "difficulty": "intermediate",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 4,
+  "description_en": "Data reuploading: Rx-CNOT-Rx-CNOT pattern",
+  "description_cn": "数据重上传：Rx-CNOT-Rx-CNOT模式",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 4
+}

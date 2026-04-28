@@ -1,0 +1,13 @@
+{
+  "id": "I08_kyber_lattice_6",
+  "category": "btc_quantum_security",
+  "difficulty": "advanced",
+  "qubits": 6,
+  "gate_count": null,
+  "depth": 7,
+  "description_en": "Kyber/CRYSTALS lattice-based key encapsulation",
+  "description_cn": "Kyber/CRYSTALS格基密钥封装",
+  "blockchain_relevance": "btc_security",
+  "state_vector_dim": 64,
+  "nonzero_amplitudes": 64
+}

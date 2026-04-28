@@ -1,0 +1,13 @@
+{
+  "id": "A02_single_s",
+  "category": "gate_coverage",
+  "difficulty": "basic",
+  "qubits": 1,
+  "gate_count": null,
+  "depth": 1,
+  "description_en": "S gate (phase gate): π/2 phase rotation",
+  "description_cn": "S门（相位门）：π/2相位旋转",
+  "blockchain_relevance": null,
+  "state_vector_dim": 2,
+  "nonzero_amplitudes": 1
+}

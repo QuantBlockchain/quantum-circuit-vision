@@ -1,0 +1,19 @@
+{
+  "id": "F06_quantum_kernel_2",
+  "qubits": 2,
+  "depth": 6,
+  "state_vector_real": [
+    0.76094331,
+    -0.10241243,
+    -0.14274724,
+    -0.18197679
+  ],
+  "state_vector_imag": [
+    0.05912784,
+    -0.43933082,
+    -0.31519304,
+    -0.24724547
+  ],
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 4
+}

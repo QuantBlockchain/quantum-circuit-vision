@@ -1,0 +1,13 @@
+{
+  "id": "D04_qaoa_2layer",
+  "category": "variational",
+  "difficulty": "intermediate",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 27,
+  "description_en": "QAOA 2-layer for MaxCut on 4-node ring",
+  "description_cn": "4节点环MaxCut的2层QAOA",
+  "blockchain_relevance": null,
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 16
+}

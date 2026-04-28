@@ -1,0 +1,27 @@
+{
+  "id": "E01_bit_flip_3",
+  "qubits": 3,
+  "depth": 2,
+  "state_vector_real": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "state_vector_imag": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 1
+}

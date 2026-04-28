@@ -1,0 +1,13 @@
+{
+  "id": "blockchain_qss",
+  "category": "blockchain",
+  "difficulty": "advanced",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 5,
+  "description_en": "GHZ-based quantum secret sharing",
+  "description_cn": "基于GHZ的量子秘密共享",
+  "blockchain_relevance": "direct",
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 2
+}

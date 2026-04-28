@@ -1,0 +1,13 @@
+{
+  "id": "adv_05_qwalk",
+  "category": "advanced_algorithms",
+  "difficulty": "advanced",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 4,
+  "description_en": "Quantum walk: coin + position shift",
+  "description_cn": "量子行走：硬币+位置移动",
+  "blockchain_relevance": null,
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 4
+}

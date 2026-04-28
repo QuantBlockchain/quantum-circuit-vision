@@ -1,0 +1,13 @@
+{
+  "id": "B02_ghz_5",
+  "category": "qubit_scaling",
+  "difficulty": "intermediate",
+  "qubits": 5,
+  "gate_count": null,
+  "depth": 5,
+  "description_en": "5-qubit GHZ state",
+  "description_cn": "5量子比特GHZ态",
+  "blockchain_relevance": null,
+  "state_vector_dim": 32,
+  "nonzero_amplitudes": 2
+}

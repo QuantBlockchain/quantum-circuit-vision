@@ -1,0 +1,13 @@
+{
+  "id": "H01_bell_barrier",
+  "category": "visual_variants",
+  "difficulty": "basic",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 2,
+  "description_en": "Bell state with visual barrier (same unitary)",
+  "description_cn": "带视觉屏障的Bell态（相同酉矩阵）",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 2
+}

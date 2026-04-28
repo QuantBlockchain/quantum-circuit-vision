@@ -1,0 +1,15 @@
+{
+  "id": "A06_single_rz",
+  "qubits": 1,
+  "depth": 1,
+  "state_vector_real": [
+    0.96592583,
+    0.0
+  ],
+  "state_vector_imag": [
+    -0.25881905,
+    0.0
+  ],
+  "state_vector_dim": 2,
+  "nonzero_amplitudes": 1
+}

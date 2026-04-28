@@ -1,0 +1,13 @@
+{
+  "id": "A10_controlled_rx",
+  "category": "gate_coverage",
+  "difficulty": "basic",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 4,
+  "description_en": "Controlled-Rx: decomposed into Rx-CNOT-Rx-CNOT",
+  "description_cn": "受控Rx门：分解为Rx-CNOT-Rx-CNOT",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 1
+}

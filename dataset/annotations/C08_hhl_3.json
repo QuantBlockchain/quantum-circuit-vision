@@ -1,0 +1,13 @@
+{
+  "id": "C08_hhl_3",
+  "category": "classical_algorithms",
+  "difficulty": "advanced",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 6,
+  "description_en": "HHL algorithm (simplified linear solver)",
+  "description_cn": "HHL算法（简化线性求解器）",
+  "blockchain_relevance": null,
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 4
+}

@@ -1,0 +1,13 @@
+{
+  "id": "D03_uccsd_2",
+  "category": "variational",
+  "difficulty": "intermediate",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 4,
+  "description_en": "UCCSD ansatz for H2 molecule",
+  "description_cn": "H2分子的UCCSD拟设",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 2
+}

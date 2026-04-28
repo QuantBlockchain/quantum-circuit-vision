@@ -1,0 +1,13 @@
+{
+  "id": "C02_deutsch_jozsa_4",
+  "category": "classical_algorithms",
+  "difficulty": "advanced",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 5,
+  "description_en": "Deutsch-Jozsa algorithm (3-bit)",
+  "description_cn": "Deutsch-Jozsa算法（3比特）",
+  "blockchain_relevance": null,
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 2
+}

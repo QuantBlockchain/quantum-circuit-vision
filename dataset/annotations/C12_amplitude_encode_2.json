@@ -1,0 +1,13 @@
+{
+  "id": "C12_amplitude_encode_2",
+  "category": "classical_algorithms",
+  "difficulty": "advanced",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 1,
+  "description_en": "Amplitude encoding: uniform 2-qubit superposition",
+  "description_cn": "振幅编码：均匀2量子比特叠加",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 4
+}

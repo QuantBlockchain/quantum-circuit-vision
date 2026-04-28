@@ -1,0 +1,13 @@
+{
+  "id": "A15_global_phase",
+  "category": "gate_coverage",
+  "difficulty": "basic",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 5,
+  "description_en": "S-T-CNOT-T†-S† sequence demonstrating global phase",
+  "description_cn": "S-T-CNOT-T†-S†序列展示全局相位",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 1
+}

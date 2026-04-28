@@ -1,0 +1,13 @@
+{
+  "id": "C04_grover_4",
+  "category": "classical_algorithms",
+  "difficulty": "advanced",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 11,
+  "description_en": "Grover's search (4-qubit) with ancilla",
+  "description_cn": "Grover搜索（4量子比特）含辅助比特",
+  "blockchain_relevance": null,
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 4
+}

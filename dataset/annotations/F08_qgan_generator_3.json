@@ -1,0 +1,13 @@
+{
+  "id": "F08_qgan_generator_3",
+  "category": "quantum_ml",
+  "difficulty": "intermediate",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 5,
+  "description_en": "Quantum GAN generator circuit",
+  "description_cn": "量子GAN生成器电路",
+  "blockchain_relevance": null,
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 8
+}

@@ -1,0 +1,13 @@
+{
+  "id": "H07_grover2_combined_oracle",
+  "category": "visual_variants",
+  "difficulty": "basic",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 6,
+  "description_en": "2-qubit Grover with oracle+diffusion drawn together",
+  "description_cn": "Oracle和扩散合并绘制的2量子比特Grover",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 1
+}

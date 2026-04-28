@@ -1,0 +1,13 @@
+{
+  "id": "E08_logical_cnot_6",
+  "category": "error_correction",
+  "difficulty": "advanced",
+  "qubits": 6,
+  "gate_count": null,
+  "depth": 3,
+  "description_en": "Transversal logical CNOT between two 3-qubit codes",
+  "description_cn": "两个3量子比特码之间的横向逻辑CNOT",
+  "blockchain_relevance": null,
+  "state_vector_dim": 64,
+  "nonzero_amplitudes": 1
+}

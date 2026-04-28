@@ -1,0 +1,13 @@
+{
+  "id": "E03_shor_9",
+  "category": "error_correction",
+  "difficulty": "advanced",
+  "qubits": 9,
+  "gate_count": null,
+  "depth": 5,
+  "description_en": "Shor's 9-qubit error correction code",
+  "description_cn": "Shor 9量子比特纠错码",
+  "blockchain_relevance": null,
+  "state_vector_dim": 512,
+  "nonzero_amplitudes": 8
+}

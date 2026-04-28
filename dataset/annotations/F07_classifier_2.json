@@ -1,0 +1,13 @@
+{
+  "id": "F07_classifier_2",
+  "category": "quantum_ml",
+  "difficulty": "intermediate",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 4,
+  "description_en": "2-qubit quantum classifier",
+  "description_cn": "2量子比特量子分类器",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 4
+}

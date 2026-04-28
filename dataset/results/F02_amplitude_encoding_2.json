@@ -1,0 +1,19 @@
+{
+  "id": "F02_amplitude_encoding_2",
+  "qubits": 2,
+  "depth": 5,
+  "state_vector_real": [
+    0.74343846,
+    0.4441838,
+    0.49798715,
+    -0.04481965
+  ],
+  "state_vector_imag": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 4
+}

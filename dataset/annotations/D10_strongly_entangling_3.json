@@ -1,0 +1,13 @@
+{
+  "id": "D10_strongly_entangling_3",
+  "category": "variational",
+  "difficulty": "intermediate",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 12,
+  "description_en": "Strongly entangling layers with long-range CNOTs",
+  "description_cn": "带长程CNOT的强纠缠层",
+  "blockchain_relevance": null,
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 8
+}

@@ -1,0 +1,13 @@
+{
+  "id": "G04_quantum_voting_5",
+  "category": "blockchain_extended",
+  "difficulty": "advanced",
+  "qubits": 5,
+  "gate_count": null,
+  "depth": 6,
+  "description_en": "GHZ-based quantum voting protocol",
+  "description_cn": "基于GHZ的量子投票协议",
+  "blockchain_relevance": "extended_protocol",
+  "state_vector_dim": 32,
+  "nonzero_amplitudes": 4
+}

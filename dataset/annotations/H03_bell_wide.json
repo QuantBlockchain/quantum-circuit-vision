@@ -1,0 +1,13 @@
+{
+  "id": "H03_bell_wide",
+  "category": "visual_variants",
+  "difficulty": "basic",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 2,
+  "description_en": "Bell state in wide visual layout with identity padding",
+  "description_cn": "带恒等填充的宽视觉布局Bell态",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 2
+}

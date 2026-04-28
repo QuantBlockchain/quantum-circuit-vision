@@ -1,0 +1,13 @@
+{
+  "id": "inter_10_phase_est",
+  "category": "intermediate",
+  "difficulty": "intermediate",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 4,
+  "description_en": "Phase estimation (simplified)",
+  "description_cn": "相位估计（简化版）",
+  "blockchain_relevance": null,
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 1
+}

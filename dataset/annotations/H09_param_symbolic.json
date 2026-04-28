@@ -1,0 +1,13 @@
+{
+  "id": "H09_param_symbolic",
+  "category": "visual_variants",
+  "difficulty": "basic",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 3,
+  "description_en": "Parametric circuit with non-standard angle values",
+  "description_cn": "具有非标准角度值的参数化电路",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 4
+}

@@ -1,0 +1,13 @@
+{
+  "id": "I09_dilithium_sign_5",
+  "category": "btc_quantum_security",
+  "difficulty": "advanced",
+  "qubits": 5,
+  "gate_count": null,
+  "depth": 7,
+  "description_en": "Dilithium lattice-based signature verification",
+  "description_cn": "Dilithium格基签名验证",
+  "blockchain_relevance": "btc_security",
+  "state_vector_dim": 32,
+  "nonzero_amplitudes": 8
+}

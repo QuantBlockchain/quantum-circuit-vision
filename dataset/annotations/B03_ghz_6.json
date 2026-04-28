@@ -1,0 +1,13 @@
+{
+  "id": "B03_ghz_6",
+  "category": "qubit_scaling",
+  "difficulty": "intermediate",
+  "qubits": 6,
+  "gate_count": null,
+  "depth": 6,
+  "description_en": "6-qubit GHZ state",
+  "description_cn": "6量子比特GHZ态",
+  "blockchain_relevance": null,
+  "state_vector_dim": 64,
+  "nonzero_amplitudes": 2
+}

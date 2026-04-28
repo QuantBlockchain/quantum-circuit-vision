@@ -1,0 +1,13 @@
+{
+  "id": "F02_amplitude_encoding_2",
+  "category": "quantum_ml",
+  "difficulty": "intermediate",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 5,
+  "description_en": "Amplitude encoding via Ry-CNOT tree",
+  "description_cn": "通过Ry-CNOT树的振幅编码",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 4
+}

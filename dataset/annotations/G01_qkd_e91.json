@@ -1,0 +1,13 @@
+{
+  "id": "G01_qkd_e91",
+  "category": "blockchain_extended",
+  "difficulty": "advanced",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 3,
+  "description_en": "E91 QKD protocol with Bell pairs",
+  "description_cn": "基于Bell对的E91 QKD协议",
+  "blockchain_relevance": "extended_protocol",
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 8
+}

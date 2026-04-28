@@ -1,0 +1,13 @@
+{
+  "id": "demo_05_toffoli",
+  "category": "basic_gates",
+  "difficulty": "basic",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 1,
+  "description_en": "Toffoli/CCX gate: universal for classical reversible computation",
+  "description_cn": "Toffoli/CCX门：经典可逆计算的通用门",
+  "blockchain_relevance": null,
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 1
+}

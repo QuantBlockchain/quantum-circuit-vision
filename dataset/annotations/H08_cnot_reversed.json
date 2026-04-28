@@ -1,0 +1,13 @@
+{
+  "id": "H08_cnot_reversed",
+  "category": "visual_variants",
+  "difficulty": "basic",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 1,
+  "description_en": "CNOT with reversed control/target (q1→q0)",
+  "description_cn": "控制/目标反转的CNOT（q1→q0）",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 1
+}

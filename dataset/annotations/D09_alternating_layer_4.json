@@ -1,0 +1,13 @@
+{
+  "id": "D09_alternating_layer_4",
+  "category": "variational",
+  "difficulty": "intermediate",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 10,
+  "description_en": "Alternating Ry/CNOT layers (3 repetitions)",
+  "description_cn": "交替Ry/CNOT层（3次重复）",
+  "blockchain_relevance": null,
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 16
+}

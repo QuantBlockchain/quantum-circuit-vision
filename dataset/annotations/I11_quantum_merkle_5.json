@@ -1,0 +1,13 @@
+{
+  "id": "I11_quantum_merkle_5",
+  "category": "btc_quantum_security",
+  "difficulty": "advanced",
+  "qubits": 5,
+  "gate_count": null,
+  "depth": 6,
+  "description_en": "Quantum Merkle tree verification",
+  "description_cn": "量子Merkle树验证",
+  "blockchain_relevance": "btc_security",
+  "state_vector_dim": 32,
+  "nonzero_amplitudes": 8
+}

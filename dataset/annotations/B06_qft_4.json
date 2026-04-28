@@ -1,0 +1,13 @@
+{
+  "id": "B06_qft_4",
+  "category": "qubit_scaling",
+  "difficulty": "intermediate",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 8,
+  "description_en": "4-qubit Quantum Fourier Transform",
+  "description_cn": "4量子比特量子傅里叶变换",
+  "blockchain_relevance": null,
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 16
+}

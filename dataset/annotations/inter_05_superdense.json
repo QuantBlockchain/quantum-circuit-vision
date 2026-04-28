@@ -1,0 +1,13 @@
+{
+  "id": "inter_05_superdense",
+  "category": "intermediate",
+  "difficulty": "intermediate",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 6,
+  "description_en": "Superdense coding: 2 bits via 1 qubit",
+  "description_cn": "超密编码：1量子比特传2经典比特",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 1
+}

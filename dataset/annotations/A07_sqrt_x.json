@@ -1,0 +1,13 @@
+{
+  "id": "A07_sqrt_x",
+  "category": "gate_coverage",
+  "difficulty": "basic",
+  "qubits": 1,
+  "gate_count": null,
+  "depth": 1,
+  "description_en": "√X (V gate): half of a Pauli-X rotation",
+  "description_cn": "√X（V门）：Pauli-X旋转的一半",
+  "blockchain_relevance": null,
+  "state_vector_dim": 2,
+  "nonzero_amplitudes": 2
+}

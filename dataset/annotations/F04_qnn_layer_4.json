@@ -1,0 +1,13 @@
+{
+  "id": "F04_qnn_layer_4",
+  "category": "quantum_ml",
+  "difficulty": "intermediate",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 6,
+  "description_en": "Quantum neural network single layer",
+  "description_cn": "量子神经网络单层",
+  "blockchain_relevance": null,
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 16
+}

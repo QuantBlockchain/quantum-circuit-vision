@@ -1,0 +1,13 @@
+{
+  "id": "inter_03_teleport_prep",
+  "category": "intermediate",
+  "difficulty": "intermediate",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 4,
+  "description_en": "Quantum teleportation state preparation",
+  "description_cn": "量子隐形传态态制备",
+  "blockchain_relevance": null,
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 4
+}

@@ -1,0 +1,13 @@
+{
+  "id": "A03_single_t",
+  "category": "gate_coverage",
+  "difficulty": "basic",
+  "qubits": 1,
+  "gate_count": null,
+  "depth": 1,
+  "description_en": "T gate: π/4 phase rotation, key for fault-tolerant QC",
+  "description_cn": "T门：π/4相位旋转，容错量子计算的关键",
+  "blockchain_relevance": null,
+  "state_vector_dim": 2,
+  "nonzero_amplitudes": 1
+}

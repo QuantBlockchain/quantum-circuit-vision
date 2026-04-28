@@ -1,0 +1,19 @@
+{
+  "id": "A08_controlled_z",
+  "qubits": 2,
+  "depth": 1,
+  "state_vector_real": [
+    1.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "state_vector_imag": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 1
+}

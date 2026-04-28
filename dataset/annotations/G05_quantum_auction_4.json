@@ -1,0 +1,13 @@
+{
+  "id": "G05_quantum_auction_4",
+  "category": "blockchain_extended",
+  "difficulty": "advanced",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 3,
+  "description_en": "Quantum sealed-bid auction",
+  "description_cn": "量子密封投标拍卖",
+  "blockchain_relevance": "extended_protocol",
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 16
+}

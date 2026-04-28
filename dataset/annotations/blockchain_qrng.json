@@ -1,0 +1,13 @@
+{
+  "id": "blockchain_qrng",
+  "category": "blockchain",
+  "difficulty": "advanced",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 1,
+  "description_en": "Quantum random number generation for consensus",
+  "description_cn": "用于共识的量子随机数生成",
+  "blockchain_relevance": "direct",
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 16
+}

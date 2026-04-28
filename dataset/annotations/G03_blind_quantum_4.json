@@ -1,0 +1,13 @@
+{
+  "id": "G03_blind_quantum_4",
+  "category": "blockchain_extended",
+  "difficulty": "advanced",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 5,
+  "description_en": "Blind quantum computing: delegated computation",
+  "description_cn": "盲量子计算：委托计算",
+  "blockchain_relevance": "extended_protocol",
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 1
+}

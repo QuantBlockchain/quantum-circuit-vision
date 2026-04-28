@@ -1,0 +1,19 @@
+{
+  "id": "A14_multi_rotation",
+  "qubits": 2,
+  "depth": 4,
+  "state_vector_real": [
+    0.82236317,
+    0.0,
+    0.0,
+    0.5319757
+  ],
+  "state_vector_imag": [
+    -0.02226003,
+    0.0,
+    0.0,
+    -0.20056212
+  ],
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 2
+}

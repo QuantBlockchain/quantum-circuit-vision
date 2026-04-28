@@ -1,0 +1,13 @@
+{
+  "id": "G08_entanglement_witness_4",
+  "category": "blockchain_extended",
+  "difficulty": "advanced",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 4,
+  "description_en": "Entanglement witness measurement",
+  "description_cn": "纠缠见证测量",
+  "blockchain_relevance": "extended_protocol",
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 8
+}

@@ -1,0 +1,13 @@
+{
+  "id": "demo_02_cnot",
+  "category": "basic_gates",
+  "difficulty": "basic",
+  "qubits": 2,
+  "gate_count": null,
+  "depth": 1,
+  "description_en": "Controlled-NOT gate: fundamental two-qubit entangling gate",
+  "description_cn": "受控非门：基本的两量子比特纠缠门",
+  "blockchain_relevance": null,
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 1
+}

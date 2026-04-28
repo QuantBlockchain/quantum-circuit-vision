@@ -1,0 +1,13 @@
+{
+  "id": "inter_08_fredkin",
+  "category": "intermediate",
+  "difficulty": "intermediate",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 1,
+  "description_en": "Fredkin (CSWAP) gate",
+  "description_cn": "Fredkin（CSWAP）门",
+  "blockchain_relevance": null,
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 1
+}

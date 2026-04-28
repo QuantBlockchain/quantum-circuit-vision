@@ -1,0 +1,19 @@
+{
+  "id": "D01_hardware_eff_2",
+  "qubits": 2,
+  "depth": 5,
+  "state_vector_real": [
+    0.30418843,
+    0.28160619,
+    0.14886102,
+    0.38688105
+  ],
+  "state_vector_imag": [
+    -0.75036683,
+    -0.21122064,
+    -0.06316566,
+    0.21136783
+  ],
+  "state_vector_dim": 4,
+  "nonzero_amplitudes": 4
+}

@@ -1,0 +1,13 @@
+{
+  "id": "G06_post_quantum_hash_6",
+  "category": "blockchain_extended",
+  "difficulty": "advanced",
+  "qubits": 6,
+  "gate_count": null,
+  "depth": 7,
+  "description_en": "Lattice-inspired quantum hash circuit",
+  "description_cn": "格基启发的量子哈希电路",
+  "blockchain_relevance": "extended_protocol",
+  "state_vector_dim": 64,
+  "nonzero_amplitudes": 64
+}

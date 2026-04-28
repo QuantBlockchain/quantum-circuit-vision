@@ -1,0 +1,13 @@
+{
+  "id": "A11_ccz",
+  "category": "gate_coverage",
+  "difficulty": "basic",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 3,
+  "description_en": "CCZ gate: doubly-controlled phase flip",
+  "description_cn": "CCZ门：双重受控相位翻转",
+  "blockchain_relevance": null,
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 1
+}

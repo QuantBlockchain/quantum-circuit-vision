@@ -1,0 +1,13 @@
+{
+  "id": "A13_double_controlled_rz",
+  "category": "gate_coverage",
+  "difficulty": "basic",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 8,
+  "description_en": "CCRz: doubly-controlled Rz decomposed into CNOT+Rz",
+  "description_cn": "CCRz：双重受控Rz分解为CNOT+Rz",
+  "blockchain_relevance": null,
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 1
+}

@@ -1,0 +1,13 @@
+{
+  "id": "H04_ghz_reversed_labels",
+  "category": "visual_variants",
+  "difficulty": "basic",
+  "qubits": 3,
+  "gate_count": null,
+  "depth": 3,
+  "description_en": "GHZ with reversed qubit labels (q2 as source)",
+  "description_cn": "反转量子比特标签的GHZ（q2为源）",
+  "blockchain_relevance": null,
+  "state_vector_dim": 8,
+  "nonzero_amplitudes": 2
+}

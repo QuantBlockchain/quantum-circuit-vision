@@ -1,0 +1,13 @@
+{
+  "id": "H10_multi_gate_per_step",
+  "category": "visual_variants",
+  "difficulty": "basic",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 4,
+  "description_en": "Multiple parallel gates at same circuit depth",
+  "description_cn": "同一电路深度的多个并行门",
+  "blockchain_relevance": null,
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 1
+}

@@ -1,0 +1,13 @@
+{
+  "id": "D05_vqe_ry_linear_4",
+  "category": "variational",
+  "difficulty": "intermediate",
+  "qubits": 4,
+  "gate_count": null,
+  "depth": 4,
+  "description_en": "VQE with Ry gates and linear CNOT entangling",
+  "description_cn": "Ry门+线性CNOT纠缠的VQE",
+  "blockchain_relevance": null,
+  "state_vector_dim": 16,
+  "nonzero_amplitudes": 16
+}

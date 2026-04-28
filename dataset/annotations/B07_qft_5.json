@@ -1,0 +1,13 @@
+{
+  "id": "B07_qft_5",
+  "category": "qubit_scaling",
+  "difficulty": "intermediate",
+  "qubits": 5,
+  "gate_count": null,
+  "depth": 10,
+  "description_en": "5-qubit Quantum Fourier Transform",
+  "description_cn": "5量子比特量子傅里叶变换",
+  "blockchain_relevance": null,
+  "state_vector_dim": 32,
+  "nonzero_amplitudes": 32
+}
