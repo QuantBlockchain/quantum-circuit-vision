@@ -13,9 +13,12 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning,decorations.pathreplacing}
 
+\usepackage[normalem]{ulem} % for strikethrough
+
 \begin{document}
 
-\title{QCV: When AI Reads Quantum --- Toward AlphaFold for Quantum Circuit Discovery}
+\title{\textcolor{red}{\sout{QCV: Quantum Circuit Code Generation using Visual Capabilities of Multi-Modal Large Language Models}}\\[6pt]
+QCV: When AI Reads Quantum --- Toward Autonomous Quantum Circuit Design}
 
 \author{
 \IEEEauthorblockN{Dongping Liu}
@@ -31,7 +34,7 @@
 \maketitle
 
 \begin{abstract}
-Can AI learn to read quantum circuit diagrams---and eventually discover new ones? Inspired by AlphaFold's transformation of structural biology, we take the first step toward AI-driven quantum circuit discovery by establishing QCV-Dataset: the first multimodal quantum circuit dataset comprising 132 circuits across 13 categories (1--10 qubits) with seven modalities per circuit---diagram images, dual-SDK executable code (Amazon Braket and Qiskit), simulation results, bilingual annotations, natural language target descriptions, and optimization equivalence pairs. Evaluating three multimodal large language models under Basic Vision (BV) and Thinking Vision (TV) prompting, we demonstrate that AI can already reliably interpret quantum circuits (97.0\% accuracy for the strongest model). More importantly, we discover a \emph{CoT sensitivity window}---a fundamental principle showing that chain-of-thought reasoning only impacts performance near a model's capability boundary, helping weaker models (+20pp) but degrading advanced performance ($-$17pp), while leaving mid-tier models entirely unaffected. This finding, absent in classical circuit experiments, reveals something deeper about how AI reasons about quantum structures. We validate on 31 blockchain-relevant circuits spanning quantum threats to Bitcoin (Shor vs.\ ECDSA, Grover vs.\ SHA-256), post-quantum defenses (Kyber, Dilithium, SPHINCS+), and quantum infrastructure---finding that structural regularity, not qubit count, determines comprehension success. Dataset and code: \url{https://github.com/QuantBlockchain/quantum-circuit-vision}.
+Can AI learn to read quantum circuit diagrams---and eventually design new ones autonomously?  We take the first step toward autonomous quantum circuit design by establishing QCV-Dataset: the first multimodal quantum circuit dataset comprising 132 circuits across 13 categories (1--10 qubits) with seven modalities per circuit---diagram images, dual-SDK executable code (Amazon Braket and Qiskit), simulation results, bilingual annotations, natural language target descriptions, and optimization equivalence pairs. Evaluating three multimodal large language models under Basic Vision (BV) and Thinking Vision (TV) prompting, we demonstrate that AI can already reliably interpret quantum circuits (97.0\% accuracy for the strongest model). More importantly, we discover a \emph{CoT sensitivity window}---a fundamental principle showing that chain-of-thought reasoning only impacts performance near a model's capability boundary, helping weaker models (+20pp) but degrading advanced performance ($-$17pp), while leaving mid-tier models entirely unaffected. This finding, absent in classical circuit experiments, reveals something deeper about how AI reasons about quantum structures. We validate on 31 blockchain-relevant circuits spanning quantum threats to Bitcoin (Shor vs.\ ECDSA, Grover vs.\ SHA-256), post-quantum defenses (Kyber, Dilithium, SPHINCS+), and quantum infrastructure---finding that structural regularity, not qubit count, determines comprehension success. Dataset and code: \url{https://github.com/QuantBlockchain/quantum-circuit-vision}.
 \end{abstract}
 
 \section{Introduction}
