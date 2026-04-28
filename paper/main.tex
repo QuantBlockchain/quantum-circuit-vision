@@ -11,7 +11,7 @@
 \usepackage[caption=false]{subfig}
 \usepackage{listings}
 \usepackage{tikz}
-\usetikzlibrary{arrows.meta,positioning}
+\usetikzlibrary{arrows.meta,positioning,decorations.pathreplacing}
 
 \begin{document}
 
@@ -52,45 +52,46 @@ In this paper, we present QCV (Quantum Circuit Vision), the first systematic stu
 
 Our results show that Claude Opus 4.6 under BV achieves a weighted score of 97.0\%, passing 20 out of 21 circuits, Sonnet 4.6 scores 88.5\%, and Haiku 4.5 scores 46.5\%. The performance gap between models widens with circuit complexity (40pp between Opus and Haiku at Basic, 67pp at Advanced), indicating that advanced visual reasoning capabilities are critical for complex quantum circuit understanding.
 
-\section{Methodology}
-
-\begin{figure}[t]
+\begin{figure*}[!t]
 \centering
-\begin{tikzpicture}[node distance=0.25cm, every node/.style={font=\scriptsize},
-  dbox/.style={draw, rounded corners, minimum height=0.5cm, minimum width=1.0cm, align=center, fill=orange!10},
-  box/.style={draw, rounded corners, minimum height=0.6cm, minimum width=1.3cm, align=center, fill=blue!8},
-  vbox/.style={draw, rounded corners, minimum height=0.6cm, minimum width=1.0cm, align=center, fill=green!8},
-  arr/.style={-{Stealth[length=1.5mm]}, semithick},
-  darr/.style={-{Stealth[length=1.5mm]}, semithick, dashed, gray}]
+\begin{tikzpicture}[node distance=0.5cm, every node/.style={font=\small},
+  dbox/.style={draw, rounded corners, minimum height=0.7cm, minimum width=1.6cm, align=center, fill=orange!10},
+  box/.style={draw, rounded corners, minimum height=0.8cm, minimum width=2.0cm, align=center, fill=blue!8},
+  vbox/.style={draw, rounded corners, minimum height=0.8cm, minimum width=1.5cm, align=center, fill=green!8},
+  arr/.style={-{Stealth[length=2.5mm]}, thick},
+  darr/.style={-{Stealth[length=2mm]}, thick, dashed, gray}]
 % Dataset layer
-\node[draw, rounded corners, fill=orange!5, minimum width=7.8cm, minimum height=1.1cm, anchor=south] (dataset) at (3.2,2.0) {};
-\node[font=\scriptsize\bfseries, anchor=north] at (3.2,3.15) {QCV-Dataset (132 circuits $\times$ 7 modalities)};
-\node[dbox] (d1) at (0.3,2.35) {Images};
-\node[dbox] (d2) at (1.6,2.35) {Braket};
-\node[dbox] (d3) at (2.9,2.35) {Qiskit};
-\node[dbox] (d4) at (4.2,2.35) {Results};
-\node[dbox] (d5) at (5.3,2.35) {Annot.};
-\node[dbox] (d6) at (6.3,2.35) {Targets};
+\node[draw, rounded corners, fill=orange!5, minimum width=14.0cm, minimum height=1.6cm] (dataset) at (6.5,3.2) {};
+\node[font=\normalsize\bfseries] at (6.5,4.1) {QCV-Dataset (132 circuits $\times$ 7 modalities)};
+\node[dbox] (d1) at (1.5,3.2) {Images\\[-2pt]\scriptsize(132 PNG)};
+\node[dbox] (d2) at (3.5,3.2) {Braket Code\\[-2pt]\scriptsize(132 .py)};
+\node[dbox] (d3) at (5.5,3.2) {Qiskit Code\\[-2pt]\scriptsize(132 .py)};
+\node[dbox] (d4) at (7.5,3.2) {Sim.\ Results\\[-2pt]\scriptsize(132 JSON)};
+\node[dbox] (d5) at (9.5,3.2) {Annotations\\[-2pt]\scriptsize(bilingual)};
+\node[dbox] (d6) at (11.5,3.2) {Targets\\[-2pt]\scriptsize(NL desc.)};
 % Evaluation pipeline
-\node[box] (img) at (0.3,0.8) {Circuit\\[-1pt]Diagram};
-\node[box] (llm) at (2.1,0.8) {MMLLM\\[-1pt](BV/TV)};
-\node[box] (code) at (3.9,0.8) {Generated\\[-1pt]Code};
-\node[vbox] (syn) at (5.2,0.8) {Syntax};
-\node[vbox] (exe) at (6.0,0.8) {Exec};
-\node[vbox] (fid) at (6.9,0.8) {Fidelity\\[-1pt]$\geq$0.99};
+\node[box] (img) at (1.5,0.8) {Circuit\\[-2pt]Diagram};
+\node[box] (llm) at (4.2,0.8) {MMLLM\\[-2pt](BV / TV)};
+\node[box] (code) at (7.0,0.8) {Generated\\[-2pt]Code};
+\node[vbox] (syn) at (9.2,0.8) {Syntax\\[-2pt]Check};
+\node[vbox] (exe) at (10.8,0.8) {Exec\\[-2pt]Check};
+\node[vbox] (fid) at (12.6,0.8) {Fidelity\\[-2pt]$\geq 0.99$};
 \draw[arr] (img) -- (llm);
 \draw[arr] (llm) -- (code);
 \draw[arr] (code) -- (syn);
 \draw[arr] (syn) -- (exe);
 \draw[arr] (exe) -- (fid);
-\node[above=0.05cm of syn, font=\tiny\itshape, anchor=south] {Verification};
-% Connection from dataset to pipeline
-\draw[darr] (d1.south) -- (img.north);
-\draw[darr] (d4.south) -- ++(0,-0.4) -| (fid.north);
+% Brace for verification
+\draw[decorate, decoration={brace, amplitude=4pt, raise=2pt}] (syn.north west) -- (fid.north east) node[midway, above=6pt, font=\small\itshape] {Verification Pipeline};
+% Connections from dataset
+\draw[darr] (d1.south) -- ++(0,-0.6) -| (img.north);
+\draw[darr] (d4.south) -- ++(0,-0.3) -| (fid.north);
 \end{tikzpicture}
-\caption{QCV system overview. Top: QCV-Dataset provides 132 circuits with 7 modalities (images, dual-SDK code, simulation results, annotations, target descriptions, equivalence pairs). Bottom: evaluation pipeline processes circuit images through MMLLMs and verifies generated code via syntax checking, execution, and unitary fidelity.}
+\caption{QCV system overview. \textbf{Top:} QCV-Dataset provides 132 quantum circuits with 7 data modalities---circuit images, executable code in two SDKs (Braket and Qiskit), simulation results, bilingual annotations, natural language target descriptions, and optimization equivalence pairs. \textbf{Bottom:} The evaluation pipeline processes a circuit diagram image through an MMLLM under BV or TV mode, then verifies the generated code through syntax checking, execution, and unitary matrix fidelity ($F \geq 0.99$).}
 \label{fig:workflow}
-\end{figure}
+\end{figure*}
+
+\section{Methodology}
 
 Following the approach established in VGV~\cite{wong2024vgv}, we design a difficulty-graded benchmark, define two visual prompting modes, and build an end-to-end verification pipeline tailored to quantum circuits.
 
