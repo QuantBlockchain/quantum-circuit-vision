@@ -1,0 +1,65 @@
+{
+  "total_circuits": 132,
+  "qubit_distribution": {
+    "1": 8,
+    "2": 29,
+    "3": 29,
+    "4": 35,
+    "5": 12,
+    "6": 10,
+    "7": 3,
+    "8": 3,
+    "9": 2,
+    "10": 1
+  },
+  "category_distribution": {
+    "advanced_algorithms": 6,
+    "basic_gates": 5,
+    "blockchain": 11,
+    "blockchain_extended": 8,
+    "btc_quantum_security": 12,
+    "classical_algorithms": 15,
+    "error_correction": 8,
+    "gate_coverage": 15,
+    "intermediate": 10,
+    "quantum_ml": 10,
+    "qubit_scaling": 12,
+    "variational": 10,
+    "visual_variants": 10
+  },
+  "difficulty_distribution": {
+    "advanced": 60,
+    "basic": 30,
+    "intermediate": 42
+  },
+  "depth_distribution": {
+    "min": 1,
+    "max": 27,
+    "mean": 5.3
+  },
+  "blockchain_relevant": 31,
+  "state_vector_dims": {
+    "2": 8,
+    "4": 29,
+    "8": 29,
+    "16": 35,
+    "32": 12,
+    "64": 10,
+    "128": 3,
+    "256": 3,
+    "512": 2,
+    "1024": 1
+  },
+  "failure_cases": {
+    "total": 27,
+    "by_model": {
+      "haiku-4.5": 18,
+      "opus-4.6": 5,
+      "sonnet-4.6": 4
+    },
+    "by_error_type": {
+      "api_error": 7,
+      "low_fidelity": 20
+    }
+  }
+}
