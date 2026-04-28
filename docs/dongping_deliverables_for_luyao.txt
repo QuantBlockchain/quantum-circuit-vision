@@ -1,0 +1,256 @@
+================================================================================
+  Dongping's Deliverables for Luyao — QCV ICML AI4Science Submission
+  Date: 2026-04-29
+================================================================================
+
+================================================================================
+1. Technical Roadmap: Research Workflow WITH vs WITHOUT GenAI
+================================================================================
+
+Traditional Workflow (WITHOUT GenAI):
+─────────────────────────────────────
+  Step 1: Researcher reads paper → sees quantum circuit diagram
+  Step 2: Manually identifies gates, qubits, connections (10-30 min/circuit)
+  Step 3: Manually writes SDK code (Braket/Qiskit/Cirq) (15-60 min/circuit)
+  Step 4: Debug syntax errors, API mismatches (10-30 min)
+  Step 5: Run on simulator, compare with expected output
+  Step 6: If wrong, go back to Step 2 (repeat 2-5 times for complex circuits)
+  Step 7: Port to different SDK if needed (another 30-60 min)
+
+  Total per circuit: 1-4 hours for complex circuits
+  Error rate: High (CNOT direction, API naming, gate ordering)
+  Scalability: Does not scale — each new circuit requires full manual effort
+
+QCV Workflow (WITH GenAI):
+──────────────────────────
+  Step 1: Input circuit diagram image (PNG)
+  Step 2: MMLLM processes image under BV or TV mode (5-15 seconds)
+  Step 3: Automatically generates Braket SDK code
+  Step 4: Automated 3-level verification:
+          - Syntax check (compile)
+          - Execution check (Circuit object created)
+          - Unitary fidelity check (F ≥ 0.99 against ground truth)
+  Step 5: If pass → done. If fail → error diagnosis available
+  Step 6: Cross-SDK translation can be automated
+
+  Total per circuit: < 1 minute (including verification)
+  Error rate: 3% for strongest model (Opus BV: 97% pass rate)
+  Scalability: 132 circuits processed in hours, not weeks
+
+Pipeline Comparison (ASCII):
+────────────────────────────
+
+WITHOUT GenAI:
+  Paper ──→ [Human reads] ──→ [Human codes] ──→ [Human debugs] ──→ Code
+            (30 min)          (60 min)          (30 min)
+            error-prone       SDK-specific       iterative
+
+WITH GenAI (QCV):
+  Paper ──→ [Image input] ──→ [MMLLM BV/TV] ──→ [Auto-verify] ──→ Code
+            (instant)         (10 sec)           (5 sec)
+            standardized      multi-model        rigorous (unitary fidelity)
+
+Key Differences at Each Stage:
+  ┌──────────────┬─────────────────────────┬──────────────────────────────┐
+  │ Stage        │ Without GenAI           │ With GenAI (QCV)             │
+  ├──────────────┼─────────────────────────┼──────────────────────────────┤
+  │ Input        │ Human visual parsing    │ Direct image input           │
+  │ Understanding│ Domain expertise needed │ MMLLM visual reasoning       │
+  │ Generation   │ Manual SDK coding       │ Automatic code generation    │
+  │ Verification │ Manual test cases       │ Unitary matrix fidelity      │
+  │ Iteration    │ Human debug loop        │ Automated re-generation      │
+  │ Portability  │ Rewrite for each SDK    │ Multi-SDK translation        │
+  │ Scale        │ O(hours) per circuit    │ O(seconds) per circuit       │
+  │ Consistency  │ Varies by programmer    │ Deterministic pipeline       │
+  └──────────────┴─────────────────────────┴──────────────────────────────┘
+
+================================================================================
+2. Training Dataset: Quantum Circuit Inclusive Principle
+================================================================================
+
+2.1 Theoretical Rationale: The Inclusive Selection Principle
+───────────────────────────────────────────────────────────
+
+Our benchmark follows an "inclusive selection principle" — systematically
+covering the full spectrum of quantum circuit characteristics rather than
+sampling from a narrow subset. This is grounded in three theoretical
+considerations:
+
+(a) Gate Universality Theorem (Barenco et al., 1995):
+    Any unitary operation can be decomposed into single-qubit gates and
+    CNOT gates. A comprehensive benchmark must therefore cover:
+    - All standard single-qubit gates (X, Y, Z, H, S, T, Rx, Ry, Rz, √X)
+    - All standard two-qubit gates (CNOT, CZ, SWAP, iSWAP, CPhaseShift)
+    - Multi-qubit gates (Toffoli/CCX, Fredkin/CSWAP, CCZ)
+    Our Direction A (15 circuits) ensures complete gate-type coverage.
+
+    Reference: Barenco, A., Bennett, C.H., Cleve, R., et al. "Elementary
+    gates for quantum computation." Physical Review A, 52(5), 3457, 1995.
+
+(b) Circuit Complexity Hierarchy (Nielsen & Chuang, 2010):
+    Quantum circuits exhibit a natural complexity hierarchy from single-gate
+    operations to complete algorithms. Our 3-level difficulty grading
+    (Basic/Intermediate/Advanced) mirrors the pedagogical progression in
+    standard quantum computing curricula, ensuring the benchmark tests
+    visual comprehension at every complexity level.
+
+    Reference: Nielsen, M.A. & Chuang, I.L. "Quantum Computation and
+    Quantum Information." Cambridge University Press, 10th Anniversary
+    Edition, 2010.
+
+(c) Scalability Principle (Preskill, 2018 — NISQ era):
+    In the NISQ era, circuits range from 1-100+ qubits with varying
+    connectivity patterns. Our Direction B (12 circuits, 4-10 qubits)
+    systematically tests scalability across qubit counts and entanglement
+    topologies (linear, ring, star, full).
+
+    Reference: Preskill, J. "Quantum Computing in the NISQ era and
+    beyond." Quantum, 2, 79, 2018.
+
+(d) Application Diversity Principle:
+    Quantum circuits serve diverse application domains. Our 13 categories
+    ensure coverage across:
+    - Foundational algorithms (C: Deutsch-Jozsa, Simon, Shor, Grover, QPE)
+    - Variational/NISQ circuits (D: VQE, QAOA, hardware-efficient ansatz)
+    - Error correction (E: repetition, Steane, surface code)
+    - Machine learning (F: QNN, QCNN, quantum kernel)
+    - Cryptography/blockchain (blockchain, G, I: QKD, PQC, QRNG)
+    - Visual robustness (H: layout variants of same logical circuit)
+
+    Reference: Cerezo, M., et al. "Variational quantum algorithms."
+    Nature Reviews Physics, 3(9), 625-644, 2021.
+
+2.2 Empirical Rationale: Existing Annotated Dataset References
+──────────────────────────────────────────────────────────────
+
+Our inclusive approach is informed by successful benchmarks in related fields:
+
+(a) MQTBench (Quetschlich et al., 2023):
+    Munich Quantum Toolkit Benchmark provides 70,000+ quantum circuits
+    across multiple abstraction levels. We adopt their principle of
+    covering "all relevant quantum algorithms" but add the visual modality.
+
+    Reference: Quetschlich, N., Burgholzer, L., & Wille, R. "MQTBench:
+    Benchmarking Software and Design Automation Tools for Quantum
+    Computing." Quantum, 7, 1062, 2023.
+
+(b) SupermarQ (Tomesh et al., 2022):
+    Application-oriented benchmark suite for quantum computers. We follow
+    their categorization of circuits by application domain.
+
+    Reference: Tomesh, T., et al. "SupermarQ: A Scalable Quantum
+    Benchmark Suite." HPCA, 2022.
+
+(c) QASMBench (Li et al., 2023):
+    Low-level OpenQASM benchmark with 60+ circuits. We extend this concept
+    to the visual domain (circuit diagrams as input).
+
+    Reference: Li, A., et al. "QASMBench: A Low-Level Quantum Benchmark
+    Suite for NISQ Evaluation." ACM TQEC, 4(2), 2023.
+
+(d) VGV Benchmark (Wong et al., 2024):
+    Our direct predecessor — 30 classical circuit diagrams across 3
+    difficulty levels. We adapt their methodology to quantum circuits
+    with domain-specific modifications.
+
+    Reference: Wong, S.-Z., Wan, G.-W., Liu, D., & Wang, X. "VGV:
+    Verilog Generation using Visual Capabilities of Multi-Modal Large
+    Language Models." Proc. IEEE/ACM DAC, 2024.
+
+(e) ImageNet / COCO analogy:
+    Just as ImageNet's success came from inclusive category coverage
+    (1000 classes, not 10), our benchmark's value comes from covering
+    13 categories of quantum circuits rather than a narrow subset.
+
+    Reference: Deng, J., et al. "ImageNet: A large-scale hierarchical
+    image database." CVPR, 2009.
+
+================================================================================
+3. Data Annotation References
+================================================================================
+
+Every circuit in our dataset is annotated with the following fields.
+Each annotation type has a methodological reference:
+
+┌─────────────────────┬──────────────────────────────────────────────────────┐
+│ Annotation Field    │ Reference / Methodology                              │
+├─────────────────────┼──────────────────────────────────────────────────────┤
+│ Circuit name        │ Standard naming from Nielsen & Chuang (2010)         │
+│ Qubit count         │ Extracted from Qiskit QuantumCircuit.num_qubits      │
+│ Gate count          │ Extracted from Qiskit QuantumCircuit.size()           │
+│ Circuit depth       │ Extracted from Qiskit QuantumCircuit.depth()          │
+│ Gate types used     │ Extracted from Qiskit QuantumCircuit.count_ops()      │
+│ Difficulty level    │ 3-level grading following VGV (Wong et al., 2024)    │
+│ Application domain  │ Categorized per Cerezo et al. (2021) taxonomy        │
+│ Entanglement type   │ Linear/Ring/Star/Full per Sim et al. (2019)          │
+│ Ground truth code   │ Amazon Braket SDK (AWS, 2024)                        │
+│ Unitary matrix      │ Computed via LocalSimulator, shots=0                 │
+│ State vector (|0⟩)  │ Output state for all-zero input                      │
+│ Fidelity threshold  │ F ≥ 0.99, following standard QC practice             │
+│ Visual complexity   │ Proposed metric: parallel_depth × qubit_count        │
+│ SDK compatibility   │ Braket (primary), Qiskit/Cirq (planned)              │
+│ Blockchain relevance│ Tagged per Liu, Zhang & Zhang (WWW'26) taxonomy      │
+└─────────────────────┴──────────────────────────────────────────────────────┘
+
+Full bibliographic references for annotation methodology:
+
+[1] Nielsen, M.A. & Chuang, I.L. "Quantum Computation and Quantum
+    Information." Cambridge University Press, 2010.
+
+[2] Wong, S.-Z., Wan, G.-W., Liu, D., & Wang, X. "VGV: Verilog Generation
+    using Visual Capabilities of Multi-Modal Large Language Models."
+    Proc. IEEE/ACM DAC, 2024.
+
+[3] Cerezo, M., et al. "Variational quantum algorithms." Nature Reviews
+    Physics, 3(9), 625-644, 2021.
+
+[4] Sim, S., Johnson, P.D., & Aspuru-Guzik, A. "Expressibility and
+    entangling capability of parameterized quantum circuits for hybrid
+    quantum-classical algorithms." Advanced Quantum Technologies, 2(12),
+    1900070, 2019.
+
+[5] Amazon Web Services. "Amazon Braket Developer Guide." 2024.
+    https://docs.aws.amazon.com/braket/
+
+[6] Qiskit Contributors. "Qiskit: An Open-Source Framework for Quantum
+    Computing." 2023. https://qiskit.org/
+
+[7] Liu, D., Zhang, A., & Zhang, L. "Quantum-Safe, Efficient, and
+    AI-Enhanced Blockchains for the Web." Companion Proc. ACM Web
+    Conference (WWW'26), 2026.
+
+[8] Barenco, A., et al. "Elementary gates for quantum computation."
+    Physical Review A, 52(5), 3457, 1995.
+
+[9] Preskill, J. "Quantum Computing in the NISQ era and beyond."
+    Quantum, 2, 79, 2018.
+
+[10] Quetschlich, N., Burgholzer, L., & Wille, R. "MQTBench: Benchmarking
+     Software and Design Automation Tools for Quantum Computing."
+     Quantum, 7, 1062, 2023.
+
+[11] Tomesh, T., et al. "SupermarQ: A Scalable Quantum Benchmark Suite."
+     HPCA, 2022.
+
+[12] Li, A., et al. "QASMBench: A Low-Level Quantum Benchmark Suite for
+     NISQ Evaluation." ACM TQEC, 4(2), 2023.
+
+================================================================================
+4. GitHub Update
+================================================================================
+
+Repository: https://github.com/QuantBlockchain/quantum-circuit-vision
+
+Collaborators (write access confirmed):
+  - sunshineluyao (Luyao Zhang) ✓
+  - AoyuQC (Aoyu Zhang) ✓
+  - ddipass (Dongping Liu) ✓
+
+Current state:
+  - 132 quantum circuits (PNG + ground truth .py)
+  - 13 categories (demo, inter, adv, blockchain, A-I)
+  - README with overview tables and montage images
+  - CIRCUIT_CATALOG.md with full listing
+  - Verification scripts and prompt templates
+
+================================================================================
