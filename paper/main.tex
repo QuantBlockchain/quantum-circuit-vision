@@ -36,7 +36,15 @@ Quantum circuit diagrams are the primary visual representation in quantum comput
 
 \section{Introduction}
 
-Quantum computing has advanced rapidly in recent years, with quantum algorithms demonstrating theoretical advantages in optimization~\cite{farhi2014qaoa}, simulation~\cite{nielsen2010quantum}, and cryptography~\cite{shor1994algorithms}. However, a persistent gap exists between algorithmic descriptions in research papers and their implementation as executable code. Quantum circuit diagrams---the standard visual notation for quantum algorithms---appear ubiquitously in textbooks and publications, yet translating these diagrams into runnable code on platforms such as Amazon Braket~\cite{braket}, Qiskit~\cite{qiskit}, or Cirq requires manual effort and domain expertise. This translation is tedious and error-prone, particularly for circuits involving multi-qubit entangling gates and parameterized rotations. The need for rapid prototyping is especially acute in emerging domains such as post-quantum cryptography (PQC), where quantum circuits are used to analyze the security of blockchain systems~\cite{fedorov2018quantum} and design quantum-safe protocols~\cite{liu2026quantumsafe}.
+The year 2025 marked a quantum inflection point: the Nobel Prize in Physics recognized experiments with superconducting qubits that enabled macroscopic quantum coherence, while the ACM Turing Award honored the foundations of quantum information theory---including the BB84 protocol that underpins quantum key distribution. The United Nations declared 2025 the International Year of Quantum Science and Technology. Quantum computing has crossed from theoretical promise to engineering reality.
+
+Yet a fundamental bottleneck persists: the gap between how quantum algorithms are \emph{communicated} (as circuit diagrams in papers, textbooks, and courses) and how they are \emph{executed} (as code in SDKs such as Amazon Braket~\cite{braket}, Qiskit~\cite{qiskit}, or Cirq). Every quantum circuit published in a research paper must be manually translated into executable code---a tedious, error-prone process requiring both visual interpretation skills and SDK-specific programming expertise. As quantum hardware scales and the volume of published circuits grows exponentially, this manual translation becomes an unsustainable bottleneck for scientific progress.
+
+We argue that \textbf{automating the translation from quantum circuit diagrams to verified executable code is a foundational AI-for-Science challenge}---analogous to how AlphaFold~\cite{jumper2021alphafold} automated protein structure prediction from amino acid sequences. Just as AlphaFold accelerated structural biology by orders of magnitude, a system that reliably reads quantum circuit diagrams and produces verified code could accelerate quantum algorithm development, quantum-safe cryptography research~\cite{fedorov2018quantum,liu2026quantumsafe}, and the broader quantum computing ecosystem.
+
+This challenge is particularly urgent for blockchain security. As platforms migrate to post-quantum cryptography, researchers publish PQC circuit designs that must be rapidly prototyped and verified. Shor's algorithm threatens ECDSA signatures protecting billions in Bitcoin assets; Grover's algorithm offers quadratic speedup against SHA-256 mining. The ability to instantly translate these threat-model circuits from diagrams to executable code---and verify their correctness---is critical infrastructure for the quantum-safe transition.
+
+In this paper, we take the first step toward this vision by establishing QCV-Dataset---the first multimodal quantum circuit dataset---and the evaluation methodology and baseline results that future circuit-discovery systems will build upon.
 
 Recent work has demonstrated that large language models (LLMs) can assist in hardware design automation. Projects such as ChipChat~\cite{blocklove2023chipchat}, VeriGen~\cite{thakur2023verigen}, GPT4AIGChip~\cite{fu2023gpt4aigchip}, ChipNemo~\cite{liu2023chipnemo}, and ChatEDA~\cite{he2023chateda} have explored using LLMs to generate HDL code, EDA scripts, and accelerator designs from textual specifications. Multimodal models such as GPT-4~\cite{openai2023gpt4} and LLaVA~\cite{liu2023llava} have further demonstrated strong visual reasoning capabilities across domains including mathematical problem solving~\cite{lu2023mathvista}. Our prior work, VGV~\cite{wong2024vgv}, extended this line of research to the visual domain, showing that MMLLMs can generate Verilog code from classical circuit diagrams. VGV introduced the Thinking Vision (TV) prompting method, which improved open-source model performance by over 50\% compared to Basic Vision (BV).
 
@@ -52,7 +60,7 @@ In this paper, we present QCV (Quantum Circuit Vision), the first systematic stu
 
 Our results show that Claude Opus 4.6 under BV achieves a weighted score of 97.0\%, passing 20 out of 21 circuits, Sonnet 4.6 scores 88.5\%, and Haiku 4.5 scores 46.5\%. The performance gap between models widens with circuit complexity (40pp between Opus and Haiku at Basic, 67pp at Advanced), indicating that advanced visual reasoning capabilities are critical for complex quantum circuit understanding.
 
-\section{Methodology}
+\section{QCV-Dataset and Methods}
 
 \begin{figure*}[t]
 \centering
@@ -194,12 +202,14 @@ Unlike VGV, which also varied prompt detail levels (Short/Medium/High), we use a
 
 \begin{figure*}[t]
 \centering
-\subfloat[Basic: Bell State (2 qubits, 2 gates)]{\includegraphics[width=0.22\textwidth]{figures/demo_03_bell.pdf}}
+\subfloat[Basic: Bell State (2q, 2 gates) --- trivial for AI]{\includegraphics[width=0.18\textwidth]{figures/demo_03_bell.pdf}}
 \hfill
-\subfloat[Intermediate: 2-Qubit Grover (2 qubits, 9 gates)]{\includegraphics[width=0.33\textwidth]{figures/inter_06_grover2.pdf}}
+\subfloat[Intermediate: 2-Qubit Grover (2q, 9 gates)]{\includegraphics[width=0.25\textwidth]{figures/inter_06_grover2.pdf}}
 \hfill
-\subfloat[Advanced: QAOA MaxCut (4 qubits, 16 gates)]{\includegraphics[width=0.40\textwidth]{figures/adv_04_qaoa.pdf}}
-\caption{Representative circuit diagrams from each difficulty level, generated using Qiskit's matplotlib drawer. Complexity increases from left to right in qubit count, gate count, and structural depth.}
+\subfloat[Advanced: QAOA MaxCut (4q, 16 gates) --- all models struggle]{\includegraphics[width=0.28\textwidth]{figures/adv_04_qaoa.pdf}}
+\hfill
+\subfloat[Blockchain: 8-Qubit Consensus (8q, 20 gates) --- passes due to regularity]{\includegraphics[width=0.25\textwidth]{figures/blockchain_consensus.pdf}}
+\caption{Representative circuits spanning the difficulty spectrum. Notably, the 8-qubit consensus circuit (d) passes with perfect fidelity due to its regular repeating structure, while the 4-qubit QAOA (c) fails for multiple models due to parallel gate layers---demonstrating that structural regularity, not qubit count, determines AI comprehension success.}
 \label{fig:circuits}
 \end{figure*}
 
@@ -223,7 +233,7 @@ We report two metrics following VGV~\cite{wong2024vgv}:
 
 \textbf{Weighted score} aggregates pass rates across difficulty levels: $S = 0.2 \times R_{\text{Basic}} + 0.3 \times R_{\text{Intermediate}} + 0.5 \times R_{\text{Advanced}}$, where $R$ denotes the pass rate at each level. The weights reflect increasing difficulty, with Advanced circuits contributing the most to the overall score.
 
-\section{Evaluation}
+\section{Experimental Evaluation}
 
 \subsection{Experimental Setup}
 
@@ -283,11 +293,42 @@ Sonnet 4.6 scores 88.5\% under both BV and TV---identical results across all dif
 
 Haiku 4.5 scores substantially lower across all conditions. Under BV, it passes 11 of 21 circuits; under TV, 12 of 21. Its weighted scores (46.5\% BV, 45.0\% TV) are roughly half of Opus's, with the gap widening at higher difficulty levels. Note that the weighted scores differ substantially from raw pass rates (e.g., 11/21 = 52\% raw vs.\ 46.5\% weighted) because Advanced circuits carry 50\% of the weight.
 
-\section{Analysis}
+\section{Scientific Findings}
 
-\subsection{Visual Modes: CoT Sensitivity Window}
+\subsection{Finding 1: CoT Sensitivity Window}
 
-The most notable finding is that TV's effect depends not only on circuit complexity but also on model capability level (Fig.~\ref{fig:cot_reversal}):
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[every node/.style={font=\small}, scale=0.9, transform shape]
+% Axis
+\draw[-{Stealth}, thick] (0,0) -- (7.5,0) node[right] {\small Difficulty};
+\draw[-{Stealth}, thick] (0,-0.3) -- (0,3.5) node[above] {\small CoT Effect};
+% Difficulty labels
+\node[below, font=\scriptsize] at (1.5,0) {Basic};
+\node[below, font=\scriptsize] at (3.75,0) {Intermediate};
+\node[below, font=\scriptsize] at (6.0,0) {Advanced};
+% Zero line
+\draw[dashed, gray] (0,1.5) -- (7.2,1.5) node[right, font=\tiny, gray] {0};
+% Haiku (wide window)
+\fill[yellow!30, rounded corners] (0.5,1.5) rectangle (5.5,3.0);
+\node[font=\scriptsize, anchor=west] at (0.6,2.7) {\textbf{Haiku}: wide CoT window};
+\draw[yellow!70!black, very thick] (0.5,3.0) -- (3.5,2.5) -- (5.5,0.5);
+% Opus (narrow window)
+\fill[blue!15, rounded corners] (2.5,1.5) rectangle (5.0,2.3);
+\node[font=\scriptsize, anchor=west] at (2.6,2.1) {\textbf{Opus}: narrow};
+\draw[blue, very thick] (0.5,1.5) -- (2.5,1.5) -- (3.75,2.3) -- (5.5,0.7);
+% Sonnet (no window)
+\draw[purple, very thick, dashed] (0.5,1.5) -- (6.5,1.5);
+\node[font=\scriptsize, purple] at (5.5,1.8) {\textbf{Sonnet}: no effect};
+% Annotations
+\node[font=\tiny, anchor=west] at (0.2,3.3) {CoT helps $\uparrow$};
+\node[font=\tiny, anchor=west] at (0.2,0.3) {CoT hurts $\downarrow$};
+\end{tikzpicture}
+\caption{The CoT Sensitivity Window: chain-of-thought prompting only helps near a model's capability boundary. Haiku has a wide window (CoT helps on Basic/Intermediate), Opus has a narrow window (only Intermediate), and Sonnet has no window (CoT has zero effect at all levels).}
+\label{fig:cot_concept}
+\end{figure}
+
+The most notable finding is that TV's effect depends not only on circuit complexity but also on model capability level (Fig.~\ref{fig:cot_concept}, Fig.~\ref{fig:cot_reversal}):
 
 \textbf{Haiku (weak):} TV has a strong positive effect on simpler circuits that diminishes and reverses with complexity. Basic: +20pp (TV helps select correct API, e.g., \texttt{.ccnot()} instead of \texttt{.toffoli()}). Intermediate: +10pp. Advanced: $-$17pp.
 
@@ -335,7 +376,7 @@ circuit.ccnot(0, 1, 2)
 \label{fig:bv_tv_example}
 \end{figure}
 
-\subsection{Model Comparison}
+\subsection{Finding 2: Capability Hierarchy}
 
 Under BV, the three models form a clear capability hierarchy:
 
@@ -349,7 +390,7 @@ Sonnet sits closer to Opus than to Haiku, suggesting that mid-tier models alread
 
 Opus BV passes 20/21 circuits overall (95.2\%), with its single failure being an API naming issue rather than a visual comprehension error. Sonnet shares the same phase estimation and QAOA failures as Opus TV, suggesting these circuits represent genuine difficulty boundaries rather than random errors.
 
-\subsection{Error Analysis}
+\subsection{Finding 3: Failure Mode Taxonomy}
 
 The two models exhibit qualitatively different failure modes. \textbf{Opus} failures are almost exclusively API naming errors: using Qiskit-style method names (\texttt{.crz()}, \texttt{.cx()}) instead of Braket equivalents (\texttt{.cphaseshift()}, \texttt{.cnot()}). The visual circuit interpretation is correct in all cases---the model identifies the right gates, qubit assignments, and ordering, but maps them to incorrect SDK calls. \textbf{Haiku} failures, by contrast, are diverse: API naming errors (\texttt{.toffoli()} instead of \texttt{.ccnot()}, keyword argument mismatches), visual misidentification of gate types, CNOT control/target reversal, and structural errors such as incorrect gate ordering or missing oracle components in Grover circuits. This diversity suggests that Haiku's limitations lie in fundamental visual comprehension rather than SDK knowledge alone, whereas Opus's errors could likely be eliminated with SDK-specific post-processing.
 
@@ -398,6 +439,8 @@ Looking forward, QCV-Dataset's target descriptions and equivalence pairs lay the
 \bibitem{fedorov2018quantum} A. K. Fedorov, E. O. Kiktenko, and A. I. Lvovsky, ``Quantum Computers Put Blockchain Security at Risk,'' \textit{Nature}, vol. 563, pp. 465--467, 2018.
 
 \bibitem{liu2026quantumsafe} D. Liu, A. Zhang, and L. Zhang, ``Quantum-Safe, Efficient, and AI-Enhanced Blockchains for the Web: A Cooperative Tutorial on Quantum Computing, Blockchain Applications, and Data Standards,'' in \textit{Companion Proc. ACM Web Conference (WWW Companion '26)}, 2026.
+
+\bibitem{jumper2021alphafold} J. Jumper \textit{et al.}, ``Highly accurate protein structure prediction with AlphaFold,'' \textit{Nature}, vol. 596, pp. 583--589, 2021.
 
 \end{thebibliography}
 
