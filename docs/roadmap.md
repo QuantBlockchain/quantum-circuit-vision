@@ -12,13 +12,13 @@
 |:---|:---:|:---:|
 | Circuit diagrams (PNG) | 132 | ✅ Done |
 | Ground truth code (Braket .py) | 132 | ✅ Done |
-| Simulation results (state vectors) | 0 | 🔨 Tonight |
-| Structured annotations (JSON) | 0 | 🔨 Tonight |
+| Simulation results (state vectors) | 132 | ✅ Done |
+| Structured annotations (JSON) | 132 | ✅ Done |
+| Failure cases (annotated) | 27 | ✅ Done |
 | Multi-SDK (Qiskit/Cirq) | 0 | 📋 Planned |
 | Circuit equivalence pairs | 0 | 📋 Planned |
 | Optimization pairs | 0 | 📋 Planned |
 | Target→Circuit pairs | 0 | 📋 Planned |
-| Failure cases (from experiments) | ~50 | ✅ Available |
 
 ---
 
@@ -58,19 +58,19 @@
 quantum-circuit-vision/
 ├── README.md
 ├── CIRCUIT_CATALOG.md
-├── dataset/
-│   ├── circuits/          # 132 PNG images (moved from benchmark/)
-│   ├── ground_truth/      # 132 Braket .py files
-│   ├── results/           # 132 simulation result JSONs  ← NEW tonight
-│   ├── annotations/       # 132 structured annotation JSONs  ← NEW tonight
-│   └── failures/          # ~50 failure cases from experiments  ← NEW tonight
+├── dataset/                    ← Unified data directory (556 files)
+│   ├── circuits/          # 132 PNG circuit diagram images
+│   ├── ground_truth/      # 132 Braket SDK ground truth (.py)
+│   ├── results/           # 132 simulation results (state vectors, JSON)
+│   ├── annotations/       # 132 structured annotations (bilingual, JSON)
+│   └── failures/          # 28 annotated failure cases (JSON)
 ├── docs/
 │   ├── roadmap.md         # This file
 │   └── dongping_deliverables_for_luyao.txt
-├── prompts/
-├── scripts/
+├── prompts/               # BV and TV prompt templates
+├── scripts/               # Generation, verification, experiment scripts
 ├── results/               # Aggregated experiment summaries
-└── assets/
+└── assets/                # Montage overview images
 ```
 
 ---
@@ -85,8 +85,8 @@ Our ultimate goal is the **first multimodal quantum circuit dataset** that enabl
 |:---:|:---|:---|:---:|
 | 1 | Circuit diagram images | AI learns to **see** | ✅ 132 |
 | 2 | Executable code (multi-SDK) | AI learns to **write** | ✅ Braket, 📋 Qiskit/Cirq |
-| 3 | Simulation results | AI learns to **verify** | 🔨 Tonight |
-| 4 | Structured annotations | AI learns to **understand** | 🔨 Tonight |
+| 3 | Simulation results | AI learns to **verify** | ✅ 132 |
+| 4 | Structured annotations | AI learns to **understand** | ✅ 132 |
 | 5 | Equivalence & optimization pairs | AI learns to **improve** | 📋 Next phase |
 | 6 | Target→Circuit mappings | AI learns to **design** | 📋 Next phase |
 

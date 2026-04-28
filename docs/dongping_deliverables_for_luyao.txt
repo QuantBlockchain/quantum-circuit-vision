@@ -254,3 +254,48 @@ Current state:
   - Verification scripts and prompt templates
 
 ================================================================================
+
+================================================================================
+5. Dataset Completion Update (2026-04-29 00:30)
+================================================================================
+
+Parts completed tonight and pushed to GitHub:
+
+  Part 3 — Simulation Results (dataset/results/)
+    132 JSON files, each containing:
+    - state_vector (real + imaginary components)
+    - qubit count, circuit depth
+    - number of nonzero amplitudes
+    All 132 circuits verified executable on Braket LocalSimulator.
+
+  Part 4 — Structured Annotations (dataset/annotations/)
+    132 JSON files, each containing:
+    - id, category, difficulty
+    - qubits, depth
+    - description_en, description_cn (bilingual)
+    - blockchain_relevance tag (null / "direct" / "extended_protocol" / "btc_security")
+    - state_vector_dim, nonzero_amplitudes
+
+  Part 6d — Failure Cases (dataset/failures/)
+    27 annotated failure cases + _summary.json
+    Each file contains: model, mode, circuit, error_type, fidelity, error_detail
+    Distribution:
+      By model: Haiku 18, Opus 5, Sonnet 4
+      By type: API errors 7, Low fidelity 20
+      By difficulty: Basic 2, Intermediate 11, Advanced 12, Blockchain 2
+
+  Repository reorganized:
+    All data now under dataset/ (556 files):
+      dataset/circuits/      132 PNG
+      dataset/ground_truth/  132 .py
+      dataset/results/       132 JSON
+      dataset/annotations/   132 JSON
+      dataset/failures/       28 JSON
+
+For the paper, you can now write:
+  "We release QCV-Dataset, comprising 132 quantum circuits with diagram images,
+   executable Braket SDK code, simulation results (state vectors and unitary
+   verification), bilingual structured annotations, and 27 annotated failure
+   cases spanning three models and four error categories."
+
+================================================================================
