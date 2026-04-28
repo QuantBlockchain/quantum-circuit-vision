@@ -1,0 +1,10 @@
+{
+  "id": "failure_023",
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "adv_04_qaoa",
+  "error_type": "low_fidelity",
+  "fidelity": 0.5,
+  "error_detail": "Partial implementation",
+  "error_category_description": "Code executes but produces wrong quantum state (fidelity < 0.99)"
+}

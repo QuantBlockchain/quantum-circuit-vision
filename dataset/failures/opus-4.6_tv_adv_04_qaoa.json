@@ -1,0 +1,10 @@
+{
+  "id": "failure_014",
+  "model": "opus-4.6",
+  "mode": "tv",
+  "circuit": "adv_04_qaoa",
+  "error_type": "low_fidelity",
+  "fidelity": 0.25,
+  "error_detail": "Incorrect QAOA cost layer implementation",
+  "error_category_description": "Code executes but produces wrong quantum state (fidelity < 0.99)"
+}

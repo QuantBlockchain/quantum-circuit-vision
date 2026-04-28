@@ -1,0 +1,10 @@
+{
+  "id": "failure_019",
+  "model": "haiku-4.5",
+  "mode": "bv",
+  "circuit": "adv_05_qwalk",
+  "error_type": "low_fidelity",
+  "fidelity": 0.75,
+  "error_detail": "Incomplete walk step",
+  "error_category_description": "Code executes but produces wrong quantum state (fidelity < 0.99)"
+}

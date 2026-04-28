@@ -1,0 +1,10 @@
+{
+  "id": "failure_006",
+  "model": "sonnet-4.6",
+  "mode": "tv",
+  "circuit": "inter_10_phase_est",
+  "error_type": "api_error",
+  "fidelity": null,
+  "error_detail": "'Circuit' object has no attribute 'crz'",
+  "error_category_description": "Model uses non-existent SDK API (e.g., .crz(), .toffoli(), .cx(), .measure_all())"
+}

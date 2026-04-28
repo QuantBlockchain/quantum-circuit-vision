@@ -1,0 +1,10 @@
+{
+  "id": "failure_025",
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "adv_06_bv",
+  "error_type": "low_fidelity",
+  "fidelity": 0.25,
+  "error_detail": "Wrong oracle",
+  "error_category_description": "Code executes but produces wrong quantum state (fidelity < 0.99)"
+}

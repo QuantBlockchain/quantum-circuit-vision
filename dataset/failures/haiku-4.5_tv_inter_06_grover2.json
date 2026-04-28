@@ -1,0 +1,10 @@
+{
+  "id": "failure_013",
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "inter_06_grover2",
+  "error_type": "low_fidelity",
+  "fidelity": 0.5,
+  "error_detail": "Incomplete Grover iteration",
+  "error_category_description": "Code executes but produces wrong quantum state (fidelity < 0.99)"
+}

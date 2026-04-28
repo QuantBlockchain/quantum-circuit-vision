@@ -1,0 +1,10 @@
+{
+  "id": "failure_002",
+  "model": "haiku-4.5",
+  "mode": "bv",
+  "circuit": "demo_05_toffoli",
+  "error_type": "api_error",
+  "fidelity": null,
+  "error_detail": "'Circuit' object has no attribute 'toffoli'",
+  "error_category_description": "Model uses non-existent SDK API (e.g., .crz(), .toffoli(), .cx(), .measure_all())"
+}

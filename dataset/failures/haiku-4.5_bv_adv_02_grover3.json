@@ -1,0 +1,10 @@
+{
+  "id": "failure_017",
+  "model": "haiku-4.5",
+  "mode": "bv",
+  "circuit": "adv_02_grover3",
+  "error_type": "low_fidelity",
+  "fidelity": 0.088,
+  "error_detail": "Missing oracle or diffusion",
+  "error_category_description": "Code executes but produces wrong quantum state (fidelity < 0.99)"
+}

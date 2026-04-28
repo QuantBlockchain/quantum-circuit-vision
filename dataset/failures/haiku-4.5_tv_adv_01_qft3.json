@@ -1,0 +1,10 @@
+{
+  "id": "failure_021",
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "adv_01_qft3",
+  "error_type": "api_error",
+  "fidelity": null,
+  "error_detail": "'Circuit' object has no attribute 'measure_all'",
+  "error_category_description": "Model uses non-existent SDK API (e.g., .crz(), .toffoli(), .cx(), .measure_all())"
+}

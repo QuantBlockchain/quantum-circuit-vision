@@ -1,0 +1,10 @@
+{
+  "id": "failure_011",
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "inter_01_swap_decomp",
+  "error_type": "low_fidelity",
+  "fidelity": 0.25,
+  "error_detail": "Incorrect CNOT ordering",
+  "error_category_description": "Code executes but produces wrong quantum state (fidelity < 0.99)"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "failure_010",
+  "model": "haiku-4.5",
+  "mode": "bv",
+  "circuit": "inter_07_param_rot",
+  "error_type": "low_fidelity",
+  "fidelity": 0.25,
+  "error_detail": "Wrong rotation angles",
+  "error_category_description": "Code executes but produces wrong quantum state (fidelity < 0.99)"
+}

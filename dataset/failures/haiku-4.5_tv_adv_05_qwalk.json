@@ -1,0 +1,10 @@
+{
+  "id": "failure_024",
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "adv_05_qwalk",
+  "error_type": "low_fidelity",
+  "fidelity": 0.75,
+  "error_detail": "Incomplete",
+  "error_category_description": "Code executes but produces wrong quantum state (fidelity < 0.99)"
+}

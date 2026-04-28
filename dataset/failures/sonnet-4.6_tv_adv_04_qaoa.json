@@ -1,0 +1,10 @@
+{
+  "id": "failure_016",
+  "model": "sonnet-4.6",
+  "mode": "tv",
+  "circuit": "adv_04_qaoa",
+  "error_type": "low_fidelity",
+  "fidelity": 0.153,
+  "error_detail": "Wrong mixer/cost layer ordering",
+  "error_category_description": "Code executes but produces wrong quantum state (fidelity < 0.99)"
+}

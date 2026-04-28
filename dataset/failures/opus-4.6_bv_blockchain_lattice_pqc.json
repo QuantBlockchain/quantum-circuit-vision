@@ -1,0 +1,10 @@
+{
+  "id": "failure_026",
+  "model": "opus-4.6",
+  "mode": "bv",
+  "circuit": "blockchain_lattice_pqc",
+  "error_type": "low_fidelity",
+  "fidelity": 0.073,
+  "error_detail": "Misinterpreted parallel CNOT-Rz-H layers as sequential cascade",
+  "error_category_description": "Code executes but produces wrong quantum state (fidelity < 0.99)"
+}

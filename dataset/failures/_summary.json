@@ -1,0 +1,18 @@
+{
+  "total_failures": 27,
+  "by_model": {
+    "haiku-4.5": 18,
+    "opus-4.6": 5,
+    "sonnet-4.6": 4
+  },
+  "by_error_type": {
+    "api_error": 7,
+    "low_fidelity": 20
+  },
+  "by_difficulty": {
+    "basic": 2,
+    "intermediate": 11,
+    "advanced": 12,
+    "blockchain": 2
+  }
+}
