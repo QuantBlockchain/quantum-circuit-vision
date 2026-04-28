@@ -483,6 +483,39 @@ Our results establish that multimodal AI can reliably interpret quantum circuit 
 
 \textbf{Level 3 --- Invention (long-term):} AI designs novel quantum circuits from specifications. Given a computational target (e.g., ``design a 6-qubit circuit that implements quantum secret sharing with minimal depth''), AI generates, verifies, and iterates on circuit designs autonomously. This is the quantum analog of de novo protein design~\cite{jumper2021alphafold}---moving from understanding known structures to inventing new ones. Recent demonstrations of quantum advantage in learning~\cite{huang2022quantum} and practical quantum simulation~\cite{daley2022practical} suggest that the circuits AI must learn to design are becoming increasingly complex and consequential.
 
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[node distance=0.4cm, every node/.style={font=\small},
+  box/.style={draw, rounded corners, minimum height=0.7cm, minimum width=2.4cm, align=center, fill=blue!8},
+  dbox/.style={draw, rounded corners, minimum height=0.7cm, minimum width=2.4cm, align=center, fill=orange!10},
+  vbox/.style={draw, rounded corners, minimum height=0.7cm, minimum width=2.4cm, align=center, fill=green!8},
+  arr/.style={-{Stealth[length=2mm]}, thick},
+  darr/.style={-{Stealth[length=2mm]}, thick, dashed}]
+% Nodes
+\node[box] (user) at (0,5.5) {User Target\\[-2pt]\scriptsize``Design 5q QKD''};
+\node[dbox] (rag) at (0,4.0) {RAG Retrieval\\[-2pt]\scriptsize QCV-Dataset};
+\node[box] (llm) at (0,2.5) {MMLLM Agent\\[-2pt]\scriptsize Generate Circuit};
+\node[vbox] (verify) at (0,1.0) {Verification\\[-2pt]\scriptsize Syntax$\to$Exec$\to$Fidelity};
+\node[draw, rounded corners, fill=red!10, minimum height=0.6cm, minimum width=1.5cm] (fail) at (2.8,1.8) {\scriptsize Fail + Error};
+\node[draw, rounded corners, fill=green!20, minimum height=0.6cm, minimum width=1.5cm] (pass) at (0,-0.3) {\scriptsize Pass $\to$ Output};
+% Arrows
+\draw[arr] (user) -- (rag);
+\draw[arr] (rag) -- node[right, font=\scriptsize] {similar circuits} (llm);
+\draw[arr] (llm) -- node[right, font=\scriptsize] {candidate code} (verify);
+\draw[arr] (verify) -- (pass);
+\draw[arr] (verify.east) -- (fail.south west);
+\draw[darr] (fail.north) |- node[above, font=\scriptsize] {feedback loop} (llm.east);
+% Labels
+\node[font=\scriptsize\itshape, gray, anchor=west] at (-3.5,4.0) {Knowledge};
+\node[font=\scriptsize\itshape, gray, anchor=west] at (-3.5,2.5) {Generation};
+\node[font=\scriptsize\itshape, gray, anchor=west] at (-3.5,1.0) {Validation};
+\end{tikzpicture}
+\caption{Proposed Hybrid Agent architecture for autonomous quantum circuit design. QCV-Dataset serves as the RAG knowledge base; the verification pipeline provides the feedback signal for iterative refinement. This closed-loop system enables AI to design, verify, and improve circuits autonomously.}
+\label{fig:agent}
+\end{figure}
+
+We propose a \textbf{Hybrid Agent} architecture (Fig.~\ref{fig:agent}) as the most practical path to autonomous circuit design. The agent uses QCV-Dataset in three ways: (1)~as a \emph{RAG knowledge base}---retrieving similar circuits and target descriptions to guide generation; (2)~as a \emph{verification oracle}---the unitary fidelity pipeline provides pass/fail feedback; and (3)~as \emph{negative examples}---the 27 annotated failure cases teach the agent which error patterns to avoid. This closed-loop design-verify-refine cycle mirrors how human quantum engineers work, but operates at machine speed.
+
 The CoT sensitivity window finding has implications beyond quantum circuits: it suggests a general principle that chain-of-thought reasoning strategies must be calibrated to model capability, and that one-size-fits-all prompting is suboptimal. This warrants investigation across other AI-for-Science domains.
 
 All data and code are publicly available at \url{https://github.com/QuantBlockchain/quantum-circuit-vision}.
