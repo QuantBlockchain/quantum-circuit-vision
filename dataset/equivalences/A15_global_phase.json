@@ -1,0 +1,18 @@
+{
+  "id": "A15_global_phase",
+  "original": {
+    "depth": 5,
+    "gate_count": 5,
+    "cx_count": 1
+  },
+  "optimized": {
+    "depth": 3,
+    "gate_count": 3,
+    "cx_count": 1
+  },
+  "reduction": {
+    "depth": 2,
+    "gates": 2
+  },
+  "note": "Transpiled with optimization_level=3, basis_gates=[cx, u3]"
+}

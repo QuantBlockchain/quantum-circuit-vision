@@ -1,0 +1,18 @@
+{
+  "id": "blockchain_coin_flip",
+  "original": {
+    "depth": 6,
+    "gate_count": 7,
+    "cx_count": 3
+  },
+  "optimized": {
+    "depth": 5,
+    "gate_count": 6,
+    "cx_count": 3
+  },
+  "reduction": {
+    "depth": 1,
+    "gates": 1
+  },
+  "note": "Transpiled with optimization_level=3, basis_gates=[cx, u3]"
+}

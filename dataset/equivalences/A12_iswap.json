@@ -1,0 +1,18 @@
+{
+  "id": "A12_iswap",
+  "original": {
+    "depth": 5,
+    "gate_count": 6,
+    "cx_count": 2
+  },
+  "optimized": {
+    "depth": 4,
+    "gate_count": 5,
+    "cx_count": 2
+  },
+  "reduction": {
+    "depth": 1,
+    "gates": 1
+  },
+  "note": "Transpiled with optimization_level=3, basis_gates=[cx, u3]"
+}

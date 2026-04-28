@@ -1,0 +1,18 @@
+{
+  "id": "H06_qft3_no_swap",
+  "original": {
+    "depth": 5,
+    "gate_count": 6,
+    "cx_count": 0
+  },
+  "optimized": {
+    "depth": 13,
+    "gate_count": 18,
+    "cx_count": 6
+  },
+  "reduction": {
+    "depth": -8,
+    "gates": -12
+  },
+  "note": "Transpiled with optimization_level=3, basis_gates=[cx, u3]"
+}

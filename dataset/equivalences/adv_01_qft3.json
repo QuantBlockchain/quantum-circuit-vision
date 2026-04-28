@@ -1,0 +1,18 @@
+{
+  "id": "adv_01_qft3",
+  "original": {
+    "depth": 6,
+    "gate_count": 7,
+    "cx_count": 0
+  },
+  "optimized": {
+    "depth": 13,
+    "gate_count": 18,
+    "cx_count": 6
+  },
+  "reduction": {
+    "depth": -7,
+    "gates": -11
+  },
+  "note": "Transpiled with optimization_level=3, basis_gates=[cx, u3]"
+}

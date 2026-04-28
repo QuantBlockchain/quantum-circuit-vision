@@ -1,0 +1,18 @@
+{
+  "id": "A10_controlled_rx",
+  "original": {
+    "depth": 4,
+    "gate_count": 4,
+    "cx_count": 2
+  },
+  "optimized": {
+    "depth": 0,
+    "gate_count": 0,
+    "cx_count": 0
+  },
+  "reduction": {
+    "depth": 4,
+    "gates": 4
+  },
+  "note": "Transpiled with optimization_level=3, basis_gates=[cx, u3]"
+}

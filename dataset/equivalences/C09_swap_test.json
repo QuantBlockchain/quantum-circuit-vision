@@ -1,0 +1,18 @@
+{
+  "id": "C09_swap_test",
+  "original": {
+    "depth": 3,
+    "gate_count": 3,
+    "cx_count": 0
+  },
+  "optimized": {
+    "depth": 12,
+    "gate_count": 19,
+    "cx_count": 7
+  },
+  "reduction": {
+    "depth": -9,
+    "gates": -16
+  },
+  "note": "Transpiled with optimization_level=3, basis_gates=[cx, u3]"
+}

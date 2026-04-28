@@ -1,0 +1,18 @@
+{
+  "id": "C08_hhl_3",
+  "original": {
+    "depth": 6,
+    "gate_count": 8,
+    "cx_count": 2
+  },
+  "optimized": {
+    "depth": 8,
+    "gate_count": 11,
+    "cx_count": 4
+  },
+  "reduction": {
+    "depth": -2,
+    "gates": -3
+  },
+  "note": "Transpiled with optimization_level=3, basis_gates=[cx, u3]"
+}

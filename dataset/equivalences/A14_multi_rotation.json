@@ -1,0 +1,18 @@
+{
+  "id": "A14_multi_rotation",
+  "original": {
+    "depth": 4,
+    "gate_count": 4,
+    "cx_count": 1
+  },
+  "optimized": {
+    "depth": 2,
+    "gate_count": 2,
+    "cx_count": 1
+  },
+  "reduction": {
+    "depth": 2,
+    "gates": 2
+  },
+  "note": "Transpiled with optimization_level=3, basis_gates=[cx, u3]"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "C14_quantum_adder_4",
+  "original": {
+    "depth": 3,
+    "gate_count": 3,
+    "cx_count": 1
+  },
+  "optimized": {
+    "depth": 20,
+    "gate_count": 26,
+    "cx_count": 11
+  },
+  "reduction": {
+    "depth": -17,
+    "gates": -23
+  },
+  "note": "Transpiled with optimization_level=3, basis_gates=[cx, u3]"
+}
