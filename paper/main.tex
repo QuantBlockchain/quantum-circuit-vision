@@ -108,8 +108,6 @@ Our results show that Claude Opus 4.6 under BV achieves a weighted score of 97.0
 \label{fig:workflow}
 \end{figure*}
 
-Following the approach established in VGV~\cite{wong2024vgv}, we design a difficulty-graded benchmark, define two visual prompting modes, and build an end-to-end verification pipeline tailored to quantum circuits.
-
 \subsection{Benchmark Design}
 
 We construct QCV-Dataset, a multimodal quantum circuit dataset of 132 circuits across 13 categories, with seven data modalities per circuit. For the evaluation reported in this paper, we select a representative subset of 21 circuits across three difficulty levels, inspired by standard quantum computing curricula~\cite{nielsen2010quantum}. All circuit diagrams are generated programmatically using Qiskit's \texttt{matplotlib} drawer~\cite{qiskit}, ensuring reproducible and unambiguous visual inputs. Ground truth implementations are provided in both Amazon Braket SDK~\cite{braket} and Qiskit.
@@ -191,6 +189,8 @@ No. & Difficulty & Circuit & Qubits \\
 
 \section{Evaluation Methodology}
 
+Following the approach established in VGV~\cite{wong2024vgv}, we define two visual prompting modes and build an end-to-end verification pipeline tailored to quantum circuits.
+
 \subsection{Visual Modes}
 
 We evaluate two visual prompting strategies adapted from VGV~\cite{wong2024vgv}:
@@ -264,7 +264,7 @@ Claude Haiku 4.5  & Lightweight & 0.40$\times$ \\
 \end{tabular}
 \end{table}
 
-All generated code is verified on Amazon Braket's LocalSimulator (a free, local state-vector simulator) using the unitary fidelity pipeline described in Section~II-C. No cloud quantum hardware is used.
+All generated code is verified on Amazon Braket's LocalSimulator (a free, local state-vector simulator) using the unitary fidelity pipeline described in Section~III. No cloud quantum hardware is used.
 
 \subsection{Results}
 
@@ -475,13 +475,15 @@ The 11-circuit blockchain case study, combined with the 21-circuit main benchmar
 
 \section{Discussion and Future Work}
 
-This paper presents QCV-Dataset, the first multimodal quantum circuit dataset, and a systematic evaluation of MMLLMs for generating executable quantum code from circuit diagram images. QCV-Dataset comprises 132 circuits across 13 categories (1--10 qubits) with seven modalities per circuit: diagram images, dual-SDK code (Braket and Qiskit), simulation results, bilingual annotations, natural language target descriptions, and optimization equivalence pairs.
+Our results establish that multimodal AI can reliably interpret quantum circuit diagrams today (97\% accuracy). This positions QCV-Dataset as the foundation for a three-level research trajectory toward autonomous quantum circuit design:
 
-Our evaluation on 21 circuits demonstrates that MMLLMs can reliably interpret quantum circuit diagrams: Claude Opus 4.6 achieves a 97.0\% weighted score under BV, failing only on an SDK-specific API naming issue. The most significant finding is a \emph{CoT sensitivity window}---TV's effectiveness depends on the interaction between model capability and task difficulty. TV helps weaker models on simpler tasks and stronger models on intermediate tasks, but degrades performance on advanced circuits ($-$17pp for Opus and Haiku). The mid-tier model (Sonnet) is entirely unaffected by TV at all difficulty levels, suggesting that CoT prompting only impacts performance near a model's capability boundary.
+\textbf{Level 1 --- Understanding (this paper):} AI reads circuit diagrams and generates verified executable code. We have demonstrated feasibility, identified the CoT sensitivity window, and released a 132-circuit multimodal dataset. The immediate next step is expanding evaluation to non-Claude models (DeepSeek, Qwen) and conducting $n=10$ repetitions for statistical rigor.
 
-Beyond the benchmark, QCV-Dataset has practical implications for quantum-safe blockchain systems. We include 31 blockchain-relevant circuits covering quantum threats (Shor vs.\ ECDSA, Grover vs.\ SHA-256/AES, PoW quantum speedup), post-quantum defenses (Kyber, Dilithium, SPHINCS+, Lamport signatures), and quantum-enhanced infrastructure (QKD networks, random beacons, quantum timestamps, Merkle tree verification). Validation on 11 blockchain circuits achieves 9/11 pass rate, with the 8-qubit consensus protocol passing while 5-qubit and 7-qubit irregular circuits fail---revealing that structural regularity, not qubit count, determines success.
+\textbf{Level 2 --- Optimization (near-term):} AI improves existing circuits. Using the equivalence pairs and target descriptions in QCV-Dataset, future systems can learn to suggest more efficient gate decompositions, reduce circuit depth, or adapt circuits to hardware constraints---functioning as a quantum protocol design co-pilot.
 
-Looking forward, QCV-Dataset's target descriptions and equivalence pairs lay the foundation for a longer-term goal: enabling AI systems to not merely translate but \emph{discover} novel quantum circuits---analogous to how AlphaFold~\cite{jumper2021alphafold} moved from understanding known protein structures to predicting unknown ones. Just as AlphaFold required comprehensive structural databases (PDB) before achieving its breakthrough, QCV-Dataset provides the multimodal training data that future quantum circuit discovery systems will require. The path from circuit understanding to circuit invention mirrors the trajectory from sequence-to-structure prediction to de novo protein design.
+\textbf{Level 3 --- Invention (long-term):} AI designs novel quantum circuits from specifications. Given a computational target (e.g., ``design a 6-qubit circuit that implements quantum secret sharing with minimal depth''), AI generates, verifies, and iterates on circuit designs autonomously. This is the quantum analog of de novo protein design---moving from understanding known structures to inventing new ones.
+
+The CoT sensitivity window finding has implications beyond quantum circuits: it suggests a general principle that chain-of-thought reasoning strategies must be calibrated to model capability, and that one-size-fits-all prompting is suboptimal. This warrants investigation across other AI-for-Science domains.
 
 All data and code are publicly available at \url{https://github.com/QuantBlockchain/quantum-circuit-vision}.
 
