@@ -1,0 +1,9 @@
+{
+  "model": "sonnet-4.6",
+  "mode": "tv",
+  "circuit": "G05_quantum_auction_4",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: name 'ccnot' is not defined",
+  "id": "failure_106"
+}

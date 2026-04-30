@@ -1,0 +1,9 @@
+{
+  "model": "opus-4.6",
+  "mode": "tv",
+  "circuit": "inter_10_phase_est",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: 'Circuit' object has no attribute 'crz'",
+  "id": "failure_060"
+}

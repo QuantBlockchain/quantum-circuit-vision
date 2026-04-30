@@ -9,5 +9,46 @@
   "description_cn": "具有多种旋转的电路表达能力测试",
   "blockchain_relevance": null,
   "state_vector_dim": 8,
-  "nonzero_amplitudes": 8
+  "nonzero_amplitudes": 8,
+  "experiment_results": {
+    "claude-opus-4.6": {
+      "bv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.5,
+        "error": "fidelity=0.5000"
+      }
+    },
+    "claude-sonnet-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.25,
+        "error": "fidelity=0.2500"
+      },
+      "tv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      }
+    },
+    "claude-haiku-4.5": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.25,
+        "error": "fidelity=0.2500"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: Operator qubit count 2 must be equal to size of target qubit set QubitSet([Qubit(1)])"
+      }
+    },
+    "best_pass_rate": "2/6",
+    "all_pass": false,
+    "all_fail": false
+  }
 }

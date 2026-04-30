@@ -9,5 +9,46 @@
   "description_cn": "工作量证明随机数搜索的Grover加速",
   "blockchain_relevance": "btc_security",
   "state_vector_dim": 16,
-  "nonzero_amplitudes": 16
+  "nonzero_amplitudes": 16,
+  "experiment_results": {
+    "claude-opus-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.5,
+        "error": "fidelity=0.5000"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0625,
+        "error": "fidelity=0.0625"
+      }
+    },
+    "claude-sonnet-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "fidelity=0.0000"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "fidelity=0.0000"
+      }
+    },
+    "claude-haiku-4.5": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0442,
+        "error": "fidelity=0.0442"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0442,
+        "error": "fidelity=0.0442"
+      }
+    },
+    "best_pass_rate": "0/6",
+    "all_pass": false,
+    "all_fail": true
+  }
 }

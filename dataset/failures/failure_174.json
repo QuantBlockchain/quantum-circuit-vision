@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "bv",
+  "circuit": "I05_quantum_random_beacon_6",
+  "error_type": "low_fidelity",
+  "fidelity": 0.2261,
+  "error_detail": "fidelity=0.2261",
+  "id": "failure_174"
+}

@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "bv",
+  "circuit": "adv_04_qaoa",
+  "error_type": "low_fidelity",
+  "fidelity": 0.0765,
+  "error_detail": "fidelity=0.0765",
+  "id": "failure_182"
+}

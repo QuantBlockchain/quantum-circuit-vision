@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "bv",
+  "circuit": "D10_strongly_entangling_3",
+  "error_type": "low_fidelity",
+  "fidelity": 0.25,
+  "error_detail": "fidelity=0.2500",
+  "id": "failure_150"
+}

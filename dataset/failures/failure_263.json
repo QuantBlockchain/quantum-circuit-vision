@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "demo_03_bell",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: name 'h' is not defined",
+  "id": "failure_263"
+}

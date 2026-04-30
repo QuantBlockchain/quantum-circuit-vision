@@ -1,0 +1,9 @@
+{
+  "model": "sonnet-4.6",
+  "mode": "tv",
+  "circuit": "I02_grover_sha256_4",
+  "error_type": "low_fidelity",
+  "fidelity": 0.25,
+  "error_detail": "fidelity=0.2500",
+  "id": "failure_111"
+}

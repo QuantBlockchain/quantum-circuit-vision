@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "D04_qaoa_2layer",
+  "error_type": "low_fidelity",
+  "fidelity": 0.1358,
+  "error_detail": "fidelity=0.1358",
+  "id": "failure_221"
+}

@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "C04_grover_4",
+  "error_type": "low_fidelity",
+  "fidelity": 0.0,
+  "error_detail": "fidelity=0.0000",
+  "id": "failure_211"
+}

@@ -1,6 +1,6 @@
 # QCV-Dataset
 
-**132 Quantum Circuits · 5 Modalities · Bilingual Annotations**
+**132 Quantum Circuits · 5 Core Modalities · 792 Experiment Results · Bilingual Annotations**
 
 The first multimodal quantum circuit dataset for training and evaluating AI systems on quantum circuit understanding, code generation, and verification.
 
@@ -8,11 +8,17 @@ The first multimodal quantum circuit dataset for training and evaluating AI syst
 
 ```
 dataset/
-├── circuits/        132 circuit diagram images (PNG, Qiskit-generated)
-├── ground_truth/    132 executable ground truth code (Amazon Braket SDK, .py)
-├── results/         132 simulation results (JSON, state vectors from LocalSimulator)
-├── annotations/     132 structured annotations (JSON, bilingual EN/CN)
-└── failures/         27 annotated failure cases + summary (JSON)
+├── circuits/            132 circuit diagram images (PNG, Qiskit-generated)
+├── braket_code/         132 executable ground truth code (Amazon Braket SDK, .py)
+├── simulations/         132 simulation results (JSON, state vectors from LocalSimulator)
+├── annotations/         132 structured annotations (JSON, bilingual EN/CN, + experiment results)
+├── failures/            annotated failure cases + summary (JSON)
+├── qiskit_code/         132 Qiskit implementations (.py)
+├── targets/             132 target descriptions (JSON)
+├── equivalences/         12 circuit equivalence pairs (JSON)
+├── experiment_results/  792 raw model outputs + verification CSV
+├── statistics.json      dataset and experiment statistics
+└── README.md            this file
 ```
 
 ## Quick Load
@@ -116,3 +122,42 @@ dataset = load_dataset()  # returns list of 132 circuit entries
 ## License
 
 MIT — see [LICENSE](../LICENSE)
+
+## Experiment Results (April 2026)
+
+We evaluated 3 models × 2 prompting modes × 132 circuits = **792 invocations**.
+
+| Model | BV | TV |
+|:---|:---:|:---:|
+| Claude Opus 4.6 | **78%** | 75% |
+| Claude Sonnet 4.6 | **77%** | 75% |
+| Claude Haiku 4.5 | 43% | **46%** |
+
+- **45 circuits** passed all 6 model–mode combinations
+- **18 circuits** failed all 6 combinations
+- Verification: unitary matrix fidelity ≥ 0.99 on Braket LocalSimulator
+
+### Loading Experiment Results
+
+```python
+from scripts.load_dataset import load_dataset
+
+dataset = load_dataset()
+for entry in dataset:
+    ann = entry["annotation"]
+    if "experiment_results" in ann:
+        opus_bv = ann["experiment_results"]["claude-opus-4.6"]["bv"]
+        print(f"{entry['id']}: pass={opus_bv['pass']}, fidelity={opus_bv['fidelity']}")
+```
+
+### Raw Model Outputs
+
+The `experiment_results/` directory contains:
+- `verification_results.csv` — 792-row summary (circuit, model, mode, pass, fidelity, error)
+- `raw/` — original model outputs from `kiro-cli` non-interactive mode
+
+### Key Findings
+
+1. **Structural complexity, not qubit count, determines success.** 8-qubit regular circuits pass; 5-qubit irregular circuits fail.
+2. **Chain-of-thought (TV) provides no benefit for strong models** (Δ = −3 to −4) but modest improvement for the weakest model (Δ = +5).
+3. **18 "impossible" circuits** are predominantly complex algorithms (Shor, HHL, QAOA), error correction (surface code), and cryptographic protocols.

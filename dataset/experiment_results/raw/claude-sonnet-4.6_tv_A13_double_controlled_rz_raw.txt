@@ -1,0 +1,70 @@
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+
+[38;5;252m[0m[?25l[?25l[0m[0mReading images: [38;5;141m/home/ubuntu/qcv-experiments/circuits/A13_double_controlled_rz.png
+[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read image
+[38;5;244m - Completed in 0.0s[0m
+
+[0m[0m
+[?25l[0m[38;5;141m> [0m[38;5;252m[1m## 分析[0m[0m
+[0m[0m
+[1m1. Qubit 线[22m[0m[0m
+共 3 条，编号为 [38;5;10mq0[0m、[38;5;10mq1[0m、[38;5;10mq2[0m。[0m[0m
+[0m[0m
+[1m2. 从左到右的量子门（共 8 个）[22m[0m[0m
+[0m[0m
+| 顺序 | 门 | 参数 |[0m[0m
+|------|-----|------|[0m[0m
+| 1 | CNOT | — |[0m[0m
+| 2 | Rz | −π/8 |[0m[0m
+| 3 | CNOT | — |[0m[0m
+| 4 | Rz | π/8 |[0m[0m
+| 5 | CNOT | — |[0m[0m
+| 6 | Rz | −π/8 |[0m[0m
+| 7 | CNOT | — |[0m[0m
+| 8 | Rz | π/8 |[0m[0m
+[0m[0m
+[1m3. 控制位分析[22m[0m[0m
+[0m[0m
+| 门 | 控制位 | 目标位 |[0m[0m
+|----|--------|--------|[0m[0m
+| CNOT #1 | q1 | q2 |[0m[0m
+| CNOT #2 | q0 | q2 |[0m[0m
+| CNOT #3 | q1 | q2 |[0m[0m
+| CNOT #4 | q0 | q2 |[0m[0m
+[0m[0m
+Rz 门均无控制位，直接作用于 q2。[0m[0m
+[0m[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[0m[0m
+[0m[0m
+[38;5;252m[1m## Amazon Braket SDK 代码[0m[0m
+[0m[0m
+[1mpython
+[0m[38;5;10mfrom braket.circuits import Circuit
+import numpy as np
+
+circ = Circuit()
+
+circ.cnot(1, 2)
+circ.rz(2, -np.pi / 8)
+circ.cnot(0, 2)
+circ.rz(2, np.pi / 8)
+circ.cnot(1, 2)
+circ.rz(2, -np.pi / 8)
+circ.cnot(0, 2)
+circ.rz(2, np.pi / 8)
+
+print(circ)
+[0m[0m[0m
+[0m[0m
+这是标准的 [1mdouble-controlled Rz（CCRz）分解[22m，将 CCRz(π/4) 分解为 4 个 CNOT + 4 个 Rz 门，控制位为 q0 和 q1，目标位为 q2。[0m[0m
+[38;5;8m
+ ▸ Credits: 0.17 • Time: 10s
+
+[0m[1G[0m[0m[?25h

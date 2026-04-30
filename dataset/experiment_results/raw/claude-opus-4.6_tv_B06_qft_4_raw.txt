@@ -1,0 +1,95 @@
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+
+[38;5;252m[0m[?25l[38;5;141m> [0m[0m[0m
+[0m[0m
+Let me first look at the circuit diagram.[0m[0m
+[?25l[0m[0mReading images: [38;5;141m/home/ubuntu/qcv-experiments/circuits/B06_qft_4.png
+[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read image
+[38;5;244m - Completed in 0.0s[0m
+
+[0m[0m
+[?25l[0m[38;5;141m> [0m[0m[0m
+[0m[0m
+[38;5;252m[1m## 量子电路分析[0m[0m
+[0m[0m
+[38;5;252m[1m### 1. Qubit 线[0m[0m
+[0m[0m
+共 [1m4 条[22m qubit 线，编号分别为：**q₀, q₁, q₂, q₃**（从上到下）。[0m[0m
+[0m[0m
+[38;5;252m[1m### 2. 从左到右依次的量子门[0m[0m
+[0m[0m
+这是一个经典的 [1m4-qubit QFT（量子傅里叶变换）[22m 电路，从左到右依次为：[0m[0m
+[0m[0m
+| 步骤 | 门 | 作用线 |[0m[0m
+|------|-----|--------|[0m[0m
+| 1 | H | q₀ |[0m[0m
+| 2 | Controlled-P(π/2) | 控制: q₁, 目标: q₀ |[0m[0m
+| 3 | Controlled-P(π/4) | 控制: q₂, 目标: q₀ |[0m[0m
+| 4 | Controlled-P(π/8) | 控制: q₃, 目标: q₀ |[0m[0m
+| 5 | H | q₁ |[0m[0m
+| 6 | Controlled-P(π/2) | 控制: q₂, 目标: q₁ |[0m[0m
+| 7 | Controlled-P(π/4) | 控制: q₃, 目标: q₁ |[0m[0m
+| 8 | H | q₂ |[0m[0m
+| 9 | Controlled-P(π/2) | 控制: q₃, 目标: q₂ |[0m[0m
+| 10 | H | q₃ |[0m[0m
+| 11 | SWAP | q₀ ↔ q₃ |[0m[0m
+| 12 | SWAP | q₁ ↔ q₂ |[0m[0m
+[0m[0m
+[38;5;252m[1m### 3. 控制门汇总[0m[0m
+[0m[0m
+所有 Controlled-Phase 门都有控制位：[0m[0m
+[0m[0m
+- **CP(π/2)**：控制 q₁ → 目标 q₀[0m[0m
+- **CP(π/4)**：控制 q₂ → 目标 q₀[0m[0m
+- **CP(π/8)**：控制 q₃ → 目标 q₀[0m[0m
+- **CP(π/2)**：控制 q₂ → 目标 q₁[0m[0m
+- **CP(π/4)**：控制 q₃ → 目标 q₁[0m[0m
+- **CP(π/2)**：控制 q₃ → 目标 q₂[0m[0m
+[0m[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[0m[0m
+[0m[0m
+[38;5;252m[1m## Amazon Braket SDK 代码[0m[0m
+[0m[0m
+[1mpython
+[0m[38;5;10mimport math
+from braket.circuits import Circuit
+
+circ = Circuit()
+
+# QFT on q0
+circ.h(0)
+circ.cphaseshift(1, 0, math.pi / 2)
+circ.cphaseshift(2, 0, math.pi / 4)
+circ.cphaseshift(3, 0, math.pi / 8)
+
+# QFT on q1
+circ.h(1)
+circ.cphaseshift(2, 1, math.pi / 2)
+circ.cphaseshift(3, 1, math.pi / 4)
+
+# QFT on q2
+circ.h(2)
+circ.cphaseshift(3, 2, math.pi / 2)
+
+# QFT on q3
+circ.h(3)
+
+# Bit-reversal swaps
+circ.swap(0, 3)
+circ.swap(1, 2)
+
+print(circ)
+[0m[0m[0m
+[0m[0m
+[38;5;10mcphaseshift(control, target, angle)[0m 对应图中的 Controlled-P 门，最后两个 SWAP 门完成 QFT 所需的比特序反转。[0m[0m
+[38;5;8m
+ ▸ Credits: 0.39 • Time: 16s
+
+[0m[1G[0m[0m[?25h

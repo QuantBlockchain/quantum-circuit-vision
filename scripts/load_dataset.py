@@ -17,9 +17,9 @@ def load_dataset(base_dir=None):
         base_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "dataset")
 
     circuits_dir = os.path.join(base_dir, "circuits")
-    gt_dir = os.path.join(base_dir, "ground_truth")
+    gt_dir = os.path.join(base_dir, "braket_code")
     ann_dir = os.path.join(base_dir, "annotations")
-    res_dir = os.path.join(base_dir, "results")
+    res_dir = os.path.join(base_dir, "simulations")
 
     dataset = []
     for fname in sorted(os.listdir(ann_dir)):

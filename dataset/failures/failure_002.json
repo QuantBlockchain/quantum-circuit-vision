@@ -1,0 +1,9 @@
+{
+  "model": "opus-4.6",
+  "mode": "bv",
+  "circuit": "A11_ccz",
+  "error_type": "low_fidelity",
+  "fidelity": 0.75,
+  "error_detail": "fidelity=0.7500",
+  "id": "failure_002"
+}

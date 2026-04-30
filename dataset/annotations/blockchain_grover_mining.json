@@ -9,5 +9,46 @@
   "description_cn": "模拟挖矿威胁的Grover搜索",
   "blockchain_relevance": "direct",
   "state_vector_dim": 4,
-  "nonzero_amplitudes": 1
+  "nonzero_amplitudes": 1,
+  "experiment_results": {
+    "claude-opus-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.5,
+        "error": "fidelity=0.5000"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.25,
+        "error": "fidelity=0.2500"
+      }
+    },
+    "claude-sonnet-4.6": {
+      "bv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      },
+      "tv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      }
+    },
+    "claude-haiku-4.5": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.5,
+        "error": "fidelity=0.5000"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.5,
+        "error": "fidelity=0.5000"
+      }
+    },
+    "best_pass_rate": "2/6",
+    "all_pass": false,
+    "all_fail": false
+  }
 }

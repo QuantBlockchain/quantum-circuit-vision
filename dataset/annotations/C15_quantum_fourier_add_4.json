@@ -9,5 +9,46 @@
   "description_cn": "基于QFT的傅里叶空间加法",
   "blockchain_relevance": null,
   "state_vector_dim": 16,
-  "nonzero_amplitudes": 1
+  "nonzero_amplitudes": 1,
+  "experiment_results": {
+    "claude-opus-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.7906,
+        "error": "fidelity=0.7906"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: name 'cphaseshift' is not defined"
+      }
+    },
+    "claude-sonnet-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.7906,
+        "error": "fidelity=0.7906"
+      },
+      "tv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      }
+    },
+    "claude-haiku-4.5": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "fidelity=0.0000"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: name 'cphaseshift' is not defined"
+      }
+    },
+    "best_pass_rate": "1/6",
+    "all_pass": false,
+    "all_fail": false
+  }
 }

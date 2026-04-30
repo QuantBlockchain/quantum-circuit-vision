@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "H05_toffoli_decomposed",
+  "error_type": "low_fidelity",
+  "fidelity": 0.3953,
+  "error_detail": "fidelity=0.3953",
+  "id": "failure_238"
+}

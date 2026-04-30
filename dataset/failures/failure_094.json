@@ -1,0 +1,9 @@
+{
+  "model": "sonnet-4.6",
+  "mode": "tv",
+  "circuit": "B07_qft_5",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: name '\u03c0' is not defined",
+  "id": "failure_094"
+}

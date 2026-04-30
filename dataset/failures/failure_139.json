@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "bv",
+  "circuit": "C07_qpe_4",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: 'list' object is not callable",
+  "id": "failure_139"
+}

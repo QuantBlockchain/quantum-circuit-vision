@@ -1,0 +1,31 @@
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+
+[38;5;252m[0m[?25l[38;5;141m> [0mI'll read the quantum circuit image and generate the corresponding Amazon Braket SDK code.[0m[0m
+[?25l[0m[0mReading images: [38;5;141m/home/ubuntu/qcv-experiments/circuits/I04_lamport_sign_4.png
+[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read image
+[38;5;244m - Completed in 0.0s[0m
+
+[0m[0m
+[?25l[0m[38;5;141m> [0m[1mpython
+[0m[38;5;10mfrom braket.circuits import Circuit
+
+circuit = Circuit()
+circuit.x(0)
+circuit.h(0)
+circuit.cnot(0, 1)
+circuit.h(0)
+circuit.x(2)
+circuit.h(2)
+circuit.cnot(2, 3)
+circuit.h(2)
+[0m[0m[0m
+[38;5;8m
+ ▸ Credits: 0.03 • Time: 5s
+
+[0m[1G[0m[0m[?25h

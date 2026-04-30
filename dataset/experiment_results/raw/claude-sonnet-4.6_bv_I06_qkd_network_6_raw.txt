@@ -1,0 +1,45 @@
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+
+[38;5;252m[0m[?25l[?25l[0m[0mReading images: [38;5;141m/home/ubuntu/qcv-experiments/circuits/I06_qkd_network_6.png
+[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read image
+[38;5;244m - Completed in 0.0s[0m
+
+[0m[0m
+[?25l[0m[38;5;141m> [0m[1mpython
+[0m[38;5;10mfrom braket.circuits import Circuit
+import math
+
+c = Circuit()
+
+# Layer 1: single-qubit gates
+c.h(0)
+c.h(2)
+c.ry(4, math.pi / 8)
+c.ry(5, math.pi / 4)
+
+# Layer 2: CNOT gates (control -> target)
+c.cnot(0, 1)
+c.cnot(2, 3)
+
+# Layer 3: CNOT gates
+c.cnot(1, 2)
+c.cnot(3, 5)
+
+# Layer 4: CNOT gates
+c.cnot(0, 4)
+
+# Layer 5: single-qubit gate
+c.h(1)
+
+print(c)
+[0m[0m[0m
+[38;5;8m
+ ▸ Credits: 0.11 • Time: 5s
+
+[0m[1G[0m[0m[?25h

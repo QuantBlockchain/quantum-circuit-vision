@@ -1,0 +1,9 @@
+{
+  "model": "opus-4.6",
+  "mode": "tv",
+  "circuit": "D09_alternating_layer_4",
+  "error_type": "low_fidelity",
+  "fidelity": 0.2443,
+  "error_detail": "fidelity=0.2443",
+  "id": "failure_039"
+}

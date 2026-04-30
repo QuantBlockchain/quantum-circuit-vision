@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "C14_quantum_adder_4",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: name 'cnot' is not defined",
+  "id": "failure_218"
+}

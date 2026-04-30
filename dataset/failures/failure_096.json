@@ -1,0 +1,9 @@
+{
+  "model": "sonnet-4.6",
+  "mode": "tv",
+  "circuit": "C08_hhl_3",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: 'Ry' object has no attribute 'controlled'",
+  "id": "failure_096"
+}

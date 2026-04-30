@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "H02_bell_compressed",
+  "error_type": "low_fidelity",
+  "fidelity": 0.3536,
+  "error_detail": "fidelity=0.3536",
+  "id": "failure_236"
+}

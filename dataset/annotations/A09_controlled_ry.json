@@ -9,5 +9,46 @@
   "description_cn": "受控Ry门：分解为Ry-CNOT-Ry-CNOT",
   "blockchain_relevance": null,
   "state_vector_dim": 4,
-  "nonzero_amplitudes": 1
+  "nonzero_amplitudes": 1,
+  "experiment_results": {
+    "claude-opus-4.6": {
+      "bv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      },
+      "tv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      }
+    },
+    "claude-sonnet-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: 'Circuit' object has no attribute 'cry'"
+      },
+      "tv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      }
+    },
+    "claude-haiku-4.5": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.4619,
+        "error": "fidelity=0.4619"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: 'Circuit' object has no attribute 'cry'"
+      }
+    },
+    "best_pass_rate": "3/6",
+    "all_pass": false,
+    "all_fail": false
+  }
 }

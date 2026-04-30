@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "bv",
+  "circuit": "D04_qaoa_2layer",
+  "error_type": "low_fidelity",
+  "fidelity": 0.0539,
+  "error_detail": "fidelity=0.0539",
+  "id": "failure_148"
+}

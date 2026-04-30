@@ -1,0 +1,9 @@
+{
+  "model": "opus-4.6",
+  "mode": "bv",
+  "circuit": "C05_shor_period_4",
+  "error_type": "low_fidelity",
+  "fidelity": 0.375,
+  "error_detail": "fidelity=0.3750",
+  "id": "failure_004"
+}

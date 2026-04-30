@@ -1,0 +1,173 @@
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+
+[38;5;252m[0m[?25l[?25l[0m[0mReading images: [38;5;141m/home/ubuntu/qcv-experiments/circuits/D04_qaoa_2layer.png
+[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read image
+[38;5;244m - Completed in 0.0s[0m
+
+[0m[0m
+[?25l[0m[38;5;141m> [0m[38;5;252m[1m## 分析[0m[0m
+[0m[0m
+[38;5;252m[1m### 1. Qubit 线[0m[0m
+[0m[0m
+共 [1m4 条[22m qubit 线，编号为 [1mq0, q1, q2, q3[22m。[0m[0m
+[0m[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[0m[0m
+[0m[0m
+[38;5;252m[1m### 2. 从左到右的量子门序列[0m[0m
+[0m[0m
+按时间顺序（图分两行，第二行是第一行的延续）：[0m[0m
+[0m[0m
+| 步骤 | 门 | 参数 | 作用 qubit |[0m[0m
+|------|-----|------|-----------|[0m[0m
+| 1 | H | — | q0, q1, q2, q3 |[0m[0m
+| 2 | CNOT | — | ctrl=q0, tgt=q1 |[0m[0m
+| 3 | Rz | π/2 | q1 |[0m[0m
+| 4 | CNOT | — | ctrl=q0, tgt=q1 |[0m[0m
+| 5 | CNOT | — | ctrl=q1, tgt=q2 |[0m[0m
+| 6 | Rz | π/2 | q2 |[0m[0m
+| 7 | CNOT | — | ctrl=q1, tgt=q2 |[0m[0m
+| 8 | CNOT | — | ctrl=q2, tgt=q3 |[0m[0m
+| 9 | Rz | π/2 | q3 |[0m[0m
+| 10 | CNOT | — | ctrl=q2, tgt=q3 |[0m[0m
+| 11 | Rx | π/4 | q1 |[0m[0m
+| 12 | CNOT | — | ctrl=q2, tgt=q0 |（长跨度连线）|[0m[0m
+| 13 | Rx | π/4 | q2 |[0m[0m
+| 14 | CNOT | — | ctrl=q3, tgt=q0 |（长跨度连线）|[0m[0m
+| 15 | Rz | π/2 | q0 |[0m[0m
+| 16 | CNOT | — | ctrl=q3, tgt=q0 |[0m[0m
+| 17 | Rx | π/4 | q0 |[0m[0m
+| 18 | Rx | π/4 | q3 |[0m[0m
+| 19 | CNOT | — | ctrl=q0, tgt=q1 |[0m[0m
+| 20 | Rz | π/3 | q1 |[0m[0m
+| 21 | CNOT | — | ctrl=q0, tgt=q1 |[0m[0m
+| 22 | CNOT | — | ctrl=q1, tgt=q2 |[0m[0m
+| 23 | Rz | π/3 | q2 |[0m[0m
+| 24 | CNOT | — | ctrl=q1, tgt=q2 |[0m[0m
+| 25 | CNOT | — | ctrl=q2, tgt=q3 |[0m[0m
+| 26 | Rz | π/3 | q3 |[0m[0m
+| 27 | CNOT | — | ctrl=q2, tgt=q3 |[0m[0m
+| 28 | Rx | π/5 | q1 |[0m[0m
+| 29 | CNOT | — | ctrl=q2, tgt=q0 |（长跨度）|[0m[0m
+| 30 | CNOT | — | ctrl=q3, tgt=q0 |（长跨度）|[0m[0m
+| 31 | Rz | π/3 | q0 |[0m[0m
+| 32 | CNOT | — | ctrl=q3, tgt=q0 |[0m[0m
+| 33 | Rx | π/5 | q2 |[0m[0m
+| 34 | Rx | π/5 | q3 |（第二行）|[0m[0m
+| 35 | CNOT | — | ctrl=q3, tgt=q0 |（第二行）|[0m[0m
+| 36 | Rx | π/5 | q0 |[0m[0m
+| 37 | Rx | π/5 | q3 |[0m[0m
+[0m[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[0m[0m
+[0m[0m
+[38;5;252m[1m### 3. 有控制位的门（CNOT）[0m[0m
+[0m[0m
+所有 CNOT 门汇总：[0m[0m
+[0m[0m
+| # | 控制 (ctrl) | 目标 (tgt) |[0m[0m
+|---|------------|-----------|[0m[0m
+| 第1层 | q0 | q1 |[0m[0m
+| 第1层 | q0 | q1 |[0m[0m
+| 第1层 | q1 | q2 |[0m[0m
+| 第1层 | q1 | q2 |[0m[0m
+| 第1层 | q2 | q3 |[0m[0m
+| 第1层 | q2 | q3 |[0m[0m
+| 第1层 | q2 | q0 |[0m[0m
+| 第1层 | q3 | q0 |[0m[0m
+| 第1层 | q3 | q0 |[0m[0m
+| 第2层 | q0 | q1 |[0m[0m
+| 第2层 | q0 | q1 |[0m[0m
+| 第2层 | q1 | q2 |[0m[0m
+| 第2层 | q1 | q2 |[0m[0m
+| 第2层 | q2 | q3 |[0m[0m
+| 第2层 | q2 | q3 |[0m[0m
+| 第2层 | q2 | q0 |[0m[0m
+| 第2层 | q3 | q0 |[0m[0m
+| 第2层 | q3 | q0 |[0m[0m
+| 尾部 | q3 | q0 |[0m[0m
+[0m[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[0m[0m
+[0m[0m
+[38;5;252m[1m## Amazon Braket SDK Python 代码[0m[0m
+[0m[0m
+[1mpython
+[0m[38;5;10mfrom braket.circuits import Circuit
+import numpy as np
+
+c = Circuit()
+
+# --- Initial Hadamard layer ---
+c.h([0, 1, 2, 3])
+
+# === QAOA Layer 1 ===
+
+# Edge (q0, q1)
+c.cnot(0, 1).rz(1, np.pi/2).cnot(0, 1)
+
+# Edge (q1, q2)
+c.cnot(1, 2).rz(2, np.pi/2).cnot(1, 2)
+
+# Edge (q2, q3)
+c.cnot(2, 3).rz(3, np.pi/2).cnot(2, 3)
+
+# Mixer layer 1
+c.rx(1, np.pi/4)
+
+# Edge (q2, q0) long-range
+c.cnot(2, 0)
+
+c.rx(2, np.pi/4)
+
+# Edge (q3, q0) long-range
+c.cnot(3, 0).rz(0, np.pi/2).cnot(3, 0)
+
+c.rx(0, np.pi/4)
+c.rx(3, np.pi/4)
+
+# === QAOA Layer 2 ===
+
+# Edge (q0, q1)
+c.cnot(0, 1).rz(1, np.pi/3).cnot(0, 1)
+
+# Edge (q1, q2)
+c.cnot(1, 2).rz(2, np.pi/3).cnot(1, 2)
+
+# Edge (q2, q3)
+c.cnot(2, 3).rz(3, np.pi/3).cnot(2, 3)
+
+# Mixer layer 2
+c.rx(1, np.pi/5)
+
+# Edge (q2, q0) long-range
+c.cnot(2, 0)
+
+# Edge (q3, q0) long-range
+c.cnot(3, 0).rz(0, np.pi/3).cnot(3, 0)
+
+c.rx(2, np.pi/5)
+c.rx(3, np.pi/5)
+
+# Tail: final CNOT(q3->q0) + Rx mixer
+c.cnot(3, 0)
+c.rx(0, np.pi/5)
+c.rx(3, np.pi/5)
+
+print(c)
+[0m[0m[0m
+[0m[0m
+[1m说明：[22m[0m[0m
+- 电路是典型的 [1m2层 QAOA[22m 结构，作用于 4 个 qubit 的环形/全连接图[0m[0m
+- 每层包含：ZZ 相互作用（CNOT–Rz–CNOT 模式）+ X 混合器（Rx）[0m[0m
+- 第1层角度参数 γ₁=π/2（Rz），β₁=π/4（Rx）；第2层 γ₂=π/3，β₂=π/5[0m[0m
+[38;5;8m
+ ▸ Credits: 0.40 • Time: 23s
+
+[0m[1G[0m[0m[?25h

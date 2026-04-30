@@ -1,0 +1,9 @@
+{
+  "model": "sonnet-4.6",
+  "mode": "tv",
+  "circuit": "A07_sqrt_x",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: name 'v' is not defined",
+  "id": "failure_091"
+}

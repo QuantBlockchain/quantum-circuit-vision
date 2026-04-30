@@ -9,5 +9,46 @@
   "description_cn": "对AES-128的Grover攻击（密钥搜索）",
   "blockchain_relevance": "btc_security",
   "state_vector_dim": 32,
-  "nonzero_amplitudes": 8
+  "nonzero_amplitudes": 8,
+  "experiment_results": {
+    "claude-opus-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.125,
+        "error": "fidelity=0.1250"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "fidelity=0.0000"
+      }
+    },
+    "claude-sonnet-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.25,
+        "error": "fidelity=0.2500"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.125,
+        "error": "fidelity=0.1250"
+      }
+    },
+    "claude-haiku-4.5": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "fidelity=0.0000"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0625,
+        "error": "fidelity=0.0625"
+      }
+    },
+    "best_pass_rate": "0/6",
+    "all_pass": false,
+    "all_fail": true
+  }
 }

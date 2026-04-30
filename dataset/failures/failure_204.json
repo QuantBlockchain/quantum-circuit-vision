@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "A12_iswap",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: name 'iswap' is not defined",
+  "id": "failure_204"
+}

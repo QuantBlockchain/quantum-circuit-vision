@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "bv",
+  "circuit": "C04_grover_4",
+  "error_type": "low_fidelity",
+  "fidelity": 0.3536,
+  "error_detail": "fidelity=0.3536",
+  "id": "failure_136"
+}

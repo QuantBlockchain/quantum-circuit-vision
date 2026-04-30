@@ -1,0 +1,9 @@
+{
+  "model": "opus-4.6",
+  "mode": "tv",
+  "circuit": "blockchain_vrf",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: 'Circuit' object has no attribute 'crz'",
+  "id": "failure_059"
+}

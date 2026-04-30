@@ -1,0 +1,9 @@
+{
+  "model": "opus-4.6",
+  "mode": "tv",
+  "circuit": "E05_surface_code_patch",
+  "error_type": "low_fidelity",
+  "fidelity": 0.125,
+  "error_detail": "fidelity=0.1250",
+  "id": "failure_041"
+}

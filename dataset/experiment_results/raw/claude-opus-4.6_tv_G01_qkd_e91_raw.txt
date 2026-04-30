@@ -1,0 +1,71 @@
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+
+[38;5;252m[0m[?25l[38;5;141m> [0m[0m[0m
+[0m[0m
+Let me first look at the quantum circuit image.[0m[0m
+[?25l[0m[0mReading images: [38;5;141m/home/ubuntu/qcv-experiments/circuits/G01_qkd_e91.png
+[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read image
+[38;5;244m - Completed in 0.0s[0m
+
+[0m[0m
+[?25l[0m[38;5;141m> [0m[0m[0m
+[0m[0m
+[38;5;252m[1m## 量子电路分析[0m[0m
+[0m[0m
+[38;5;252m[1m### 1. Qubit 线[0m[0m
+[0m[0m
+共 [1m4 条[22m qubit 线，编号分别为：**q₀, q₁, q₂, q₃**[0m[0m
+[0m[0m
+[38;5;252m[1m### 2. 从左到右的量子门[0m[0m
+[0m[0m
+| 顺序 | 门 | 作用线 |[0m[0m
+|------|------|--------|[0m[0m
+| 1 | H (Hadamard) | q₀ |[0m[0m
+| 2 | H (Hadamard) | q₂ |[0m[0m
+| 3 | CNOT | 控制 q₀，目标 q₁ |[0m[0m
+| 4 | CNOT | 控制 q₂，目标 q₃ |[0m[0m
+| 5 | Ry(π/8) | q₀ |[0m[0m
+| 6 | Ry(π/4) | q₁ |[0m[0m
+[0m[0m
+[38;5;252m[1m### 3. 有控制位的门[0m[0m
+[0m[0m
+- **第一个 CNOT**：控制位在 [1mq₀[22m，目标在 [1mq₁[22m[0m[0m
+- **第二个 CNOT**：控制位在 [1mq₂[22m，目标在 [1mq₃[22m[0m[0m
+[0m[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[0m[0m
+[0m[0m
+这是一个 E91 QKD 协议的电路：先用 H + CNOT 在 (q₀, q₁) 和 (q₂, q₃) 上各制备一对 Bell 态，然后 Alice 对 q₀ 施加 Ry(π/8) 测量基旋转，Bob 对 q₁ 施加 Ry(π/4) 测量基旋转。[0m[0m
+[0m[0m
+[38;5;252m[1m## Amazon Braket SDK 代码[0m[0m
+[0m[0m
+[1mpython
+[0m[38;5;10mimport math
+from braket.circuits import Circuit
+
+circuit = Circuit()
+
+# Hadamard gates
+circuit.h(0)
+circuit.h(2)
+
+# CNOT gates (Bell pairs)
+circuit.cnot(0, 1)
+circuit.cnot(2, 3)
+
+# Ry measurement basis rotations
+circuit.ry(0, math.pi / 8)
+circuit.ry(1, math.pi / 4)
+
+print(circuit)
+[0m[0m[0m
+[38;5;8m
+ ▸ Credits: 0.28 • Time: 14s
+
+[0m[1G[0m[0m[?25h

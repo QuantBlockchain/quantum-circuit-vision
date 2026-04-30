@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "bv",
+  "circuit": "I10_pow_quantum_speedup_4",
+  "error_type": "low_fidelity",
+  "fidelity": 0.0442,
+  "error_detail": "fidelity=0.0442",
+  "id": "failure_178"
+}

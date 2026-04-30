@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "demo_02_cnot",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: CNot.cnot() got an unexpected keyword argument 'control_qubit'",
+  "id": "failure_262"
+}

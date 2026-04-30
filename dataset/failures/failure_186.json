@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "bv",
+  "circuit": "blockchain_consensus",
+  "error_type": "low_fidelity",
+  "fidelity": 0.0034,
+  "error_detail": "fidelity=0.0034",
+  "id": "failure_186"
+}

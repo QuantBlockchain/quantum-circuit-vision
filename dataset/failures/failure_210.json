@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "C03_simon_4",
+  "error_type": "low_fidelity",
+  "fidelity": 0.5,
+  "error_detail": "fidelity=0.5000",
+  "id": "failure_210"
+}

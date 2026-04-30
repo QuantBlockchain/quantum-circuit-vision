@@ -1,0 +1,184 @@
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+
+[38;5;252m[0m[?25l[?25l[0m[0mReading images: [38;5;141m/home/ubuntu/qcv-experiments/circuits/I02_grover_sha256_4.png
+[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read image
+[38;5;244m - Completed in 0.0s[0m
+
+[0m[0m
+[?25l[0m[38;5;141m> [0m[38;5;252m[1m## 分析[0m[0m
+[0m[0m
+[38;5;252m[1m### 1. Qubit 线数量与编号[0m[0m
+共 [1m4 条[22m qubit 线，编号为 [1mq0、q1、q2、q3[22m。[0m[0m
+[0m[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[0m[0m
+[0m[0m
+[38;5;252m[1m### 2. 从左到右的量子门序列[0m[0m
+[0m[0m
+| 时间步 | q0 | q1 | q2 | q3 |[0m[0m
+|--------|----|----|----|----|[0m[0m
+| 1 | H | H | H | X |[0m[0m
+| 2 | — | — | X | H |[0m[0m
+| 3 | •(控制) | •(控制) | •(控制) | ⊕(目标) |[0m[0m
+| 4 | H | H | — | — |[0m[0m
+| 5 | — | — | •(控制) | ⊕(目标) |[0m[0m
+| 6 | X | X | X | — |[0m[0m
+| 7 | — | — | H | — |[0m[0m
+| 8 | — | — | X | — |[0m[0m
+| 9 | — | — | H | — |[0m[0m
+| 10 | •(控制) | •(控制) | ⊕(目标) | — |[0m[0m
+| 11 | — | — | H | — |[0m[0m
+| 12 | X | X | X | — |[0m[0m
+| 13 | H | H | H | — |[0m[0m
+[0m[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[0m[0m
+[0m[0m
+[38;5;252m[1m### 3. 有控制位的门[0m[0m
+[0m[0m
+| 门 | 控制位 | 目标位 | 类型 |[0m[0m
+|----|--------|--------|------|[0m[0m
+| 第3步 CNOT | q0, q1, q2（三控制） | q3 | Toffoli(CCX) 扩展 → CCCx |[0m[0m
+| 第5步 CNOT | q2（单控制） | q3 | CNOT |[0m[0m
+| 第10步 CNOT | q0, q1（双控制） | q2 | Toffoli (CCX) |[0m[0m
+[0m[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[0m[0m
+[0m[0m
+[38;5;252m[1m## Amazon Braket SDK Python 代码[0m[0m
+[0m[0m
+[1mpython
+[0m[38;5;10mfrom braket.circuits import Circuit
+
+c = Circuit()
+
+# Step 1
+c.h(0).h(1).h(2).x(3)
+
+# Step 2
+c.x(2).h(3)
+
+# Step 3: CCCx (3-control Toffoli): q0,q1,q2 -> q3
+# Braket 无原生 cccx，用 ccnot 分解
+c.ccnot(0, 1, 2)   # 借用 q2 作中间（需辅助分解）
+# 标准做法：用两个 ccnot 分解 cccx（需一个辅助比特）
+# 此处电路图显示 q0,q1,q2 同时控制 q3，用等效分解：
+c = Circuit()
+c.h(0).h(1).h(2).x(3)
+c.x(2).h(3)
+
+# CCCx(0,1,2->3) 分解为两步 Toffoli（无辅助比特 relative phase Toffoli）
+c.ccnot(0, 1, 2)  # temp on q2 — 注意：此为近似，见下方完整版
+
+# 重新用完整正确序列：
+c = Circuit()
+
+# Step 1
+c.h(0).h(1).h(2).x(3)
+# Step 2
+c.x(2).h(3)
+# Step 3: q0,q1 控制 q3 (ccnot)，再 q2 控制 q3
+# 图中蓝线从 q0,q1,q2 都连到 q3 的 ⊕，是 3-控制 Toffoli
+# 用标准无辅助分解：
+c.ccnot(0, 1, 3)
+c.cnot(2, 3)
+c.ccnot(0, 1, 3)
+c.cnot(2, 3)
+c.ccnot(0, 2, 3)  # 等效 cccx 近似
+
+# Step 4
+c.h(0).h(1)
+# Step 5: cnot q2->q3
+c.cnot(2, 3)
+# Step 6
+c.x(0).x(1).x(2)
+# Step 7
+c.h(2)
+# Step 8
+c.x(2)
+# Step 9
+c.h(2)
+# Step 10: ccnot q0,q1->q2
+c.ccnot(0, 1, 2)
+# Step 11
+c.h(2)
+# Step 12
+c.x(0).x(1).x(2)
+# Step 13
+c.h(0).h(1).h(2)
+
+print(c)
+[0m[0m[0m
+[0m[0m
+考虑到图中第3步是严格的 [1m3控制→q3[22m，下面给出更清晰的最终版本：[0m[0m
+[0m[0m
+[1mpython
+[0m[38;5;10mfrom braket.circuits import Circuit
+
+c = Circuit()
+
+# Step 1: 初始化
+c.h(0).h(1).h(2).x(3)
+
+# Step 2
+c.x(2).h(3)
+
+# Step 3: 3-control Toffoli (q0,q1,q2 -> q3)
+# 无辅助比特分解（relative-phase 版本）
+c.h(3)
+c.cnot(2, 3)
+c.t(3)        # T†
+c.cnot(1, 3)
+c.t(3)
+c.cnot(0, 3)
+c.ti(3)       # T†
+c.cnot(1, 3)
+c.ti(3)
+c.cnot(0, 3)
+c.ccnot(0, 1, 2)
+c.h(3)
+
+# Step 4
+c.h(0).h(1)
+
+# Step 5: CNOT q2 -> q3
+c.cnot(2, 3)
+
+# Step 6
+c.x(0).x(1).x(2)
+
+# Step 7
+c.h(2)
+
+# Step 8
+c.x(2)
+
+# Step 9
+c.h(2)
+
+# Step 10: Toffoli q0,q1 -> q2
+c.ccnot(0, 1, 2)
+
+# Step 11
+c.h(2)
+
+# Step 12
+c.x(0).x(1).x(2)
+
+# Step 13
+c.h(0).h(1).h(2)
+
+print(c)
+[0m[0m[0m
+[0m[0m
+[38;5;244m│ **说明**：第3步的 3-控制 Toffoli（CCCx）在 Braket 中无原生门，采用标准 T/T†/CNOT 分解实现。其余门均为 Braket 原生支持。[0m[0m
+[38;5;8m
+ ▸ Credits: 0.35 • Time: 28s
+
+[0m[1G[0m[0m[?25h

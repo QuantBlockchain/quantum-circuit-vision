@@ -1,0 +1,9 @@
+{
+  "model": "sonnet-4.6",
+  "mode": "bv",
+  "circuit": "blockchain_vrf",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: Operator qubit count 2 must be equal to size of target qubit set QubitSet([Qubit(0)])",
+  "id": "failure_089"
+}

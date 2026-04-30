@@ -9,5 +9,46 @@
   "description_cn": "格基启发的量子哈希电路",
   "blockchain_relevance": "extended_protocol",
   "state_vector_dim": 64,
-  "nonzero_amplitudes": 64
+  "nonzero_amplitudes": 64,
+  "experiment_results": {
+    "claude-opus-4.6": {
+      "bv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      },
+      "tv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      }
+    },
+    "claude-sonnet-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.25,
+        "error": "fidelity=0.2500"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.5,
+        "error": "fidelity=0.5000"
+      }
+    },
+    "claude-haiku-4.5": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0929,
+        "error": "fidelity=0.0929"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.25,
+        "error": "fidelity=0.2500"
+      }
+    },
+    "best_pass_rate": "2/6",
+    "all_pass": false,
+    "all_fail": false
+  }
 }

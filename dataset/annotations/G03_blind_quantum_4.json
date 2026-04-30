@@ -9,5 +9,46 @@
   "description_cn": "盲量子计算：委托计算",
   "blockchain_relevance": "extended_protocol",
   "state_vector_dim": 16,
-  "nonzero_amplitudes": 1
+  "nonzero_amplitudes": 1,
+  "experiment_results": {
+    "claude-opus-4.6": {
+      "bv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      },
+      "tv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      }
+    },
+    "claude-sonnet-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.5,
+        "error": "fidelity=0.5000"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.5,
+        "error": "fidelity=0.5000"
+      }
+    },
+    "claude-haiku-4.5": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: XX.xx() missing 1 required positional argument: 'angle'"
+      },
+      "tv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      }
+    },
+    "best_pass_rate": "3/6",
+    "all_pass": false,
+    "all_fail": false
+  }
 }

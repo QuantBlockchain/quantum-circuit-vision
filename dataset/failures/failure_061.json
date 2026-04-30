@@ -1,0 +1,9 @@
+{
+  "model": "sonnet-4.6",
+  "mode": "bv",
+  "circuit": "A09_controlled_ry",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: 'Circuit' object has no attribute 'cry'",
+  "id": "failure_061"
+}

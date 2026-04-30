@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "H06_qft3_no_swap",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: name 'cphaseshift' is not defined",
+  "id": "failure_239"
+}

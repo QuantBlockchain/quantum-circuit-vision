@@ -9,5 +9,46 @@
   "description_cn": "T门：π/4相位旋转，容错量子计算的关键",
   "blockchain_relevance": null,
   "state_vector_dim": 2,
-  "nonzero_amplitudes": 1
+  "nonzero_amplitudes": 1,
+  "experiment_results": {
+    "claude-opus-4.6": {
+      "bv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      },
+      "tv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      }
+    },
+    "claude-sonnet-4.6": {
+      "bv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      },
+      "tv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      }
+    },
+    "claude-haiku-4.5": {
+      "bv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: 'Circuit' object has no attribute 'print_ascii'"
+      }
+    },
+    "best_pass_rate": "5/6",
+    "all_pass": false,
+    "all_fail": false
+  }
 }

@@ -1,0 +1,9 @@
+{
+  "model": "opus-4.6",
+  "mode": "bv",
+  "circuit": "B05_ghz_10",
+  "error_type": "syntax_error",
+  "fidelity": 0.0,
+  "error_detail": "syntax: expected an indented block after 'for' statement on line 5 (<check>, line 6)",
+  "id": "failure_003"
+}

@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "F09_barren_plateau_4",
+  "error_type": "low_fidelity",
+  "fidelity": 0.0083,
+  "error_detail": "fidelity=0.0083",
+  "id": "failure_231"
+}

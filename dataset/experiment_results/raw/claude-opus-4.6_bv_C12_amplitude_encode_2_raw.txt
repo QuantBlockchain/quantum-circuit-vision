@@ -1,0 +1,37 @@
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+
+[38;5;252m[0m[?25l[38;5;141m> [0m[0m[0m
+[0m[0m
+Let me first look at the circuit diagram.[0m[0m
+[?25l[0m[0mReading images: [38;5;141m/home/ubuntu/qcv-experiments/circuits/C12_amplitude_encode_2.png
+[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read image
+[38;5;244m - Completed in 0.0s[0m
+
+[0m[0m
+[?25l[0m[38;5;141m> [0m[0m[0m
+[0m[0m
+Now I can see the circuit. It has 2 qubits (q0 and q1), each with a Hadamard (H) gate applied.[0m[0m
+[?25l[0m[0mI'll create the following file: [38;5;141m/home/ubuntu/qcv-experiments/circuits/C12_amplitude_encode_2.py[0m[38;5;244m (using tool: write)[0m
+
+[49m[38;5;10m+    1[0m:[38;5;10m[49m from braket.circuits import Circuit
+[0m[49m[38;5;10m+    2[0m:[38;5;10m[49m 
+[0m[49m[38;5;10m+    3[0m:[38;5;10m[49m circuit = Circuit()
+[0m[49m[38;5;10m+    4[0m:[38;5;10m[49m circuit.h(0)
+[0m[49m[38;5;10m+    5[0m:[38;5;10m[49m circuit.h(1)
+[0m[49m[38;5;10m+    6[0m:[38;5;10m[49m 
+[0m[49m[38;5;10m+    7[0m:[38;5;10m[49m print(circuit)
+[0m[K
+Creating: [38;5;141m/home/ubuntu/qcv-experiments/circuits/C12_amplitude_encode_2.py[0m
+[38;5;244m - Completed in 0.0s[0m
+
+[?25l[0m[38;5;141m> [0m代码已生成并保存到 [38;5;10m/home/ubuntu/qcv-experiments/circuits/C12_amplitude_encode_2.py[0m。电路对 q0 和 q1 各施加一个 Hadamard 门，生成均匀叠加态 (振幅编码 [38;5;10m[0.5, 0.5, 0.5, 0.5][0m)。[0m[0m
+[38;5;8m
+ ▸ Credits: 0.26 • Time: 15s
+
+[0m[1G[0m[0m[?25h

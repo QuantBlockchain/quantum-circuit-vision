@@ -9,5 +9,46 @@
   "description_cn": "硬件高效拟设（4量子比特，2层）",
   "blockchain_relevance": null,
   "state_vector_dim": 16,
-  "nonzero_amplitudes": 16
+  "nonzero_amplitudes": 16,
+  "experiment_results": {
+    "claude-opus-4.6": {
+      "bv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      },
+      "tv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      }
+    },
+    "claude-sonnet-4.6": {
+      "bv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      },
+      "tv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      }
+    },
+    "claude-haiku-4.5": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0189,
+        "error": "fidelity=0.0189"
+      },
+      "tv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      }
+    },
+    "best_pass_rate": "5/6",
+    "all_pass": false,
+    "all_fail": false
+  }
 }

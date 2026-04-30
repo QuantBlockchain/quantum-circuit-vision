@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "C07_qpe_4",
+  "error_type": "unknown",
+  "fidelity": 0.0,
+  "error_detail": "verify: cannot add a result type to a circuit which already contains a measure instruction.",
+  "id": "failure_214"
+}

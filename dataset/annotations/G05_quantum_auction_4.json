@@ -9,5 +9,46 @@
   "description_cn": "量子密封投标拍卖",
   "blockchain_relevance": "extended_protocol",
   "state_vector_dim": 16,
-  "nonzero_amplitudes": 16
+  "nonzero_amplitudes": 16,
+  "experiment_results": {
+    "claude-opus-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.75,
+        "error": "fidelity=0.7500"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.75,
+        "error": "fidelity=0.7500"
+      }
+    },
+    "claude-sonnet-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.125,
+        "error": "fidelity=0.1250"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: name 'ccnot' is not defined"
+      }
+    },
+    "claude-haiku-4.5": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.1575,
+        "error": "fidelity=0.1575"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.25,
+        "error": "fidelity=0.2500"
+      }
+    },
+    "best_pass_rate": "0/6",
+    "all_pass": false,
+    "all_fail": true
+  }
 }

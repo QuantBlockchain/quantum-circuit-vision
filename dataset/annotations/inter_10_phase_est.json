@@ -9,5 +9,46 @@
   "description_cn": "相位估计（简化版）",
   "blockchain_relevance": null,
   "state_vector_dim": 8,
-  "nonzero_amplitudes": 1
+  "nonzero_amplitudes": 1,
+  "experiment_results": {
+    "claude-opus-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: 'Circuit' object has no attribute 'crz'"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: 'Circuit' object has no attribute 'crz'"
+      }
+    },
+    "claude-sonnet-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: 'Circuit' object has no attribute 'crz'"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: 'Circuit' object has no attribute 'crz'"
+      }
+    },
+    "claude-haiku-4.5": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.2999,
+        "error": "fidelity=0.2999"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: name 'cphaseshift' is not defined"
+      }
+    },
+    "best_pass_rate": "0/6",
+    "all_pass": false,
+    "all_fail": true
+  }
 }

@@ -1,0 +1,9 @@
+{
+  "model": "sonnet-4.6",
+  "mode": "tv",
+  "circuit": "C10_w_state_3",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: 'Circuit' object has no attribute 'ch'",
+  "id": "failure_097"
+}

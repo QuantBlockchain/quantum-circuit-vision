@@ -1,0 +1,90 @@
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+
+[38;5;252m[0m[?25l[38;5;141m> [0m[0m[0m
+[0m[0m
+Let me first look at the circuit image.[0m[0m
+[?25l[0m[0mReading images: [38;5;141m/home/ubuntu/qcv-experiments/circuits/blockchain_oblivious_transfer.png
+[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read image
+[38;5;244m - Completed in 0.0s[0m
+
+[0m[0m
+[?25l[0m[38;5;141m> [0m[0m[0m
+[0m[0m
+[38;5;252m[1m## 量子电路分析[0m[0m
+[0m[0m
+[38;5;252m[1m### 1. Qubit 线[0m[0m
+[0m[0m
+共 [1m5 条[22m qubit 线，编号分别为：**q₀, q₁, q₂, q₃, q₄**。[0m[0m
+[0m[0m
+[38;5;252m[1m### 2. 从左到右依次的量子门[0m[0m
+[0m[0m
+| 步骤 | 门 | 作用 qubit |[0m[0m
+|------|-----|-----------|[0m[0m
+| 1 | H | q₀ |[0m[0m
+| 2 | H | q₁ |[0m[0m
+| 3 | CNOT | 控制 q₀ → 目标 q₂ |[0m[0m
+| 4 | CNOT | 控制 q₁ → 目标 q₃ |[0m[0m
+| 5 | H | q₀ |[0m[0m
+| 6 | H | q₂ |[0m[0m
+| 7 | H | q₁ |[0m[0m
+| 8 | H | q₃ |[0m[0m
+| 9 | CNOT | 控制 q₂ → 目标 q₄ |[0m[0m
+| 10 | CNOT | 控制 q₃ → 目标 q₄ |[0m[0m
+| 11 | Rz(π/3) | q₄ |[0m[0m
+| 12 | CNOT | 控制 q₂ → 目标 q₄ |[0m[0m
+| 13 | CNOT | 控制 q₃ → 目标 q₄ |[0m[0m
+[0m[0m
+[38;5;252m[1m### 3. 带控制位的门[0m[0m
+[0m[0m
+| 门 | 控制 qubit | 目标 qubit |[0m[0m
+|----|-----------|-----------|[0m[0m
+| CNOT #1 | q₀ | q₂ |[0m[0m
+| CNOT #2 | q₁ | q₃ |[0m[0m
+| CNOT #3 | q₂ | q₄ |[0m[0m
+| CNOT #4 | q₃ | q₄ |[0m[0m
+| CNOT #5 | q₂ | q₄ |[0m[0m
+| CNOT #6 | q₃ | q₄ |[0m[0m
+[0m[0m
+共 [1m6 个 CNOT 门[22m，均为单控制位的受控非门。[0m[0m
+[0m[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[0m[0m
+[0m[0m
+[38;5;252m[1m## Amazon Braket SDK 代码[0m[0m
+[0m[0m
+[1mpython
+[0m[38;5;10mimport math
+from braket.circuits import Circuit
+
+circ = Circuit()
+
+# H on q0, q1
+circ.h(0).h(1)
+
+# CNOT: q0->q2, q1->q3
+circ.cnot(0, 2).cnot(1, 3)
+
+# H on q0, q2, q1, q3
+circ.h(0).h(2).h(1).h(3)
+
+# CNOT: q2->q4, q3->q4
+circ.cnot(2, 4).cnot(3, 4)
+
+# Rz(pi/3) on q4
+circ.rz(4, math.pi / 3)
+
+# CNOT: q2->q4, q3->q4
+circ.cnot(2, 4).cnot(3, 4)
+
+print(circ)
+[0m[0m[0m
+[38;5;8m
+ ▸ Credits: 0.35 • Time: 15s
+
+[0m[1G[0m[0m[?25h

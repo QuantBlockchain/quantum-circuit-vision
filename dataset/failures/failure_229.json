@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "E05_surface_code_patch",
+  "error_type": "low_fidelity",
+  "fidelity": 0.0028,
+  "error_detail": "fidelity=0.0028",
+  "id": "failure_229"
+}

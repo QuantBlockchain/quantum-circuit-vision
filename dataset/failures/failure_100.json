@@ -1,0 +1,9 @@
+{
+  "model": "sonnet-4.6",
+  "mode": "tv",
+  "circuit": "D04_qaoa_2layer",
+  "error_type": "low_fidelity",
+  "fidelity": 0.2358,
+  "error_detail": "fidelity=0.2358",
+  "id": "failure_100"
+}

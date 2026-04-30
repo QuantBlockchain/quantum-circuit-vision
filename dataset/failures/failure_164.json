@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "bv",
+  "circuit": "G05_quantum_auction_4",
+  "error_type": "low_fidelity",
+  "fidelity": 0.1575,
+  "error_detail": "fidelity=0.1575",
+  "id": "failure_164"
+}

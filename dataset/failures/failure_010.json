@@ -1,0 +1,9 @@
+{
+  "model": "opus-4.6",
+  "mode": "bv",
+  "circuit": "D09_alternating_layer_4",
+  "error_type": "low_fidelity",
+  "fidelity": 0.1043,
+  "error_detail": "fidelity=0.1043",
+  "id": "failure_010"
+}

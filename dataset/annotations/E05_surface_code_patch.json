@@ -9,5 +9,46 @@
   "description_cn": "最小表面码补丁（9量子比特）",
   "blockchain_relevance": null,
   "state_vector_dim": 512,
-  "nonzero_amplitudes": 16
+  "nonzero_amplitudes": 16,
+  "experiment_results": {
+    "claude-opus-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0625,
+        "error": "fidelity=0.0625"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.125,
+        "error": "fidelity=0.1250"
+      }
+    },
+    "claude-sonnet-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: Operator qubit count 2 must be equal to size of target qubit set QubitSet([Qubit(3)])"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0625,
+        "error": "fidelity=0.0625"
+      }
+    },
+    "claude-haiku-4.5": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0078,
+        "error": "fidelity=0.0078"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0028,
+        "error": "fidelity=0.0028"
+      }
+    },
+    "best_pass_rate": "0/6",
+    "all_pass": false,
+    "all_fail": true
+  }
 }

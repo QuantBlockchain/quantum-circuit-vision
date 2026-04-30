@@ -9,5 +9,46 @@
   "description_cn": "数据重上传：Rx-CNOT-Rx-CNOT模式",
   "blockchain_relevance": null,
   "state_vector_dim": 4,
-  "nonzero_amplitudes": 4
+  "nonzero_amplitudes": 4,
+  "experiment_results": {
+    "claude-opus-4.6": {
+      "bv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      },
+      "tv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      }
+    },
+    "claude-sonnet-4.6": {
+      "bv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      },
+      "tv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      }
+    },
+    "claude-haiku-4.5": {
+      "bv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      },
+      "tv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      }
+    },
+    "best_pass_rate": "6/6",
+    "all_pass": true,
+    "all_fail": false
+  }
 }

@@ -1,0 +1,9 @@
+{
+  "model": "sonnet-4.6",
+  "mode": "bv",
+  "circuit": "I01_shor_ecc_6",
+  "error_type": "low_fidelity",
+  "fidelity": 0.3125,
+  "error_detail": "fidelity=0.3125",
+  "id": "failure_079"
+}

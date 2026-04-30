@@ -9,5 +9,46 @@
   "description_cn": "Toffoli分解为15个基本门",
   "blockchain_relevance": null,
   "state_vector_dim": 8,
-  "nonzero_amplitudes": 1
+  "nonzero_amplitudes": 1,
+  "experiment_results": {
+    "claude-opus-4.6": {
+      "bv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "syntax: invalid syntax (<check>, line 23)"
+      }
+    },
+    "claude-sonnet-4.6": {
+      "bv": {
+        "pass": true,
+        "fidelity": 1.0,
+        "error": null
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: name 'ti' is not defined"
+      }
+    },
+    "claude-haiku-4.5": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: 'Circuit' object has no attribute 't_dagger'"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.3953,
+        "error": "fidelity=0.3953"
+      }
+    },
+    "best_pass_rate": "2/6",
+    "all_pass": false,
+    "all_fail": false
+  }
 }

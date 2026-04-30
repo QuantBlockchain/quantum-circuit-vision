@@ -9,5 +9,46 @@
   "description_cn": "Shor算法攻击椭圆曲线（ECDSA威胁）",
   "blockchain_relevance": "btc_security",
   "state_vector_dim": 64,
-  "nonzero_amplitudes": 34
+  "nonzero_amplitudes": 34,
+  "experiment_results": {
+    "claude-opus-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.25,
+        "error": "fidelity=0.2500"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.2317,
+        "error": "fidelity=0.2317"
+      }
+    },
+    "claude-sonnet-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.3125,
+        "error": "fidelity=0.3125"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.25,
+        "error": "fidelity=0.2500"
+      }
+    },
+    "claude-haiku-4.5": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: 'list' object is not callable"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "verify: cannot add a result type to a circuit which already contains a measure instruction."
+      }
+    },
+    "best_pass_rate": "0/6",
+    "all_pass": false,
+    "all_fail": true
+  }
 }

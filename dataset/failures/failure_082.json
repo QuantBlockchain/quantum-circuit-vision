@@ -1,0 +1,9 @@
+{
+  "model": "sonnet-4.6",
+  "mode": "bv",
+  "circuit": "I08_kyber_lattice_6",
+  "error_type": "low_fidelity",
+  "fidelity": 0.25,
+  "error_detail": "fidelity=0.2500",
+  "id": "failure_082"
+}

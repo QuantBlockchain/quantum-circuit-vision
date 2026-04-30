@@ -1,0 +1,9 @@
+{
+  "model": "sonnet-4.6",
+  "mode": "tv",
+  "circuit": "C14_quantum_adder_4",
+  "error_type": "low_fidelity",
+  "fidelity": 0.5,
+  "error_detail": "fidelity=0.5000",
+  "id": "failure_099"
+}

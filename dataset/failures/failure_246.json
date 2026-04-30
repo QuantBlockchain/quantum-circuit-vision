@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "I05_quantum_random_beacon_6",
+  "error_type": "low_fidelity",
+  "fidelity": 0.25,
+  "error_detail": "fidelity=0.2500",
+  "id": "failure_246"
+}

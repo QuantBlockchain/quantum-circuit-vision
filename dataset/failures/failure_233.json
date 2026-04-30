@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "G01_qkd_e91",
+  "error_type": "low_fidelity",
+  "fidelity": 0.9239,
+  "error_detail": "fidelity=0.9239",
+  "id": "failure_233"
+}

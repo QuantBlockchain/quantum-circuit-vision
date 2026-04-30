@@ -1,0 +1,9 @@
+{
+  "model": "opus-4.6",
+  "mode": "bv",
+  "circuit": "F09_barren_plateau_4",
+  "error_type": "low_fidelity",
+  "fidelity": 0.0499,
+  "error_detail": "fidelity=0.0499",
+  "id": "failure_016"
+}

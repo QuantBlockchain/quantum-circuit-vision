@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "F10_expressibility_test_3",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: Operator qubit count 2 must be equal to size of target qubit set QubitSet([Qubit(1)])",
+  "id": "failure_232"
+}

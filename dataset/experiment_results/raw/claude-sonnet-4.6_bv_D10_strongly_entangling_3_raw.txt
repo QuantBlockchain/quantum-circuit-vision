@@ -1,0 +1,45 @@
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+
+[38;5;252m[0m[?25l[?25l[0m[0mReading images: [38;5;141m/home/ubuntu/qcv-experiments/circuits/D10_strongly_entangling_3.png
+[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read image
+[38;5;244m - Completed in 0.0s[0m
+
+[0m[0m
+[?25l[0m[38;5;141m> [0m[1mpython
+[0m[38;5;10mimport math
+from braket.circuits import Circuit
+
+c = Circuit()
+
+# Layer 1 - Rotation gates
+c.rx(0, math.pi/3).ry(0, math.pi/4).rz(0, math.pi/5)
+c.rx(1, math.pi/4).ry(1, math.pi/5).rz(1, math.pi/6)
+c.rx(2, math.pi/5).ry(2, math.pi/6).rz(2, math.pi/7)
+
+# Layer 1 - Entangling CNOTs (control->target): q0->q1, q1->q2, q2->q0
+c.cnot(0, 1)
+c.cnot(1, 2)
+c.cnot(2, 0)
+
+# Layer 2 - Rotation gates
+c.rx(0, math.pi/6).ry(0, math.pi/7).rz(0, math.pi/8)
+c.rx(1, math.pi/7).ry(1, math.pi/8).rz(1, math.pi/9)
+c.rx(2, math.pi/8).ry(2, math.pi/9).rz(2, math.pi/10)
+
+# Layer 2 - Entangling CNOTs: q0->q2, q2->q1, q1->q0
+c.cnot(0, 2)
+c.cnot(2, 1)
+c.cnot(1, 0)
+
+print(c)
+[0m[0m[0m
+[38;5;8m
+ ▸ Credits: 0.14 • Time: 7s
+
+[0m[1G[0m[0m[?25h

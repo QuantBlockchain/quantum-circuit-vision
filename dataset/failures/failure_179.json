@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "bv",
+  "circuit": "I11_quantum_merkle_5",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: Operator qubit count 2 must be equal to size of target qubit set QubitSet([Qubit(4)])",
+  "id": "failure_179"
+}

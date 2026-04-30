@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "bv",
+  "circuit": "A15_global_phase",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: 'Circuit' object has no attribute 't_dagger'",
+  "id": "failure_130"
+}

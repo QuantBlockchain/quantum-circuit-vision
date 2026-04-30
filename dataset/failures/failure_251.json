@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "I11_quantum_merkle_5",
+  "error_type": "low_fidelity",
+  "fidelity": 0.25,
+  "error_detail": "fidelity=0.2500",
+  "id": "failure_251"
+}

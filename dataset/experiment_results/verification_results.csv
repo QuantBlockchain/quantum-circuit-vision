@@ -1,0 +1,793 @@
+circuit_name,model,mode,syntax_ok,exec_ok,fidelity,pass,error
+A01_single_y,claude-opus-4.6,bv,True,True,1.0,True,
+A02_single_s,claude-opus-4.6,bv,True,True,1.0,True,
+A03_single_t,claude-opus-4.6,bv,True,True,1.0,True,
+A04_single_rx,claude-opus-4.6,bv,True,True,1.0,True,
+A05_single_ry,claude-opus-4.6,bv,True,True,1.0,True,
+A06_single_rz,claude-opus-4.6,bv,True,True,1.0,True,
+A07_sqrt_x,claude-opus-4.6,bv,True,True,1.0,True,
+A08_controlled_z,claude-opus-4.6,bv,True,True,1.0,True,
+A09_controlled_ry,claude-opus-4.6,bv,True,True,1.0,True,
+A10_controlled_rx,claude-opus-4.6,bv,True,True,0.933,False,fidelity=0.9330
+A11_ccz,claude-opus-4.6,bv,True,True,0.75,False,fidelity=0.7500
+A12_iswap,claude-opus-4.6,bv,True,True,1.0,True,
+A13_double_controlled_rz,claude-opus-4.6,bv,True,True,1.0,True,
+A14_multi_rotation,claude-opus-4.6,bv,True,True,1.0,True,
+A15_global_phase,claude-opus-4.6,bv,True,True,1.0,True,
+B01_ghz_4,claude-opus-4.6,bv,True,True,1.0,True,
+B02_ghz_5,claude-opus-4.6,bv,True,True,1.0,True,
+B03_ghz_6,claude-opus-4.6,bv,True,True,1.0,True,
+B04_ghz_8,claude-opus-4.6,bv,True,True,1.0,True,
+B05_ghz_10,claude-opus-4.6,bv,False,False,0.0,False,"syntax: expected an indented block after 'for' statement on line 5 (<check>, line 6)"
+B06_qft_4,claude-opus-4.6,bv,True,True,1.0,True,
+B07_qft_5,claude-opus-4.6,bv,True,True,1.0,True,
+B08_linear_entangle_6,claude-opus-4.6,bv,True,True,1.0,True,
+B09_ring_entangle_6,claude-opus-4.6,bv,True,True,1.0,True,
+B10_ladder_4,claude-opus-4.6,bv,True,True,1.0,True,
+B11_full_entangle_4,claude-opus-4.6,bv,True,True,1.0,True,
+B12_star_entangle_5,claude-opus-4.6,bv,True,True,1.0,True,
+C01_deutsch_jozsa_3,claude-opus-4.6,bv,True,True,1.0,True,
+C02_deutsch_jozsa_4,claude-opus-4.6,bv,True,True,1.0,True,
+C03_simon_4,claude-opus-4.6,bv,True,True,1.0,True,
+C04_grover_4,claude-opus-4.6,bv,True,True,1.0,True,
+C05_shor_period_4,claude-opus-4.6,bv,True,True,0.375,False,fidelity=0.3750
+C06_qpe_3,claude-opus-4.6,bv,True,True,1.0,True,
+C07_qpe_4,claude-opus-4.6,bv,True,True,1.0,True,
+C08_hhl_3,claude-opus-4.6,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'cry'
+C09_swap_test,claude-opus-4.6,bv,True,True,1.0,True,
+C10_w_state_3,claude-opus-4.6,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'ch'
+C11_w_state_4,claude-opus-4.6,bv,True,True,0.1768,False,fidelity=0.1768
+C12_amplitude_encode_2,claude-opus-4.6,bv,True,True,1.0,True,
+C13_amplitude_encode_3,claude-opus-4.6,bv,True,True,1.0,True,
+C14_quantum_adder_4,claude-opus-4.6,bv,True,True,1.0,True,
+C15_quantum_fourier_add_4,claude-opus-4.6,bv,True,True,0.7906,False,fidelity=0.7906
+D01_hardware_eff_2,claude-opus-4.6,bv,True,True,1.0,True,
+D02_hardware_eff_4,claude-opus-4.6,bv,True,True,1.0,True,
+D03_uccsd_2,claude-opus-4.6,bv,True,True,1.0,True,
+D04_qaoa_2layer,claude-opus-4.6,bv,True,True,0.0199,False,fidelity=0.0199
+D05_vqe_ry_linear_4,claude-opus-4.6,bv,True,True,1.0,True,
+D06_vqe_ry_circular_4,claude-opus-4.6,bv,True,True,1.0,True,
+D07_param_shift_2,claude-opus-4.6,bv,True,True,1.0,True,
+D08_data_reuploading_2,claude-opus-4.6,bv,True,True,1.0,True,
+D09_alternating_layer_4,claude-opus-4.6,bv,True,True,0.1043,False,fidelity=0.1043
+D10_strongly_entangling_3,claude-opus-4.6,bv,True,True,0.5,False,fidelity=0.5000
+E01_bit_flip_3,claude-opus-4.6,bv,True,True,1.0,True,
+E02_phase_flip_3,claude-opus-4.6,bv,True,True,1.0,True,
+E03_shor_9,claude-opus-4.6,bv,True,True,1.0,True,
+E04_steane_7_encode,claude-opus-4.6,bv,True,True,0.5,False,fidelity=0.5000
+E05_surface_code_patch,claude-opus-4.6,bv,True,True,0.0625,False,fidelity=0.0625
+E06_repetition_5,claude-opus-4.6,bv,True,True,1.0,True,
+E07_cat_state_5,claude-opus-4.6,bv,True,True,1.0,True,
+E08_logical_cnot_6,claude-opus-4.6,bv,True,True,1.0,True,
+F01_angle_encoding_4,claude-opus-4.6,bv,True,True,1.0,True,
+F02_amplitude_encoding_2,claude-opus-4.6,bv,True,True,1.0,True,
+F03_iqp_encoding_4,claude-opus-4.6,bv,True,True,0.5,False,fidelity=0.5000
+F04_qnn_layer_4,claude-opus-4.6,bv,True,True,1.0,True,
+F05_qcnn_8,claude-opus-4.6,bv,False,False,0.0,False,"syntax: expected an indented block after 'for' statement on line 7 (<check>, line 8)"
+F06_quantum_kernel_2,claude-opus-4.6,bv,True,True,1.0,True,
+F07_classifier_2,claude-opus-4.6,bv,True,True,1.0,True,
+F08_qgan_generator_3,claude-opus-4.6,bv,True,True,1.0,True,
+F09_barren_plateau_4,claude-opus-4.6,bv,True,True,0.0499,False,fidelity=0.0499
+F10_expressibility_test_3,claude-opus-4.6,bv,True,True,1.0,True,
+G01_qkd_e91,claude-opus-4.6,bv,True,True,1.0,True,
+G02_quantum_money_3,claude-opus-4.6,bv,True,True,1.0,True,
+G03_blind_quantum_4,claude-opus-4.6,bv,True,True,1.0,True,
+G04_quantum_voting_5,claude-opus-4.6,bv,True,True,1.0,True,
+G05_quantum_auction_4,claude-opus-4.6,bv,True,True,0.75,False,fidelity=0.7500
+G06_post_quantum_hash_6,claude-opus-4.6,bv,True,True,1.0,True,
+G07_quantum_commitment_3,claude-opus-4.6,bv,True,True,1.0,True,
+G08_entanglement_witness_4,claude-opus-4.6,bv,True,True,1.0,True,
+H01_bell_barrier,claude-opus-4.6,bv,True,True,1.0,True,
+H02_bell_compressed,claude-opus-4.6,bv,True,True,1.0,True,
+H03_bell_wide,claude-opus-4.6,bv,True,True,1.0,True,
+H04_ghz_reversed_labels,claude-opus-4.6,bv,True,True,1.0,True,
+H05_toffoli_decomposed,claude-opus-4.6,bv,True,True,1.0,True,
+H06_qft3_no_swap,claude-opus-4.6,bv,True,True,1.0,True,
+H07_grover2_combined_oracle,claude-opus-4.6,bv,True,True,1.0,True,
+H08_cnot_reversed,claude-opus-4.6,bv,True,True,1.0,True,
+H09_param_symbolic,claude-opus-4.6,bv,True,True,1.0,True,
+H10_multi_gate_per_step,claude-opus-4.6,bv,True,True,1.0,True,
+I01_shor_ecc_6,claude-opus-4.6,bv,True,True,0.25,False,fidelity=0.2500
+I02_grover_sha256_4,claude-opus-4.6,bv,True,True,1.0,True,
+I03_grover_aes_5,claude-opus-4.6,bv,True,True,0.125,False,fidelity=0.1250
+I04_lamport_sign_4,claude-opus-4.6,bv,True,True,1.0,True,
+I05_quantum_random_beacon_6,claude-opus-4.6,bv,True,True,1.0,True,
+I06_qkd_network_6,claude-opus-4.6,bv,True,True,1.0,True,
+I07_quantum_timestamp_4,claude-opus-4.6,bv,True,True,1.0,True,
+I08_kyber_lattice_6,claude-opus-4.6,bv,True,True,1.0,True,
+I09_dilithium_sign_5,claude-opus-4.6,bv,True,True,0.25,False,fidelity=0.2500
+I10_pow_quantum_speedup_4,claude-opus-4.6,bv,True,True,0.5,False,fidelity=0.5000
+I11_quantum_merkle_5,claude-opus-4.6,bv,True,True,1.0,True,
+I12_sphincs_hash_7,claude-opus-4.6,bv,True,True,0.375,False,fidelity=0.3750
+adv_01_qft3,claude-opus-4.6,bv,True,True,1.0,True,
+adv_02_grover3,claude-opus-4.6,bv,True,True,1.0,True,
+adv_03_vqe_ansatz,claude-opus-4.6,bv,True,True,1.0,True,
+adv_04_qaoa,claude-opus-4.6,bv,True,True,0.1821,False,fidelity=0.1821
+adv_05_qwalk,claude-opus-4.6,bv,True,True,1.0,True,
+adv_06_bv,claude-opus-4.6,bv,True,True,1.0,True,
+blockchain_bb84,claude-opus-4.6,bv,True,True,1.0,True,
+blockchain_bv_crypto,claude-opus-4.6,bv,True,True,1.0,True,
+blockchain_coin_flip,claude-opus-4.6,bv,True,True,1.0,True,
+blockchain_consensus,claude-opus-4.6,bv,True,True,1.0,True,
+blockchain_grover_mining,claude-opus-4.6,bv,True,True,0.5,False,fidelity=0.5000
+blockchain_lattice_pqc,claude-opus-4.6,bv,False,False,0.0,False,"syntax: expected an indented block after 'for' statement on line 7 (<check>, line 8)"
+blockchain_oblivious_transfer,claude-opus-4.6,bv,True,True,1.0,True,
+blockchain_qds,claude-opus-4.6,bv,True,True,0.25,False,fidelity=0.2500
+blockchain_qrng,claude-opus-4.6,bv,True,True,1.0,True,
+blockchain_qss,claude-opus-4.6,bv,True,True,1.0,True,
+blockchain_vrf,claude-opus-4.6,bv,True,True,0.2373,False,fidelity=0.2373
+demo_01_hadamard,claude-opus-4.6,bv,True,True,1.0,True,
+demo_02_cnot,claude-opus-4.6,bv,True,True,1.0,True,
+demo_03_bell,claude-opus-4.6,bv,True,True,1.0,True,
+demo_04_ghz,claude-opus-4.6,bv,True,True,1.0,True,
+demo_05_toffoli,claude-opus-4.6,bv,True,True,1.0,True,
+inter_01_swap_decomp,claude-opus-4.6,bv,True,True,1.0,True,
+inter_02_qft2,claude-opus-4.6,bv,True,True,1.0,True,
+inter_03_teleport_prep,claude-opus-4.6,bv,True,True,1.0,True,
+inter_04_deutsch,claude-opus-4.6,bv,True,True,1.0,True,
+inter_05_superdense,claude-opus-4.6,bv,True,True,1.0,True,
+inter_06_grover2,claude-opus-4.6,bv,True,True,1.0,True,
+inter_07_param_rot,claude-opus-4.6,bv,True,True,1.0,True,
+inter_08_fredkin,claude-opus-4.6,bv,True,True,1.0,True,
+inter_09_shift_reg,claude-opus-4.6,bv,True,True,1.0,True,
+inter_10_phase_est,claude-opus-4.6,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'crz'
+A01_single_y,claude-opus-4.6,tv,True,True,1.0,True,
+A02_single_s,claude-opus-4.6,tv,True,True,1.0,True,
+A03_single_t,claude-opus-4.6,tv,True,True,1.0,True,
+A04_single_rx,claude-opus-4.6,tv,True,True,1.0,True,
+A05_single_ry,claude-opus-4.6,tv,True,True,1.0,True,
+A06_single_rz,claude-opus-4.6,tv,True,True,1.0,True,
+A07_sqrt_x,claude-opus-4.6,tv,True,False,0.0,False,exec: name 'v' is not defined
+A08_controlled_z,claude-opus-4.6,tv,True,True,1.0,True,
+A09_controlled_ry,claude-opus-4.6,tv,True,True,1.0,True,
+A10_controlled_rx,claude-opus-4.6,tv,True,True,0.933,False,fidelity=0.9330
+A11_ccz,claude-opus-4.6,tv,True,False,0.0,False,exec: name 'unitary' is not defined
+A12_iswap,claude-opus-4.6,tv,True,True,1.0,True,
+A13_double_controlled_rz,claude-opus-4.6,tv,True,True,1.0,True,
+A14_multi_rotation,claude-opus-4.6,tv,True,True,1.0,True,
+A15_global_phase,claude-opus-4.6,tv,True,True,1.0,True,
+B01_ghz_4,claude-opus-4.6,tv,True,True,1.0,True,
+B02_ghz_5,claude-opus-4.6,tv,True,True,1.0,True,
+B03_ghz_6,claude-opus-4.6,tv,True,True,1.0,True,
+B04_ghz_8,claude-opus-4.6,tv,True,True,1.0,True,
+B05_ghz_10,claude-opus-4.6,tv,True,True,1.0,True,
+B06_qft_4,claude-opus-4.6,tv,True,False,0.0,False,exec: name 'cphaseshift' is not defined
+B07_qft_5,claude-opus-4.6,tv,True,True,1.0,True,
+B08_linear_entangle_6,claude-opus-4.6,tv,True,True,1.0,True,
+B09_ring_entangle_6,claude-opus-4.6,tv,True,True,1.0,True,
+B10_ladder_4,claude-opus-4.6,tv,True,True,1.0,True,
+B11_full_entangle_4,claude-opus-4.6,tv,True,True,1.0,True,
+B12_star_entangle_5,claude-opus-4.6,tv,True,True,1.0,True,
+C01_deutsch_jozsa_3,claude-opus-4.6,tv,True,True,1.0,True,
+C02_deutsch_jozsa_4,claude-opus-4.6,tv,True,True,1.0,True,
+C03_simon_4,claude-opus-4.6,tv,True,True,1.0,True,
+C04_grover_4,claude-opus-4.6,tv,True,True,1.0,True,
+C05_shor_period_4,claude-opus-4.6,tv,True,True,0.25,False,fidelity=0.2500
+C06_qpe_3,claude-opus-4.6,tv,True,True,1.0,True,
+C07_qpe_4,claude-opus-4.6,tv,True,True,1.0,True,
+C08_hhl_3,claude-opus-4.6,tv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'cry'
+C09_swap_test,claude-opus-4.6,tv,True,True,1.0,True,
+C10_w_state_3,claude-opus-4.6,tv,False,False,0.0,False,"syntax: invalid character '→' (U+2192) (<check>, line 25)"
+C11_w_state_4,claude-opus-4.6,tv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'ch'
+C12_amplitude_encode_2,claude-opus-4.6,tv,True,True,1.0,True,
+C13_amplitude_encode_3,claude-opus-4.6,tv,True,True,1.0,True,
+C14_quantum_adder_4,claude-opus-4.6,tv,True,True,1.0,True,
+C15_quantum_fourier_add_4,claude-opus-4.6,tv,True,False,0.0,False,exec: name 'cphaseshift' is not defined
+D01_hardware_eff_2,claude-opus-4.6,tv,True,True,1.0,True,
+D02_hardware_eff_4,claude-opus-4.6,tv,True,True,1.0,True,
+D03_uccsd_2,claude-opus-4.6,tv,True,True,1.0,True,
+D04_qaoa_2layer,claude-opus-4.6,tv,True,True,0.3554,False,fidelity=0.3554
+D05_vqe_ry_linear_4,claude-opus-4.6,tv,True,True,1.0,True,
+D06_vqe_ry_circular_4,claude-opus-4.6,tv,True,True,1.0,True,
+D07_param_shift_2,claude-opus-4.6,tv,True,True,1.0,True,
+D08_data_reuploading_2,claude-opus-4.6,tv,True,True,1.0,True,
+D09_alternating_layer_4,claude-opus-4.6,tv,True,True,0.2443,False,fidelity=0.2443
+D10_strongly_entangling_3,claude-opus-4.6,tv,True,True,0.5,False,fidelity=0.5000
+E01_bit_flip_3,claude-opus-4.6,tv,True,True,1.0,True,
+E02_phase_flip_3,claude-opus-4.6,tv,True,True,1.0,True,
+E03_shor_9,claude-opus-4.6,tv,True,True,1.0,True,
+E04_steane_7_encode,claude-opus-4.6,tv,True,True,1.0,True,
+E05_surface_code_patch,claude-opus-4.6,tv,True,True,0.125,False,fidelity=0.1250
+E06_repetition_5,claude-opus-4.6,tv,True,True,1.0,True,
+E07_cat_state_5,claude-opus-4.6,tv,True,True,1.0,True,
+E08_logical_cnot_6,claude-opus-4.6,tv,True,True,0.25,False,fidelity=0.2500
+F01_angle_encoding_4,claude-opus-4.6,tv,True,True,1.0,True,
+F02_amplitude_encoding_2,claude-opus-4.6,tv,True,True,1.0,True,
+F03_iqp_encoding_4,claude-opus-4.6,tv,True,True,0.5,False,fidelity=0.5000
+F04_qnn_layer_4,claude-opus-4.6,tv,True,True,1.0,True,
+F05_qcnn_8,claude-opus-4.6,tv,True,True,1.0,True,
+F06_quantum_kernel_2,claude-opus-4.6,tv,True,True,1.0,True,
+F07_classifier_2,claude-opus-4.6,tv,True,True,1.0,True,
+F08_qgan_generator_3,claude-opus-4.6,tv,True,True,1.0,True,
+F09_barren_plateau_4,claude-opus-4.6,tv,True,True,1.0,True,
+F10_expressibility_test_3,claude-opus-4.6,tv,True,True,0.5,False,fidelity=0.5000
+G01_qkd_e91,claude-opus-4.6,tv,True,True,1.0,True,
+G02_quantum_money_3,claude-opus-4.6,tv,True,True,1.0,True,
+G03_blind_quantum_4,claude-opus-4.6,tv,True,True,1.0,True,
+G04_quantum_voting_5,claude-opus-4.6,tv,True,True,1.0,True,
+G05_quantum_auction_4,claude-opus-4.6,tv,True,True,0.75,False,fidelity=0.7500
+G06_post_quantum_hash_6,claude-opus-4.6,tv,True,True,1.0,True,
+G07_quantum_commitment_3,claude-opus-4.6,tv,True,True,1.0,True,
+G08_entanglement_witness_4,claude-opus-4.6,tv,True,True,1.0,True,
+H01_bell_barrier,claude-opus-4.6,tv,True,True,1.0,True,
+H02_bell_compressed,claude-opus-4.6,tv,True,True,1.0,True,
+H03_bell_wide,claude-opus-4.6,tv,True,True,1.0,True,
+H04_ghz_reversed_labels,claude-opus-4.6,tv,True,True,1.0,True,
+H05_toffoli_decomposed,claude-opus-4.6,tv,False,False,0.0,False,"syntax: invalid syntax (<check>, line 23)"
+H06_qft3_no_swap,claude-opus-4.6,tv,True,True,1.0,True,
+H07_grover2_combined_oracle,claude-opus-4.6,tv,True,True,1.0,True,
+H08_cnot_reversed,claude-opus-4.6,tv,True,True,1.0,True,
+H09_param_symbolic,claude-opus-4.6,tv,True,True,1.0,True,
+H10_multi_gate_per_step,claude-opus-4.6,tv,True,True,1.0,True,
+I01_shor_ecc_6,claude-opus-4.6,tv,True,True,0.2317,False,fidelity=0.2317
+I02_grover_sha256_4,claude-opus-4.6,tv,True,True,1.0,True,
+I03_grover_aes_5,claude-opus-4.6,tv,True,True,0.0,False,fidelity=0.0000
+I04_lamport_sign_4,claude-opus-4.6,tv,True,True,1.0,True,
+I05_quantum_random_beacon_6,claude-opus-4.6,tv,True,True,1.0,True,
+I06_qkd_network_6,claude-opus-4.6,tv,True,True,1.0,True,
+I07_quantum_timestamp_4,claude-opus-4.6,tv,True,True,1.0,True,
+I08_kyber_lattice_6,claude-opus-4.6,tv,True,True,0.5,False,fidelity=0.5000
+I09_dilithium_sign_5,claude-opus-4.6,tv,True,True,0.25,False,fidelity=0.2500
+I10_pow_quantum_speedup_4,claude-opus-4.6,tv,True,True,0.0625,False,fidelity=0.0625
+I11_quantum_merkle_5,claude-opus-4.6,tv,True,True,0.5,False,fidelity=0.5000
+I12_sphincs_hash_7,claude-opus-4.6,tv,True,True,0.1875,False,fidelity=0.1875
+adv_01_qft3,claude-opus-4.6,tv,True,True,1.0,True,
+adv_02_grover3,claude-opus-4.6,tv,True,True,1.0,True,
+adv_03_vqe_ansatz,claude-opus-4.6,tv,True,True,1.0,True,
+adv_04_qaoa,claude-opus-4.6,tv,True,True,0.25,False,fidelity=0.2500
+adv_05_qwalk,claude-opus-4.6,tv,True,True,1.0,True,
+adv_06_bv,claude-opus-4.6,tv,True,True,1.0,True,
+blockchain_bb84,claude-opus-4.6,tv,True,True,1.0,True,
+blockchain_bv_crypto,claude-opus-4.6,tv,True,True,1.0,True,
+blockchain_coin_flip,claude-opus-4.6,tv,True,True,1.0,True,
+blockchain_consensus,claude-opus-4.6,tv,True,False,0.0,False,exec: name 'blockchain_consensus' is not defined
+blockchain_grover_mining,claude-opus-4.6,tv,True,True,0.25,False,fidelity=0.2500
+blockchain_lattice_pqc,claude-opus-4.6,tv,True,True,0.5,False,fidelity=0.5000
+blockchain_oblivious_transfer,claude-opus-4.6,tv,True,True,1.0,True,
+blockchain_qds,claude-opus-4.6,tv,False,False,0.0,False,"syntax: unexpected indent (<check>, line 2)"
+blockchain_qrng,claude-opus-4.6,tv,True,True,1.0,True,
+blockchain_qss,claude-opus-4.6,tv,True,True,1.0,True,
+blockchain_vrf,claude-opus-4.6,tv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'crz'
+demo_01_hadamard,claude-opus-4.6,tv,True,True,1.0,True,
+demo_02_cnot,claude-opus-4.6,tv,True,True,1.0,True,
+demo_03_bell,claude-opus-4.6,tv,True,True,1.0,True,
+demo_04_ghz,claude-opus-4.6,tv,True,True,1.0,True,
+demo_05_toffoli,claude-opus-4.6,tv,True,True,1.0,True,
+inter_01_swap_decomp,claude-opus-4.6,tv,True,True,1.0,True,
+inter_02_qft2,claude-opus-4.6,tv,True,True,1.0,True,
+inter_03_teleport_prep,claude-opus-4.6,tv,True,True,1.0,True,
+inter_04_deutsch,claude-opus-4.6,tv,True,True,1.0,True,
+inter_05_superdense,claude-opus-4.6,tv,True,True,1.0,True,
+inter_06_grover2,claude-opus-4.6,tv,True,True,1.0,True,
+inter_07_param_rot,claude-opus-4.6,tv,True,True,1.0,True,
+inter_08_fredkin,claude-opus-4.6,tv,True,True,1.0,True,
+inter_09_shift_reg,claude-opus-4.6,tv,True,True,1.0,True,
+inter_10_phase_est,claude-opus-4.6,tv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'crz'
+A01_single_y,claude-sonnet-4.6,bv,True,True,1.0,True,
+A02_single_s,claude-sonnet-4.6,bv,True,True,1.0,True,
+A03_single_t,claude-sonnet-4.6,bv,True,True,1.0,True,
+A04_single_rx,claude-sonnet-4.6,bv,True,True,1.0,True,
+A05_single_ry,claude-sonnet-4.6,bv,True,True,1.0,True,
+A06_single_rz,claude-sonnet-4.6,bv,True,True,1.0,True,
+A07_sqrt_x,claude-sonnet-4.6,bv,True,True,1.0,True,
+A08_controlled_z,claude-sonnet-4.6,bv,True,True,1.0,True,
+A09_controlled_ry,claude-sonnet-4.6,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'cry'
+A10_controlled_rx,claude-sonnet-4.6,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'crx'
+A11_ccz,claude-sonnet-4.6,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'ccz'
+A12_iswap,claude-sonnet-4.6,bv,True,True,1.0,True,
+A13_double_controlled_rz,claude-sonnet-4.6,bv,True,True,1.0,True,
+A14_multi_rotation,claude-sonnet-4.6,bv,True,True,1.0,True,
+A15_global_phase,claude-sonnet-4.6,bv,True,True,1.0,True,
+B01_ghz_4,claude-sonnet-4.6,bv,True,True,1.0,True,
+B02_ghz_5,claude-sonnet-4.6,bv,True,True,1.0,True,
+B03_ghz_6,claude-sonnet-4.6,bv,True,True,1.0,True,
+B04_ghz_8,claude-sonnet-4.6,bv,True,True,1.0,True,
+B05_ghz_10,claude-sonnet-4.6,bv,True,True,1.0,True,
+B06_qft_4,claude-sonnet-4.6,bv,True,True,1.0,True,
+B07_qft_5,claude-sonnet-4.6,bv,True,True,1.0,True,
+B08_linear_entangle_6,claude-sonnet-4.6,bv,True,True,1.0,True,
+B09_ring_entangle_6,claude-sonnet-4.6,bv,True,True,1.0,True,
+B10_ladder_4,claude-sonnet-4.6,bv,True,True,1.0,True,
+B11_full_entangle_4,claude-sonnet-4.6,bv,True,True,1.0,True,
+B12_star_entangle_5,claude-sonnet-4.6,bv,True,True,1.0,True,
+C01_deutsch_jozsa_3,claude-sonnet-4.6,bv,True,True,1.0,True,
+C02_deutsch_jozsa_4,claude-sonnet-4.6,bv,True,True,1.0,True,
+C03_simon_4,claude-sonnet-4.6,bv,True,True,1.0,True,
+C04_grover_4,claude-sonnet-4.6,bv,True,True,1.0,True,
+C05_shor_period_4,claude-sonnet-4.6,bv,True,True,0.3953,False,fidelity=0.3953
+C06_qpe_3,claude-sonnet-4.6,bv,True,True,1.0,True,
+C07_qpe_4,claude-sonnet-4.6,bv,True,True,1.0,True,
+C08_hhl_3,claude-sonnet-4.6,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'cp'
+C09_swap_test,claude-sonnet-4.6,bv,True,True,1.0,True,
+C10_w_state_3,claude-sonnet-4.6,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'ch'
+C11_w_state_4,claude-sonnet-4.6,bv,False,False,0.0,False,"syntax: invalid syntax. Perhaps you forgot a comma? (<check>, line 5)"
+C12_amplitude_encode_2,claude-sonnet-4.6,bv,True,True,1.0,True,
+C13_amplitude_encode_3,claude-sonnet-4.6,bv,True,True,1.0,True,
+C14_quantum_adder_4,claude-sonnet-4.6,bv,True,True,0.75,False,fidelity=0.7500
+C15_quantum_fourier_add_4,claude-sonnet-4.6,bv,True,True,0.7906,False,fidelity=0.7906
+D01_hardware_eff_2,claude-sonnet-4.6,bv,True,True,1.0,True,
+D02_hardware_eff_4,claude-sonnet-4.6,bv,True,True,1.0,True,
+D03_uccsd_2,claude-sonnet-4.6,bv,True,True,1.0,True,
+D04_qaoa_2layer,claude-sonnet-4.6,bv,True,True,0.1627,False,fidelity=0.1627
+D05_vqe_ry_linear_4,claude-sonnet-4.6,bv,True,True,1.0,True,
+D06_vqe_ry_circular_4,claude-sonnet-4.6,bv,True,True,0.5,False,fidelity=0.5000
+D07_param_shift_2,claude-sonnet-4.6,bv,True,True,1.0,True,
+D08_data_reuploading_2,claude-sonnet-4.6,bv,True,True,1.0,True,
+D09_alternating_layer_4,claude-sonnet-4.6,bv,True,True,1.0,True,
+D10_strongly_entangling_3,claude-sonnet-4.6,bv,True,True,1.0,True,
+E01_bit_flip_3,claude-sonnet-4.6,bv,True,True,1.0,True,
+E02_phase_flip_3,claude-sonnet-4.6,bv,True,True,1.0,True,
+E03_shor_9,claude-sonnet-4.6,bv,True,True,1.0,True,
+E04_steane_7_encode,claude-sonnet-4.6,bv,True,True,0.25,False,fidelity=0.2500
+E05_surface_code_patch,claude-sonnet-4.6,bv,True,False,0.0,False,exec: Operator qubit count 2 must be equal to size of target qubit set QubitSet([Qubit(3)])
+E06_repetition_5,claude-sonnet-4.6,bv,True,True,1.0,True,
+E07_cat_state_5,claude-sonnet-4.6,bv,True,True,1.0,True,
+E08_logical_cnot_6,claude-sonnet-4.6,bv,True,True,0.125,False,fidelity=0.1250
+F01_angle_encoding_4,claude-sonnet-4.6,bv,True,True,1.0,True,
+F02_amplitude_encoding_2,claude-sonnet-4.6,bv,True,True,1.0,True,
+F03_iqp_encoding_4,claude-sonnet-4.6,bv,True,True,1.0,True,
+F04_qnn_layer_4,claude-sonnet-4.6,bv,True,True,1.0,True,
+F05_qcnn_8,claude-sonnet-4.6,bv,True,True,1.0,True,
+F06_quantum_kernel_2,claude-sonnet-4.6,bv,True,True,1.0,True,
+F07_classifier_2,claude-sonnet-4.6,bv,True,True,1.0,True,
+F08_qgan_generator_3,claude-sonnet-4.6,bv,True,True,1.0,True,
+F09_barren_plateau_4,claude-sonnet-4.6,bv,True,True,1.0,True,
+F10_expressibility_test_3,claude-sonnet-4.6,bv,True,True,0.25,False,fidelity=0.2500
+G01_qkd_e91,claude-sonnet-4.6,bv,True,True,1.0,True,
+G02_quantum_money_3,claude-sonnet-4.6,bv,True,True,1.0,True,
+G03_blind_quantum_4,claude-sonnet-4.6,bv,True,True,0.5,False,fidelity=0.5000
+G04_quantum_voting_5,claude-sonnet-4.6,bv,True,True,1.0,True,
+G05_quantum_auction_4,claude-sonnet-4.6,bv,True,True,0.125,False,fidelity=0.1250
+G06_post_quantum_hash_6,claude-sonnet-4.6,bv,True,True,0.25,False,fidelity=0.2500
+G07_quantum_commitment_3,claude-sonnet-4.6,bv,True,True,1.0,True,
+G08_entanglement_witness_4,claude-sonnet-4.6,bv,True,True,1.0,True,
+H01_bell_barrier,claude-sonnet-4.6,bv,True,True,1.0,True,
+H02_bell_compressed,claude-sonnet-4.6,bv,True,True,1.0,True,
+H03_bell_wide,claude-sonnet-4.6,bv,True,True,1.0,True,
+H04_ghz_reversed_labels,claude-sonnet-4.6,bv,True,True,1.0,True,
+H05_toffoli_decomposed,claude-sonnet-4.6,bv,True,True,1.0,True,
+H06_qft3_no_swap,claude-sonnet-4.6,bv,True,True,1.0,True,
+H07_grover2_combined_oracle,claude-sonnet-4.6,bv,True,True,1.0,True,
+H08_cnot_reversed,claude-sonnet-4.6,bv,True,True,1.0,True,
+H09_param_symbolic,claude-sonnet-4.6,bv,True,True,1.0,True,
+H10_multi_gate_per_step,claude-sonnet-4.6,bv,True,True,1.0,True,
+I01_shor_ecc_6,claude-sonnet-4.6,bv,True,True,0.3125,False,fidelity=0.3125
+I02_grover_sha256_4,claude-sonnet-4.6,bv,True,True,1.0,True,
+I03_grover_aes_5,claude-sonnet-4.6,bv,True,True,0.25,False,fidelity=0.2500
+I04_lamport_sign_4,claude-sonnet-4.6,bv,True,True,1.0,True,
+I05_quantum_random_beacon_6,claude-sonnet-4.6,bv,True,True,0.25,False,fidelity=0.2500
+I06_qkd_network_6,claude-sonnet-4.6,bv,True,True,1.0,True,
+I07_quantum_timestamp_4,claude-sonnet-4.6,bv,True,True,1.0,True,
+I08_kyber_lattice_6,claude-sonnet-4.6,bv,True,True,0.25,False,fidelity=0.2500
+I09_dilithium_sign_5,claude-sonnet-4.6,bv,True,True,0.25,False,fidelity=0.2500
+I10_pow_quantum_speedup_4,claude-sonnet-4.6,bv,True,True,0.0,False,fidelity=0.0000
+I11_quantum_merkle_5,claude-sonnet-4.6,bv,True,True,0.25,False,fidelity=0.2500
+I12_sphincs_hash_7,claude-sonnet-4.6,bv,True,True,0.0625,False,fidelity=0.0625
+adv_01_qft3,claude-sonnet-4.6,bv,True,True,1.0,True,
+adv_02_grover3,claude-sonnet-4.6,bv,True,True,1.0,True,
+adv_03_vqe_ansatz,claude-sonnet-4.6,bv,True,True,1.0,True,
+adv_04_qaoa,claude-sonnet-4.6,bv,True,True,0.5,False,fidelity=0.5000
+adv_05_qwalk,claude-sonnet-4.6,bv,True,True,1.0,True,
+adv_06_bv,claude-sonnet-4.6,bv,True,True,1.0,True,
+blockchain_bb84,claude-sonnet-4.6,bv,True,True,1.0,True,
+blockchain_bv_crypto,claude-sonnet-4.6,bv,True,True,1.0,True,
+blockchain_coin_flip,claude-sonnet-4.6,bv,True,True,1.0,True,
+blockchain_consensus,claude-sonnet-4.6,bv,True,True,1.0,True,
+blockchain_grover_mining,claude-sonnet-4.6,bv,True,True,1.0,True,
+blockchain_lattice_pqc,claude-sonnet-4.6,bv,True,True,1.0,True,
+blockchain_oblivious_transfer,claude-sonnet-4.6,bv,True,True,1.0,True,
+blockchain_qds,claude-sonnet-4.6,bv,True,True,0.5,False,fidelity=0.5000
+blockchain_qrng,claude-sonnet-4.6,bv,True,True,1.0,True,
+blockchain_qss,claude-sonnet-4.6,bv,True,True,1.0,True,
+blockchain_vrf,claude-sonnet-4.6,bv,True,False,0.0,False,exec: Operator qubit count 2 must be equal to size of target qubit set QubitSet([Qubit(0)])
+demo_01_hadamard,claude-sonnet-4.6,bv,True,True,1.0,True,
+demo_02_cnot,claude-sonnet-4.6,bv,True,True,1.0,True,
+demo_03_bell,claude-sonnet-4.6,bv,True,True,1.0,True,
+demo_04_ghz,claude-sonnet-4.6,bv,True,True,1.0,True,
+demo_05_toffoli,claude-sonnet-4.6,bv,True,True,1.0,True,
+inter_01_swap_decomp,claude-sonnet-4.6,bv,True,True,1.0,True,
+inter_02_qft2,claude-sonnet-4.6,bv,True,True,1.0,True,
+inter_03_teleport_prep,claude-sonnet-4.6,bv,True,True,1.0,True,
+inter_04_deutsch,claude-sonnet-4.6,bv,True,True,1.0,True,
+inter_05_superdense,claude-sonnet-4.6,bv,True,True,1.0,True,
+inter_06_grover2,claude-sonnet-4.6,bv,True,True,1.0,True,
+inter_07_param_rot,claude-sonnet-4.6,bv,True,True,1.0,True,
+inter_08_fredkin,claude-sonnet-4.6,bv,True,True,1.0,True,
+inter_09_shift_reg,claude-sonnet-4.6,bv,True,True,1.0,True,
+inter_10_phase_est,claude-sonnet-4.6,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'crz'
+A01_single_y,claude-sonnet-4.6,tv,True,True,1.0,True,
+A02_single_s,claude-sonnet-4.6,tv,True,True,1.0,True,
+A03_single_t,claude-sonnet-4.6,tv,True,True,1.0,True,
+A04_single_rx,claude-sonnet-4.6,tv,True,True,1.0,True,
+A05_single_ry,claude-sonnet-4.6,tv,True,True,1.0,True,
+A06_single_rz,claude-sonnet-4.6,tv,True,True,1.0,True,
+A07_sqrt_x,claude-sonnet-4.6,tv,True,False,0.0,False,exec: name 'v' is not defined
+A08_controlled_z,claude-sonnet-4.6,tv,True,True,1.0,True,
+A09_controlled_ry,claude-sonnet-4.6,tv,True,True,1.0,True,
+A10_controlled_rx,claude-sonnet-4.6,tv,True,True,0.933,False,fidelity=0.9330
+A11_ccz,claude-sonnet-4.6,tv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'ccz'
+A12_iswap,claude-sonnet-4.6,tv,True,True,1.0,True,
+A13_double_controlled_rz,claude-sonnet-4.6,tv,True,True,1.0,True,
+A14_multi_rotation,claude-sonnet-4.6,tv,True,True,1.0,True,
+A15_global_phase,claude-sonnet-4.6,tv,True,True,1.0,True,
+B01_ghz_4,claude-sonnet-4.6,tv,True,True,1.0,True,
+B02_ghz_5,claude-sonnet-4.6,tv,True,True,1.0,True,
+B03_ghz_6,claude-sonnet-4.6,tv,True,True,1.0,True,
+B04_ghz_8,claude-sonnet-4.6,tv,True,True,1.0,True,
+B05_ghz_10,claude-sonnet-4.6,tv,True,True,1.0,True,
+B06_qft_4,claude-sonnet-4.6,tv,True,True,1.0,True,
+B07_qft_5,claude-sonnet-4.6,tv,True,False,0.0,False,exec: name 'π' is not defined
+B08_linear_entangle_6,claude-sonnet-4.6,tv,True,True,1.0,True,
+B09_ring_entangle_6,claude-sonnet-4.6,tv,True,True,1.0,True,
+B10_ladder_4,claude-sonnet-4.6,tv,True,True,1.0,True,
+B11_full_entangle_4,claude-sonnet-4.6,tv,True,True,1.0,True,
+B12_star_entangle_5,claude-sonnet-4.6,tv,True,True,1.0,True,
+C01_deutsch_jozsa_3,claude-sonnet-4.6,tv,True,True,1.0,True,
+C02_deutsch_jozsa_4,claude-sonnet-4.6,tv,True,True,1.0,True,
+C03_simon_4,claude-sonnet-4.6,tv,True,True,1.0,True,
+C04_grover_4,claude-sonnet-4.6,tv,True,True,1.0,True,
+C05_shor_period_4,claude-sonnet-4.6,tv,True,True,0.625,False,fidelity=0.6250
+C06_qpe_3,claude-sonnet-4.6,tv,True,True,1.0,True,
+C07_qpe_4,claude-sonnet-4.6,tv,True,True,1.0,True,
+C08_hhl_3,claude-sonnet-4.6,tv,True,False,0.0,False,exec: 'Ry' object has no attribute 'controlled'
+C09_swap_test,claude-sonnet-4.6,tv,True,True,1.0,True,
+C10_w_state_3,claude-sonnet-4.6,tv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'ch'
+C11_w_state_4,claude-sonnet-4.6,tv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'ch'
+C12_amplitude_encode_2,claude-sonnet-4.6,tv,True,True,1.0,True,
+C13_amplitude_encode_3,claude-sonnet-4.6,tv,True,True,1.0,True,
+C14_quantum_adder_4,claude-sonnet-4.6,tv,True,True,0.5,False,fidelity=0.5000
+C15_quantum_fourier_add_4,claude-sonnet-4.6,tv,True,True,1.0,True,
+D01_hardware_eff_2,claude-sonnet-4.6,tv,True,True,1.0,True,
+D02_hardware_eff_4,claude-sonnet-4.6,tv,True,True,1.0,True,
+D03_uccsd_2,claude-sonnet-4.6,tv,True,True,1.0,True,
+D04_qaoa_2layer,claude-sonnet-4.6,tv,True,True,0.2358,False,fidelity=0.2358
+D05_vqe_ry_linear_4,claude-sonnet-4.6,tv,True,True,1.0,True,
+D06_vqe_ry_circular_4,claude-sonnet-4.6,tv,True,True,1.0,True,
+D07_param_shift_2,claude-sonnet-4.6,tv,True,True,1.0,True,
+D08_data_reuploading_2,claude-sonnet-4.6,tv,True,True,1.0,True,
+D09_alternating_layer_4,claude-sonnet-4.6,tv,True,True,1.0,True,
+D10_strongly_entangling_3,claude-sonnet-4.6,tv,True,True,0.5,False,fidelity=0.5000
+E01_bit_flip_3,claude-sonnet-4.6,tv,True,True,1.0,True,
+E02_phase_flip_3,claude-sonnet-4.6,tv,True,True,1.0,True,
+E03_shor_9,claude-sonnet-4.6,tv,True,True,1.0,True,
+E04_steane_7_encode,claude-sonnet-4.6,tv,True,True,0.5,False,fidelity=0.5000
+E05_surface_code_patch,claude-sonnet-4.6,tv,True,True,0.0625,False,fidelity=0.0625
+E06_repetition_5,claude-sonnet-4.6,tv,True,True,1.0,True,
+E07_cat_state_5,claude-sonnet-4.6,tv,True,True,1.0,True,
+E08_logical_cnot_6,claude-sonnet-4.6,tv,True,True,0.25,False,fidelity=0.2500
+F01_angle_encoding_4,claude-sonnet-4.6,tv,True,True,1.0,True,
+F02_amplitude_encoding_2,claude-sonnet-4.6,tv,True,True,1.0,True,
+F03_iqp_encoding_4,claude-sonnet-4.6,tv,True,True,1.0,True,
+F04_qnn_layer_4,claude-sonnet-4.6,tv,True,True,1.0,True,
+F05_qcnn_8,claude-sonnet-4.6,tv,True,True,1.0,True,
+F06_quantum_kernel_2,claude-sonnet-4.6,tv,True,True,1.0,True,
+F07_classifier_2,claude-sonnet-4.6,tv,True,True,1.0,True,
+F08_qgan_generator_3,claude-sonnet-4.6,tv,True,True,1.0,True,
+F09_barren_plateau_4,claude-sonnet-4.6,tv,True,True,1.0,True,
+F10_expressibility_test_3,claude-sonnet-4.6,tv,True,True,1.0,True,
+G01_qkd_e91,claude-sonnet-4.6,tv,True,True,1.0,True,
+G02_quantum_money_3,claude-sonnet-4.6,tv,True,True,1.0,True,
+G03_blind_quantum_4,claude-sonnet-4.6,tv,True,True,0.5,False,fidelity=0.5000
+G04_quantum_voting_5,claude-sonnet-4.6,tv,True,True,1.0,True,
+G05_quantum_auction_4,claude-sonnet-4.6,tv,True,False,0.0,False,exec: name 'ccnot' is not defined
+G06_post_quantum_hash_6,claude-sonnet-4.6,tv,True,True,0.5,False,fidelity=0.5000
+G07_quantum_commitment_3,claude-sonnet-4.6,tv,True,True,1.0,True,
+G08_entanglement_witness_4,claude-sonnet-4.6,tv,True,True,1.0,True,
+H01_bell_barrier,claude-sonnet-4.6,tv,True,True,1.0,True,
+H02_bell_compressed,claude-sonnet-4.6,tv,True,True,1.0,True,
+H03_bell_wide,claude-sonnet-4.6,tv,True,True,1.0,True,
+H04_ghz_reversed_labels,claude-sonnet-4.6,tv,True,True,1.0,True,
+H05_toffoli_decomposed,claude-sonnet-4.6,tv,True,False,0.0,False,exec: name 'ti' is not defined
+H06_qft3_no_swap,claude-sonnet-4.6,tv,True,False,0.0,False,exec: name 'no_swap' is not defined
+H07_grover2_combined_oracle,claude-sonnet-4.6,tv,True,True,1.0,True,
+H08_cnot_reversed,claude-sonnet-4.6,tv,True,True,1.0,True,
+H09_param_symbolic,claude-sonnet-4.6,tv,True,True,1.0,True,
+H10_multi_gate_per_step,claude-sonnet-4.6,tv,True,True,1.0,True,
+I01_shor_ecc_6,claude-sonnet-4.6,tv,True,True,0.25,False,fidelity=0.2500
+I02_grover_sha256_4,claude-sonnet-4.6,tv,True,True,0.25,False,fidelity=0.2500
+I03_grover_aes_5,claude-sonnet-4.6,tv,True,True,0.125,False,fidelity=0.1250
+I04_lamport_sign_4,claude-sonnet-4.6,tv,True,True,1.0,True,
+I05_quantum_random_beacon_6,claude-sonnet-4.6,tv,True,True,1.0,True,
+I06_qkd_network_6,claude-sonnet-4.6,tv,True,True,1.0,True,
+I07_quantum_timestamp_4,claude-sonnet-4.6,tv,True,True,1.0,True,
+I08_kyber_lattice_6,claude-sonnet-4.6,tv,True,True,0.25,False,fidelity=0.2500
+I09_dilithium_sign_5,claude-sonnet-4.6,tv,True,True,0.5,False,fidelity=0.5000
+I10_pow_quantum_speedup_4,claude-sonnet-4.6,tv,True,True,0.0,False,fidelity=0.0000
+I11_quantum_merkle_5,claude-sonnet-4.6,tv,True,True,0.5,False,fidelity=0.5000
+I12_sphincs_hash_7,claude-sonnet-4.6,tv,True,True,0.0625,False,fidelity=0.0625
+adv_01_qft3,claude-sonnet-4.6,tv,True,False,0.0,False,exec: name 'cphaseshift' is not defined
+adv_02_grover3,claude-sonnet-4.6,tv,True,True,1.0,True,
+adv_03_vqe_ansatz,claude-sonnet-4.6,tv,True,True,1.0,True,
+adv_04_qaoa,claude-sonnet-4.6,tv,True,True,0.25,False,fidelity=0.2500
+adv_05_qwalk,claude-sonnet-4.6,tv,True,True,1.0,True,
+adv_06_bv,claude-sonnet-4.6,tv,True,True,0.0,False,fidelity=0.0000
+blockchain_bb84,claude-sonnet-4.6,tv,True,True,1.0,True,
+blockchain_bv_crypto,claude-sonnet-4.6,tv,True,True,1.0,True,
+blockchain_coin_flip,claude-sonnet-4.6,tv,True,True,1.0,True,
+blockchain_consensus,claude-sonnet-4.6,tv,True,True,1.0,True,
+blockchain_grover_mining,claude-sonnet-4.6,tv,True,True,1.0,True,
+blockchain_lattice_pqc,claude-sonnet-4.6,tv,True,True,1.0,True,
+blockchain_oblivious_transfer,claude-sonnet-4.6,tv,True,True,1.0,True,
+blockchain_qds,claude-sonnet-4.6,tv,True,True,0.5,False,fidelity=0.5000
+blockchain_qrng,claude-sonnet-4.6,tv,True,True,1.0,True,
+blockchain_qss,claude-sonnet-4.6,tv,True,True,1.0,True,
+blockchain_vrf,claude-sonnet-4.6,tv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'crz'
+demo_01_hadamard,claude-sonnet-4.6,tv,True,True,1.0,True,
+demo_02_cnot,claude-sonnet-4.6,tv,True,True,1.0,True,
+demo_03_bell,claude-sonnet-4.6,tv,True,True,1.0,True,
+demo_04_ghz,claude-sonnet-4.6,tv,True,True,1.0,True,
+demo_05_toffoli,claude-sonnet-4.6,tv,True,True,1.0,True,
+inter_01_swap_decomp,claude-sonnet-4.6,tv,True,True,1.0,True,
+inter_02_qft2,claude-sonnet-4.6,tv,True,True,1.0,True,
+inter_03_teleport_prep,claude-sonnet-4.6,tv,True,True,1.0,True,
+inter_04_deutsch,claude-sonnet-4.6,tv,True,True,1.0,True,
+inter_05_superdense,claude-sonnet-4.6,tv,True,True,1.0,True,
+inter_06_grover2,claude-sonnet-4.6,tv,True,True,1.0,True,
+inter_07_param_rot,claude-sonnet-4.6,tv,True,True,1.0,True,
+inter_08_fredkin,claude-sonnet-4.6,tv,True,True,1.0,True,
+inter_09_shift_reg,claude-sonnet-4.6,tv,True,True,1.0,True,
+inter_10_phase_est,claude-sonnet-4.6,tv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'crz'
+A01_single_y,claude-haiku-4.5,bv,True,True,1.0,True,
+A02_single_s,claude-haiku-4.5,bv,True,True,1.0,True,
+A03_single_t,claude-haiku-4.5,bv,True,True,1.0,True,
+A04_single_rx,claude-haiku-4.5,bv,True,True,1.0,True,
+A05_single_ry,claude-haiku-4.5,bv,True,True,1.0,True,
+A06_single_rz,claude-haiku-4.5,bv,True,False,0.0,False,exec: name 'pi' is not defined
+A07_sqrt_x,claude-haiku-4.5,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'sqrt_x'
+A08_controlled_z,claude-haiku-4.5,bv,True,True,1.0,True,
+A09_controlled_ry,claude-haiku-4.5,bv,True,True,0.4619,False,fidelity=0.4619
+A10_controlled_rx,claude-haiku-4.5,bv,True,True,0.5,False,fidelity=0.5000
+A11_ccz,claude-haiku-4.5,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'ccz'
+A12_iswap,claude-haiku-4.5,bv,True,True,1.0,True,
+A13_double_controlled_rz,claude-haiku-4.5,bv,True,True,0.0,False,fidelity=0.0000
+A14_multi_rotation,claude-haiku-4.5,bv,True,True,1.0,True,
+A15_global_phase,claude-haiku-4.5,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 't_dagger'
+B01_ghz_4,claude-haiku-4.5,bv,True,True,1.0,True,
+B02_ghz_5,claude-haiku-4.5,bv,True,True,1.0,True,
+B03_ghz_6,claude-haiku-4.5,bv,True,True,1.0,True,
+B04_ghz_8,claude-haiku-4.5,bv,True,True,1.0,True,
+B05_ghz_10,claude-haiku-4.5,bv,True,True,0.0039,False,fidelity=0.0039
+B06_qft_4,claude-haiku-4.5,bv,True,True,0.25,False,fidelity=0.2500
+B07_qft_5,claude-haiku-4.5,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'measure_all'
+B08_linear_entangle_6,claude-haiku-4.5,bv,True,True,1.0,True,
+B09_ring_entangle_6,claude-haiku-4.5,bv,True,True,1.0,True,
+B10_ladder_4,claude-haiku-4.5,bv,True,True,0.25,False,fidelity=0.2500
+B11_full_entangle_4,claude-haiku-4.5,bv,True,True,1.0,True,
+B12_star_entangle_5,claude-haiku-4.5,bv,True,True,1.0,True,
+C01_deutsch_jozsa_3,claude-haiku-4.5,bv,True,True,0.25,False,fidelity=0.2500
+C02_deutsch_jozsa_4,claude-haiku-4.5,bv,True,True,1.0,True,
+C03_simon_4,claude-haiku-4.5,bv,True,True,1.0,True,
+C04_grover_4,claude-haiku-4.5,bv,True,True,0.3536,False,fidelity=0.3536
+C05_shor_period_4,claude-haiku-4.5,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'result'
+C06_qpe_3,claude-haiku-4.5,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'measure_all'
+C07_qpe_4,claude-haiku-4.5,bv,True,False,0.0,False,exec: 'list' object is not callable
+C08_hhl_3,claude-haiku-4.5,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'p'
+C09_swap_test,claude-haiku-4.5,bv,True,True,0.75,False,fidelity=0.7500
+C10_w_state_3,claude-haiku-4.5,bv,True,True,0.0,False,fidelity=0.0000
+C11_w_state_4,claude-haiku-4.5,bv,True,True,0.0,False,fidelity=0.0000
+C12_amplitude_encode_2,claude-haiku-4.5,bv,True,True,1.0,True,
+C13_amplitude_encode_3,claude-haiku-4.5,bv,True,True,1.0,True,
+C14_quantum_adder_4,claude-haiku-4.5,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'cx'
+C15_quantum_fourier_add_4,claude-haiku-4.5,bv,True,True,0.0,False,fidelity=0.0000
+D01_hardware_eff_2,claude-haiku-4.5,bv,True,True,1.0,True,
+D02_hardware_eff_4,claude-haiku-4.5,bv,True,True,0.0189,False,fidelity=0.0189
+D03_uccsd_2,claude-haiku-4.5,bv,True,True,0.9045,False,fidelity=0.9045
+D04_qaoa_2layer,claude-haiku-4.5,bv,True,True,0.0539,False,fidelity=0.0539
+D05_vqe_ry_linear_4,claude-haiku-4.5,bv,True,True,1.0,True,
+D06_vqe_ry_circular_4,claude-haiku-4.5,bv,True,True,0.25,False,fidelity=0.2500
+D07_param_shift_2,claude-haiku-4.5,bv,True,True,1.0,True,
+D08_data_reuploading_2,claude-haiku-4.5,bv,True,True,1.0,True,
+D09_alternating_layer_4,claude-haiku-4.5,bv,True,True,1.0,True,
+D10_strongly_entangling_3,claude-haiku-4.5,bv,True,True,0.25,False,fidelity=0.2500
+E01_bit_flip_3,claude-haiku-4.5,bv,True,True,0.5,False,fidelity=0.5000
+E02_phase_flip_3,claude-haiku-4.5,bv,True,True,0.5,False,fidelity=0.5000
+E03_shor_9,claude-haiku-4.5,bv,True,True,0.0156,False,fidelity=0.0156
+E04_steane_7_encode,claude-haiku-4.5,bv,True,True,0.25,False,fidelity=0.2500
+E05_surface_code_patch,claude-haiku-4.5,bv,True,True,0.0078,False,fidelity=0.0078
+E06_repetition_5,claude-haiku-4.5,bv,True,True,0.125,False,fidelity=0.1250
+E07_cat_state_5,claude-haiku-4.5,bv,True,True,1.0,True,
+E08_logical_cnot_6,claude-haiku-4.5,bv,True,True,0.125,False,fidelity=0.1250
+F01_angle_encoding_4,claude-haiku-4.5,bv,True,True,1.0,True,
+F02_amplitude_encoding_2,claude-haiku-4.5,bv,True,True,1.0,True,
+F03_iqp_encoding_4,claude-haiku-4.5,bv,True,True,0.0625,False,fidelity=0.0625
+F04_qnn_layer_4,claude-haiku-4.5,bv,True,True,1.0,True,
+F05_qcnn_8,claude-haiku-4.5,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'cx'
+F06_quantum_kernel_2,claude-haiku-4.5,bv,True,True,1.0,True,
+F07_classifier_2,claude-haiku-4.5,bv,True,True,1.0,True,
+F08_qgan_generator_3,claude-haiku-4.5,bv,True,True,0.5954,False,fidelity=0.5954
+F09_barren_plateau_4,claude-haiku-4.5,bv,True,True,0.9956,True,
+F10_expressibility_test_3,claude-haiku-4.5,bv,True,True,0.25,False,fidelity=0.2500
+G01_qkd_e91,claude-haiku-4.5,bv,True,True,1.0,True,
+G02_quantum_money_3,claude-haiku-4.5,bv,True,True,1.0,True,
+G03_blind_quantum_4,claude-haiku-4.5,bv,True,False,0.0,False,exec: XX.xx() missing 1 required positional argument: 'angle'
+G04_quantum_voting_5,claude-haiku-4.5,bv,True,True,0.5,False,fidelity=0.5000
+G05_quantum_auction_4,claude-haiku-4.5,bv,True,True,0.1575,False,fidelity=0.1575
+G06_post_quantum_hash_6,claude-haiku-4.5,bv,True,True,0.0929,False,fidelity=0.0929
+G07_quantum_commitment_3,claude-haiku-4.5,bv,True,True,1.0,True,
+G08_entanglement_witness_4,claude-haiku-4.5,bv,True,True,1.0,True,
+H01_bell_barrier,claude-haiku-4.5,bv,True,True,1.0,True,
+H02_bell_compressed,claude-haiku-4.5,bv,True,True,1.0,True,
+H03_bell_wide,claude-haiku-4.5,bv,True,True,1.0,True,
+H04_ghz_reversed_labels,claude-haiku-4.5,bv,True,True,0.5,False,fidelity=0.5000
+H05_toffoli_decomposed,claude-haiku-4.5,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 't_dagger'
+H06_qft3_no_swap,claude-haiku-4.5,bv,True,True,1.0,True,
+H07_grover2_combined_oracle,claude-haiku-4.5,bv,True,True,0.5,False,fidelity=0.5000
+H08_cnot_reversed,claude-haiku-4.5,bv,True,True,0.3536,False,fidelity=0.3536
+H09_param_symbolic,claude-haiku-4.5,bv,True,True,1.0,True,
+H10_multi_gate_per_step,claude-haiku-4.5,bv,True,True,0.25,False,fidelity=0.2500
+I01_shor_ecc_6,claude-haiku-4.5,bv,True,False,0.0,False,exec: 'list' object is not callable
+I02_grover_sha256_4,claude-haiku-4.5,bv,True,True,0.0,False,fidelity=0.0000
+I03_grover_aes_5,claude-haiku-4.5,bv,True,True,0.0,False,fidelity=0.0000
+I04_lamport_sign_4,claude-haiku-4.5,bv,True,True,1.0,True,
+I05_quantum_random_beacon_6,claude-haiku-4.5,bv,True,True,0.2261,False,fidelity=0.2261
+I06_qkd_network_6,claude-haiku-4.5,bv,True,True,0.5,False,fidelity=0.5000
+I07_quantum_timestamp_4,claude-haiku-4.5,bv,True,True,1.0,True,
+I08_kyber_lattice_6,claude-haiku-4.5,bv,True,True,0.0703,False,fidelity=0.0703
+I09_dilithium_sign_5,claude-haiku-4.5,bv,True,False,0.0,False,exec: Operator qubit count 2 must be equal to size of target qubit set QubitSet([Qubit(4)])
+I10_pow_quantum_speedup_4,claude-haiku-4.5,bv,True,True,0.0442,False,fidelity=0.0442
+I11_quantum_merkle_5,claude-haiku-4.5,bv,True,False,0.0,False,exec: Operator qubit count 2 must be equal to size of target qubit set QubitSet([Qubit(4)])
+I12_sphincs_hash_7,claude-haiku-4.5,bv,True,True,0.1749,False,fidelity=0.1749
+adv_01_qft3,claude-haiku-4.5,bv,True,True,1.0,True,
+adv_02_grover3,claude-haiku-4.5,bv,True,True,0.375,False,fidelity=0.3750
+adv_03_vqe_ansatz,claude-haiku-4.5,bv,True,True,1.0,True,
+adv_04_qaoa,claude-haiku-4.5,bv,True,True,0.0765,False,fidelity=0.0765
+adv_05_qwalk,claude-haiku-4.5,bv,True,True,0.75,False,fidelity=0.7500
+adv_06_bv,claude-haiku-4.5,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'measure_all'
+blockchain_bb84,claude-haiku-4.5,bv,True,True,1.0,True,
+blockchain_bv_crypto,claude-haiku-4.5,bv,True,True,1.0,True,
+blockchain_coin_flip,claude-haiku-4.5,bv,True,True,0.5,False,fidelity=0.5000
+blockchain_consensus,claude-haiku-4.5,bv,True,True,0.0034,False,fidelity=0.0034
+blockchain_grover_mining,claude-haiku-4.5,bv,True,True,0.5,False,fidelity=0.5000
+blockchain_lattice_pqc,claude-haiku-4.5,bv,True,True,1.0,True,
+blockchain_oblivious_transfer,claude-haiku-4.5,bv,True,True,0.0,False,fidelity=0.0000
+blockchain_qds,claude-haiku-4.5,bv,True,True,0.0625,False,fidelity=0.0625
+blockchain_qrng,claude-haiku-4.5,bv,True,True,1.0,True,
+blockchain_qss,claude-haiku-4.5,bv,True,True,1.0,True,
+blockchain_vrf,claude-haiku-4.5,bv,True,True,0.0321,False,fidelity=0.0321
+demo_01_hadamard,claude-haiku-4.5,bv,True,True,1.0,True,
+demo_02_cnot,claude-haiku-4.5,bv,True,True,1.0,True,
+demo_03_bell,claude-haiku-4.5,bv,True,True,1.0,True,
+demo_04_ghz,claude-haiku-4.5,bv,True,True,1.0,True,
+demo_05_toffoli,claude-haiku-4.5,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'toffoli'
+inter_01_swap_decomp,claude-haiku-4.5,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'cx'
+inter_02_qft2,claude-haiku-4.5,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'result_type'
+inter_03_teleport_prep,claude-haiku-4.5,bv,True,True,0.0,False,fidelity=0.0000
+inter_04_deutsch,claude-haiku-4.5,bv,True,True,1.0,True,
+inter_05_superdense,claude-haiku-4.5,bv,True,True,1.0,True,
+inter_06_grover2,claude-haiku-4.5,bv,True,True,0.5,False,fidelity=0.5000
+inter_07_param_rot,claude-haiku-4.5,bv,True,True,0.25,False,fidelity=0.2500
+inter_08_fredkin,claude-haiku-4.5,bv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'fredkin'
+inter_09_shift_reg,claude-haiku-4.5,bv,True,True,1.0,True,
+inter_10_phase_est,claude-haiku-4.5,bv,True,True,0.2999,False,fidelity=0.2999
+A01_single_y,claude-haiku-4.5,tv,True,True,1.0,True,
+A02_single_s,claude-haiku-4.5,tv,True,True,1.0,True,
+A03_single_t,claude-haiku-4.5,tv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'print_ascii'
+A04_single_rx,claude-haiku-4.5,tv,True,True,1.0,True,
+A05_single_ry,claude-haiku-4.5,tv,True,True,1.0,True,
+A06_single_rz,claude-haiku-4.5,tv,True,True,1.0,True,
+A07_sqrt_x,claude-haiku-4.5,tv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'sqrt_x'
+A08_controlled_z,claude-haiku-4.5,tv,True,True,1.0,True,
+A09_controlled_ry,claude-haiku-4.5,tv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'cry'
+A10_controlled_rx,claude-haiku-4.5,tv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'crx'
+A11_ccz,claude-haiku-4.5,tv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'ccz'
+A12_iswap,claude-haiku-4.5,tv,True,False,0.0,False,exec: name 'iswap' is not defined
+A13_double_controlled_rz,claude-haiku-4.5,tv,True,True,1.0,True,
+A14_multi_rotation,claude-haiku-4.5,tv,True,True,1.0,True,
+A15_global_phase,claude-haiku-4.5,tv,True,False,0.0,False,exec: 'Circuit' object has no attribute 't_dagger'
+B01_ghz_4,claude-haiku-4.5,tv,True,True,1.0,True,
+B02_ghz_5,claude-haiku-4.5,tv,True,True,1.0,True,
+B03_ghz_6,claude-haiku-4.5,tv,True,True,1.0,True,
+B04_ghz_8,claude-haiku-4.5,tv,True,True,1.0,True,
+B05_ghz_10,claude-haiku-4.5,tv,True,True,0.0039,False,fidelity=0.0039
+B06_qft_4,claude-haiku-4.5,tv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'measure_all'
+B07_qft_5,claude-haiku-4.5,tv,True,False,0.0,False,exec: name 'cphaseshift' is not defined
+B08_linear_entangle_6,claude-haiku-4.5,tv,True,True,1.0,True,
+B09_ring_entangle_6,claude-haiku-4.5,tv,True,True,1.0,True,
+B10_ladder_4,claude-haiku-4.5,tv,True,True,0.25,False,fidelity=0.2500
+B11_full_entangle_4,claude-haiku-4.5,tv,True,True,1.0,True,
+B12_star_entangle_5,claude-haiku-4.5,tv,True,True,1.0,True,
+C01_deutsch_jozsa_3,claude-haiku-4.5,tv,True,True,1.0,True,
+C02_deutsch_jozsa_4,claude-haiku-4.5,tv,True,True,1.0,True,
+C03_simon_4,claude-haiku-4.5,tv,True,True,0.5,False,fidelity=0.5000
+C04_grover_4,claude-haiku-4.5,tv,True,True,0.0,False,fidelity=0.0000
+C05_shor_period_4,claude-haiku-4.5,tv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'phase'
+C06_qpe_3,claude-haiku-4.5,tv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'measure_all'
+C07_qpe_4,claude-haiku-4.5,tv,True,True,0.0,False,verify: cannot add a result type to a circuit which already contains a measure instruction.
+C08_hhl_3,claude-haiku-4.5,tv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'cry'
+C09_swap_test,claude-haiku-4.5,tv,True,True,1.0,True,
+C10_w_state_3,claude-haiku-4.5,tv,True,True,0.0,False,fidelity=0.0000
+C11_w_state_4,claude-haiku-4.5,tv,True,True,0.0,False,fidelity=0.0000
+C12_amplitude_encode_2,claude-haiku-4.5,tv,True,True,1.0,True,
+C13_amplitude_encode_3,claude-haiku-4.5,tv,True,True,1.0,True,
+C14_quantum_adder_4,claude-haiku-4.5,tv,True,False,0.0,False,exec: name 'cnot' is not defined
+C15_quantum_fourier_add_4,claude-haiku-4.5,tv,True,False,0.0,False,exec: name 'cphaseshift' is not defined
+D01_hardware_eff_2,claude-haiku-4.5,tv,True,True,1.0,True,
+D02_hardware_eff_4,claude-haiku-4.5,tv,True,True,1.0,True,
+D03_uccsd_2,claude-haiku-4.5,tv,True,True,0.9045,False,fidelity=0.9045
+D04_qaoa_2layer,claude-haiku-4.5,tv,True,True,0.1358,False,fidelity=0.1358
+D05_vqe_ry_linear_4,claude-haiku-4.5,tv,True,True,1.0,True,
+D06_vqe_ry_circular_4,claude-haiku-4.5,tv,True,True,0.25,False,fidelity=0.2500
+D07_param_shift_2,claude-haiku-4.5,tv,True,True,1.0,True,
+D08_data_reuploading_2,claude-haiku-4.5,tv,True,True,1.0,True,
+D09_alternating_layer_4,claude-haiku-4.5,tv,True,True,0.125,False,fidelity=0.1250
+D10_strongly_entangling_3,claude-haiku-4.5,tv,True,True,0.25,False,fidelity=0.2500
+E01_bit_flip_3,claude-haiku-4.5,tv,True,False,0.0,False,exec: CNot.cnot() got an unexpected keyword argument 'control_qubit'
+E02_phase_flip_3,claude-haiku-4.5,tv,True,False,0.0,False,exec: CNot.cnot() got an unexpected keyword argument 'control_qubit'
+E03_shor_9,claude-haiku-4.5,tv,True,True,0.5,False,fidelity=0.5000
+E04_steane_7_encode,claude-haiku-4.5,tv,True,True,0.125,False,fidelity=0.1250
+E05_surface_code_patch,claude-haiku-4.5,tv,True,True,0.0028,False,fidelity=0.0028
+E06_repetition_5,claude-haiku-4.5,tv,True,True,1.0,True,
+E07_cat_state_5,claude-haiku-4.5,tv,True,True,1.0,True,
+E08_logical_cnot_6,claude-haiku-4.5,tv,True,True,0.0625,False,fidelity=0.0625
+F01_angle_encoding_4,claude-haiku-4.5,tv,True,True,1.0,True,
+F02_amplitude_encoding_2,claude-haiku-4.5,tv,True,True,1.0,True,
+F03_iqp_encoding_4,claude-haiku-4.5,tv,True,True,1.0,True,
+F04_qnn_layer_4,claude-haiku-4.5,tv,True,True,0.9969,True,
+F05_qcnn_8,claude-haiku-4.5,tv,True,True,1.0,True,
+F06_quantum_kernel_2,claude-haiku-4.5,tv,True,True,1.0,True,
+F07_classifier_2,claude-haiku-4.5,tv,True,True,1.0,True,
+F08_qgan_generator_3,claude-haiku-4.5,tv,True,True,1.0,True,
+F09_barren_plateau_4,claude-haiku-4.5,tv,True,True,0.0083,False,fidelity=0.0083
+F10_expressibility_test_3,claude-haiku-4.5,tv,True,False,0.0,False,exec: Operator qubit count 2 must be equal to size of target qubit set QubitSet([Qubit(1)])
+G01_qkd_e91,claude-haiku-4.5,tv,True,True,0.9239,False,fidelity=0.9239
+G02_quantum_money_3,claude-haiku-4.5,tv,True,True,1.0,True,
+G03_blind_quantum_4,claude-haiku-4.5,tv,True,True,1.0,True,
+G04_quantum_voting_5,claude-haiku-4.5,tv,True,True,1.0,True,
+G05_quantum_auction_4,claude-haiku-4.5,tv,True,True,0.25,False,fidelity=0.2500
+G06_post_quantum_hash_6,claude-haiku-4.5,tv,True,True,0.25,False,fidelity=0.2500
+G07_quantum_commitment_3,claude-haiku-4.5,tv,True,True,1.0,True,
+G08_entanglement_witness_4,claude-haiku-4.5,tv,True,True,1.0,True,
+H01_bell_barrier,claude-haiku-4.5,tv,True,True,1.0,True,
+H02_bell_compressed,claude-haiku-4.5,tv,True,True,0.3536,False,fidelity=0.3536
+H03_bell_wide,claude-haiku-4.5,tv,True,True,1.0,True,
+H04_ghz_reversed_labels,claude-haiku-4.5,tv,True,True,0.5,False,fidelity=0.5000
+H05_toffoli_decomposed,claude-haiku-4.5,tv,True,True,0.3953,False,fidelity=0.3953
+H06_qft3_no_swap,claude-haiku-4.5,tv,True,False,0.0,False,exec: name 'cphaseshift' is not defined
+H07_grover2_combined_oracle,claude-haiku-4.5,tv,True,True,0.5,False,fidelity=0.5000
+H08_cnot_reversed,claude-haiku-4.5,tv,True,False,0.0,False,exec: CNot.cnot() got an unexpected keyword argument 'control_qubit'
+H09_param_symbolic,claude-haiku-4.5,tv,True,True,1.0,True,
+H10_multi_gate_per_step,claude-haiku-4.5,tv,True,True,0.0,False,fidelity=0.0000
+I01_shor_ecc_6,claude-haiku-4.5,tv,True,True,0.0,False,verify: cannot add a result type to a circuit which already contains a measure instruction.
+I02_grover_sha256_4,claude-haiku-4.5,tv,True,True,0.0625,False,fidelity=0.0625
+I03_grover_aes_5,claude-haiku-4.5,tv,True,True,0.0625,False,fidelity=0.0625
+I04_lamport_sign_4,claude-haiku-4.5,tv,True,True,1.0,True,
+I05_quantum_random_beacon_6,claude-haiku-4.5,tv,True,True,0.25,False,fidelity=0.2500
+I06_qkd_network_6,claude-haiku-4.5,tv,True,True,0.0625,False,fidelity=0.0625
+I07_quantum_timestamp_4,claude-haiku-4.5,tv,True,True,1.0,True,
+I08_kyber_lattice_6,claude-haiku-4.5,tv,True,True,0.25,False,fidelity=0.2500
+I09_dilithium_sign_5,claude-haiku-4.5,tv,True,True,0.4542,False,fidelity=0.4542
+I10_pow_quantum_speedup_4,claude-haiku-4.5,tv,True,True,0.0442,False,fidelity=0.0442
+I11_quantum_merkle_5,claude-haiku-4.5,tv,True,True,0.25,False,fidelity=0.2500
+I12_sphincs_hash_7,claude-haiku-4.5,tv,True,True,0.25,False,fidelity=0.2500
+adv_01_qft3,claude-haiku-4.5,tv,True,True,1.0,True,
+adv_02_grover3,claude-haiku-4.5,tv,True,True,0.0625,False,fidelity=0.0625
+adv_03_vqe_ansatz,claude-haiku-4.5,tv,True,True,1.0,True,
+adv_04_qaoa,claude-haiku-4.5,tv,True,True,0.0625,False,fidelity=0.0625
+adv_05_qwalk,claude-haiku-4.5,tv,True,True,0.75,False,fidelity=0.7500
+adv_06_bv,claude-haiku-4.5,tv,True,True,1.0,True,
+blockchain_bb84,claude-haiku-4.5,tv,True,True,1.0,True,
+blockchain_bv_crypto,claude-haiku-4.5,tv,True,True,1.0,True,
+blockchain_coin_flip,claude-haiku-4.5,tv,True,True,0.5,False,fidelity=0.5000
+blockchain_consensus,claude-haiku-4.5,tv,True,True,0.0156,False,fidelity=0.0156
+blockchain_grover_mining,claude-haiku-4.5,tv,True,True,0.5,False,fidelity=0.5000
+blockchain_lattice_pqc,claude-haiku-4.5,tv,True,True,1.0,True,
+blockchain_oblivious_transfer,claude-haiku-4.5,tv,True,True,0.0,False,fidelity=0.0000
+blockchain_qds,claude-haiku-4.5,tv,True,True,0.0,False,fidelity=0.0000
+blockchain_qrng,claude-haiku-4.5,tv,True,True,1.0,True,
+blockchain_qss,claude-haiku-4.5,tv,True,True,1.0,True,
+blockchain_vrf,claude-haiku-4.5,tv,True,True,0.0339,False,fidelity=0.0339
+demo_01_hadamard,claude-haiku-4.5,tv,True,True,1.0,True,
+demo_02_cnot,claude-haiku-4.5,tv,True,False,0.0,False,exec: CNot.cnot() got an unexpected keyword argument 'control_qubit'
+demo_03_bell,claude-haiku-4.5,tv,True,False,0.0,False,exec: name 'h' is not defined
+demo_04_ghz,claude-haiku-4.5,tv,True,True,1.0,True,
+demo_05_toffoli,claude-haiku-4.5,tv,True,False,0.0,False,exec: CCNot.ccnot() got an unexpected keyword argument 'control_qubits'. Did you mean 'control_state'?
+inter_01_swap_decomp,claude-haiku-4.5,tv,True,True,1.0,True,
+inter_02_qft2,claude-haiku-4.5,tv,True,False,0.0,False,exec: 'Circuit' object has no attribute 'measure_all'
+inter_03_teleport_prep,claude-haiku-4.5,tv,True,True,1.0,True,
+inter_04_deutsch,claude-haiku-4.5,tv,True,True,1.0,True,
+inter_05_superdense,claude-haiku-4.5,tv,True,True,1.0,True,
+inter_06_grover2,claude-haiku-4.5,tv,True,True,0.5,False,fidelity=0.5000
+inter_07_param_rot,claude-haiku-4.5,tv,True,True,1.0,True,
+inter_08_fredkin,claude-haiku-4.5,tv,True,False,0.0,False,exec: name 'cswap' is not defined
+inter_09_shift_reg,claude-haiku-4.5,tv,True,True,1.0,True,
+inter_10_phase_est,claude-haiku-4.5,tv,True,False,0.0,False,exec: name 'cphaseshift' is not defined

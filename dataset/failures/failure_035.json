@@ -1,0 +1,9 @@
+{
+  "model": "opus-4.6",
+  "mode": "tv",
+  "circuit": "C10_w_state_3",
+  "error_type": "syntax_error",
+  "fidelity": 0.0,
+  "error_detail": "syntax: invalid character '\u2192' (U+2192) (<check>, line 25)",
+  "id": "failure_035"
+}

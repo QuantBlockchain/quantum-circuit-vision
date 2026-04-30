@@ -9,5 +9,46 @@
   "description_cn": "Dilithium格基签名验证",
   "blockchain_relevance": "btc_security",
   "state_vector_dim": 32,
-  "nonzero_amplitudes": 8
+  "nonzero_amplitudes": 8,
+  "experiment_results": {
+    "claude-opus-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.25,
+        "error": "fidelity=0.2500"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.25,
+        "error": "fidelity=0.2500"
+      }
+    },
+    "claude-sonnet-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.25,
+        "error": "fidelity=0.2500"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.5,
+        "error": "fidelity=0.5000"
+      }
+    },
+    "claude-haiku-4.5": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: Operator qubit count 2 must be equal to size of target qubit set QubitSet([Qubit(4)])"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.4542,
+        "error": "fidelity=0.4542"
+      }
+    },
+    "best_pass_rate": "0/6",
+    "all_pass": false,
+    "all_fail": true
+  }
 }

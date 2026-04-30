@@ -1,0 +1,9 @@
+{
+  "model": "sonnet-4.6",
+  "mode": "tv",
+  "circuit": "E04_steane_7_encode",
+  "error_type": "low_fidelity",
+  "fidelity": 0.5,
+  "error_detail": "fidelity=0.5000",
+  "id": "failure_102"
+}

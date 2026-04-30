@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "B05_ghz_10",
+  "error_type": "low_fidelity",
+  "fidelity": 0.0039,
+  "error_detail": "fidelity=0.0039",
+  "id": "failure_206"
+}

@@ -9,5 +9,46 @@
   "description_cn": "受控Rx门：分解为Rx-CNOT-Rx-CNOT",
   "blockchain_relevance": null,
   "state_vector_dim": 4,
-  "nonzero_amplitudes": 1
+  "nonzero_amplitudes": 1,
+  "experiment_results": {
+    "claude-opus-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.933,
+        "error": "fidelity=0.9330"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.933,
+        "error": "fidelity=0.9330"
+      }
+    },
+    "claude-sonnet-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: 'Circuit' object has no attribute 'crx'"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.933,
+        "error": "fidelity=0.9330"
+      }
+    },
+    "claude-haiku-4.5": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.5,
+        "error": "fidelity=0.5000"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: 'Circuit' object has no attribute 'crx'"
+      }
+    },
+    "best_pass_rate": "0/6",
+    "all_pass": false,
+    "all_fail": true
+  }
 }

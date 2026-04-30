@@ -1,0 +1,9 @@
+{
+  "model": "opus-4.6",
+  "mode": "tv",
+  "circuit": "blockchain_consensus",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: name 'blockchain_consensus' is not defined",
+  "id": "failure_055"
+}

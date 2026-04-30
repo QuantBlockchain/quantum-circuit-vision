@@ -1,0 +1,9 @@
+{
+  "model": "opus-4.6",
+  "mode": "bv",
+  "circuit": "I10_pow_quantum_speedup_4",
+  "error_type": "low_fidelity",
+  "fidelity": 0.5,
+  "error_detail": "fidelity=0.5000",
+  "id": "failure_021"
+}

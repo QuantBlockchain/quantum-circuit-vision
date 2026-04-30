@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "bv",
+  "circuit": "F03_iqp_encoding_4",
+  "error_type": "low_fidelity",
+  "fidelity": 0.0625,
+  "error_detail": "fidelity=0.0625",
+  "id": "failure_158"
+}

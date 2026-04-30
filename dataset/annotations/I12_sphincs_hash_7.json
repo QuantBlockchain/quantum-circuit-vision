@@ -9,5 +9,46 @@
   "description_cn": "SPHINCS+基于哈希的签名树",
   "blockchain_relevance": "btc_security",
   "state_vector_dim": 128,
-  "nonzero_amplitudes": 32
+  "nonzero_amplitudes": 32,
+  "experiment_results": {
+    "claude-opus-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.375,
+        "error": "fidelity=0.3750"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.1875,
+        "error": "fidelity=0.1875"
+      }
+    },
+    "claude-sonnet-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0625,
+        "error": "fidelity=0.0625"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0625,
+        "error": "fidelity=0.0625"
+      }
+    },
+    "claude-haiku-4.5": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.1749,
+        "error": "fidelity=0.1749"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.25,
+        "error": "fidelity=0.2500"
+      }
+    },
+    "best_pass_rate": "0/6",
+    "all_pass": false,
+    "all_fail": true
+  }
 }

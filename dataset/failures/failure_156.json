@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "bv",
+  "circuit": "E06_repetition_5",
+  "error_type": "low_fidelity",
+  "fidelity": 0.125,
+  "error_detail": "fidelity=0.1250",
+  "id": "failure_156"
+}

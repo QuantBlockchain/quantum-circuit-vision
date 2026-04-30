@@ -1,0 +1,85 @@
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+
+[38;5;252m[0m[?25l[?25l[0m[0mReading images: [38;5;141m/home/ubuntu/qcv-experiments/circuits/B06_qft_4.png
+[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read image
+[38;5;244m - Completed in 0.0s[0m
+
+[0m[0m
+[?25l[0m[38;5;141m> [0m[38;5;252m[1m## 分析[0m[0m
+[0m[0m
+[38;5;252m[1m### 1. Qubit 线[0m[0m
+共 [1m4 条[22m，编号为 [1mq0, q1, q2, q3[22m（从上到下）。[0m[0m
+[0m[0m
+[38;5;252m[1m### 2. 从左到右的量子门序列[0m[0m
+[0m[0m
+| 顺序 | 门 | 说明 |[0m[0m
+|------|-----|------|[0m[0m
+| 1 | H | q0 |[0m[0m
+| 2 | CP(π/2) | 控制 q1 → 目标 q0 |[0m[0m
+| 3 | CP(π/4) | 控制 q2 → 目标 q0 |[0m[0m
+| 4 | H | q1 |[0m[0m
+| 5 | CP(π/8) | 控制 q3 → 目标 q0 |[0m[0m
+| 6 | CP(π/2) | 控制 q2 → 目标 q1 |[0m[0m
+| 7 | CP(π/4) | 控制 q3 → 目标 q1 |[0m[0m
+| 8 | H | q2 |[0m[0m
+| 9 | CP(π/2) | 控制 q3 → 目标 q2 |[0m[0m
+| 10 | H | q3 |[0m[0m
+| 11 | SWAP | q0 ↔ q3 |[0m[0m
+| 12 | SWAP | q1 ↔ q2 |[0m[0m
+[0m[0m
+[38;5;252m[1m### 3. 有控制位的门[0m[0m
+[0m[0m
+| 门 | 控制 qubit | 目标 qubit |[0m[0m
+|----|-----------|-----------|[0m[0m
+| CP(π/2) | q1 | q0 |[0m[0m
+| CP(π/4) | q2 | q0 |[0m[0m
+| CP(π/8) | q3 | q0 |[0m[0m
+| CP(π/2) | q2 | q1 |[0m[0m
+| CP(π/4) | q3 | q1 |[0m[0m
+| CP(π/2) | q3 | q2 |[0m[0m
+[0m[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[0m[0m
+[0m[0m
+[38;5;252m[1m## Amazon Braket SDK 代码[0m[0m
+[0m[0m
+[1mpython
+[0m[38;5;10mimport numpy as np
+from braket.circuits import Circuit
+
+circ = Circuit()
+
+# QFT on q0
+circ.h(0)
+circ.cphaseshift(1, 0, np.pi / 2)
+circ.cphaseshift(2, 0, np.pi / 4)
+circ.cphaseshift(3, 0, np.pi / 8)
+
+# QFT on q1
+circ.h(1)
+circ.cphaseshift(2, 1, np.pi / 2)
+circ.cphaseshift(3, 1, np.pi / 4)
+
+# QFT on q2
+circ.h(2)
+circ.cphaseshift(3, 2, np.pi / 2)
+
+# QFT on q3
+circ.h(3)
+
+# Bit-reversal swaps
+circ.swap(0, 3)
+circ.swap(1, 2)
+
+print(circ)
+[0m[0m[0m
+[38;5;8m
+ ▸ Credits: 0.20 • Time: 11s
+
+[0m[1G[0m[0m[?25h

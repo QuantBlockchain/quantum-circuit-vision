@@ -1,0 +1,9 @@
+{
+  "model": "sonnet-4.6",
+  "mode": "bv",
+  "circuit": "E08_logical_cnot_6",
+  "error_type": "low_fidelity",
+  "fidelity": 0.125,
+  "error_detail": "fidelity=0.1250",
+  "id": "failure_074"
+}

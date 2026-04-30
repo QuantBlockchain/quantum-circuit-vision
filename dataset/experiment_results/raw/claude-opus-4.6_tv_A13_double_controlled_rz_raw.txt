@@ -1,0 +1,73 @@
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+
+[38;5;252m[0m[?25l[38;5;141m> [0m[0m[0m
+[0m[0m
+Let me first look at the circuit diagram.[0m[0m
+[?25l[0m[0mReading images: [38;5;141m/home/ubuntu/qcv-experiments/circuits/A13_double_controlled_rz.png
+[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read image
+[38;5;244m - Completed in 0.0s[0m
+
+[0m[0m
+[?25l[0m[38;5;141m> [0m[0m[0m
+[0m[0m
+[38;5;252m[1m## 电路分析[0m[0m
+[0m[0m
+[38;5;252m[1m### 1. Qubit 线[0m[0m
+[0m[0m
+共 [1m3 条[22m qubit 线，编号分别为：**q₀、q₁、q₂**（从上到下）。[0m[0m
+[0m[0m
+[38;5;252m[1m### 2. 从左到右依次的量子门[0m[0m
+[0m[0m
+| 序号 | 门 | 作用线 |[0m[0m
+|------|------|--------|[0m[0m
+| 1 | CNOT | 控制 q₁ → 目标 q₂ |[0m[0m
+| 2 | Rz(−π/8) | q₂ |[0m[0m
+| 3 | CNOT | 控制 q₀ → 目标 q₂ |[0m[0m
+| 4 | Rz(π/8) | q₂ |[0m[0m
+| 5 | CNOT | 控制 q₁ → 目标 q₂ |[0m[0m
+| 6 | Rz(−π/8) | q₂ |[0m[0m
+| 7 | CNOT | 控制 q₀ → 目标 q₂ |[0m[0m
+| 8 | Rz(π/8) | q₂ |[0m[0m
+[0m[0m
+[38;5;252m[1m### 3. 控制门分析[0m[0m
+[0m[0m
+- **CNOT 门（共 4 个）**：[0m[0m
+  - 第 1、5 个：控制位 [1mq₁[22m，目标位 [1mq₂[22m[0m[0m
+  - 第 3、7 个：控制位 [1mq₀[22m，目标位 [1mq₂[22m[0m[0m
+- **Rz 门（共 4 个）**：无控制位，均直接作用于 [1mq₂[22m[0m[0m
+[0m[0m
+这是一个**双控制 Rz 门（CCRz）的分解电路**，通过交替使用 CNOT 和 Rz 旋转来实现等效的双控制相位旋转。[0m[0m
+[0m[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[0m[0m
+[0m[0m
+[38;5;252m[1m## Amazon Braket 代码[0m[0m
+[0m[0m
+[1mpython
+[0m[38;5;10mimport math
+from braket.circuits import Circuit
+
+angle = math.pi / 8
+
+circuit = Circuit()
+circuit.cnot(1, 2)
+circuit.rz(2, -angle)
+circuit.cnot(0, 2)
+circuit.rz(2, angle)
+circuit.cnot(1, 2)
+circuit.rz(2, -angle)
+circuit.cnot(0, 2)
+circuit.rz(2, angle)
+
+print(circuit)
+[0m[0m[0m
+[38;5;8m
+ ▸ Credits: 0.30 • Time: 15s
+
+[0m[1G[0m[0m[?25h

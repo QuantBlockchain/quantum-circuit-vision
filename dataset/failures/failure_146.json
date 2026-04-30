@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "bv",
+  "circuit": "D02_hardware_eff_4",
+  "error_type": "low_fidelity",
+  "fidelity": 0.0189,
+  "error_detail": "fidelity=0.0189",
+  "id": "failure_146"
+}

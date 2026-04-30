@@ -1,0 +1,9 @@
+{
+  "model": "sonnet-4.6",
+  "mode": "bv",
+  "circuit": "G05_quantum_auction_4",
+  "error_type": "low_fidelity",
+  "fidelity": 0.125,
+  "error_detail": "fidelity=0.1250",
+  "id": "failure_077"
+}

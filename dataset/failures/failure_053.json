@@ -1,0 +1,9 @@
+{
+  "model": "opus-4.6",
+  "mode": "tv",
+  "circuit": "I12_sphincs_hash_7",
+  "error_type": "low_fidelity",
+  "fidelity": 0.1875,
+  "error_detail": "fidelity=0.1875",
+  "id": "failure_053"
+}

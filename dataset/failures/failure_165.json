@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "bv",
+  "circuit": "G06_post_quantum_hash_6",
+  "error_type": "low_fidelity",
+  "fidelity": 0.0929,
+  "error_detail": "fidelity=0.0929",
+  "id": "failure_165"
+}

@@ -9,5 +9,46 @@
   "description_cn": "W态制备（3量子比特）",
   "blockchain_relevance": null,
   "state_vector_dim": 8,
-  "nonzero_amplitudes": 3
+  "nonzero_amplitudes": 3,
+  "experiment_results": {
+    "claude-opus-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: 'Circuit' object has no attribute 'ch'"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "syntax: invalid character '→' (U+2192) (<check>, line 25)"
+      }
+    },
+    "claude-sonnet-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: 'Circuit' object has no attribute 'ch'"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: 'Circuit' object has no attribute 'ch'"
+      }
+    },
+    "claude-haiku-4.5": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "fidelity=0.0000"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "fidelity=0.0000"
+      }
+    },
+    "best_pass_rate": "0/6",
+    "all_pass": false,
+    "all_fail": true
+  }
 }

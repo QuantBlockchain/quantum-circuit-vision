@@ -1,0 +1,9 @@
+{
+  "model": "sonnet-4.6",
+  "mode": "tv",
+  "circuit": "adv_01_qft3",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: name 'cphaseshift' is not defined",
+  "id": "failure_118"
+}

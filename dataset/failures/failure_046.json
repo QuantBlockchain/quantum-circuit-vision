@@ -1,0 +1,9 @@
+{
+  "model": "opus-4.6",
+  "mode": "tv",
+  "circuit": "H05_toffoli_decomposed",
+  "error_type": "syntax_error",
+  "fidelity": 0.0,
+  "error_detail": "syntax: invalid syntax (<check>, line 23)",
+  "id": "failure_046"
+}

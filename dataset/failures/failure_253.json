@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "adv_02_grover3",
+  "error_type": "low_fidelity",
+  "fidelity": 0.0625,
+  "error_detail": "fidelity=0.0625",
+  "id": "failure_253"
+}

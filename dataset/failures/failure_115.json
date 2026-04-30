@@ -1,0 +1,9 @@
+{
+  "model": "sonnet-4.6",
+  "mode": "tv",
+  "circuit": "I10_pow_quantum_speedup_4",
+  "error_type": "low_fidelity",
+  "fidelity": 0.0,
+  "error_detail": "fidelity=0.0000",
+  "id": "failure_115"
+}

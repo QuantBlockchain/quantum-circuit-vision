@@ -1,0 +1,9 @@
+{
+  "model": "opus-4.6",
+  "mode": "tv",
+  "circuit": "blockchain_qds",
+  "error_type": "syntax_error",
+  "fidelity": 0.0,
+  "error_detail": "syntax: unexpected indent (<check>, line 2)",
+  "id": "failure_058"
+}

@@ -9,5 +9,46 @@
   "description_cn": "量子可验证随机函数",
   "blockchain_relevance": "direct",
   "state_vector_dim": 64,
-  "nonzero_amplitudes": 60
+  "nonzero_amplitudes": 60,
+  "experiment_results": {
+    "claude-opus-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.2373,
+        "error": "fidelity=0.2373"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: 'Circuit' object has no attribute 'crz'"
+      }
+    },
+    "claude-sonnet-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: Operator qubit count 2 must be equal to size of target qubit set QubitSet([Qubit(0)])"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0,
+        "error": "exec: 'Circuit' object has no attribute 'crz'"
+      }
+    },
+    "claude-haiku-4.5": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0321,
+        "error": "fidelity=0.0321"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.0339,
+        "error": "fidelity=0.0339"
+      }
+    },
+    "best_pass_rate": "0/6",
+    "all_pass": false,
+    "all_fail": true
+  }
 }

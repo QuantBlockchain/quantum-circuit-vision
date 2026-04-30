@@ -1,0 +1,9 @@
+{
+  "model": "sonnet-4.6",
+  "mode": "tv",
+  "circuit": "A10_controlled_rx",
+  "error_type": "low_fidelity",
+  "fidelity": 0.933,
+  "error_detail": "fidelity=0.9330",
+  "id": "failure_092"
+}

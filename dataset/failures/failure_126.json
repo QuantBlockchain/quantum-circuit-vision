@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "bv",
+  "circuit": "A09_controlled_ry",
+  "error_type": "low_fidelity",
+  "fidelity": 0.4619,
+  "error_detail": "fidelity=0.4619",
+  "id": "failure_126"
+}

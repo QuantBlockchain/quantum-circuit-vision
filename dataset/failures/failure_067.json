@@ -1,0 +1,9 @@
+{
+  "model": "sonnet-4.6",
+  "mode": "bv",
+  "circuit": "C11_w_state_4",
+  "error_type": "syntax_error",
+  "fidelity": 0.0,
+  "error_detail": "syntax: invalid syntax. Perhaps you forgot a comma? (<check>, line 5)",
+  "id": "failure_067"
+}

@@ -1,0 +1,9 @@
+{
+  "model": "sonnet-4.6",
+  "mode": "tv",
+  "circuit": "H06_qft3_no_swap",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: name 'no_swap' is not defined",
+  "id": "failure_109"
+}

@@ -9,5 +9,46 @@
   "description_cn": "4节点环MaxCut的2层QAOA",
   "blockchain_relevance": null,
   "state_vector_dim": 16,
-  "nonzero_amplitudes": 16
+  "nonzero_amplitudes": 16,
+  "experiment_results": {
+    "claude-opus-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0199,
+        "error": "fidelity=0.0199"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.3554,
+        "error": "fidelity=0.3554"
+      }
+    },
+    "claude-sonnet-4.6": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.1627,
+        "error": "fidelity=0.1627"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.2358,
+        "error": "fidelity=0.2358"
+      }
+    },
+    "claude-haiku-4.5": {
+      "bv": {
+        "pass": false,
+        "fidelity": 0.0539,
+        "error": "fidelity=0.0539"
+      },
+      "tv": {
+        "pass": false,
+        "fidelity": 0.1358,
+        "error": "fidelity=0.1358"
+      }
+    },
+    "best_pass_rate": "0/6",
+    "all_pass": false,
+    "all_fail": true
+  }
 }

@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "bv",
+  "circuit": "A06_single_rz",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: name 'pi' is not defined",
+  "id": "failure_124"
+}

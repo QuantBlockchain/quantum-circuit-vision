@@ -1,0 +1,9 @@
+{
+  "model": "sonnet-4.6",
+  "mode": "tv",
+  "circuit": "H05_toffoli_decomposed",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: name 'ti' is not defined",
+  "id": "failure_108"
+}

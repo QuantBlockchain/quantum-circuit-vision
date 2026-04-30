@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "bv",
+  "circuit": "blockchain_qds",
+  "error_type": "low_fidelity",
+  "fidelity": 0.0625,
+  "error_detail": "fidelity=0.0625",
+  "id": "failure_189"
+}

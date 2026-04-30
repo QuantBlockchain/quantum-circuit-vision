@@ -1,0 +1,9 @@
+{
+  "model": "sonnet-4.6",
+  "mode": "tv",
+  "circuit": "I12_sphincs_hash_7",
+  "error_type": "low_fidelity",
+  "fidelity": 0.0625,
+  "error_detail": "fidelity=0.0625",
+  "id": "failure_117"
+}

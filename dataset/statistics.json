@@ -61,5 +61,35 @@
       "api_error": 7,
       "low_fidelity": 20
     }
+  },
+  "experiment": {
+    "total_experiments": 792,
+    "models_evaluated": [
+      "claude-haiku-4.5",
+      "claude-opus-4.6",
+      "claude-sonnet-4.6"
+    ],
+    "modes": [
+      "bv",
+      "tv"
+    ],
+    "overall_pass_rate": {
+      "claude-opus-4.6": {
+        "bv": 0.7879,
+        "tv": 0.7576
+      },
+      "claude-sonnet-4.6": {
+        "bv": 0.7727,
+        "tv": 0.75
+      },
+      "claude-haiku-4.5": {
+        "bv": 0.4318,
+        "tv": 0.4697
+      }
+    },
+    "always_pass_circuits": 45,
+    "always_fail_circuits": 18,
+    "experiment_date": "2026-04-30",
+    "verification_threshold": 0.99
   }
 }

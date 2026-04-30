@@ -1,0 +1,9 @@
+{
+  "model": "opus-4.6",
+  "mode": "tv",
+  "circuit": "C15_quantum_fourier_add_4",
+  "error_type": "api_error",
+  "fidelity": 0.0,
+  "error_detail": "exec: name 'cphaseshift' is not defined",
+  "id": "failure_037"
+}

@@ -1,0 +1,60 @@
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+
+[38;5;252m[0m[?25l[38;5;141m> [0m[0m[0m
+[0m[0m
+Let me first look at the circuit diagram.[0m[0m
+[?25l[0m[0mReading images: [38;5;141m/home/ubuntu/qcv-experiments/circuits/A14_multi_rotation.png
+[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read image
+[38;5;244m - Completed in 0.0s[0m
+
+[0m[0m
+[?25l[0m[38;5;141m> [0m[0m[0m
+[0m[0m
+[38;5;252m[1m## 量子电路分析[0m[0m
+[0m[0m
+[38;5;252m[1m### 1. Qubit 线[0m[0m
+[0m[0m
+共 [1m2 条[22m qubit 线，编号分别为：[0m[0m
+- **q₀**（上方）[0m[0m
+- **q₁**（下方）[0m[0m
+[0m[0m
+[38;5;252m[1m### 2. 从左到右的量子门[0m[0m
+[0m[0m
+| 顺序 | 门 | 作用线 | 参数 |[0m[0m
+|------|------|--------|------|[0m[0m
+| 1 | Rx | q₀ | π/4 |[0m[0m
+| 2 | Ry | q₀ | π/3 |[0m[0m
+| 3 | Rz | q₀ | π/6 |[0m[0m
+| 4 | CNOT | q₀ → q₁ | — |[0m[0m
+[0m[0m
+[38;5;252m[1m### 3. 有控制位的门[0m[0m
+[0m[0m
+- **CNOT（CX）门**：控制位在 [1mq₀[22m（实心圆点），目标位在 [1mq₁[22m（⊕ 符号）。[0m[0m
+[0m[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[0m[0m
+[0m[0m
+[38;5;252m[1m## Amazon Braket SDK 代码[0m[0m
+[0m[0m
+[1mpython
+[0m[38;5;10mimport math
+from braket.circuits import Circuit
+
+circuit = Circuit()
+circuit.rx(0, math.pi / 4)
+circuit.ry(0, math.pi / 3)
+circuit.rz(0, math.pi / 6)
+circuit.cnot(0, 1)
+
+print(circuit)
+[0m[0m[0m
+[38;5;8m
+ ▸ Credits: 0.23 • Time: 10s
+
+[0m[1G[0m[0m[?25h

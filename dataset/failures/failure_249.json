@@ -1,0 +1,9 @@
+{
+  "model": "haiku-4.5",
+  "mode": "tv",
+  "circuit": "I09_dilithium_sign_5",
+  "error_type": "low_fidelity",
+  "fidelity": 0.4542,
+  "error_detail": "fidelity=0.4542",
+  "id": "failure_249"
+}

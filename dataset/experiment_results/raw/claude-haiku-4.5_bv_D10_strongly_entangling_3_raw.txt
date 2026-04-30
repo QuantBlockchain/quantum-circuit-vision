@@ -1,0 +1,57 @@
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+
+[38;5;252m[0m[?25l[38;5;141m> [0mI'll read the quantum circuit image and generate the corresponding Amazon Braket SDK code.[0m[0m
+[?25l[0m[0mReading images: [38;5;141m/home/ubuntu/qcv-experiments/circuits/D10_strongly_entangling_3.png
+[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read image
+[38;5;244m - Completed in 0.0s[0m
+
+[0m[0m
+[?25l[0m[38;5;141m> [0m[1mpython
+[0m[38;5;10mfrom braket.circuits import Circuit
+
+circuit = Circuit()
+
+circuit.rx(0, 3.14159265359/3)
+circuit.ry(0, 3.14159265359/4)
+circuit.rz(0, 3.14159265359/5)
+
+circuit.rx(1, 3.14159265359/4)
+circuit.ry(1, 3.14159265359/5)
+circuit.rz(1, 3.14159265359/6)
+
+circuit.rx(2, 3.14159265359/5)
+circuit.ry(2, 3.14159265359/6)
+circuit.rz(2, 3.14159265359/7)
+
+circuit.cnot(0, 1)
+circuit.cnot(1, 2)
+circuit.cnot(2, 0)
+
+circuit.rx(0, 3.14159265359/6)
+circuit.ry(0, 3.14159265359/7)
+circuit.rz(0, 3.14159265359/8)
+
+circuit.rx(1, 3.14159265359/7)
+circuit.ry(1, 3.14159265359/8)
+circuit.rz(1, 3.14159265359/9)
+
+circuit.rx(2, 3.14159265359/8)
+circuit.ry(2, 3.14159265359/9)
+circuit.rz(2, 3.14159265359/10)
+
+circuit.cnot(0, 1)
+circuit.cnot(1, 2)
+circuit.cnot(2, 0)
+
+print(circuit)
+[0m[0m[0m
+[38;5;8m
+ ▸ Credits: 0.04 • Time: 4s
+
+[0m[1G[0m[0m[?25h

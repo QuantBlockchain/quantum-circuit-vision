@@ -1,0 +1,9 @@
+{
+  "model": "opus-4.6",
+  "mode": "bv",
+  "circuit": "blockchain_lattice_pqc",
+  "error_type": "syntax_error",
+  "fidelity": 0.0,
+  "error_detail": "syntax: expected an indented block after 'for' statement on line 7 (<check>, line 8)",
+  "id": "failure_025"
+}
