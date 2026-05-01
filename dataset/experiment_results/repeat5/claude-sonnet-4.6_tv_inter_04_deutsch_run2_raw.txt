@@ -1,0 +1,53 @@
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+
+[38;5;252m[0m[?25l[?25l[0m[0mReading images: [38;5;141m/home/ubuntu/qcv-experiments/circuits/inter_04_deutsch.png
+[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read image
+[38;5;244m - Completed in 0.0s[0m
+
+[0m[0m
+[?25l[0m[38;5;141m> [0m[38;5;252m[1m## 分析[0m[0m
+[0m[0m
+[1m1. Qubit 线[22m[0m[0m
+共 2 条，编号为 [38;5;10mq0[0m 和 [38;5;10mq1[0m。[0m[0m
+[0m[0m
+[1m2. 从左到右的量子门[22m[0m[0m
+[0m[0m
+| 顺序 | 作用线 | 门 |[0m[0m
+|------|--------|----|[0m[0m
+| 1 | q0 | H |[0m[0m
+| 2 | q1 | X |[0m[0m
+| 3 | q1 | H |[0m[0m
+| 4 | q0→q1 | CNOT（CX） |[0m[0m
+| 5 | q0 | H |[0m[0m
+[0m[0m
+[1m3. 有控制位的门[22m[0m[0m
+[0m[0m
+- **CNOT**：控制位 = [38;5;10mq0[0m，目标位 = [38;5;10mq1[0m[0m[0m
+[0m[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[0m[0m
+[0m[0m
+[38;5;252m[1m## Amazon Braket SDK 代码[0m[0m
+[0m[0m
+[1mpython
+[0m[38;5;10mfrom braket.circuits import Circuit
+
+circ = Circuit()
+circ.h(0)
+circ.x(1)
+circ.h(1)
+circ.cnot(0, 1)
+circ.h(0)
+
+print(circ)
+[0m[0m[0m
+[38;5;8m
+ ▸ Credits: 0.12 • Time: 10s
+
+[0m[1G[0m[0m[?25h

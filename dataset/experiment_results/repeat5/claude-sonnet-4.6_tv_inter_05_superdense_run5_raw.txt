@@ -1,0 +1,58 @@
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+
+[38;5;252m[0m[?25l[?25l[0m[0mReading images: [38;5;141m/home/ubuntu/qcv-experiments/circuits/inter_05_superdense.png
+[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read image
+[38;5;244m - Completed in 0.0s[0m
+
+[0m[0m
+[?25l[0m[38;5;141m> [0m[38;5;252m[1m## 分析[0m[0m
+[0m[0m
+[1m1. Qubit 线[22m[0m[0m
+共 2 条，编号为 q₀ 和 q₁。[0m[0m
+[0m[0m
+[1m2. 从左到右的量子门（按时序）[22m[0m[0m
+[0m[0m
+| 时序 | 门 | 作用线 |[0m[0m
+|------|-----|--------|[0m[0m
+| 1 | H | q₀ |[0m[0m
+| 2 | CNOT | 控制 q₀ → 目标 q₁ |[0m[0m
+| 3 | X | q₀ |[0m[0m
+| 4 | Z | q₀ |[0m[0m
+| 5 | CNOT | 控制 q₀ → 目标 q₁ |[0m[0m
+| 6 | H | q₀ |[0m[0m
+[0m[0m
+[1m3. 有控制位的门[22m[0m[0m
+[0m[0m
+- 第 2 个门：CNOT，控制位 q₀，目标位 q₁[0m[0m
+- 第 5 个门：CNOT，控制位 q₀，目标位 q₁[0m[0m
+[0m[0m
+这是超密编码（Superdense Coding）电路。[0m[0m
+[0m[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[0m[0m
+[0m[0m
+[38;5;252m[1m## Amazon Braket SDK 代码[0m[0m
+[0m[0m
+[1mpython
+[0m[38;5;10mfrom braket.circuits import Circuit
+
+circ = Circuit()
+circ.h(0)
+circ.cnot(0, 1)
+circ.x(0)
+circ.z(0)
+circ.cnot(0, 1)
+circ.h(0)
+
+print(circ)
+[0m[0m[0m
+[38;5;8m
+ ▸ Credits: 0.13 • Time: 8s
+
+[0m[1G[0m[0m[?25h

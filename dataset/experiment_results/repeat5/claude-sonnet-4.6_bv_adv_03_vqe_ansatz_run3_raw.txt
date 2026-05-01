@@ -1,0 +1,40 @@
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+
+[38;5;252m[0m[?25l[?25l[0m[0mReading images: [38;5;141m/home/ubuntu/qcv-experiments/circuits/adv_03_vqe_ansatz.png
+[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read image
+[38;5;244m - Completed in 0.0s[0m
+
+[0m[0m
+[?25l[0m[38;5;141m> [0m[0m[0m
+[1mpython
+[0m[38;5;10mfrom braket.circuits import Circuit
+import numpy as np
+
+circuit = Circuit()
+
+circuit.ry(0, np.pi/4)
+circuit.ry(1, np.pi/3)
+circuit.ry(2, np.pi/6)
+circuit.ry(3, np.pi/5)
+
+circuit.cnot(0, 1)
+circuit.cnot(1, 2)
+circuit.cnot(2, 3)
+
+circuit.ry(0, np.pi/5)
+circuit.ry(1, np.pi/6)
+circuit.ry(2, np.pi/3)
+circuit.ry(3, np.pi/4)
+
+print(circuit)
+[0m[0m[0m
+[38;5;8m
+ ▸ Credits: 0.11 • Time: 8s
+
+[0m[1G[0m[0m[?25h

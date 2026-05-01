@@ -1,0 +1,45 @@
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+
+[38;5;252m[0m[?25l[?25l[0m[0mReading images: [38;5;141m/home/ubuntu/qcv-experiments/circuits/inter_10_phase_est.png
+[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read image
+[38;5;244m - Completed in 0.0s[0m
+
+[0m[0m
+[?25l[0m[38;5;141m> [0m[1mpython
+[0m[38;5;10mfrom braket.circuits import Circuit
+
+circ = Circuit()
+circ.h(0).h(1)
+circ.rz(2, 3.141592653589793 / 2).cnot(0, 2)  # controlled-Rz(π/2) with q0 as control
+circ.rz(2, 3.141592653589793 / 4).cnot(1, 2)  # controlled-Rz(π/4) with q1 as control
+circ.h(0).h(1)
+
+print(circ)
+[0m[0m[0m
+[0m[0m
+Wait, looking more carefully at the circuit — the controls are on q0 and q1, targets on q2 for the Rz gates. These are controlled-Rz gates. Let me output the correct code:[0m[0m
+[0m[0m
+[1mpython
+[0m[38;5;10mfrom braket.circuits import Circuit
+import numpy as np
+
+circ = Circuit()
+circ.h(0)
+circ.h(1)
+circ.cphaseshift(0, 2, np.pi / 2)
+circ.cphaseshift(1, 2, np.pi / 4)
+circ.h(0)
+circ.h(1)
+
+print(circ)
+[0m[0m[0m
+[38;5;8m
+ ▸ Credits: 0.12 • Time: 7s
+
+[0m[1G[0m[0m[?25h

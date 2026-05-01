@@ -1,0 +1,66 @@
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+
+[38;5;252m[0m[?25l[38;5;141m> [0m[0m[0m
+[0m[0m
+Let me first look at the circuit diagram.[0m[0m
+[?25l[0m[0mReading images: [38;5;141m/home/ubuntu/qcv-experiments/circuits/inter_02_qft2.png
+[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read image
+[38;5;244m - Completed in 0.0s[0m
+
+[0m[0m
+[?25l[0m[38;5;141m> [0m[38;5;252m[1m## 量子电路分析[0m[0m
+[0m[0m
+[38;5;252m[1m### 1. Qubit 线[0m[0m
+[0m[0m
+共 [1m2 条[22m qubit 线，编号分别为 [1mq₀[22m（上）和 [1mq₁[22m（下）。[0m[0m
+[0m[0m
+[38;5;252m[1m### 2. 从左到右的量子门[0m[0m
+[0m[0m
+| 顺序 | 门 | 作用线 |[0m[0m
+|------|------|--------|[0m[0m
+| 1 | H（Hadamard） | q₀ |[0m[0m
+| 2 | Controlled-P(π/2)（受控相位门） | 控制: q₀, 目标: q₁ |[0m[0m
+| 3 | H（Hadamard） | q₁ |[0m[0m
+| 4 | SWAP | q₀ ↔ q₁ |[0m[0m
+[0m[0m
+[38;5;252m[1m### 3. 控制门分析[0m[0m
+[0m[0m
+- **Controlled-P(π/2)**：控制位在 [1mq₀[22m（上方实心圆点），目标位在 [1mq₁[22m（下方实心圆点），对目标 qubit 施加 P(π/2) 相位旋转。[0m[0m
+[0m[0m
+这是一个标准的 [1m2-qubit QFT（量子傅里叶变换）[22m 电路。[0m[0m
+[0m[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[0m[0m
+[0m[0m
+[38;5;252m[1m## Amazon Braket SDK 代码[0m[0m
+[0m[0m
+[1mpython
+[0m[38;5;10mimport numpy as np
+from braket.circuits import Circuit
+
+circuit = Circuit()
+
+# H on q0
+circuit.h(0)
+
+# Controlled-P(π/2): control=q0, target=q1
+circuit.cphaseshift(0, 1, np.pi / 2)
+
+# H on q1
+circuit.h(1)
+
+# SWAP q0 and q1
+circuit.swap(0, 1)
+
+print(circuit)
+[0m[0m[0m
+[38;5;8m
+ ▸ Credits: 0.25 • Time: 12s
+
+[0m[1G[0m[0m[?25h
