@@ -91,5 +91,49 @@
     "always_fail_circuits": 18,
     "experiment_date": "2026-04-30",
     "verification_threshold": 0.99
+  },
+  "cost_analysis": {
+    "claude-opus-4.6_bv": {
+      "avg_credits": 0.6177,
+      "total_credits": 80.92,
+      "avg_time_seconds": 24.4,
+      "pass_count": 104,
+      "credits_per_correct": 0.7781
+    },
+    "claude-opus-4.6_tv": {
+      "avg_credits": 0.3475,
+      "total_credits": 45.87,
+      "avg_time_seconds": 15.3,
+      "pass_count": 100,
+      "credits_per_correct": 0.4587
+    },
+    "claude-sonnet-4.6_bv": {
+      "avg_credits": 0.1098,
+      "total_credits": 14.49,
+      "avg_time_seconds": 6.0,
+      "pass_count": 102,
+      "credits_per_correct": 0.1421
+    },
+    "claude-sonnet-4.6_tv": {
+      "avg_credits": 0.1651,
+      "total_credits": 21.79,
+      "avg_time_seconds": 10.2,
+      "pass_count": 99,
+      "credits_per_correct": 0.2201
+    },
+    "claude-haiku-4.5_bv": {
+      "avg_credits": 0.0313,
+      "total_credits": 4.13,
+      "avg_time_seconds": 3.7,
+      "pass_count": 57,
+      "credits_per_correct": 0.0725
+    },
+    "claude-haiku-4.5_tv": {
+      "avg_credits": 0.0495,
+      "total_credits": 6.54,
+      "avg_time_seconds": 5.9,
+      "pass_count": 62,
+      "credits_per_correct": 0.1055
+    }
   }
 }

@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use QCV-Dataset, please cite it as below."
+title: "QCV-Dataset: A Multimodal Quantum Circuit Benchmark for Visual AI Evaluation"
+type: dataset
+authors:
+  - family-names: Liu
+    given-names: Dongping
+    affiliation: "LiJian Research Institute, Tenorshare (Hong Kong) Limited"
+    email: dpliu@tenorshare.com
+  - family-names: Zhang
+    given-names: Aoyu
+    affiliation: "Amazon Web Services"
+    email: aoyuzhan@amazon.com
+  - family-names: Zhang
+    given-names: Luyao
+    affiliation: "Duke Kunshan University"
+    email: lz183@duke.edu
+date-released: "2026-04-30"
+version: "2.0"
+license: MIT
+url: "https://github.com/QuantBlockchain/quantum-circuit-vision"
+repository-code: "https://github.com/QuantBlockchain/quantum-circuit-vision"
+keywords:
+  - quantum computing
+  - multimodal AI
+  - benchmark
+  - code generation
+  - visual reasoning
+  - evaluation
+abstract: >-
+  QCV-Dataset is the first multimodal quantum circuit benchmark for evaluating
+  AI systems on visual circuit understanding and code generation. It contains
+  132 circuits across 13 categories (1-10 qubits) with 5 core modalities:
+  circuit diagram images, executable code (Braket and Qiskit), simulation
+  results, structured annotations, and annotated failure cases. Includes
+  792 experiment results with cost analysis across three model tiers.

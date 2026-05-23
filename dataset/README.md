@@ -161,3 +161,31 @@ The `experiment_results/` directory contains:
 1. **Structural complexity, not qubit count, determines success.** 8-qubit regular circuits pass; 5-qubit irregular circuits fail.
 2. **Chain-of-thought (TV) provides no benefit for strong models** (Δ = −3 to −4) but modest improvement for the weakest model (Δ = +5).
 3. **18 "impossible" circuits** are predominantly complex algorithms (Shor, HHL, QAOA), error correction (surface code), and cryptographic protocols.
+
+## Cost Analysis
+
+| Model | Tier | Credits/call | Time | Pass% (BV) | Credits/correct |
+|:---|:---:|:---:|:---:|:---:|:---:|
+| Opus 4.6 | 2.20× | 0.618 | 24.4s | 78% | 0.778 |
+| Sonnet 4.6 | 1.30× | 0.110 | 6.0s | 77% | **0.142** |
+| Haiku 4.5 | 0.40× | 0.031 | 3.7s | 43% | 0.072 |
+
+Sonnet achieves Pareto-optimal cost-accuracy: same pass rate as Opus at 18% of the cost.
+
+See `experiment_results/cost_analysis.csv` for per-invocation data.
+
+## Citation
+
+```bibtex
+@misc{liu2026qcv,
+  title={QCV: Cost-Aware Evaluation of Visual AI Agents for Quantum Code Generation},
+  author={Liu, Dongping and Zhang, Aoyu and Zhang, Luyao},
+  year={2026},
+  url={https://github.com/QuantBlockchain/quantum-circuit-vision}
+}
+```
+
+## Documentation
+
+- [DATASHEET.md](../DATASHEET.md) — Dataset documentation following Gebru et al. (2021)
+- [CITATION.cff](../CITATION.cff) — Machine-readable citation metadata
