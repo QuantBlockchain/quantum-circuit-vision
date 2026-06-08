@@ -19,8 +19,14 @@
 
 Quantum Circuit Vision (QCV) studies whether multimodal LLMs can generate executable quantum code from circuit-diagram images. The project provides a difficulty-graded benchmark of **132 circuits** across 13 categories, reference implementations (Braket & Qiskit), bilingual annotations, and verification tooling.
 
-<!-- Navigation bar -->
-**Navigate:** [Overview](#qcv--quantum-circuit-vision-️) • [Dataset card](docs/huggingface/DATASET_CARD.md) • [Quick Start](#-quick-start) • [Repository Structure](#-repository-structure-short) • [Scripts](scripts/) • [Hugging Face Dataset](https://huggingface.co/datasets/QuantBlockchain/qcv-dataset) • [License](LICENSE)
+<!-- Badge-style navigation bar -->
+[![Overview](https://img.shields.io/badge/Overview-README-blue?logo=github)](README.md) 
+[![Dataset card](https://img.shields.io/badge/Dataset%20Card-docs%2Fhuggingface%2FDATASET_CARD.md-blueviolet)](docs/huggingface/DATASET_CARD.md) 
+[![Quick Start](https://img.shields.io/badge/Quick%20Start-%E2%9A%80%EF%B8%8F-brightgreen)](#quick-start) 
+[![Repo Structure](https://img.shields.io/badge/Repo%20Structure-📁-informational)](#repository-structure) 
+[![Scripts](https://img.shields.io/badge/Scripts-scripts%2F-blue)](scripts/) 
+[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Dataset-orange)](https://huggingface.co/datasets/QuantBlockchain/qcv-dataset) 
+[![License](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)
 
 ## Key Findings
 
