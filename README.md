@@ -1,7 +1,7 @@
 <!-- prettier-ignore-start -->
 # QCV — Quantum Circuit Vision ⚛️
 
-![GitHub stars](https://img.shields.io/github/stars/QuantBlockchain/quantum-circuit-vision?style=social)
+
 ![License](https://img.shields.io/github/license/QuantBlockchain/quantum-circuit-vision)
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
 ![Hugging Face Dataset](https://img.shields.io/badge/huggingface-QCV--Dataset-orange)
@@ -18,6 +18,9 @@
 [![Claude Haiku 4.5](https://img.shields.io/badge/Claude-Haiku%204.5-lightgrey)](https://www.anthropic.com)
 
 Quantum Circuit Vision (QCV) studies whether multimodal LLMs can generate executable quantum code from circuit-diagram images. The project provides a difficulty-graded benchmark of **132 circuits** across 13 categories, reference implementations (Braket & Qiskit), bilingual annotations, and verification tooling.
+
+<!-- Navigation bar -->
+**Navigate:** [Overview](#qcv--quantum-circuit-vision-️) • [Dataset card](docs/huggingface/DATASET_CARD.md) • [Quick Start](#-quick-start) • [Repository Structure](#-repository-structure-short) • [Scripts](scripts/) • [Hugging Face Dataset](https://huggingface.co/datasets/QuantBlockchain/qcv-dataset) • [License](LICENSE)
 
 ## Key Findings
 
