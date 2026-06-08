@@ -1,22 +1,22 @@
 <!-- prettier-ignore-start -->
-# QCV — Quantum Circuit Vision ⚛️  [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20593035-blue)](https://doi.org/10.5281/zenodo.20593035) 
+# QCV — Quantum Circuit Vision ⚛️  [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20593035-blue)](https://doi.org/10.5281/zenodo.20593035)
 
-![License](https://img.shields.io/github/license/QuantBlockchain/quantum-circuit-vision)
-![Python](https://img.shields.io/badge/python-3.8%2B-blue)
-![Hugging Face Dataset](https://img.shields.io/badge/huggingface-QCV--Dataset-orange)
-![Repo size](https://img.shields.io/github/repo-size/QuantBlockchain/quantum-circuit-vision)
+[![License](https://img.shields.io/github/license/QuantBlockchain/quantum-circuit-vision)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
+[![Hugging Face Dataset](https://img.shields.io/badge/huggingface-QCV--Dataset-orange)](https://huggingface.co/datasets/QuantBlockchain/qcv-dataset)
+[![Repo size](https://img.shields.io/github/repo-size/QuantBlockchain/quantum-circuit-vision)](https://github.com/QuantBlockchain/quantum-circuit-vision)
 
-<!-- Technologies -->
 [![AWS Braket](https://img.shields.io/badge/AWS-Braket-orange?logo=amazon-aws)](https://aws.amazon.com/braket/)
 [![Braket SDK](https://img.shields.io/badge/Braket%20SDK-Python-blue?logo=python)](https://aws.amazon.com/braket/)
 [![Qiskit](https://img.shields.io/badge/Qiskit-enabled-8A2BE2?logo=qiskit)](https://qiskit.org)
 
-<!-- Models tested -->
 [![Claude Opus 4.6](https://img.shields.io/badge/Claude-Opus%204.6-pink)](https://www.anthropic.com)
 [![Claude Sonnet 4.6](https://img.shields.io/badge/Claude-Sonnet%204.6-lightpink)](https://www.anthropic.com)
 [![Claude Haiku 4.5](https://img.shields.io/badge/Claude-Haiku%204.5-lightgrey)](https://www.anthropic.com)
 
-Quantum Circuit Vision (QCV) studies whether multimodal LLMs can generate executable quantum code from circuit-diagram images. The project provides a difficulty-graded benchmark of **132 circuits** across 13 categories, reference implementations (Braket & Qiskit), bilingual annotations, and verification tooling.
+<blockquote>
+<p>Quantum Circuit Vision (QCV) studies whether multimodal LLMs can generate executable quantum code from circuit-diagram images. The project provides a difficulty-graded benchmark of <strong>132 circuits</strong> across 13 categories, reference implementations (Braket &amp; Qiskit), bilingual annotations, and verification tooling.</p>
+</blockquote>
 
 <!-- Badge-style navigation bar -->
 [![Overview](https://img.shields.io/badge/Overview-README-blue?logo=github)](README.md) 
