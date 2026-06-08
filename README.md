@@ -1,5 +1,5 @@
 <!-- prettier-ignore-start -->
-# QCV — Quantum Circuit Vision ⚛️   [![DOI](https://zenodo.org/badge/1203942399.svg)](https://doi.org/10.5281/zenodo.20593035)
+# QCV — Quantum Circuit Vision ⚛️  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20593035.svg)](https://doi.org/10.5281/zenodo.20593035)
 
 
 ![License](https://img.shields.io/github/license/QuantBlockchain/quantum-circuit-vision)
