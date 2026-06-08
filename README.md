@@ -1,8 +1,13 @@
-# QCV: Quantum Circuit Vision
+<!-- prettier-ignore-start -->
+# QCV — Quantum Circuit Vision ⚛️
 
-**Quantum Circuit Code Generation using Visual Capabilities of Multi-Modal Large Language Models**
+![GitHub stars](https://img.shields.io/github/stars/QuantBlockchain/quantum-circuit-vision?style=social)
+![License](https://img.shields.io/github/license/QuantBlockchain/quantum-circuit-vision)
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![Hugging Face Dataset](https://img.shields.io/badge/huggingface-QCV--Dataset-orange)
+![Repo size](https://img.shields.io/github/repo-size/QuantBlockchain/quantum-circuit-vision)
 
-QCV investigates whether multimodal large language models (MMLLMs) can generate executable quantum code directly from circuit diagram images. We construct a difficulty-graded benchmark of **132 quantum circuits** across 13 categories and evaluate multiple MMLLMs under two visual prompting modes: Basic Vision (BV) and Thinking Vision (TV).
+Quantum Circuit Vision (QCV) studies whether multimodal LLMs can generate executable quantum code from circuit-diagram images. The project provides a difficulty-graded benchmark of **132 circuits** across 13 categories, reference implementations (Braket & Qiskit), bilingual annotations, and verification tooling.
 
 ## Key Findings
 
