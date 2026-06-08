@@ -1,6 +1,5 @@
 <!-- prettier-ignore-start -->
-# QCV — Quantum Circuit Vision ⚛️  [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20593035-blue)](https://doi.org/10.5281/zenodo.20593035)  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20593036.svg)](https://doi.org/10.5281/zenodo.20593035)
-
+# QCV — Quantum Circuit Vision ⚛️  [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20593035-blue)](https://doi.org/10.5281/zenodo.20593035) 
 
 ![License](https://img.shields.io/github/license/QuantBlockchain/quantum-circuit-vision)
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
