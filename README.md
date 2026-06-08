@@ -91,17 +91,96 @@ Weighted score = 0.2 × Basic + 0.3 × Intermediate + 0.5 × Advanced
 
 Pass rate: **9/11 (81.8%)** — including an 8-qubit consensus protocol (256×256 unitary verified)
 
+---
+
+## Dataset on Hugging Face Hub
+
+The full QCV-Dataset (132 circuits, 792 experiment results, bilingual annotations) is published on **Hugging Face Hub**:
+
+**[https://huggingface.co/datasets/QuantBlockchain/qcv-dataset](https://huggingface.co/datasets/QuantBlockchain/qcv-dataset)**
+
+```python
+from datasets import load_dataset
+
+# Load all 132 circuits with images, code, and annotations
+circuits = load_dataset("QuantBlockchain/qcv-dataset", "circuits", split="train")
+
+# Load all 792 experiment results
+experiments = load_dataset("QuantBlockchain/qcv-dataset", "experiments", split="train")
+
+# Access a sample
+sample = circuits[0]
+print(sample["id"])              # A01_single_y
+print(sample["circuit_image"])    # PIL.Image — circuit diagram
+print(sample["braket_code"])      # Executable Braket code
+print(sample["description_en"])   # English description
+print(sample["description_cn"])   # Chinese description
+```
+
+### Data Governance Standards
+
+Publishing on Hugging Face Hub with structured metadata ensures our dataset is **discoverable, interoperable, and reusable** across the ML ecosystem. We adhere to three complementary layers of data governance:
+
+| Layer | Standard | Purpose |
+|:---|:---|:---|
+| **Dataset Card (YAML)** | Hugging Face Hub metadata | Search/discovery, task categorization, license clarity |
+| **Croissant JSON-LD** | [MLCommons Croissant](https://github.com/mlcommons/croissant) [^1] | Machine-readable schema for cross-platform tool integration |
+| **Croissant-RAI** | [MLCommons RAI Extension](https://docs.mlcommons.org/croissant/docs/croissant-rai-spec.html) [^1] | Responsible AI documentation: provenance, limitations, biases |
+
+**Why this matters.** Croissant [^1] is an emerging industry standard (Google Dataset Search, Kaggle, OpenML) that represents datasets as structured metadata graphs. Combined with the RAI extension, it documents data collection methods, known limitations, and ethical considerations — making our quantum circuit dataset reproducible and trustworthy for downstream research.
+
+### How We Did It
+
+1. **Consolidated 5 modalities** (circuit images, Braket code, Qiskit code, state vectors, bilingual annotations) into structured Parquet configs using the `datasets` library with explicit `Features` schema
+2. **Used `Image()` feature type** to embed circuit diagrams as bytes — enabling the Hugging Face Dataset Viewer to render circuit previews directly in the browser
+3. **Wrote a Croissant-RAI overlay** documenting data provenance (Qiskit generation + expert curation), verification protocol (fidelity ≥ 0.99 on Braket LocalSimulator), known biases (23.5% blockchain-relevant circuits), and use cases
+4. **Structured the dataset card** with YAML front matter for automatic task categorization and discoverability on Hugging Face Hub
+
+### Related Files
+
+| File | Description |
+|:---|:---|
+| [`docs/huggingface/DATASET_CARD.md`](docs/huggingface/DATASET_CARD.md) | Hugging Face dataset card with YAML metadata |
+| [`scripts/hf/upload_to_huggingface.py`](scripts/hf/upload_to_huggingface.py) | Upload script (datasets → HF Hub with Croissant-RAI) |
+| [`docs/huggingface/GUIDE.md`](docs/huggingface/GUIDE.md) | Step-by-step guide for re-uploading or updating the dataset |
+
+[^1]: Akhtar, M., Benjelloun, O., Conforti, C., Foschini, L., Gijsbers, P., Giner-Miguelez, J., Goswami, S., Jain, N., Karamousadakis, M., Krishna, S., Kuchnik, M., Lesage, S., Lhoest, Q., Marcenac, P., Maskey, M., Mattson, P., Oala, L., Oderinwale, H., Ruyssen, P., Santos, T., Shinde, R., Simperl, E., Suresh, A., Thomas, G., Tykhonov, S., Vanschoren, J., Varma, S., van der Velde, J., Vogler, S., Wu, C.-J., & Zhang, L. (2024). *Croissant: A Metadata Format for ML-Ready Datasets*. Advances in Neural Information Processing Systems, 37, 82133–82148. https://doi.org/10.52202/079017-2610
+
 ## Repository Structure
 
 ```
 quantum-circuit-vision/
-├── dataset/circuits/                  # 132 circuit diagram images (PNG)
-
-├── prompts/                    # BV and TV prompt templates
-├── scripts/                    # Circuit generation, experiment, and verification scripts
-├── results/                    # Aggregated experiment results
+├── dataset/                         # 132 circuits, 5 core modalities
+│   ├── circuits/                    # Circuit diagram images (PNG)
+│   ├── braket_code/                 # Amazon Braket SDK ground truth (.py)
+│   ├── qiskit_code/                 # Qiskit implementations (.py)
+│   ├── simulations/                 # State vectors (JSON)
+│   ├── annotations/                 # Bilingual EN/CN annotations + experiment results (JSON)
+│   ├── failures/                    # Annotated failure cases (JSON)
+│   ├── equivalences/                # Circuit equivalence pairs (JSON)
+│   ├── experiment_results/          # 792 raw model outputs + verification CSV
+│   └── targets/                     # Natural language target descriptions (JSON)
+├── docs/
+│   └── huggingface/                 # Hugging Face Hub documentation
+│       ├── DATASET_CARD.md          # HF dataset card (YAML + Markdown)
+│       └── GUIDE.md                 # Upload guide
+├── scripts/
+│   ├── hf/                          # Hugging Face upload tooling
+│   │   └── upload_to_huggingface.py # Upload script with Croissant-RAI
+│   ├── load_dataset.py              # Local dataset loader
+│   ├── generate_circuits.py         # Circuit generation
+│   ├── generate_intermediate.py     # Intermediate circuit generation
+│   ├── generate_advanced.py         # Advanced circuit generation
+│   └── verify.py                    # Verification pipeline
+├── prompts/                         # BV and TV prompt templates
+├── results/                         # Aggregated experiment results
+├── assets/                          # README figures
 ├── requirements.txt
-└── LICENSE
+├── CITATION.cff                     # Machine-readable citation metadata
+├── DATASHEET.md                     # Dataset documentation (Gebru et al., 2021)
+├── CIRCUIT_CATALOG.md               # Full listing of all 132 circuits
+├── LICENSE
+└── README.md
 ```
 
 ## Quick Start
@@ -147,6 +226,23 @@ See `prompts/prompts.txt` for the exact templates.
   title={QCV: Quantum Circuit Code Generation using Visual Capabilities of Multi-Modal Large Language Models},
   author={Liu, Dongping and Zhang, Aoyu and Zhang, Luyao},
   year={2026}
+}
+```
+
+If you use the Hugging Face dataset or Croissant metadata, please also cite:
+
+```bibtex
+@inproceedings{NEURIPS2024_9547b09b,
+  author = {Akhtar, Mubashara and Benjelloun, Omar and Conforti, Costanza and Foschini, Luca and Gijsbers, Pieter and Giner-Miguelez, Joan and Goswami, Sujata and Jain, Nitisha and Karamousadakis, Michalis and Krishna, Satyapriya and Kuchnik, Michael and Lesage, Sylvain and Lhoest, Quentin and Marcenac, Pierre and Maskey, Manil and Mattson, Peter and Oala, Luis and Oderinwale, Hamidah and Ruyssen, Pierre and Santos, Tim and Shinde, Rajat and Simperl, Elena and Suresh, Arjun and Thomas, Goeffry and Tykhonov, Slava and Vanschoren, Joaquin and Varma, Susheel and van der Velde, Jos and Vogler, Steffen and Wu, Carole-Jean and Zhang, Luyao},
+  booktitle = {Advances in Neural Information Processing Systems},
+  doi = {10.52202/079017-2610},
+  editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+  pages = {82133--82148},
+  publisher = {Curran Associates, Inc.},
+  title = {Croissant: A Metadata Format for ML-Ready Datasets},
+  url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/9547b09b722f2948ff3ddb5d86002bc0-Paper-Datasets_and_Benchmarks_Track.pdf},
+  volume = {37},
+  year = {2024}
 }
 ```
 
