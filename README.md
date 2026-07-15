@@ -34,6 +34,29 @@
 - **Structural regularity > qubit count**: An 8-qubit regular circuit passes while 5-qubit and 7-qubit irregular circuits fail
 - All generated code is verified end-to-end using **unitary matrix fidelity** on Amazon Braket's LocalSimulator
 
+## Interdisciplinary Contribution Framework
+
+The QCV contribution is not only a benchmark release; it is an interdisciplinary workflow connecting quantum computing, multimodal model evaluation, reproducible verification, and blockchain-oriented security applications.
+
+![QCV Interdisciplinary Framework](figures/Interdisciplinary_Framework.png)
+
+This framework illustrates how QCV integrates:
+
+- **Agentic AI** to support automated decision making and orchestration
+- **Cost-Aware Evaluation** to prioritize practical and resource-efficient experimentation
+- **Quantum Circuit Vision** as the core task domain connecting both sides
+
+As shown by the three links in the diagram, the framework emphasizes:
+
+- **Automated Circuit Design**
+- **Resource-Optimized QCV**
+- **Efficient Agent Deployment**
+
+For reproducibility, the Python source files used to generate this figure are available in the [figures](figures/) folder:
+
+- [figures/qcv_interdisciplinary_framework.py](figures/qcv_interdisciplinary_framework.py)
+- [figures/QCV_Interdisciplinary_Framework.ipynb](figures/QCV_Interdisciplinary_Framework.ipynb)
+
 ## Benchmark Overview
 
 ### 132 Circuits · 13 Categories · 1–10 Qubits
