@@ -1,0 +1,631 @@
+lang,model,circuit,run,passed,fidelity,error
+cn,claude-haiku-4.5,adv_01_qft3,1,True,1.0,
+cn,claude-haiku-4.5,adv_01_qft3,2,False,0.0,exec:'Circuit' object has no attribute 'measu
+cn,claude-haiku-4.5,adv_01_qft3,3,False,0.0,exec:'Circuit' object has no attribute 'measu
+cn,claude-haiku-4.5,adv_01_qft3,4,True,1.0,
+cn,claude-haiku-4.5,adv_01_qft3,5,True,1.0,
+cn,claude-haiku-4.5,adv_02_grover3,1,False,0.0,exec:Operator qubit count 2 must be equal to 
+cn,claude-haiku-4.5,adv_02_grover3,2,False,0.3125,fid=0.312
+cn,claude-haiku-4.5,adv_02_grover3,3,False,0.2652,fid=0.265
+cn,claude-haiku-4.5,adv_02_grover3,4,False,0.1875,fid=0.187
+cn,claude-haiku-4.5,adv_02_grover3,5,False,0.125,fid=0.125
+cn,claude-haiku-4.5,adv_03_vqe_ansatz,1,True,1.0,
+cn,claude-haiku-4.5,adv_03_vqe_ansatz,2,True,1.0,
+cn,claude-haiku-4.5,adv_03_vqe_ansatz,3,True,1.0,
+cn,claude-haiku-4.5,adv_03_vqe_ansatz,4,True,1.0,
+cn,claude-haiku-4.5,adv_03_vqe_ansatz,5,True,1.0,
+cn,claude-haiku-4.5,adv_04_qaoa,1,False,0.0,fid=0.000
+cn,claude-haiku-4.5,adv_04_qaoa,2,False,0.0625,fid=0.062
+cn,claude-haiku-4.5,adv_04_qaoa,3,False,0.0884,fid=0.088
+cn,claude-haiku-4.5,adv_04_qaoa,4,False,0.0817,fid=0.082
+cn,claude-haiku-4.5,adv_04_qaoa,5,False,0.0676,fid=0.068
+cn,claude-haiku-4.5,adv_05_qwalk,1,False,0.75,fid=0.750
+cn,claude-haiku-4.5,adv_05_qwalk,2,False,0.75,fid=0.750
+cn,claude-haiku-4.5,adv_05_qwalk,3,False,0.25,fid=0.250
+cn,claude-haiku-4.5,adv_05_qwalk,4,False,0.75,fid=0.750
+cn,claude-haiku-4.5,adv_05_qwalk,5,False,0.75,fid=0.750
+cn,claude-haiku-4.5,adv_06_bv,1,False,0.5,fid=0.500
+cn,claude-haiku-4.5,adv_06_bv,2,False,0.5,fid=0.500
+cn,claude-haiku-4.5,adv_06_bv,3,False,0.5,fid=0.500
+cn,claude-haiku-4.5,adv_06_bv,4,False,0.25,fid=0.250
+cn,claude-haiku-4.5,adv_06_bv,5,False,0.5,fid=0.500
+cn,claude-haiku-4.5,demo_01_hadamard,1,True,1.0,
+cn,claude-haiku-4.5,demo_01_hadamard,2,False,0.3536,fid=0.354
+cn,claude-haiku-4.5,demo_01_hadamard,3,False,0.3536,fid=0.354
+cn,claude-haiku-4.5,demo_01_hadamard,4,True,1.0,
+cn,claude-haiku-4.5,demo_01_hadamard,5,True,1.0,
+cn,claude-haiku-4.5,demo_02_cnot,1,False,0.0,fid=0.000
+cn,claude-haiku-4.5,demo_02_cnot,2,True,1.0,
+cn,claude-haiku-4.5,demo_02_cnot,3,True,1.0,
+cn,claude-haiku-4.5,demo_02_cnot,4,True,1.0,
+cn,claude-haiku-4.5,demo_02_cnot,5,True,1.0,
+cn,claude-haiku-4.5,demo_03_bell,1,False,0.3536,fid=0.354
+cn,claude-haiku-4.5,demo_03_bell,2,True,1.0,
+cn,claude-haiku-4.5,demo_03_bell,3,True,1.0,
+cn,claude-haiku-4.5,demo_03_bell,4,True,1.0,
+cn,claude-haiku-4.5,demo_03_bell,5,True,1.0,
+cn,claude-haiku-4.5,demo_04_ghz,1,True,1.0,
+cn,claude-haiku-4.5,demo_04_ghz,2,True,1.0,
+cn,claude-haiku-4.5,demo_04_ghz,3,True,1.0,
+cn,claude-haiku-4.5,demo_04_ghz,4,True,1.0,
+cn,claude-haiku-4.5,demo_04_ghz,5,True,1.0,
+cn,claude-haiku-4.5,demo_05_toffoli,1,False,0.0,exec:'Circuit' object has no attribute 'toffo
+cn,claude-haiku-4.5,demo_05_toffoli,2,True,1.0,
+cn,claude-haiku-4.5,demo_05_toffoli,3,False,0.0,exec:'Circuit' object has no attribute 'toffo
+cn,claude-haiku-4.5,demo_05_toffoli,4,False,0.0,exec:'Circuit' object has no attribute 'toffo
+cn,claude-haiku-4.5,demo_05_toffoli,5,False,0.0,exec:'Circuit' object has no attribute 'toffo
+cn,claude-haiku-4.5,inter_01_swap_decomp,1,False,0.0,exec:'Circuit' object has no attribute 'cx'
+cn,claude-haiku-4.5,inter_01_swap_decomp,2,False,0.0,exec:'Circuit' object has no attribute 'cx'
+cn,claude-haiku-4.5,inter_01_swap_decomp,3,False,0.0,exec:'Circuit' object has no attribute 'cx'
+cn,claude-haiku-4.5,inter_01_swap_decomp,4,False,0.0,exec:'Circuit' object has no attribute 'cx'
+cn,claude-haiku-4.5,inter_01_swap_decomp,5,False,0.0,exec:'Circuit' object has no attribute 'cx'
+cn,claude-haiku-4.5,inter_02_qft2,1,False,0.0,exec:'Circuit' object has no attribute 'measu
+cn,claude-haiku-4.5,inter_02_qft2,2,False,0.0,exec:'Circuit' object has no attribute 'measu
+cn,claude-haiku-4.5,inter_02_qft2,3,False,0.5,fid=0.500
+cn,claude-haiku-4.5,inter_02_qft2,4,False,0.5,fid=0.500
+cn,claude-haiku-4.5,inter_02_qft2,5,True,1.0,
+cn,claude-haiku-4.5,inter_03_teleport_prep,1,False,0.0,fid=0.000
+cn,claude-haiku-4.5,inter_03_teleport_prep,2,False,0.3536,fid=0.354
+cn,claude-haiku-4.5,inter_03_teleport_prep,3,False,0.3536,fid=0.354
+cn,claude-haiku-4.5,inter_03_teleport_prep,4,False,0.1768,fid=0.177
+cn,claude-haiku-4.5,inter_03_teleport_prep,5,False,0.0,fid=0.000
+cn,claude-haiku-4.5,inter_04_deutsch,1,True,1.0,
+cn,claude-haiku-4.5,inter_04_deutsch,2,True,1.0,
+cn,claude-haiku-4.5,inter_04_deutsch,3,True,1.0,
+cn,claude-haiku-4.5,inter_04_deutsch,4,True,1.0,
+cn,claude-haiku-4.5,inter_04_deutsch,5,True,1.0,
+cn,claude-haiku-4.5,inter_05_superdense,1,True,1.0,
+cn,claude-haiku-4.5,inter_05_superdense,2,True,1.0,
+cn,claude-haiku-4.5,inter_05_superdense,3,True,1.0,
+cn,claude-haiku-4.5,inter_05_superdense,4,True,1.0,
+cn,claude-haiku-4.5,inter_05_superdense,5,True,1.0,
+cn,claude-haiku-4.5,inter_06_grover2,1,False,0.5,fid=0.500
+cn,claude-haiku-4.5,inter_06_grover2,2,False,0.5,fid=0.500
+cn,claude-haiku-4.5,inter_06_grover2,3,False,0.5,fid=0.500
+cn,claude-haiku-4.5,inter_06_grover2,4,False,0.5,fid=0.500
+cn,claude-haiku-4.5,inter_06_grover2,5,False,0.5,fid=0.500
+cn,claude-haiku-4.5,inter_07_param_rot,1,False,0.25,fid=0.250
+cn,claude-haiku-4.5,inter_07_param_rot,2,False,0.0,exec:CNot.cnot() got an unexpected keyword ar
+cn,claude-haiku-4.5,inter_07_param_rot,3,False,0.25,fid=0.250
+cn,claude-haiku-4.5,inter_07_param_rot,4,False,0.0,exec:CNot.cnot() got an unexpected keyword ar
+cn,claude-haiku-4.5,inter_07_param_rot,5,False,0.25,fid=0.250
+cn,claude-haiku-4.5,inter_08_fredkin,1,False,0.0,exec:'Circuit' object has no attribute 'fredk
+cn,claude-haiku-4.5,inter_08_fredkin,2,False,0.0,exec:'Circuit' object has no attribute 'fredk
+cn,claude-haiku-4.5,inter_08_fredkin,3,False,0.0,exec:'Circuit' object has no attribute 'fredk
+cn,claude-haiku-4.5,inter_08_fredkin,4,False,0.0,exec:'Circuit' object has no attribute 'fredk
+cn,claude-haiku-4.5,inter_08_fredkin,5,False,0.625,fid=0.625
+cn,claude-haiku-4.5,inter_09_shift_reg,1,True,1.0,
+cn,claude-haiku-4.5,inter_09_shift_reg,2,True,1.0,
+cn,claude-haiku-4.5,inter_09_shift_reg,3,True,1.0,
+cn,claude-haiku-4.5,inter_09_shift_reg,4,True,1.0,
+cn,claude-haiku-4.5,inter_09_shift_reg,5,True,1.0,
+cn,claude-haiku-4.5,inter_10_phase_est,1,False,0.2999,fid=0.300
+cn,claude-haiku-4.5,inter_10_phase_est,2,False,0.2999,fid=0.300
+cn,claude-haiku-4.5,inter_10_phase_est,3,False,0.2999,fid=0.300
+cn,claude-haiku-4.5,inter_10_phase_est,4,False,0.2677,fid=0.268
+cn,claude-haiku-4.5,inter_10_phase_est,5,False,0.2999,fid=0.300
+cn,claude-opus-4.6,adv_01_qft3,1,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,adv_01_qft3,2,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,adv_01_qft3,3,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,adv_01_qft3,4,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,adv_01_qft3,5,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,adv_02_grover3,1,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,adv_02_grover3,2,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,adv_02_grover3,3,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,adv_02_grover3,4,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,adv_02_grover3,5,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,adv_03_vqe_ansatz,1,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,adv_03_vqe_ansatz,2,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,adv_03_vqe_ansatz,3,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,adv_03_vqe_ansatz,4,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,adv_03_vqe_ansatz,5,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,adv_04_qaoa,1,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,adv_04_qaoa,2,False,0.5,fid=0.500
+cn,claude-opus-4.6,adv_04_qaoa,3,False,0.0,exec:name 'circuit' is not defined
+cn,claude-opus-4.6,adv_04_qaoa,4,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,adv_04_qaoa,5,False,0.0,exec:name 'circuit' is not defined
+cn,claude-opus-4.6,adv_05_qwalk,1,True,1.0,
+cn,claude-opus-4.6,adv_05_qwalk,2,True,1.0,
+cn,claude-opus-4.6,adv_05_qwalk,3,True,1.0,
+cn,claude-opus-4.6,adv_05_qwalk,4,True,1.0,
+cn,claude-opus-4.6,adv_05_qwalk,5,True,1.0,
+cn,claude-opus-4.6,adv_06_bv,1,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,adv_06_bv,2,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,adv_06_bv,3,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,adv_06_bv,4,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,adv_06_bv,5,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,demo_01_hadamard,1,True,1.0,
+cn,claude-opus-4.6,demo_01_hadamard,2,True,1.0,
+cn,claude-opus-4.6,demo_01_hadamard,3,False,0.0,exec:name 'q' is not defined
+cn,claude-opus-4.6,demo_01_hadamard,4,True,1.0,
+cn,claude-opus-4.6,demo_01_hadamard,5,True,1.0,
+cn,claude-opus-4.6,demo_02_cnot,1,True,1.0,
+cn,claude-opus-4.6,demo_02_cnot,2,True,1.0,
+cn,claude-opus-4.6,demo_02_cnot,3,True,1.0,
+cn,claude-opus-4.6,demo_02_cnot,4,True,1.0,
+cn,claude-opus-4.6,demo_02_cnot,5,True,1.0,
+cn,claude-opus-4.6,demo_03_bell,1,True,1.0,
+cn,claude-opus-4.6,demo_03_bell,2,True,1.0,
+cn,claude-opus-4.6,demo_03_bell,3,True,1.0,
+cn,claude-opus-4.6,demo_03_bell,4,True,1.0,
+cn,claude-opus-4.6,demo_03_bell,5,True,1.0,
+cn,claude-opus-4.6,demo_04_ghz,1,True,1.0,
+cn,claude-opus-4.6,demo_04_ghz,2,True,1.0,
+cn,claude-opus-4.6,demo_04_ghz,3,True,1.0,
+cn,claude-opus-4.6,demo_04_ghz,4,True,1.0,
+cn,claude-opus-4.6,demo_04_ghz,5,True,1.0,
+cn,claude-opus-4.6,demo_05_toffoli,1,True,1.0,
+cn,claude-opus-4.6,demo_05_toffoli,2,True,1.0,
+cn,claude-opus-4.6,demo_05_toffoli,3,True,1.0,
+cn,claude-opus-4.6,demo_05_toffoli,4,True,1.0,
+cn,claude-opus-4.6,demo_05_toffoli,5,True,1.0,
+cn,claude-opus-4.6,inter_01_swap_decomp,1,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,inter_01_swap_decomp,2,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,inter_01_swap_decomp,3,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,inter_01_swap_decomp,4,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,inter_01_swap_decomp,5,True,1.0,
+cn,claude-opus-4.6,inter_02_qft2,1,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,inter_02_qft2,2,True,1.0,
+cn,claude-opus-4.6,inter_02_qft2,3,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,inter_02_qft2,4,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,inter_02_qft2,5,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,inter_03_teleport_prep,1,True,1.0,
+cn,claude-opus-4.6,inter_03_teleport_prep,2,True,1.0,
+cn,claude-opus-4.6,inter_03_teleport_prep,3,True,1.0,
+cn,claude-opus-4.6,inter_03_teleport_prep,4,True,1.0,
+cn,claude-opus-4.6,inter_03_teleport_prep,5,True,1.0,
+cn,claude-opus-4.6,inter_04_deutsch,1,True,1.0,
+cn,claude-opus-4.6,inter_04_deutsch,2,True,1.0,
+cn,claude-opus-4.6,inter_04_deutsch,3,True,1.0,
+cn,claude-opus-4.6,inter_04_deutsch,4,True,1.0,
+cn,claude-opus-4.6,inter_04_deutsch,5,True,1.0,
+cn,claude-opus-4.6,inter_05_superdense,1,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,inter_05_superdense,2,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,inter_05_superdense,3,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,inter_05_superdense,4,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,inter_05_superdense,5,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,inter_06_grover2,1,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,inter_06_grover2,2,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,inter_06_grover2,3,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,inter_06_grover2,4,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,inter_06_grover2,5,False,0.0,exec:name 'circuits' is not defined
+cn,claude-opus-4.6,inter_07_param_rot,1,True,1.0,
+cn,claude-opus-4.6,inter_07_param_rot,2,True,1.0,
+cn,claude-opus-4.6,inter_07_param_rot,3,True,1.0,
+cn,claude-opus-4.6,inter_07_param_rot,4,True,1.0,
+cn,claude-opus-4.6,inter_07_param_rot,5,True,1.0,
+cn,claude-opus-4.6,inter_08_fredkin,1,True,1.0,
+cn,claude-opus-4.6,inter_08_fredkin,2,True,1.0,
+cn,claude-opus-4.6,inter_08_fredkin,3,True,1.0,
+cn,claude-opus-4.6,inter_08_fredkin,4,True,1.0,
+cn,claude-opus-4.6,inter_08_fredkin,5,True,1.0,
+cn,claude-opus-4.6,inter_09_shift_reg,1,True,1.0,
+cn,claude-opus-4.6,inter_09_shift_reg,2,True,1.0,
+cn,claude-opus-4.6,inter_09_shift_reg,3,True,1.0,
+cn,claude-opus-4.6,inter_09_shift_reg,4,True,1.0,
+cn,claude-opus-4.6,inter_09_shift_reg,5,True,1.0,
+cn,claude-opus-4.6,inter_10_phase_est,1,False,0.0,exec:'Circuit' object has no attribute 'crz'
+cn,claude-opus-4.6,inter_10_phase_est,2,False,0.0,exec:'Circuit' object has no attribute 'crz'
+cn,claude-opus-4.6,inter_10_phase_est,3,False,0.0,exec:name 'crz' is not defined
+cn,claude-opus-4.6,inter_10_phase_est,4,False,0.0,exec:'Circuit' object has no attribute 'crz'
+cn,claude-opus-4.6,inter_10_phase_est,5,False,0.0,exec:'Circuit' object has no attribute 'crz'
+cn,claude-sonnet-4.6,adv_01_qft3,1,True,1.0,
+cn,claude-sonnet-4.6,adv_01_qft3,2,True,1.0,
+cn,claude-sonnet-4.6,adv_01_qft3,3,True,1.0,
+cn,claude-sonnet-4.6,adv_01_qft3,4,True,1.0,
+cn,claude-sonnet-4.6,adv_01_qft3,5,True,1.0,
+cn,claude-sonnet-4.6,adv_02_grover3,1,True,1.0,
+cn,claude-sonnet-4.6,adv_02_grover3,2,True,1.0,
+cn,claude-sonnet-4.6,adv_02_grover3,3,True,1.0,
+cn,claude-sonnet-4.6,adv_02_grover3,4,True,1.0,
+cn,claude-sonnet-4.6,adv_02_grover3,5,True,1.0,
+cn,claude-sonnet-4.6,adv_03_vqe_ansatz,1,True,1.0,
+cn,claude-sonnet-4.6,adv_03_vqe_ansatz,2,True,1.0,
+cn,claude-sonnet-4.6,adv_03_vqe_ansatz,3,True,1.0,
+cn,claude-sonnet-4.6,adv_03_vqe_ansatz,4,True,1.0,
+cn,claude-sonnet-4.6,adv_03_vqe_ansatz,5,True,1.0,
+cn,claude-sonnet-4.6,adv_04_qaoa,1,False,0.25,fid=0.250
+cn,claude-sonnet-4.6,adv_04_qaoa,2,False,0.25,fid=0.250
+cn,claude-sonnet-4.6,adv_04_qaoa,3,False,0.1768,fid=0.177
+cn,claude-sonnet-4.6,adv_04_qaoa,4,False,0.125,fid=0.125
+cn,claude-sonnet-4.6,adv_04_qaoa,5,False,0.1768,fid=0.177
+cn,claude-sonnet-4.6,adv_05_qwalk,1,True,1.0,
+cn,claude-sonnet-4.6,adv_05_qwalk,2,True,1.0,
+cn,claude-sonnet-4.6,adv_05_qwalk,3,True,1.0,
+cn,claude-sonnet-4.6,adv_05_qwalk,4,True,1.0,
+cn,claude-sonnet-4.6,adv_05_qwalk,5,True,1.0,
+cn,claude-sonnet-4.6,adv_06_bv,1,True,1.0,
+cn,claude-sonnet-4.6,adv_06_bv,2,True,1.0,
+cn,claude-sonnet-4.6,adv_06_bv,3,True,1.0,
+cn,claude-sonnet-4.6,adv_06_bv,4,True,1.0,
+cn,claude-sonnet-4.6,adv_06_bv,5,True,1.0,
+cn,claude-sonnet-4.6,demo_01_hadamard,1,True,1.0,
+cn,claude-sonnet-4.6,demo_01_hadamard,2,True,1.0,
+cn,claude-sonnet-4.6,demo_01_hadamard,3,True,1.0,
+cn,claude-sonnet-4.6,demo_01_hadamard,4,True,1.0,
+cn,claude-sonnet-4.6,demo_01_hadamard,5,True,1.0,
+cn,claude-sonnet-4.6,demo_02_cnot,1,True,1.0,
+cn,claude-sonnet-4.6,demo_02_cnot,2,True,1.0,
+cn,claude-sonnet-4.6,demo_02_cnot,3,True,1.0,
+cn,claude-sonnet-4.6,demo_02_cnot,4,True,1.0,
+cn,claude-sonnet-4.6,demo_02_cnot,5,True,1.0,
+cn,claude-sonnet-4.6,demo_03_bell,1,True,1.0,
+cn,claude-sonnet-4.6,demo_03_bell,2,True,1.0,
+cn,claude-sonnet-4.6,demo_03_bell,3,True,1.0,
+cn,claude-sonnet-4.6,demo_03_bell,4,True,1.0,
+cn,claude-sonnet-4.6,demo_03_bell,5,True,1.0,
+cn,claude-sonnet-4.6,demo_04_ghz,1,True,1.0,
+cn,claude-sonnet-4.6,demo_04_ghz,2,True,1.0,
+cn,claude-sonnet-4.6,demo_04_ghz,3,True,1.0,
+cn,claude-sonnet-4.6,demo_04_ghz,4,True,1.0,
+cn,claude-sonnet-4.6,demo_04_ghz,5,True,1.0,
+cn,claude-sonnet-4.6,demo_05_toffoli,1,True,1.0,
+cn,claude-sonnet-4.6,demo_05_toffoli,2,True,1.0,
+cn,claude-sonnet-4.6,demo_05_toffoli,3,True,1.0,
+cn,claude-sonnet-4.6,demo_05_toffoli,4,True,1.0,
+cn,claude-sonnet-4.6,demo_05_toffoli,5,True,1.0,
+cn,claude-sonnet-4.6,inter_01_swap_decomp,1,True,1.0,
+cn,claude-sonnet-4.6,inter_01_swap_decomp,2,True,1.0,
+cn,claude-sonnet-4.6,inter_01_swap_decomp,3,True,1.0,
+cn,claude-sonnet-4.6,inter_01_swap_decomp,4,True,1.0,
+cn,claude-sonnet-4.6,inter_01_swap_decomp,5,True,1.0,
+cn,claude-sonnet-4.6,inter_02_qft2,1,True,1.0,
+cn,claude-sonnet-4.6,inter_02_qft2,2,True,1.0,
+cn,claude-sonnet-4.6,inter_02_qft2,3,True,1.0,
+cn,claude-sonnet-4.6,inter_02_qft2,4,True,1.0,
+cn,claude-sonnet-4.6,inter_02_qft2,5,True,1.0,
+cn,claude-sonnet-4.6,inter_03_teleport_prep,1,True,1.0,
+cn,claude-sonnet-4.6,inter_03_teleport_prep,2,True,1.0,
+cn,claude-sonnet-4.6,inter_03_teleport_prep,3,True,1.0,
+cn,claude-sonnet-4.6,inter_03_teleport_prep,4,True,1.0,
+cn,claude-sonnet-4.6,inter_03_teleport_prep,5,True,1.0,
+cn,claude-sonnet-4.6,inter_04_deutsch,1,True,1.0,
+cn,claude-sonnet-4.6,inter_04_deutsch,2,True,1.0,
+cn,claude-sonnet-4.6,inter_04_deutsch,3,True,1.0,
+cn,claude-sonnet-4.6,inter_04_deutsch,4,True,1.0,
+cn,claude-sonnet-4.6,inter_04_deutsch,5,True,1.0,
+cn,claude-sonnet-4.6,inter_05_superdense,1,True,1.0,
+cn,claude-sonnet-4.6,inter_05_superdense,2,True,1.0,
+cn,claude-sonnet-4.6,inter_05_superdense,3,True,1.0,
+cn,claude-sonnet-4.6,inter_05_superdense,4,True,1.0,
+cn,claude-sonnet-4.6,inter_05_superdense,5,True,1.0,
+cn,claude-sonnet-4.6,inter_06_grover2,1,True,1.0,
+cn,claude-sonnet-4.6,inter_06_grover2,2,True,1.0,
+cn,claude-sonnet-4.6,inter_06_grover2,3,True,1.0,
+cn,claude-sonnet-4.6,inter_06_grover2,4,True,1.0,
+cn,claude-sonnet-4.6,inter_06_grover2,5,True,1.0,
+cn,claude-sonnet-4.6,inter_07_param_rot,1,True,1.0,
+cn,claude-sonnet-4.6,inter_07_param_rot,2,True,1.0,
+cn,claude-sonnet-4.6,inter_07_param_rot,3,True,1.0,
+cn,claude-sonnet-4.6,inter_07_param_rot,4,True,1.0,
+cn,claude-sonnet-4.6,inter_07_param_rot,5,True,1.0,
+cn,claude-sonnet-4.6,inter_08_fredkin,1,True,1.0,
+cn,claude-sonnet-4.6,inter_08_fredkin,2,True,1.0,
+cn,claude-sonnet-4.6,inter_08_fredkin,3,True,1.0,
+cn,claude-sonnet-4.6,inter_08_fredkin,4,True,1.0,
+cn,claude-sonnet-4.6,inter_08_fredkin,5,True,1.0,
+cn,claude-sonnet-4.6,inter_09_shift_reg,1,True,1.0,
+cn,claude-sonnet-4.6,inter_09_shift_reg,2,True,1.0,
+cn,claude-sonnet-4.6,inter_09_shift_reg,3,True,1.0,
+cn,claude-sonnet-4.6,inter_09_shift_reg,4,True,1.0,
+cn,claude-sonnet-4.6,inter_09_shift_reg,5,True,1.0,
+cn,claude-sonnet-4.6,inter_10_phase_est,1,False,0.231,fid=0.231
+cn,claude-sonnet-4.6,inter_10_phase_est,2,False,0.231,fid=0.231
+cn,claude-sonnet-4.6,inter_10_phase_est,3,False,0.0,exec:'Circuit' object has no attribute 'contr
+cn,claude-sonnet-4.6,inter_10_phase_est,4,False,0.231,fid=0.231
+cn,claude-sonnet-4.6,inter_10_phase_est,5,False,0.0,exec:'Circuit' object has no attribute 'crz'
+en,claude-haiku-4.5,adv_01_qft3,1,True,1.0,
+en,claude-haiku-4.5,adv_01_qft3,2,False,0.0,exec:'Circuit' object has no attribute 'measu
+en,claude-haiku-4.5,adv_01_qft3,3,False,0.1976,fid=0.198
+en,claude-haiku-4.5,adv_01_qft3,4,False,0.4283,fid=0.428
+en,claude-haiku-4.5,adv_01_qft3,5,False,0.0,exec:'Circuit' object has no attribute 'resul
+en,claude-haiku-4.5,adv_02_grover3,1,False,0.0625,fid=0.062
+en,claude-haiku-4.5,adv_02_grover3,2,False,0.0,fid=0.000
+en,claude-haiku-4.5,adv_02_grover3,3,False,0.1875,fid=0.187
+en,claude-haiku-4.5,adv_02_grover3,4,False,0.0,exec:Operator qubit count 2 must be equal to 
+en,claude-haiku-4.5,adv_02_grover3,5,False,0.1768,fid=0.177
+en,claude-haiku-4.5,adv_03_vqe_ansatz,1,False,0.6329,fid=0.633
+en,claude-haiku-4.5,adv_03_vqe_ansatz,2,False,0.3592,fid=0.359
+en,claude-haiku-4.5,adv_03_vqe_ansatz,3,True,1.0,
+en,claude-haiku-4.5,adv_03_vqe_ansatz,4,False,0.0,exec:Operator qubit count 2 must be equal to 
+en,claude-haiku-4.5,adv_03_vqe_ansatz,5,True,1.0,
+en,claude-haiku-4.5,adv_04_qaoa,1,False,0.1414,fid=0.141
+en,claude-haiku-4.5,adv_04_qaoa,2,False,0.231,fid=0.231
+en,claude-haiku-4.5,adv_04_qaoa,3,False,0.0625,fid=0.062
+en,claude-haiku-4.5,adv_04_qaoa,4,False,0.0442,fid=0.044
+en,claude-haiku-4.5,adv_04_qaoa,5,False,0.0776,fid=0.078
+en,claude-haiku-4.5,adv_05_qwalk,1,False,0.75,fid=0.750
+en,claude-haiku-4.5,adv_05_qwalk,2,False,0.75,fid=0.750
+en,claude-haiku-4.5,adv_05_qwalk,3,False,0.25,fid=0.250
+en,claude-haiku-4.5,adv_05_qwalk,4,False,0.25,fid=0.250
+en,claude-haiku-4.5,adv_05_qwalk,5,False,0.25,fid=0.250
+en,claude-haiku-4.5,adv_06_bv,1,False,0.0,fid=0.000
+en,claude-haiku-4.5,adv_06_bv,2,True,1.0,
+en,claude-haiku-4.5,adv_06_bv,3,False,0.5,fid=0.500
+en,claude-haiku-4.5,adv_06_bv,4,False,0.3536,fid=0.354
+en,claude-haiku-4.5,adv_06_bv,5,False,0.5,fid=0.500
+en,claude-haiku-4.5,demo_01_hadamard,1,True,1.0,
+en,claude-haiku-4.5,demo_01_hadamard,2,True,1.0,
+en,claude-haiku-4.5,demo_01_hadamard,3,True,1.0,
+en,claude-haiku-4.5,demo_01_hadamard,4,True,1.0,
+en,claude-haiku-4.5,demo_01_hadamard,5,True,1.0,
+en,claude-haiku-4.5,demo_02_cnot,1,True,1.0,
+en,claude-haiku-4.5,demo_02_cnot,2,True,1.0,
+en,claude-haiku-4.5,demo_02_cnot,3,False,0.0,exec:CNot.cnot() got an unexpected keyword ar
+en,claude-haiku-4.5,demo_02_cnot,4,True,1.0,
+en,claude-haiku-4.5,demo_02_cnot,5,True,1.0,
+en,claude-haiku-4.5,demo_03_bell,1,True,1.0,
+en,claude-haiku-4.5,demo_03_bell,2,True,1.0,
+en,claude-haiku-4.5,demo_03_bell,3,True,1.0,
+en,claude-haiku-4.5,demo_03_bell,4,True,1.0,
+en,claude-haiku-4.5,demo_03_bell,5,True,1.0,
+en,claude-haiku-4.5,demo_04_ghz,1,True,1.0,
+en,claude-haiku-4.5,demo_04_ghz,2,True,1.0,
+en,claude-haiku-4.5,demo_04_ghz,3,True,1.0,
+en,claude-haiku-4.5,demo_04_ghz,4,True,1.0,
+en,claude-haiku-4.5,demo_04_ghz,5,True,1.0,
+en,claude-haiku-4.5,demo_05_toffoli,1,False,0.0,exec:'Circuit' object has no attribute 'toffo
+en,claude-haiku-4.5,demo_05_toffoli,2,False,0.0,exec:'Circuit' object has no attribute 'toffo
+en,claude-haiku-4.5,demo_05_toffoli,3,False,0.0,exec:'Circuit' object has no attribute 'toffo
+en,claude-haiku-4.5,demo_05_toffoli,4,False,0.0,exec:'Circuit' object has no attribute 'toffo
+en,claude-haiku-4.5,demo_05_toffoli,5,False,0.0,exec:'Circuit' object has no attribute 'toffo
+en,claude-haiku-4.5,inter_01_swap_decomp,1,False,0.0,exec:'Circuit' object has no attribute 'cx'
+en,claude-haiku-4.5,inter_01_swap_decomp,2,False,0.0,exec:'Circuit' object has no attribute 'cx'
+en,claude-haiku-4.5,inter_01_swap_decomp,3,False,0.0,exec:'Circuit' object has no attribute 'cx'
+en,claude-haiku-4.5,inter_01_swap_decomp,4,False,0.0,exec:'Circuit' object has no attribute 'cx'
+en,claude-haiku-4.5,inter_01_swap_decomp,5,False,0.0,fid=0.000
+en,claude-haiku-4.5,inter_02_qft2,1,False,0.0,exec:'Circuit' object has no attribute 'resul
+en,claude-haiku-4.5,inter_02_qft2,2,False,0.0,exec:'Circuit' object has no attribute 'resul
+en,claude-haiku-4.5,inter_02_qft2,3,False,0.0,exec:'Circuit' object has no attribute 'resul
+en,claude-haiku-4.5,inter_02_qft2,4,False,0.0,exec:'list' object is not callable
+en,claude-haiku-4.5,inter_02_qft2,5,False,0.0,exec:'Circuit' object has no attribute 'measu
+en,claude-haiku-4.5,inter_03_teleport_prep,1,False,0.1768,fid=0.177
+en,claude-haiku-4.5,inter_03_teleport_prep,2,False,0.1768,fid=0.177
+en,claude-haiku-4.5,inter_03_teleport_prep,3,False,0.0,fid=0.000
+en,claude-haiku-4.5,inter_03_teleport_prep,4,False,0.1768,fid=0.177
+en,claude-haiku-4.5,inter_03_teleport_prep,5,False,0.1768,fid=0.177
+en,claude-haiku-4.5,inter_04_deutsch,1,True,1.0,
+en,claude-haiku-4.5,inter_04_deutsch,2,True,1.0,
+en,claude-haiku-4.5,inter_04_deutsch,3,True,1.0,
+en,claude-haiku-4.5,inter_04_deutsch,4,True,1.0,
+en,claude-haiku-4.5,inter_04_deutsch,5,True,1.0,
+en,claude-haiku-4.5,inter_05_superdense,1,True,1.0,
+en,claude-haiku-4.5,inter_05_superdense,2,True,1.0,
+en,claude-haiku-4.5,inter_05_superdense,3,True,1.0,
+en,claude-haiku-4.5,inter_05_superdense,4,True,1.0,
+en,claude-haiku-4.5,inter_05_superdense,5,True,1.0,
+en,claude-haiku-4.5,inter_06_grover2,1,False,0.5,fid=0.500
+en,claude-haiku-4.5,inter_06_grover2,2,False,0.5,fid=0.500
+en,claude-haiku-4.5,inter_06_grover2,3,False,0.5,fid=0.500
+en,claude-haiku-4.5,inter_06_grover2,4,False,0.5,fid=0.500
+en,claude-haiku-4.5,inter_06_grover2,5,False,0.5,fid=0.500
+en,claude-haiku-4.5,inter_07_param_rot,1,False,0.25,fid=0.250
+en,claude-haiku-4.5,inter_07_param_rot,2,False,0.25,fid=0.250
+en,claude-haiku-4.5,inter_07_param_rot,3,False,0.25,fid=0.250
+en,claude-haiku-4.5,inter_07_param_rot,4,False,0.25,fid=0.250
+en,claude-haiku-4.5,inter_07_param_rot,5,False,0.25,fid=0.250
+en,claude-haiku-4.5,inter_08_fredkin,1,True,1.0,
+en,claude-haiku-4.5,inter_08_fredkin,2,False,0.0,exec:'Circuit' object has no attribute 'fredk
+en,claude-haiku-4.5,inter_08_fredkin,3,False,0.0,exec:'Circuit' object has no attribute 'fredk
+en,claude-haiku-4.5,inter_08_fredkin,4,False,0.0,exec:'Circuit' object has no attribute 'fredk
+en,claude-haiku-4.5,inter_08_fredkin,5,False,0.625,fid=0.625
+en,claude-haiku-4.5,inter_09_shift_reg,1,True,1.0,
+en,claude-haiku-4.5,inter_09_shift_reg,2,True,1.0,
+en,claude-haiku-4.5,inter_09_shift_reg,3,True,1.0,
+en,claude-haiku-4.5,inter_09_shift_reg,4,True,1.0,
+en,claude-haiku-4.5,inter_09_shift_reg,5,True,1.0,
+en,claude-haiku-4.5,inter_10_phase_est,1,False,0.2999,fid=0.300
+en,claude-haiku-4.5,inter_10_phase_est,2,False,0.4653,fid=0.465
+en,claude-haiku-4.5,inter_10_phase_est,3,False,0.4653,fid=0.465
+en,claude-haiku-4.5,inter_10_phase_est,4,False,0.2677,fid=0.268
+en,claude-haiku-4.5,inter_10_phase_est,5,False,0.2999,fid=0.300
+en,claude-opus-4.6,adv_01_qft3,1,False,0.0,exec:name 'circuits' is not defined
+en,claude-opus-4.6,adv_01_qft3,2,True,1.0,
+en,claude-opus-4.6,adv_01_qft3,3,True,1.0,
+en,claude-opus-4.6,adv_01_qft3,4,True,1.0,
+en,claude-opus-4.6,adv_01_qft3,5,True,1.0,
+en,claude-opus-4.6,adv_02_grover3,1,True,1.0,
+en,claude-opus-4.6,adv_02_grover3,2,False,0.0,fid=0.000
+en,claude-opus-4.6,adv_02_grover3,3,False,0.3536,fid=0.354
+en,claude-opus-4.6,adv_02_grover3,4,False,0.0,fid=0.000
+en,claude-opus-4.6,adv_02_grover3,5,False,0.0,fid=0.000
+en,claude-opus-4.6,adv_03_vqe_ansatz,1,True,1.0,
+en,claude-opus-4.6,adv_03_vqe_ansatz,2,False,0.0,exec:name 'circuit' is not defined
+en,claude-opus-4.6,adv_03_vqe_ansatz,3,False,0.0,exec:name 'circuit' is not defined
+en,claude-opus-4.6,adv_03_vqe_ansatz,4,False,0.0,exec:name 'circuit' is not defined
+en,claude-opus-4.6,adv_03_vqe_ansatz,5,True,1.0,
+en,claude-opus-4.6,adv_04_qaoa,1,False,0.5,fid=0.500
+en,claude-opus-4.6,adv_04_qaoa,2,False,0.0,exec:name 'circuit' is not defined
+en,claude-opus-4.6,adv_04_qaoa,3,False,0.0884,fid=0.088
+en,claude-opus-4.6,adv_04_qaoa,4,True,1.0,
+en,claude-opus-4.6,adv_04_qaoa,5,False,0.0,exec:name 'circuits' is not defined
+en,claude-opus-4.6,adv_05_qwalk,1,True,1.0,
+en,claude-opus-4.6,adv_05_qwalk,2,True,1.0,
+en,claude-opus-4.6,adv_05_qwalk,3,True,1.0,
+en,claude-opus-4.6,adv_05_qwalk,4,True,1.0,
+en,claude-opus-4.6,adv_05_qwalk,5,True,1.0,
+en,claude-opus-4.6,adv_06_bv,1,True,1.0,
+en,claude-opus-4.6,adv_06_bv,2,True,1.0,
+en,claude-opus-4.6,adv_06_bv,3,True,1.0,
+en,claude-opus-4.6,adv_06_bv,4,True,1.0,
+en,claude-opus-4.6,adv_06_bv,5,True,1.0,
+en,claude-opus-4.6,demo_01_hadamard,1,True,1.0,
+en,claude-opus-4.6,demo_01_hadamard,2,False,0.0,exec:name 'circuits' is not defined
+en,claude-opus-4.6,demo_01_hadamard,3,True,1.0,
+en,claude-opus-4.6,demo_01_hadamard,4,True,1.0,
+en,claude-opus-4.6,demo_01_hadamard,5,False,0.0,exec:name 'circuits' is not defined
+en,claude-opus-4.6,demo_02_cnot,1,True,1.0,
+en,claude-opus-4.6,demo_02_cnot,2,True,1.0,
+en,claude-opus-4.6,demo_02_cnot,3,True,1.0,
+en,claude-opus-4.6,demo_02_cnot,4,True,1.0,
+en,claude-opus-4.6,demo_02_cnot,5,True,1.0,
+en,claude-opus-4.6,demo_03_bell,1,True,1.0,
+en,claude-opus-4.6,demo_03_bell,2,True,1.0,
+en,claude-opus-4.6,demo_03_bell,3,True,1.0,
+en,claude-opus-4.6,demo_03_bell,4,True,1.0,
+en,claude-opus-4.6,demo_03_bell,5,True,1.0,
+en,claude-opus-4.6,demo_04_ghz,1,True,1.0,
+en,claude-opus-4.6,demo_04_ghz,2,True,1.0,
+en,claude-opus-4.6,demo_04_ghz,3,True,1.0,
+en,claude-opus-4.6,demo_04_ghz,4,True,1.0,
+en,claude-opus-4.6,demo_04_ghz,5,True,1.0,
+en,claude-opus-4.6,demo_05_toffoli,1,True,1.0,
+en,claude-opus-4.6,demo_05_toffoli,2,True,1.0,
+en,claude-opus-4.6,demo_05_toffoli,3,True,1.0,
+en,claude-opus-4.6,demo_05_toffoli,4,True,1.0,
+en,claude-opus-4.6,demo_05_toffoli,5,True,1.0,
+en,claude-opus-4.6,inter_01_swap_decomp,1,True,1.0,
+en,claude-opus-4.6,inter_01_swap_decomp,2,True,1.0,
+en,claude-opus-4.6,inter_01_swap_decomp,3,True,1.0,
+en,claude-opus-4.6,inter_01_swap_decomp,4,True,1.0,
+en,claude-opus-4.6,inter_01_swap_decomp,5,True,1.0,
+en,claude-opus-4.6,inter_02_qft2,1,True,1.0,
+en,claude-opus-4.6,inter_02_qft2,2,True,1.0,
+en,claude-opus-4.6,inter_02_qft2,3,True,1.0,
+en,claude-opus-4.6,inter_02_qft2,4,True,1.0,
+en,claude-opus-4.6,inter_02_qft2,5,True,1.0,
+en,claude-opus-4.6,inter_03_teleport_prep,1,True,1.0,
+en,claude-opus-4.6,inter_03_teleport_prep,2,True,1.0,
+en,claude-opus-4.6,inter_03_teleport_prep,3,True,1.0,
+en,claude-opus-4.6,inter_03_teleport_prep,4,True,1.0,
+en,claude-opus-4.6,inter_03_teleport_prep,5,False,0.0,exec:name 'circuits' is not defined
+en,claude-opus-4.6,inter_04_deutsch,1,True,1.0,
+en,claude-opus-4.6,inter_04_deutsch,2,True,1.0,
+en,claude-opus-4.6,inter_04_deutsch,3,True,1.0,
+en,claude-opus-4.6,inter_04_deutsch,4,False,0.0,exec:name 'H' is not defined
+en,claude-opus-4.6,inter_04_deutsch,5,True,1.0,
+en,claude-opus-4.6,inter_05_superdense,1,False,0.0,exec:name 'circuits' is not defined
+en,claude-opus-4.6,inter_05_superdense,2,True,1.0,
+en,claude-opus-4.6,inter_05_superdense,3,False,0.0,exec:name 'circuits' is not defined
+en,claude-opus-4.6,inter_05_superdense,4,True,1.0,
+en,claude-opus-4.6,inter_05_superdense,5,False,0.0,exec:name 'circuits' is not defined
+en,claude-opus-4.6,inter_06_grover2,1,True,1.0,
+en,claude-opus-4.6,inter_06_grover2,2,True,1.0,
+en,claude-opus-4.6,inter_06_grover2,3,True,1.0,
+en,claude-opus-4.6,inter_06_grover2,4,True,1.0,
+en,claude-opus-4.6,inter_06_grover2,5,True,1.0,
+en,claude-opus-4.6,inter_07_param_rot,1,True,1.0,
+en,claude-opus-4.6,inter_07_param_rot,2,True,1.0,
+en,claude-opus-4.6,inter_07_param_rot,3,True,1.0,
+en,claude-opus-4.6,inter_07_param_rot,4,True,1.0,
+en,claude-opus-4.6,inter_07_param_rot,5,True,1.0,
+en,claude-opus-4.6,inter_08_fredkin,1,True,1.0,
+en,claude-opus-4.6,inter_08_fredkin,2,True,1.0,
+en,claude-opus-4.6,inter_08_fredkin,3,True,1.0,
+en,claude-opus-4.6,inter_08_fredkin,4,True,1.0,
+en,claude-opus-4.6,inter_08_fredkin,5,True,1.0,
+en,claude-opus-4.6,inter_09_shift_reg,1,True,1.0,
+en,claude-opus-4.6,inter_09_shift_reg,2,True,1.0,
+en,claude-opus-4.6,inter_09_shift_reg,3,True,1.0,
+en,claude-opus-4.6,inter_09_shift_reg,4,True,1.0,
+en,claude-opus-4.6,inter_09_shift_reg,5,True,1.0,
+en,claude-opus-4.6,inter_10_phase_est,1,False,0.0,exec:'Circuit' object has no attribute 'crz'
+en,claude-opus-4.6,inter_10_phase_est,2,False,0.9061,fid=0.906
+en,claude-opus-4.6,inter_10_phase_est,3,False,0.9061,fid=0.906
+en,claude-opus-4.6,inter_10_phase_est,4,False,0.0,exec:'Circuit' object has no attribute 'crz'
+en,claude-opus-4.6,inter_10_phase_est,5,False,0.9061,fid=0.906
+en,claude-sonnet-4.6,adv_01_qft3,1,True,1.0,
+en,claude-sonnet-4.6,adv_01_qft3,2,True,1.0,
+en,claude-sonnet-4.6,adv_01_qft3,3,True,1.0,
+en,claude-sonnet-4.6,adv_01_qft3,4,True,1.0,
+en,claude-sonnet-4.6,adv_01_qft3,5,True,1.0,
+en,claude-sonnet-4.6,adv_02_grover3,1,True,1.0,
+en,claude-sonnet-4.6,adv_02_grover3,2,False,0.0,fid=0.000
+en,claude-sonnet-4.6,adv_02_grover3,3,False,0.0,fid=0.000
+en,claude-sonnet-4.6,adv_02_grover3,4,True,1.0,
+en,claude-sonnet-4.6,adv_02_grover3,5,True,1.0,
+en,claude-sonnet-4.6,adv_03_vqe_ansatz,1,True,1.0,
+en,claude-sonnet-4.6,adv_03_vqe_ansatz,2,True,1.0,
+en,claude-sonnet-4.6,adv_03_vqe_ansatz,3,True,1.0,
+en,claude-sonnet-4.6,adv_03_vqe_ansatz,4,True,1.0,
+en,claude-sonnet-4.6,adv_03_vqe_ansatz,5,True,1.0,
+en,claude-sonnet-4.6,adv_04_qaoa,1,False,0.25,fid=0.250
+en,claude-sonnet-4.6,adv_04_qaoa,2,False,0.0,exec:name 'circuit' is not defined
+en,claude-sonnet-4.6,adv_04_qaoa,3,True,1.0,
+en,claude-sonnet-4.6,adv_04_qaoa,4,False,0.5,fid=0.500
+en,claude-sonnet-4.6,adv_04_qaoa,5,False,0.5,fid=0.500
+en,claude-sonnet-4.6,adv_05_qwalk,1,True,1.0,
+en,claude-sonnet-4.6,adv_05_qwalk,2,True,1.0,
+en,claude-sonnet-4.6,adv_05_qwalk,3,True,1.0,
+en,claude-sonnet-4.6,adv_05_qwalk,4,True,1.0,
+en,claude-sonnet-4.6,adv_05_qwalk,5,True,1.0,
+en,claude-sonnet-4.6,adv_06_bv,1,True,1.0,
+en,claude-sonnet-4.6,adv_06_bv,2,True,1.0,
+en,claude-sonnet-4.6,adv_06_bv,3,False,0.0,fid=0.000
+en,claude-sonnet-4.6,adv_06_bv,4,True,1.0,
+en,claude-sonnet-4.6,adv_06_bv,5,True,1.0,
+en,claude-sonnet-4.6,demo_01_hadamard,1,True,1.0,
+en,claude-sonnet-4.6,demo_01_hadamard,2,True,1.0,
+en,claude-sonnet-4.6,demo_01_hadamard,3,True,1.0,
+en,claude-sonnet-4.6,demo_01_hadamard,4,True,1.0,
+en,claude-sonnet-4.6,demo_01_hadamard,5,True,1.0,
+en,claude-sonnet-4.6,demo_02_cnot,1,True,1.0,
+en,claude-sonnet-4.6,demo_02_cnot,2,True,1.0,
+en,claude-sonnet-4.6,demo_02_cnot,3,True,1.0,
+en,claude-sonnet-4.6,demo_02_cnot,4,True,1.0,
+en,claude-sonnet-4.6,demo_02_cnot,5,True,1.0,
+en,claude-sonnet-4.6,demo_03_bell,1,True,1.0,
+en,claude-sonnet-4.6,demo_03_bell,2,True,1.0,
+en,claude-sonnet-4.6,demo_03_bell,3,True,1.0,
+en,claude-sonnet-4.6,demo_03_bell,4,True,1.0,
+en,claude-sonnet-4.6,demo_03_bell,5,True,1.0,
+en,claude-sonnet-4.6,demo_04_ghz,1,True,1.0,
+en,claude-sonnet-4.6,demo_04_ghz,2,True,1.0,
+en,claude-sonnet-4.6,demo_04_ghz,3,True,1.0,
+en,claude-sonnet-4.6,demo_04_ghz,4,True,1.0,
+en,claude-sonnet-4.6,demo_04_ghz,5,True,1.0,
+en,claude-sonnet-4.6,demo_05_toffoli,1,True,1.0,
+en,claude-sonnet-4.6,demo_05_toffoli,2,True,1.0,
+en,claude-sonnet-4.6,demo_05_toffoli,3,True,1.0,
+en,claude-sonnet-4.6,demo_05_toffoli,4,True,1.0,
+en,claude-sonnet-4.6,demo_05_toffoli,5,True,1.0,
+en,claude-sonnet-4.6,inter_01_swap_decomp,1,True,1.0,
+en,claude-sonnet-4.6,inter_01_swap_decomp,2,True,1.0,
+en,claude-sonnet-4.6,inter_01_swap_decomp,3,True,1.0,
+en,claude-sonnet-4.6,inter_01_swap_decomp,4,True,1.0,
+en,claude-sonnet-4.6,inter_01_swap_decomp,5,True,1.0,
+en,claude-sonnet-4.6,inter_02_qft2,1,True,1.0,
+en,claude-sonnet-4.6,inter_02_qft2,2,True,1.0,
+en,claude-sonnet-4.6,inter_02_qft2,3,True,1.0,
+en,claude-sonnet-4.6,inter_02_qft2,4,True,1.0,
+en,claude-sonnet-4.6,inter_02_qft2,5,True,1.0,
+en,claude-sonnet-4.6,inter_03_teleport_prep,1,True,1.0,
+en,claude-sonnet-4.6,inter_03_teleport_prep,2,True,1.0,
+en,claude-sonnet-4.6,inter_03_teleport_prep,3,True,1.0,
+en,claude-sonnet-4.6,inter_03_teleport_prep,4,True,1.0,
+en,claude-sonnet-4.6,inter_03_teleport_prep,5,True,1.0,
+en,claude-sonnet-4.6,inter_04_deutsch,1,True,1.0,
+en,claude-sonnet-4.6,inter_04_deutsch,2,True,1.0,
+en,claude-sonnet-4.6,inter_04_deutsch,3,True,1.0,
+en,claude-sonnet-4.6,inter_04_deutsch,4,True,1.0,
+en,claude-sonnet-4.6,inter_04_deutsch,5,True,1.0,
+en,claude-sonnet-4.6,inter_05_superdense,1,True,1.0,
+en,claude-sonnet-4.6,inter_05_superdense,2,True,1.0,
+en,claude-sonnet-4.6,inter_05_superdense,3,True,1.0,
+en,claude-sonnet-4.6,inter_05_superdense,4,True,1.0,
+en,claude-sonnet-4.6,inter_05_superdense,5,True,1.0,
+en,claude-sonnet-4.6,inter_06_grover2,1,True,1.0,
+en,claude-sonnet-4.6,inter_06_grover2,2,True,1.0,
+en,claude-sonnet-4.6,inter_06_grover2,3,True,1.0,
+en,claude-sonnet-4.6,inter_06_grover2,4,True,1.0,
+en,claude-sonnet-4.6,inter_06_grover2,5,True,1.0,
+en,claude-sonnet-4.6,inter_07_param_rot,1,True,1.0,
+en,claude-sonnet-4.6,inter_07_param_rot,2,True,1.0,
+en,claude-sonnet-4.6,inter_07_param_rot,3,True,1.0,
+en,claude-sonnet-4.6,inter_07_param_rot,4,True,1.0,
+en,claude-sonnet-4.6,inter_07_param_rot,5,True,1.0,
+en,claude-sonnet-4.6,inter_08_fredkin,1,True,1.0,
+en,claude-sonnet-4.6,inter_08_fredkin,2,True,1.0,
+en,claude-sonnet-4.6,inter_08_fredkin,3,True,1.0,
+en,claude-sonnet-4.6,inter_08_fredkin,4,True,1.0,
+en,claude-sonnet-4.6,inter_08_fredkin,5,True,1.0,
+en,claude-sonnet-4.6,inter_09_shift_reg,1,True,1.0,
+en,claude-sonnet-4.6,inter_09_shift_reg,2,True,1.0,
+en,claude-sonnet-4.6,inter_09_shift_reg,3,True,1.0,
+en,claude-sonnet-4.6,inter_09_shift_reg,4,True,1.0,
+en,claude-sonnet-4.6,inter_09_shift_reg,5,True,1.0,
+en,claude-sonnet-4.6,inter_10_phase_est,1,False,0.375,fid=0.375
+en,claude-sonnet-4.6,inter_10_phase_est,2,False,0.0,exec:'Circuit' object has no attribute 'contr
+en,claude-sonnet-4.6,inter_10_phase_est,3,False,0.0,exec:'Circuit' object has no attribute 'contr
+en,claude-sonnet-4.6,inter_10_phase_est,4,False,0.0,exec:'Circuit' object has no attribute 'contr
+en,claude-sonnet-4.6,inter_10_phase_est,5,False,0.0,exec:'Circuit' object has no attribute 'contr
